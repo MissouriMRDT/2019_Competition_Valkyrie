@@ -103,7 +103,7 @@ void setbusses(){
   digitalWrite(SW_12B, SW_12B_SW);
   digitalWrite(SW_12C, SW_12C_SW);
   
-  if (SW_M1_SW == HIGH && digitalRead(SW_M1) == 0)
+  if (SW_M1_SW == HIGH && digitalRead(SW_M1) == LOW)
   {
     digitalWrite(SW_M1, SW_M1_SW);
     delay (INRUSHDELAY); 
@@ -111,7 +111,7 @@ void setbusses(){
   digitalWrite(SW_M1, SW_M1_SW);
   };
   
-  if (SW_M2_SW == HIGH && digitalRead(SW_M2) == 0)
+  if (SW_M2_SW == HIGH && digitalRead(SW_M2) == LOW)
   {
     digitalWrite(SW_M2, SW_M2_SW);
     delay (INRUSHDELAY); 
@@ -119,7 +119,7 @@ void setbusses(){
   digitalWrite(SW_M2, SW_M2_SW);
   };
   
-  if (SW_M3_SW == HIGH && digitalRead(SW_M3) == 0)
+  if (SW_M3_SW == HIGH && digitalRead(SW_M3) == LOW)
   {
     digitalWrite(SW_M3, SW_M3_SW);
     delay (INRUSHDELAY); 
@@ -127,7 +127,7 @@ void setbusses(){
   digitalWrite(SW_M3, SW_M3_SW);
   };
   
-  if (SW_M4_SW == HIGH && digitalRead(SW_M4) == 0)
+  if (SW_M4_SW == HIGH && digitalRead(SW_M4) == LOW)
   {
     digitalWrite(SW_M4, SW_M4_SW);
     delay (INRUSHDELAY); 
@@ -135,7 +135,7 @@ void setbusses(){
   digitalWrite(SW_M4, SW_M4_SW);
   };
   
-  if (SW_M5_SW == HIGH && digitalRead(SW_M5) == 0)
+  if (SW_M5_SW == HIGH && digitalRead(SW_M5) == LOW)
   {
     digitalWrite(SW_M5, SW_M5_SW);
     delay (INRUSHDELAY); 
@@ -143,7 +143,7 @@ void setbusses(){
   digitalWrite(SW_M5, SW_M5_SW);
   };
   
-  if (SW_M6_SW == HIGH && digitalRead(SW_M6) == 0)
+  if (SW_M6_SW == HIGH && digitalRead(SW_M6) == LOW)
   {
     digitalWrite(SW_M6, SW_M6_SW);
     delay (INRUSHDELAY); 
