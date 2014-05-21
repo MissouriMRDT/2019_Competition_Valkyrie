@@ -1,271 +1,202 @@
-
-//Warning: I have literally no idea what I'm doing
-
 #include <EasyTransfer.h>
 
-EasyTransfer ET;
+EasyTransfer easyTransfer;
 
+/**********************************************************
+ * Send/Receive Structs
+ **********************************************************/
 struct SEND_DATA
 {
-  int temp;
-  int volt12a;
-  int volt12b;
-  int volt12c;
-  int main_volt;
-  int total_current;
-
+  int ambientTemperature;
+  int busAVoltage;
+  int busBVoltage;
+  int busCVoltage;
+  int inputVoltage;
+  int inputCurrent;
 };
 SEND_DATA powerData;
 
-struct RECIEVE_DATA
+struct RECEIVE_DATA
 {
-  boolean SET_MASTER;    //This should always be high. Think Snoop d̶o̶g̶ Lion.
-  boolean SET_POE;       //If the master line is Snoop, this is mother theresa. Mother Theresa never gets high. That would be terrible.
-  boolean SET_12A;
-  boolean SET_12B;
-  boolean SET_12C;
-  boolean SET_24;        //If the master line is Snoop, this is Wiz. He gets high just as much as snoop. Basically 81x7 neffew. 
-  boolean SET_M1;
-  boolean SET_M2;
-  boolean SET_M3;
-  boolean SET_M4;
-  boolean SET_M5;
-  boolean SET_M6;
+  boolean receivedMaster;
+  boolean receivedPOE;
+  boolean receivedBusA;
+  boolean receivedBusB;
+  boolean receivedBusC;
+  boolean receivedAuxiliary;
+  boolean receivedMotor1;
+  boolean receivedMotor2;
+  boolean receivedMotor3;
+  boolean receivedMotor4;
+  boolean receivedMotor5;
+  boolean receivedMotor6;
 };
-RECIEVE_DATA powerCommands;
+RECEIVE_DATA commands;
 
-//Setting up port names
-                                 //Digital outs
-const uint8_t MASTER = 2;        //Master power pin- If this is pulled low, it switches off the power board. Motherboard will go down. Don't use this. Switch off all outputs instead, or kill at the BMS.
-const uint8_t SW_POE = 3;        //POE Control -     If this goes high, we lose radio and cams - Active low
-const uint8_t SW_12C = 4;        //12V Bus 3 control- Active low
-const uint8_t SW_M4 = 5;         //Motor 4 control
-const uint8_t SW_M3 = 6;         //Motor 3 control
-const uint8_t SW_M2 = 7;         //Motor 2 control
-const uint8_t SW_M1 = 8;         //Motor 1 control
-const uint8_t SW_24 = 9;         //24v Aux control- The switch is connected here, so if this drops, we lose comms with the motherboard (Connection with radio should maintain)
-const uint8_t SW_M5 = 10;        //Motor 5 control
-const uint8_t SW_M6 = 11;        //Motor 6 control
-const uint8_t SW_12A = 12;       //12v Bus 1 control- Active low
-const uint8_t SW_12B= 13;        //12v bus 2 control- Active low
+/**********************************************************
+ * Digital Output Pins
+ **********************************************************/
+// If Master Pin goes low, the power board will go off.
+const uint8_t MASTER_PIN	= 2;
+const uint8_t POE_PIN		= 3; // Active low
+const uint8_t BUS_C_PIN		= 4; // Active low
+const uint8_t MOTOR_4_PIN	= 5;
+const uint8_t MOTOR_3_PIN	= 6;
+const uint8_t MOTOR_2_PIN	= 7;
+const uint8_t MOTOR_1_PIN	= 8;
+const uint8_t AUXILIARY_PIN     = 9;
+const uint8_t MOTOR_5_PIN	= 10;
+const uint8_t MOTOR_6_PIN	= 11;
+const uint8_t BUS_A_PIN		= 12; // Active Low
+const uint8_t BUS_B_PIN		= 13; // Active Low
 
-                                 //Analog ins
-const uint8_t TEMP = 0;          //Ambient Temp
-const uint8_t V12A = 1;          //Voltage measurement over 12V bus A
-const uint8_t V12B = 2;          //Voltage measurement over 12V bus B
-const uint8_t V12C = 3;          //Voltage measurement over 12V bus C
-const uint8_t VOLT = 4;          //Voltage at Input
-const uint8_t CURR = 5;          //Current at input
+/**********************************************************
+ * Analog Input Pins
+ **********************************************************/
+const uint8_t AMBIENT_TEMPERATURE = 0;
+const uint8_t BUS_A_VOLTAGE = 1;
+const uint8_t BUS_B_VOLTAGE = 2;
+const uint8_t BUS_C_VOLTAGE = 3;
+const uint8_t INPUT_VOLTAGE = 4;
+const uint8_t INPUT_CURRENT = 5;
 
+// Amount of time that the powerboard waits before switching on each motor controller - inrush current.
+const int IN_RUSH_DELAY = 50;
 
-
-
-
-//i made some variables so let's see if it works
-int TEMP_MEAS = 0;     // measured ambient temp
-int V12A_MEAS = 0;     // measured voltage over 12V bus A
-int V12B_MEAS = 0; 
-int V12C_MEAS = 0; 
-int VOLT_MEAS = 0;     // measured votlage at input
-int CURR_MEAS = 0;     // measured current at input
-
-//I'm making some more because i literally don't know what the shit else to do
-boolean MASTER_SW = HIGH;
-boolean SW_POE_SW = LOW;      //Lower voltage busses are active low
-boolean SW_12A_SW = LOW;
-boolean SW_12B_SW = LOW;
-boolean SW_12C_SW = LOW;
-boolean SW_24_SW = HIGH;
-boolean SW_M1_SW = HIGH;
-boolean SW_M2_SW = HIGH;
-boolean SW_M3_SW = HIGH;
-boolean SW_M4_SW = HIGH;
-boolean SW_M5_SW = HIGH;
-boolean SW_M6_SW = HIGH;
-
-
-
-//Other variables that idk probably do shit or something
-int INRUSHDELAY = 50; //This is the amount of time that the powerboard waits before switching on each motor controller. Inrush current yo
-                      // also i really don't know what this should be so this is a #yolo here.
-
-
-
-
-
-//This should set the states of the busses
-
-void setbusses(){
-  digitalWrite(MASTER, MASTER_SW);     //Critical busses are brought high first
-  digitalWrite(SW_POE, SW_POE_SW);
-  digitalWrite(SW_24, SW_24_SW);        //That includes Master, POE and the 24V Aux bus. The 5V bus is alwaus on
-  digitalWrite(SW_12A, SW_12A_SW);
-  digitalWrite(SW_12B, SW_12B_SW);
-  digitalWrite(SW_12C, SW_12C_SW);
-  
-  if (SW_M1_SW == HIGH && digitalRead(SW_M1) == LOW)
-  {
-    digitalWrite(SW_M1, SW_M1_SW);
-    delay (INRUSHDELAY); 
-  } else {
-  digitalWrite(SW_M1, SW_M1_SW);
-  };
-  
-  if (SW_M2_SW == HIGH && digitalRead(SW_M2) == LOW)
-  {
-    digitalWrite(SW_M2, SW_M2_SW);
-    delay (INRUSHDELAY); 
-  } else {
-  digitalWrite(SW_M2, SW_M2_SW);
-  };
-  
-  if (SW_M3_SW == HIGH && digitalRead(SW_M3) == LOW)
-  {
-    digitalWrite(SW_M3, SW_M3_SW);
-    delay (INRUSHDELAY); 
-  } else {
-  digitalWrite(SW_M3, SW_M3_SW);
-  };
-  
-  if (SW_M4_SW == HIGH && digitalRead(SW_M4) == LOW)
-  {
-    digitalWrite(SW_M4, SW_M4_SW);
-    delay (INRUSHDELAY); 
-  } else {
-  digitalWrite(SW_M4, SW_M4_SW);
-  };
-  
-  if (SW_M5_SW == HIGH && digitalRead(SW_M5) == LOW)
-  {
-    digitalWrite(SW_M5, SW_M5_SW);
-    delay (INRUSHDELAY); 
-  } else {
-  digitalWrite(SW_M5, SW_M5_SW);
-  };
-  
-  if (SW_M6_SW == HIGH && digitalRead(SW_M6) == LOW)
-  {
-    digitalWrite(SW_M6, SW_M6_SW);
-    delay (INRUSHDELAY); 
-  } else {
-  digitalWrite(SW_M6, SW_M6_SW);
-  };
-
-
-}
-
-
-
-//This should send shit back to the motherboard
-void senddata()
+/**********************************************************
+ * Functions
+ **********************************************************/
+// Initializes the state of all of the buses
+void setBuses()
 {
-  powerData.temp = TEMP_MEAS;
-  powerData.volt12a = V12A_MEAS;
-  powerData.volt12b = V12B_MEAS;
-  powerData.volt12c = V12C_MEAS;
-  powerData.main_volt = VOLT_MEAS;
-  powerData.total_current= CURR_MEAS;
-  
-  ET.sendData();
-}
+  // Critical MASTER_PIN are brought high first
+  digitalWrite(MASTER_PIN, commands.receivedMaster);
+  digitalWrite(POE_PIN, commands.receivedPOE);
+  // That includes Master, POE and the 24V Aux bus. The 5V bus is always on
+  digitalWrite(AUXILIARY_PIN, commands.receivedAuxiliary);
+  digitalWrite(BUS_A_PIN, commands.receivedBusA);
+  digitalWrite(BUS_B_PIN, commands.receivedBusB);
+  digitalWrite(BUS_C_PIN, commands.receivedBusC);
 
-
-
-
-
-void setup(){
-
-
-pinMode(MASTER, OUTPUT);
-pinMode(SW_POE, OUTPUT);
-pinMode(SW_12A, OUTPUT);
-pinMode(SW_12B, OUTPUT);
-pinMode(SW_12C, OUTPUT);
-pinMode(SW_M1, OUTPUT);
-pinMode(SW_M2, OUTPUT);
-pinMode(SW_M3, OUTPUT);
-pinMode(SW_M4, OUTPUT);
-pinMode(SW_M5, OUTPUT);
-pinMode(SW_M6, OUTPUT);
-pinMode(SW_24, OUTPUT);
-digitalWrite(MASTER, HIGH);     //Critical busses are brought on first
-digitalWrite(SW_POE, LOW);     //That includes Master, POE (active low) and the 24V Aux bus. The 5V bus is alwaus on
-digitalWrite(SW_12A, HIGH);
-digitalWrite(SW_12B, HIGH);
-digitalWrite(SW_12C, HIGH);
-digitalWrite(SW_M1, LOW);
-digitalWrite(SW_M2, LOW);
-digitalWrite(SW_M3, LOW);
-digitalWrite(SW_M4, LOW);
-digitalWrite(SW_M5, LOW);
-digitalWrite(SW_M6, LOW);
-digitalWrite(SW_24, HIGH);
-
-
-Serial.begin(115200);
-ET.begin(details(powerData),&Serial);
-
-
-
-}
-
-void loop(){
-  
-  
- //Read the analog inputs and store them into the int values I guess, idk
-TEMP_MEAS =analogRead(TEMP);
-V12A_MEAS =analogRead(V12A);
-V12B_MEAS =analogRead(V12B);
-V12C_MEAS =analogRead(V12C);
-VOLT_MEAS =analogRead(VOLT);
-CURR_MEAS =analogRead(CURR); 
- 
-senddata();
-
-setbusses();
-
-
-  if(ET.receiveData())
+  if (commands.receivedMotor1 == HIGH && digitalRead(MOTOR_1_PIN) == LOW)
   {
-   
+    digitalWrite(MOTOR_1_PIN, commands.receivedMotor1);
+    delay(IN_RUSH_DELAY);
+  }
+  else 
+  {
+    digitalWrite(MOTOR_1_PIN, commands.receivedMotor1);
+  }
 
-    MASTER_SW = powerCommands.SET_MASTER; //I'm playing a dangerous game by letting you fuck with this one. Don't let me down.
-    SW_POE_SW = powerCommands.SET_POE;     
-    SW_12A_SW = powerCommands.SET_12A;
-    SW_12B_SW = powerCommands.SET_12B;
-    SW_12C_SW = powerCommands.SET_12C;
-    SW_24_SW = powerCommands.SET_24; 
-    SW_M1_SW = powerCommands.SET_M1;
-    SW_M2_SW = powerCommands.SET_M2;
-    SW_M3_SW = powerCommands.SET_M3;
-    SW_M4_SW = powerCommands.SET_M4;
-    SW_M5_SW = powerCommands.SET_M5;
-    SW_M6_SW = powerCommands.SET_M6;
-      
+  if (commands.receivedMotor2 == HIGH && digitalRead(MOTOR_2_PIN) == LOW)
+  {
+    digitalWrite(MOTOR_2_PIN, commands.receivedMotor2);
+    delay(IN_RUSH_DELAY); 
+  } 
+  else 
+  {
+    digitalWrite(MOTOR_2_PIN, commands.receivedMotor2);
+  }
 
+  if (commands.receivedMotor3 == HIGH && digitalRead(MOTOR_3_PIN) == LOW)
+  {
+    digitalWrite(MOTOR_3_PIN, commands.receivedMotor3);
+    delay(IN_RUSH_DELAY); 
+  } 
+  else 
+  {
+    digitalWrite(MOTOR_3_PIN, commands.receivedMotor3);
+  }
+
+  if (commands.receivedMotor4 == HIGH && digitalRead(MOTOR_4_PIN) == LOW)
+  {
+    digitalWrite(MOTOR_4_PIN, commands.receivedMotor4);
+    delay(IN_RUSH_DELAY); 
+  } 
+  else 
+  {
+    digitalWrite(MOTOR_4_PIN, commands.receivedMotor4);
+  }
+
+  if (commands.receivedMotor5 == HIGH && digitalRead(MOTOR_5_PIN) == LOW)
+  {
+    digitalWrite(MOTOR_5_PIN, commands.receivedMotor5);
+    delay(IN_RUSH_DELAY); 
+  } 
+  else 
+  {
+    digitalWrite(MOTOR_5_PIN, commands.receivedMotor5);
+  }
+
+  if (commands.receivedMotor6 == HIGH && digitalRead(MOTOR_6_PIN) == LOW)
+  {
+    digitalWrite(MOTOR_6_PIN, commands.receivedMotor6);
+    delay(IN_RUSH_DELAY);
+  } 
+  else 
+  {
+    digitalWrite(MOTOR_6_PIN, commands.receivedMotor6);
+  }
+}
+
+//  Sends data to the motherboard
+void sendData()
+{
+  powerData.ambientTemperature = analogRead(AMBIENT_TEMPERATURE);
+  powerData.busAVoltage = analogRead(BUS_A_VOLTAGE);
+  powerData.busBVoltage = analogRead(BUS_B_VOLTAGE);
+  powerData.busCVoltage = analogRead(BUS_C_VOLTAGE);
+  powerData.inputVoltage = analogRead(INPUT_VOLTAGE);
+  powerData.inputCurrent = analogRead(INPUT_CURRENT);
+
+  easyTransfer.sendData();
+}
+
+// Defines all pins as either input or output
+void setup()
+{
+  pinMode(MASTER_PIN, OUTPUT);
+  pinMode(POE_PIN, OUTPUT);
+  pinMode(BUS_A_PIN, OUTPUT);
+  pinMode(BUS_B_PIN, OUTPUT);
+  pinMode(BUS_C_PIN, OUTPUT);
+  pinMode(MOTOR_1_PIN, OUTPUT);
+  pinMode(MOTOR_2_PIN, OUTPUT);
+  pinMode(MOTOR_3_PIN, OUTPUT);
+  pinMode(MOTOR_4_PIN, OUTPUT);
+  pinMode(MOTOR_5_PIN, OUTPUT);
+  pinMode(MOTOR_6_PIN, OUTPUT);
+  pinMode(AUXILIARY_PIN, OUTPUT);
+  digitalWrite(MASTER_PIN, HIGH);     //Critical busses are brought on first
+  digitalWrite(POE_PIN, LOW);			//That includes Master, POE (active low) and the 24V Aux bus. The 5V bus is alwaus on
+  digitalWrite(BUS_A_PIN, LOW);
+  digitalWrite(BUS_B_PIN, LOW);
+  digitalWrite(BUS_C_PIN, LOW);
+  digitalWrite(MOTOR_1_PIN, HIGH);
+  delay(IN_RUSH_DELAY);
+  digitalWrite(MOTOR_2_PIN, HIGH);
+  delay(IN_RUSH_DELAY);
+  digitalWrite(MOTOR_3_PIN, HIGH);
+  delay(IN_RUSH_DELAY);
+  digitalWrite(MOTOR_4_PIN, HIGH);
+  delay(IN_RUSH_DELAY);
+  digitalWrite(MOTOR_5_PIN, HIGH);
+  delay(IN_RUSH_DELAY);
+  digitalWrite(MOTOR_6_PIN, HIGH);
+  delay(IN_RUSH_DELAY);
+  digitalWrite(AUXILIARY_PIN, HIGH);
+
+  Serial.begin(115200);
+  easyTransfer.begin(details(powerData), &Serial);
+}
+
+void loop()
+{
+  sendData();
+
+  if(easyTransfer.receiveData())
+  {
+    setBuses();
   };
-  
-
-
 }
-
-
-
- 
- 
-//This Function reads the average from a port------------- Should I use this? Fuck if I know; i got it from the BMS code
-/*
-int long_adc(int channel)
-{ 
-    unsigned int sum = 0;
-int temp;
- int i;
-  for (i=0; i<AVG_NUM; i++) {            // loop through reading raw adc values AVG_NUM number of times  
-    temp = analogRead(channel);          // read the input pin  
-    sum += temp;                        // store sum for averaging  
- }
-  return(sum / AVG_NUM);                // divide sum by AVG_NUM to get average and return it
-}
-*/
-
 
