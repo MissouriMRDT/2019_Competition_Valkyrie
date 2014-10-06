@@ -3114,68 +3114,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-FreqCtrl">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find crystals and oscillators and other things that go "tick".&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="CRYSTAL-SMD-5X3">
-<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.2032" layer="21"/>
-<wire x1="0.6" y1="-1.6" x2="-0.6" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.2032" layer="21"/>
-<smd name="1" x="-1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="3" x="1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="4" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="2" x="1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<text x="-2.54" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CRYSTAL-GND">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<wire x1="0" y1="-2.8" x2="0" y2="-1.6" width="0.1524" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CRYSTAL-GROUNDED">
-<gates>
-<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CRYSTAL-SMD-5X3">
-<connects>
-<connect gate="G$1" pin="1" pad="3"/>
-<connect gate="G$1" pin="2" pad="1"/>
-<connect gate="G$1" pin="3" pad="2 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="con-hirose">
 <description>&lt;b&gt;Hirose Connectors&lt;/b&gt;&lt;p&gt;
 www.hirose.co.jp&lt;p&gt;
@@ -4766,6 +4704,68 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-FreqCtrl">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find crystals and oscillators and other things that go "tick".&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="CRYSTAL-SMD-5X3">
+<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.2032" layer="21"/>
+<wire x1="0.6" y1="-1.6" x2="-0.6" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.2032" layer="21"/>
+<smd name="1" x="-1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
+<smd name="3" x="1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
+<smd name="4" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
+<smd name="2" x="1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
+<text x="-2.54" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CRYSTAL-GND">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="0" y1="-2.8" x2="0" y2="-1.6" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CRYSTAL-GROUNDED">
+<gates>
+<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYSTAL-SMD-5X3">
+<connects>
+<connect gate="G$1" pin="1" pad="3"/>
+<connect gate="G$1" pin="2" pad="1"/>
+<connect gate="G$1" pin="3" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4779,10 +4779,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0603)" device="" value="1.0uF"/>
-<part name="C18" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
-<part name="C19" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
-<part name="GND30" library="supply1" deviceset="GND" device=""/>
-<part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="SparkFun-DigitalIC" deviceset="ATMEGA32U4" device="TQFP-44"/>
 <part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="10k"/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
@@ -4796,14 +4792,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="U$2" library="Jake" deviceset="ICSP_SMD" device=""/>
-<part name="U$4" library="SparkFun-FreqCtrl" deviceset="CRYSTAL-GROUNDED" device=""/>
-<part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="con-hirose" deviceset="MINI-USB-" device="UX60A-MB-5ST"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X16" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X16" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="C18" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
+<part name="C19" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
+<part name="GND30" library="supply1" deviceset="GND" device=""/>
+<part name="GND31" library="supply1" deviceset="GND" device=""/>
+<part name="U$4" library="SparkFun-FreqCtrl" deviceset="CRYSTAL-GROUNDED" device=""/>
+<part name="GND26" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4814,10 +4814,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND1" gate="1" x="187.96" y="99.06"/>
 <instance part="GND5" gate="1" x="266.7" y="-2.54"/>
 <instance part="C7" gate="G$1" x="261.62" y="10.16"/>
-<instance part="C18" gate="G$1" x="162.56" y="152.4"/>
-<instance part="C19" gate="G$1" x="152.4" y="152.4"/>
-<instance part="GND30" gate="1" x="162.56" y="142.24"/>
-<instance part="GND31" gate="1" x="152.4" y="142.24"/>
 <instance part="U$3" gate="G$1" x="226.06" y="172.72"/>
 <instance part="R18" gate="G$1" x="205.74" y="226.06" rot="R180"/>
 <instance part="P+8" gate="VCC" x="198.12" y="251.46"/>
@@ -4831,14 +4827,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND29" gate="1" x="238.76" y="38.1"/>
 <instance part="P+6" gate="VCC" x="251.46" y="48.26"/>
 <instance part="U$2" gate="G$1" x="279.4" y="33.02"/>
-<instance part="U$4" gate="G$1" x="182.88" y="160.02" rot="R270"/>
-<instance part="GND26" gate="1" x="175.26" y="152.4"/>
 <instance part="X1" gate="G$1" x="281.94" y="15.24"/>
 <instance part="JP1" gate="A" x="312.42" y="177.8"/>
 <instance part="JP2" gate="A" x="312.42" y="231.14"/>
 <instance part="GND2" gate="1" x="299.72" y="154.94"/>
 <instance part="S1" gate="G$1" x="208.28" y="259.08"/>
 <instance part="GND3" gate="1" x="198.12" y="259.08" rot="R270"/>
+<instance part="C18" gate="G$1" x="160.02" y="152.4"/>
+<instance part="C19" gate="G$1" x="149.86" y="152.4"/>
+<instance part="GND30" gate="1" x="160.02" y="142.24"/>
+<instance part="GND31" gate="1" x="149.86" y="142.24"/>
+<instance part="U$4" gate="G$1" x="180.34" y="160.02" rot="R270"/>
+<instance part="GND26" gate="1" x="172.72" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -4885,16 +4885,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="X1" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="C18" gate="G$1" pin="2"/>
-<pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="162.56" y1="144.78" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C19" gate="G$1" pin="2"/>
-<pinref part="GND31" gate="1" pin="GND"/>
-<wire x1="152.4" y1="144.78" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="180.34" y1="190.5" x2="180.34" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="195.58" x2="180.34" y2="203.2" width="0.1524" layer="91"/>
@@ -4911,12 +4901,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="U$2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="3"/>
-<pinref part="GND26" gate="1" pin="GND"/>
-<wire x1="175.26" y1="154.94" x2="175.26" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="160.02" x2="177.8" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="16"/>
 <wire x1="309.88" y1="157.48" x2="299.72" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -4930,6 +4914,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="S1" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="200.66" y1="259.08" x2="203.2" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="160.02" y1="144.78" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+<wire x1="149.86" y1="144.78" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="3"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+<wire x1="172.72" y1="154.94" x2="172.72" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="160.02" x2="175.26" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D+" class="0">
@@ -4956,27 +4956,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="170.18" x2="175.26" y2="170.18" width="0.1524" layer="91"/>
 <label x="175.26" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$39" class="0">
-<segment>
-<pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="157.48" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="162.56" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="XTAL1"/>
-<pinref part="U$4" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
-<junction x="182.88" y="162.56"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="C18" gate="G$1" pin="1"/>
-<pinref part="U$3" gate="G$1" pin="XTAL2"/>
-<wire x1="162.56" y1="157.48" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="157.48" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
-<junction x="182.88" y="157.48"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -5447,6 +5426,27 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="JP1" gate="A" pin="8"/>
 <wire x1="309.88" y1="177.8" x2="299.72" y2="177.8" width="0.1524" layer="91"/>
 <label x="299.72" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="157.48" x2="149.86" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="162.56" x2="180.34" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="162.56" x2="149.86" y2="162.56" width="0.1524" layer="91"/>
+<junction x="180.34" y="162.56"/>
+<pinref part="U$3" gate="G$1" pin="XTAL1"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="157.48" x2="180.34" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="157.48" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
+<junction x="180.34" y="157.48"/>
+<pinref part="U$3" gate="G$1" pin="XTAL2"/>
 </segment>
 </net>
 </nets>
