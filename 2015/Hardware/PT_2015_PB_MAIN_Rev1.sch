@@ -3830,6 +3830,40 @@ Metric Code Size 5664</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+5V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+5V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3840,10 +3874,10 @@ Metric Code Size 5664</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
-<part name="U$2" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
-<part name="U$3" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device=""/>
-<part name="U$4" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device=""/>
+<part name="SIDEOUS-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
+<part name="PALPATINE-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
+<part name="VADER-5V" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device="" value="Q_PTN78020HAH"/>
+<part name="DOOKU-12V" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device="" value="Q_PTN78020HAH"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -3863,16 +3897,18 @@ Metric Code Size 5664</description>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C5" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="P+2" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="63.5" y="73.66"/>
-<instance part="U$2" gate="G$1" x="63.5" y="43.18"/>
-<instance part="U$3" gate="G$1" x="45.72" y="12.7"/>
-<instance part="U$4" gate="G$1" x="45.72" y="119.38"/>
+<instance part="SIDEOUS-12V" gate="G$1" x="63.5" y="73.66"/>
+<instance part="PALPATINE-12V" gate="G$1" x="63.5" y="43.18"/>
+<instance part="VADER-5V" gate="G$1" x="45.72" y="12.7"/>
+<instance part="DOOKU-12V" gate="G$1" x="45.72" y="119.38"/>
 <instance part="GND2" gate="1" x="35.56" y="7.62"/>
 <instance part="GND3" gate="1" x="35.56" y="30.48"/>
 <instance part="GND4" gate="1" x="35.56" y="60.96"/>
@@ -3892,31 +3928,33 @@ Metric Code Size 5664</description>
 <instance part="SUPPLY1" gate="G$1" x="-193.04" y="175.26"/>
 <instance part="GND1" gate="1" x="-142.24" y="137.16"/>
 <instance part="C5" gate="G$1" x="-132.08" y="149.86"/>
+<instance part="P+1" gate="1" x="-139.7" y="177.8"/>
+<instance part="P+2" gate="1" x="-139.7" y="177.8"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="DOOKU-12V" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="40.64" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="119.38" x2="35.56" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="-VIN"/>
+<pinref part="SIDEOUS-12V" gate="G$1" pin="-VIN"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="40.64" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="66.04" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="-VIN"/>
+<pinref part="PALPATINE-12V" gate="G$1" pin="-VIN"/>
 <wire x1="40.64" y1="35.56" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="35.56" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="VADER-5V" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="40.64" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="12.7" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
@@ -3951,25 +3989,25 @@ Metric Code Size 5664</description>
 </net>
 <net name="V_BATT" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="VIN"/>
+<pinref part="VADER-5V" gate="G$1" pin="VIN"/>
 <pinref part="SUPPLY5" gate="G$1" pin="V_BATT"/>
 <wire x1="40.64" y1="0" x2="25.4" y2="0" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="0" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="+VIN"/>
+<pinref part="SIDEOUS-12V" gate="G$1" pin="+VIN"/>
 <pinref part="SUPPLY3" gate="G$1" pin="V_BATT"/>
 <wire x1="40.64" y1="81.28" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="81.28" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="+VIN"/>
+<pinref part="PALPATINE-12V" gate="G$1" pin="+VIN"/>
 <pinref part="SUPPLY4" gate="G$1" pin="V_BATT"/>
 <wire x1="40.64" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="50.8" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="VIN"/>
+<pinref part="DOOKU-12V" gate="G$1" pin="VIN"/>
 <pinref part="SUPPLY2" gate="G$1" pin="V_BATT"/>
 <wire x1="40.64" y1="106.68" x2="25.4" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="106.68" x2="25.4" y2="111.76" width="0.1524" layer="91"/>
@@ -4014,14 +4052,19 @@ Metric Code Size 5664</description>
 <wire x1="-182.88" y1="152.4" x2="-187.96" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="+5V" class="0">
 <segment>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
 <pinref part="Q1" gate="G$1" pin="V+"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="-144.78" y1="154.94" x2="-139.7" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="-139.7" y1="154.94" x2="-132.08" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="-132.08" y1="154.94" x2="-132.08" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="-139.7" y1="154.94" x2="-139.7" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="154.94" x2="-139.7" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="REF2"/>
+<wire x1="-144.78" y1="160.02" x2="-139.7" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="160.02" x2="-139.7" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
