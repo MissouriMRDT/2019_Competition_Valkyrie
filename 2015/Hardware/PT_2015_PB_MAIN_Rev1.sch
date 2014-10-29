@@ -6736,98 +6736,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Retired">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find all manner of retired footprints for resistors, capacitors, board names, ICs, etc., that are no longer used in our catalog.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt;Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="0402-CAP">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.4064" layer="21"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.889" y="0.6985" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.0795" y="-1.143" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="1206">
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-</packages>
-<symbols>
-<symbol name="CAP">
-<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
-<text x="1.524" y="2.921" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.524" y="-2.159" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
-<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="2.2UF-CER" prefix="C">
-<description>2.2uF Ceramic SMT&lt;BR&gt;
-CAP-07888- 10V, 20% (0603)&lt;br&gt;
-CAP-10009- 50V, 10% (1206)</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="CAP-07888" package="0402-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-07888"/>
-<attribute name="VALUE" value="2.2uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="CAP-10009" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-10009"/>
-<attribute name="VALUE" value="2.2uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6840,8 +6748,8 @@ CAP-10009- 50V, 10% (1206)</description>
 <parts>
 <part name="SIDEOUS-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
 <part name="PALPATINE-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
-<part name="VADER-5V" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device="" value="Q_PTN78020WAH"/>
-<part name="DOOKU-12V" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device="" value="Q_PTN78020WAH"/>
+<part name="VADER-5V-CRIT" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device="" value="Q_PTN78020WAH"/>
+<part name="DOOKU-12V-CRIT" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device="" value="Q_PTN78020WAH"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6877,9 +6785,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="C6" library="resistor" deviceset="C-US" device="C1206"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="U$2" library="MRDT-2014-All" deviceset="D_SD12T1G" device=""/>
-<part name="U$3" library="MRDT-2014-All" deviceset="D_SD12T1G" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6891,7 +6797,6 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
 <part name="Q3" library="PCB0M1" deviceset="Q_LTC490" device=""/>
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
-<part name="C10" library="SparkFun-Retired" deviceset="2.2UF-CER" device="CAP-10009" value=".1uF"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6911,6 +6816,18 @@ CAP-10009- 50V, 10% (1206)</description>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R7" library="resistor" deviceset="R-US_" device="R1206"/>
+<part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C7" library="resistor" deviceset="C-US" device="C1206" value="1uF"/>
+<part name="C8" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="P+3" library="supply1" deviceset="+5V" device=""/>
+<part name="U$5" library="MRDT-2014-All" deviceset="D_SD12T1G" device=""/>
+<part name="C9" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C10" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="C14" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6927,13 +6844,13 @@ CAP-10009- 50V, 10% (1206)</description>
 <instances>
 <instance part="SIDEOUS-12V" gate="G$1" x="63.5" y="73.66"/>
 <instance part="PALPATINE-12V" gate="G$1" x="63.5" y="43.18"/>
-<instance part="VADER-5V" gate="G$1" x="45.72" y="12.7"/>
-<instance part="DOOKU-12V" gate="G$1" x="45.72" y="134.62"/>
+<instance part="VADER-5V-CRIT" gate="G$1" x="45.72" y="12.7"/>
+<instance part="DOOKU-12V-CRIT" gate="G$1" x="45.72" y="134.62"/>
 <instance part="GND2" gate="1" x="2.54" y="10.16"/>
 <instance part="GND3" gate="1" x="35.56" y="30.48"/>
 <instance part="GND4" gate="1" x="35.56" y="60.96"/>
-<instance part="GND5" gate="1" x="35.56" y="129.54"/>
-<instance part="SUPPLY2" gate="G$1" x="25.4" y="127"/>
+<instance part="GND5" gate="1" x="5.08" y="132.08"/>
+<instance part="SUPPLY2" gate="G$1" x="5.08" y="121.92"/>
 <instance part="SUPPLY3" gate="G$1" x="25.4" y="86.36"/>
 <instance part="SUPPLY4" gate="G$1" x="25.4" y="53.34"/>
 <instance part="SUPPLY5" gate="G$1" x="2.54" y="0"/>
@@ -6953,7 +6870,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <instance part="U$1" gate="G$1" x="-195.58" y="-86.36"/>
 <instance part="L1" gate="G$1" x="114.3" y="116.84"/>
 <instance part="L4" gate="G$1" x="106.68" y="0"/>
-<instance part="L5" gate="G$1" x="33.02" y="119.38"/>
+<instance part="L5" gate="G$1" x="25.4" y="119.38"/>
 <instance part="L6" gate="G$1" x="33.02" y="81.28"/>
 <instance part="L7" gate="G$1" x="33.02" y="48.26"/>
 <instance part="L8" gate="G$1" x="25.4" y="-2.54"/>
@@ -6964,9 +6881,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <instance part="C6" gate="G$1" x="205.74" y="73.66"/>
 <instance part="P+4" gate="1" x="198.12" y="91.44"/>
 <instance part="U$2" gate="G$1" x="129.54" y="-5.08" rot="R90"/>
-<instance part="U$3" gate="G$1" x="101.6" y="114.3" rot="R90"/>
 <instance part="GND8" gate="1" x="129.54" y="-17.78"/>
-<instance part="GND9" gate="1" x="101.6" y="106.68"/>
 <instance part="GND10" gate="1" x="91.44" y="132.08"/>
 <instance part="GND11" gate="1" x="88.9" y="63.5"/>
 <instance part="GND12" gate="1" x="88.9" y="33.02"/>
@@ -6978,7 +6893,6 @@ CAP-10009- 50V, 10% (1206)</description>
 <instance part="R5" gate="G$1" x="-297.18" y="-66.04"/>
 <instance part="Q3" gate="G$1" x="-266.7" y="-58.42" rot="R180"/>
 <instance part="R6" gate="G$1" x="-297.18" y="-55.88"/>
-<instance part="C10" gate="G$1" x="-251.46" y="-81.28"/>
 <instance part="GND16" gate="1" x="-243.84" y="-48.26"/>
 <instance part="P+6" gate="1" x="-243.84" y="-68.58"/>
 <instance part="GND17" gate="1" x="-309.88" y="-48.26"/>
@@ -6993,21 +6907,38 @@ CAP-10009- 50V, 10% (1206)</description>
 <instance part="R8" gate="G$1" x="66.04" y="-17.78" rot="R90"/>
 <instance part="GND19" gate="1" x="66.04" y="-27.94"/>
 <instance part="Q4" gate="G$1" x="149.86" y="15.24"/>
-<instance part="Q5" gate="G$1" x="162.56" y="127"/>
+<instance part="Q5" gate="G$1" x="177.8" y="129.54"/>
 <instance part="GND20" gate="1" x="165.1" y="2.54"/>
 <instance part="P+7" gate="1" x="165.1" y="27.94"/>
 <instance part="GND21" gate="1" x="172.72" y="-17.78"/>
 <instance part="R7" gate="G$1" x="66.04" y="104.14" rot="R90"/>
+<instance part="GND22" gate="1" x="-251.46" y="-88.9"/>
+<instance part="C7" gate="G$1" x="-251.46" y="-78.74"/>
+<instance part="C8" gate="G$1" x="177.8" y="106.68"/>
+<instance part="GND23" gate="1" x="177.8" y="96.52"/>
+<instance part="GND24" gate="1" x="193.04" y="116.84"/>
+<instance part="P+3" gate="1" x="193.04" y="142.24"/>
+<instance part="U$5" gate="G$1" x="137.16" y="116.84" rot="R90"/>
+<instance part="C9" gate="G$1" x="127" y="116.84"/>
+<instance part="GND25" gate="1" x="132.08" y="104.14"/>
+<instance part="C10" gate="G$1" x="15.24" y="129.54"/>
+<instance part="C14" gate="G$1" x="35.56" y="129.54"/>
+<instance part="GND9" gate="1" x="66.04" y="93.98"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="DOOKU-12V" gate="G$1" pin="GND"/>
+<pinref part="DOOKU-12V-CRIT" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="40.64" y1="134.62" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="134.62" x2="35.56" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="134.62" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="134.62" x2="5.08" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="132.08" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="132.08" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SIDEOUS-12V" gate="G$1" pin="-VIN"/>
@@ -7022,7 +6953,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="VADER-5V" gate="G$1" pin="GND"/>
+<pinref part="VADER-5V-CRIT" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="40.64" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
@@ -7082,12 +7013,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <wire x1="121.92" y1="-12.7" x2="129.54" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="111.76" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="DOOKU-12V" gate="G$1" pin="GND1"/>
+<pinref part="DOOKU-12V-CRIT" gate="G$1" pin="GND1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -7099,7 +7025,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="VADER-5V" gate="G$1" pin="GND1"/>
+<pinref part="VADER-5V-CRIT" gate="G$1" pin="GND1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -7152,6 +7078,37 @@ CAP-10009- 50V, 10% (1206)</description>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="-15.24" x2="172.72" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="-251.46" y1="-86.36" x2="-251.46" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="177.8" y1="99.06" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q5" gate="G$1" pin="GND"/>
+<wire x1="190.5" y1="121.92" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="121.92" x2="193.04" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="A"/>
+<wire x1="137.16" y1="114.3" x2="137.16" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="109.22" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="109.22" x2="127" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="127" y1="109.22" x2="127" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="132.08" y1="106.68" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="99.06" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -7208,19 +7165,21 @@ CAP-10009- 50V, 10% (1206)</description>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="V_BATT"/>
-<wire x1="25.4" y1="121.92" x2="25.4" y2="127" width="0.1524" layer="91"/>
 <pinref part="L5" gate="G$1" pin="4"/>
 <pinref part="L5" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="124.46" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="121.92" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="119.38" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="121.92" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
-<junction x="27.94" y="116.84"/>
+<wire x1="20.32" y1="124.46" x2="20.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="121.92" x2="20.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="119.38" x2="20.32" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="121.92" x2="15.24" y2="121.92" width="0.1524" layer="91"/>
+<junction x="20.32" y="116.84"/>
 <pinref part="L5" gate="G$1" pin="2"/>
-<junction x="27.94" y="119.38"/>
+<junction x="20.32" y="119.38"/>
 <pinref part="L5" gate="G$1" pin="3"/>
-<junction x="27.94" y="121.92"/>
-<junction x="27.94" y="124.46"/>
+<junction x="20.32" y="121.92"/>
+<junction x="20.32" y="124.46"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="121.92" x2="20.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="124.46" x2="15.24" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="V_BATT"/>
@@ -7301,7 +7260,6 @@ CAP-10009- 50V, 10% (1206)</description>
 </segment>
 <segment>
 <pinref part="Q3" gate="G$1" pin="VCC"/>
-<pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="-259.08" y1="-68.58" x2="-251.46" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-251.46" y1="-68.58" x2="-251.46" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
@@ -7309,12 +7267,19 @@ CAP-10009- 50V, 10% (1206)</description>
 <wire x1="-251.46" y1="-73.66" x2="-243.84" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-243.84" y1="-73.66" x2="-243.84" y2="-71.12" width="0.1524" layer="91"/>
 <junction x="-251.46" y="-73.66"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="Q4" gate="G$1" pin="VCC"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="165.1" y1="25.4" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q5" gate="G$1" pin="VCC"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="190.5" y1="137.16" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="137.16" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7326,7 +7291,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <wire x1="30.48" y1="-2.54" x2="30.48" y2="0" width="0.1524" layer="91"/>
 <pinref part="L8" gate="G$1" pin="5"/>
 <wire x1="30.48" y1="-5.08" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="VADER-5V" gate="G$1" pin="VIN"/>
+<pinref part="VADER-5V-CRIT" gate="G$1" pin="VIN"/>
 <wire x1="40.64" y1="0" x2="35.56" y2="0" width="0.1524" layer="91"/>
 <junction x="30.48" y="-5.08"/>
 <junction x="30.48" y="-2.54"/>
@@ -7376,17 +7341,20 @@ CAP-10009- 50V, 10% (1206)</description>
 <segment>
 <pinref part="L5" gate="G$1" pin="8"/>
 <pinref part="L5" gate="G$1" pin="5"/>
-<wire x1="38.1" y1="124.46" x2="38.1" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="DOOKU-12V" gate="G$1" pin="VIN"/>
-<wire x1="38.1" y1="121.92" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="119.38" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="121.92" x2="38.1" y2="121.92" width="0.1524" layer="91"/>
-<junction x="38.1" y="124.46"/>
+<wire x1="30.48" y1="124.46" x2="30.48" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="DOOKU-12V-CRIT" gate="G$1" pin="VIN"/>
+<wire x1="30.48" y1="121.92" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="119.38" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="121.92" x2="35.56" y2="121.92" width="0.1524" layer="91"/>
+<junction x="30.48" y="124.46"/>
 <pinref part="L5" gate="G$1" pin="7"/>
-<junction x="38.1" y="121.92"/>
+<junction x="30.48" y="121.92"/>
 <pinref part="L5" gate="G$1" pin="6"/>
-<junction x="38.1" y="119.38"/>
-<junction x="38.1" y="116.84"/>
+<junction x="30.48" y="119.38"/>
+<junction x="30.48" y="116.84"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="121.92" x2="30.48" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="124.46" x2="35.56" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -7396,13 +7364,22 @@ CAP-10009- 50V, 10% (1206)</description>
 <wire x1="119.38" y1="121.92" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="119.38" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="116.84" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="121.92" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
 <junction x="119.38" y="121.92"/>
 <pinref part="L1" gate="G$1" pin="7"/>
 <junction x="119.38" y="119.38"/>
 <pinref part="L1" gate="G$1" pin="6"/>
 <junction x="119.38" y="116.84"/>
 <junction x="119.38" y="114.3"/>
+<wire x1="137.16" y1="121.92" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="121.92" x2="147.32" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="Q5" gate="G$1" pin="IP+"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="127" y1="119.38" x2="127" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="C"/>
+<wire x1="127" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="121.92" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -7410,7 +7387,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <pinref part="L4" gate="G$1" pin="4"/>
 <pinref part="L4" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="5.08" x2="101.6" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="VADER-5V" gate="G$1" pin="VOUT"/>
+<pinref part="VADER-5V-CRIT" gate="G$1" pin="VOUT"/>
 <wire x1="101.6" y1="2.54" x2="101.6" y2="0" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="0" x2="101.6" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="101.6" y="5.08"/>
@@ -7420,7 +7397,7 @@ CAP-10009- 50V, 10% (1206)</description>
 <junction x="101.6" y="0"/>
 <junction x="101.6" y="-2.54"/>
 <wire x1="91.44" y1="0" x2="93.98" y2="0" width="0.1524" layer="91"/>
-<pinref part="VADER-5V" gate="G$1" pin="SENSE"/>
+<pinref part="VADER-5V-CRIT" gate="G$1" pin="SENSE"/>
 <wire x1="93.98" y1="0" x2="101.6" y2="0" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-10.16" x2="73.66" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-12.7" x2="93.98" y2="-12.7" width="0.1524" layer="91"/>
@@ -7672,7 +7649,7 @@ CAP-10009- 50V, 10% (1206)</description>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="VADER-5V" gate="G$1" pin="ADJUST"/>
+<pinref part="VADER-5V-CRIT" gate="G$1" pin="ADJUST"/>
 <wire x1="66.04" y1="-10.16" x2="66.04" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
@@ -7695,14 +7672,13 @@ CAP-10009- 50V, 10% (1206)</description>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="DOOKU-12V" gate="G$1" pin="SENSE"/>
+<pinref part="DOOKU-12V-CRIT" gate="G$1" pin="SENSE"/>
 <wire x1="73.66" y1="111.76" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="DOOKU-12V" gate="G$1" pin="VOUT"/>
+<pinref part="DOOKU-12V-CRIT" gate="G$1" pin="VOUT"/>
 <pinref part="L1" gate="G$1" pin="4"/>
 <wire x1="91.44" y1="121.92" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="121.92" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="121.92" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="114.3" x2="109.22" y2="116.84" width="0.1524" layer="91"/>
 <junction x="109.22" y="114.3"/>
 <pinref part="L1" gate="G$1" pin="2"/>
@@ -7712,17 +7688,32 @@ CAP-10009- 50V, 10% (1206)</description>
 <junction x="109.22" y="119.38"/>
 <wire x1="109.22" y1="119.38" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
 <junction x="109.22" y="121.92"/>
-<pinref part="U$3" gate="G$1" pin="C"/>
-<wire x1="101.6" y1="116.84" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="109.22" x2="93.98" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="109.22" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="DOOKU-12V" gate="G$1" pin="ADJUST"/>
+<pinref part="DOOKU-12V-CRIT" gate="G$1" pin="ADJUST"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="109.22" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="IP-"/>
+<wire x1="165.1" y1="124.46" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="124.46" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="111.76" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="111.76" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="109.22" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="VIOUT"/>
+<wire x1="190.5" y1="132.08" x2="198.12" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
