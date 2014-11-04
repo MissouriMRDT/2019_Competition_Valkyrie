@@ -8365,7 +8365,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <net name="N$41" class="0">
 <segment>
 <pinref part="Q6" gate="G$1" pin="S"/>
-<wire x1="-193.04" y1="119.38" x2="-193.04" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="119.38" x2="-193.04" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
