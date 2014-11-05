@@ -260,6 +260,57 @@
 <vertex x="4.25" y="-1.925"/>
 </polygon>
 </package>
+<package name="20020618-M02">
+<pad name="L1" x="-3.81" y="3.81" drill="1.6"/>
+<pad name="R1" x="3.81" y="3.81" drill="1.6"/>
+<pad name="R2" x="3.81" y="-3.81" drill="1.6"/>
+<pad name="L2" x="-3.81" y="-3.81" drill="1.6"/>
+<wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<wire x1="7.62" y1="6.35" x2="7.62" y2="-22.86" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-22.86" x2="-7.62" y2="-22.86" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-22.86" x2="-7.62" y2="6.35" width="0.127" layer="21"/>
+<rectangle x1="-7.62" y1="-22.86" x2="7.62" y2="6.35" layer="39"/>
+<text x="0" y="7.62" size="1.778" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-17.78" size="1.27" layer="27" rot="R90" align="center-left">&gt;VALUE</text>
+<text x="-3.81" y="0" size="1.778" layer="21" align="center">L</text>
+<text x="3.81" y="0" size="1.778" layer="21" align="center">R</text>
+</package>
+<package name="OKI-78SRH">
+<description>OKI-78SR-3.3/1.5W36H&lt;br&gt;
+OKI-78SR-5/1.5W36H</description>
+<wire x1="5.08" y1="-1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="15.24" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="15.24" x2="5.08" y2="15.24" width="0.127" layer="21"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="10.16" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="10.16" x2="-2.54" y2="12.7" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="12.7" x2="2.54" y2="12.7" width="0.127" layer="21"/>
+<wire x1="2.54" y1="12.7" x2="5.08" y2="10.16" width="0.127" layer="21"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="10.16" width="0.127" layer="21"/>
+<pad name="3" x="-2.54" y="0" drill="1.016"/>
+<pad name="2" x="0" y="0" drill="1.016"/>
+<pad name="1" x="2.54" y="0" drill="1.016"/>
+<text x="-1.016" y="-2.794" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="5.08" width="0.127" layer="51"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="15.24" width="0.127" layer="51"/>
+<wire x1="5.08" y1="15.24" x2="-5.08" y2="15.24" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="15.24" x2="-5.08" y2="10.16" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="10.16" x2="-2.54" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.7" x2="2.54" y2="12.7" width="0.127" layer="51"/>
+<wire x1="2.54" y1="12.7" x2="5.08" y2="10.16" width="0.127" layer="51"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="5.08" width="0.127" layer="51"/>
+<wire x1="5.08" y1="5.08" x2="2.54" y2="2.54" width="0.127" layer="51"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="5.08" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="UQW-12/20-T48NBS">
@@ -366,6 +417,27 @@
 <text x="5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="2-PIN_HEADER">
+<description>Two Pin Header</description>
+<pin name="L" x="-10.16" y="2.54" visible="pin" length="middle"/>
+<pin name="R" x="10.16" y="2.54" visible="pin" length="middle" rot="R180"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="-10.16" size="1.778" layer="96" rot="R180" align="top-center">&gt;VALUE</text>
+<text x="0" y="7.62" size="1.778" layer="95" rot="R180" align="bottom-center">&gt;NAME</text>
+</symbol>
+<symbol name="5V_REG">
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<pin name="VI" x="-7.62" y="0" length="short"/>
+<pin name="GND" x="2.54" y="-7.62" length="short" rot="R90"/>
+<pin name="VO" x="12.7" y="0" length="short" rot="R180"/>
+<text x="2.54" y="5.08" size="1.778" layer="95" align="top-center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="UQW-12/20-T48NBS">
@@ -466,6 +538,47 @@
 <connect gate="G$1" pin="D" pad="TAB"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="H_20020618-M02*" prefix="H">
+<description>20020618-M02* header pin from FCI. Rated up to 32A</description>
+<gates>
+<gate name="G$1" symbol="2-PIN_HEADER" x="-2.54" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="20020618-M02">
+<connects>
+<connect gate="G$1" pin="L" pad="L1 L2"/>
+<connect gate="G$1" pin="R" pad="R1 R2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="Q_OKI-78SR">
+<description>4.95W DC/DC Converter
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt; Manufacturer:&lt;/b&gt;&lt;br&gt;
+Murata
+&lt;br&gt;&lt;br&gt;&lt;b&gt;Part Number:&lt;/b&gt;&lt;br&gt;
+OKI-78SR-5/1.5-W36H-C&lt;br&gt;
+OKI-78SR-3.3/1.5-W36H-C</description>
+<gates>
+<gate name="G$1" symbol="5V_REG" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="OKI-78SRH">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VI" pad="1"/>
+<connect gate="G$1" pin="VO" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6958,7 +7071,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <parts>
 <part name="SIDEOUS-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
 <part name="PALPATINE-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
-<part name="VADER-5V-CRIT" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device="" value="Q_PTN78020WAH"/>
+<part name="VADER-5V-EXT" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device="" value="Q_PTN78020WAH"/>
 <part name="DOOKU-12V-CRIT" library="MRDT-2015-PowerBoard" deviceset="Q_PTN78020" device="" value="Q_PTN78020WAH"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6974,11 +7087,11 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <part name="C2" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
 <part name="C3" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
 <part name="C4" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
-<part name="R1" library="MRDT-2014-All" deviceset="R_FC4L110R001JER" device=""/>
+<part name="R1" library="MRDT-2014-All" deviceset="R_FC4L110R001JER" device="" value=".001Ω"/>
 <part name="Q1" library="MRDT-2014-All" deviceset="Q_INA28" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C5" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="C5" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="U$1" library="MRDT-2015-General" deviceset="32U4_BREAKOUT" device=""/>
@@ -7045,8 +7158,13 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <part name="U$3" library="MAX3077" deviceset="MAX3077" device=""/>
 <part name="U$6" library="Jake" deviceset="LT1910" device=""/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C16" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="C16" library="resistor" deviceset="C-US" device="C1206" value="10µF"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="MOTOR_1" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device=""/>
+<part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="OKI-78SR-5/1.5-W36H" library="MRDT-2015-PowerBoard" deviceset="Q_OKI-78SR" device=""/>
+<part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C17" library="resistor" deviceset="C-US" device="C1206" value="47µF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7067,7 +7185,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <instances>
 <instance part="SIDEOUS-12V" gate="G$1" x="63.5" y="73.66"/>
 <instance part="PALPATINE-12V" gate="G$1" x="63.5" y="43.18"/>
-<instance part="VADER-5V-CRIT" gate="G$1" x="45.72" y="12.7"/>
+<instance part="VADER-5V-EXT" gate="G$1" x="45.72" y="12.7"/>
 <instance part="DOOKU-12V-CRIT" gate="G$1" x="45.72" y="134.62"/>
 <instance part="GND2" gate="1" x="2.54" y="10.16"/>
 <instance part="GND3" gate="1" x="35.56" y="30.48"/>
@@ -7156,6 +7274,11 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <instance part="GND27" gate="1" x="-228.6" y="124.46"/>
 <instance part="C16" gate="G$1" x="-205.74" y="152.4"/>
 <instance part="GND28" gate="1" x="-213.36" y="160.02"/>
+<instance part="MOTOR_1" gate="G$1" x="-205.74" y="96.52"/>
+<instance part="GND29" gate="1" x="-218.44" y="93.98"/>
+<instance part="OKI-78SR-5/1.5-W36H" gate="G$1" x="218.44" y="129.54"/>
+<instance part="GND30" gate="1" x="220.98" y="116.84"/>
+<instance part="C17" gate="G$1" x="236.22" y="127"/>
 </instances>
 <busses>
 </busses>
@@ -7185,7 +7308,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="VADER-5V-CRIT" gate="G$1" pin="GND"/>
+<pinref part="VADER-5V-EXT" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="40.64" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
@@ -7257,7 +7380,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="VADER-5V-CRIT" gate="G$1" pin="GND1"/>
+<pinref part="VADER-5V-EXT" gate="G$1" pin="GND1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -7357,6 +7480,20 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <wire x1="-205.74" y1="167.64" x2="-213.36" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="-213.36" y1="167.64" x2="-213.36" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="MOTOR_1" gate="G$1" pin="L"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+<wire x1="-215.9" y1="99.06" x2="-218.44" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-218.44" y1="99.06" x2="-218.44" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="OKI-78SR-5/1.5-W36H" gate="G$1" pin="GND"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="220.98" y1="121.92" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="121.92" x2="236.22" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="119.38" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -7548,7 +7685,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <wire x1="30.48" y1="-2.54" x2="30.48" y2="0" width="0.1524" layer="91"/>
 <pinref part="L8" gate="G$1" pin="5"/>
 <wire x1="30.48" y1="-5.08" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="VADER-5V-CRIT" gate="G$1" pin="VIN"/>
+<pinref part="VADER-5V-EXT" gate="G$1" pin="VIN"/>
 <wire x1="40.64" y1="0" x2="35.56" y2="0" width="0.1524" layer="91"/>
 <junction x="30.48" y="-5.08"/>
 <junction x="30.48" y="-2.54"/>
@@ -7644,7 +7781,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <pinref part="L4" gate="G$1" pin="4"/>
 <pinref part="L4" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="5.08" x2="101.6" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="VADER-5V-CRIT" gate="G$1" pin="VOUT"/>
+<pinref part="VADER-5V-EXT" gate="G$1" pin="VOUT"/>
 <wire x1="101.6" y1="2.54" x2="101.6" y2="0" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="0" x2="101.6" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="101.6" y="5.08"/>
@@ -7654,7 +7791,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <junction x="101.6" y="0"/>
 <junction x="101.6" y="-2.54"/>
 <wire x1="91.44" y1="0" x2="93.98" y2="0" width="0.1524" layer="91"/>
-<pinref part="VADER-5V-CRIT" gate="G$1" pin="SENSE"/>
+<pinref part="VADER-5V-EXT" gate="G$1" pin="SENSE"/>
 <wire x1="93.98" y1="0" x2="101.6" y2="0" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-10.16" x2="73.66" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-12.7" x2="93.98" y2="-12.7" width="0.1524" layer="91"/>
@@ -7906,19 +8043,20 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="VADER-5V-CRIT" gate="G$1" pin="ADJUST"/>
+<pinref part="VADER-5V-EXT" gate="G$1" pin="ADJUST"/>
 <wire x1="66.04" y1="-10.16" x2="66.04" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="5V-EXT" class="0">
 <segment>
-<wire x1="172.72" y1="-2.54" x2="182.88" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-2.54" x2="246.38" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="-5.08" x2="172.72" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="IP-"/>
 <wire x1="137.16" y1="10.16" x2="137.16" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="-2.54" x2="172.72" y2="-2.54" width="0.1524" layer="91"/>
+<label x="246.38" y="-2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -7956,7 +8094,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <wire x1="66.04" y1="109.22" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="12V-CRIT" class="0">
 <segment>
 <pinref part="Q5" gate="G$1" pin="IP-"/>
 <wire x1="165.1" y1="124.46" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
@@ -7965,6 +8103,11 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="111.76" x2="205.74" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="109.22" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="111.76" x2="248.92" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="111.76" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="OKI-78SR-5/1.5-W36H" gate="G$1" pin="VI"/>
+<wire x1="205.74" y1="129.54" x2="210.82" y2="129.54" width="0.1524" layer="91"/>
+<label x="248.92" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -7973,12 +8116,11 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <wire x1="190.5" y1="132.08" x2="198.12" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="12V-AUX" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="53.34" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="48.26" x2="205.74" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="53.34" x2="246.38" y2="53.34" width="0.1524" layer="91"/>
+<label x="246.38" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -8001,7 +8143,9 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <net name="N$41" class="0">
 <segment>
 <pinref part="Q6" gate="G$1" pin="S"/>
-<wire x1="-193.04" y1="119.38" x2="-193.04" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="119.38" x2="-193.04" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="MOTOR_1" gate="G$1" pin="R"/>
+<wire x1="-195.58" y1="99.06" x2="-193.04" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
@@ -8017,6 +8161,16 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <segment>
 <pinref part="U$6" gate="G$1" pin="IN"/>
 <wire x1="-246.38" y1="139.7" x2="-256.54" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V-CRIT" class="0">
+<segment>
+<pinref part="OKI-78SR-5/1.5-W36H" gate="G$1" pin="VO"/>
+<wire x1="231.14" y1="129.54" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<junction x="236.22" y="129.54"/>
+<wire x1="236.22" y1="129.54" x2="248.92" y2="129.54" width="0.1524" layer="91"/>
+<label x="248.92" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
