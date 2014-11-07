@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.0.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15644,9 +15644,9 @@ this Pi-Filter yet!!!</text>
 <wire x1="160.02" y1="68.58" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A2"/>
-<wire x1="-175.26" y1="-99.06" x2="-162.56" y2="-99.06" width="0.1524" layer="91"/>
-<label x="-162.56" y="-99.06" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D12/A11"/>
+<wire x1="-175.26" y1="-48.26" x2="-162.56" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-162.56" y="-48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -15723,17 +15723,12 @@ this Pi-Filter yet!!!</text>
 <label x="185.42" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A0"/>
-<wire x1="-175.26" y1="-88.9" x2="-162.56" y2="-88.9" width="0.1524" layer="91"/>
-<label x="-162.56" y="-88.9" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D4/A6"/>
+<wire x1="-215.9" y1="-48.26" x2="-226.06" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-226.06" y="-48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M2-IMEAS" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="A5"/>
-<wire x1="-175.26" y1="-114.3" x2="-162.56" y2="-114.3" width="0.1524" layer="91"/>
-<label x="-162.56" y="-114.3" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="Q3" gate="G$1" pin="OUT"/>
 <wire x1="-165.1" y1="157.48" x2="-172.72" y2="157.48" width="0.1524" layer="91"/>
@@ -15741,12 +15736,59 @@ this Pi-Filter yet!!!</text>
 <wire x1="-172.72" y1="147.32" x2="-167.64" y2="147.32" width="0.1524" layer="91"/>
 <label x="-167.64" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D10~/A10"/>
+<wire x1="-175.26" y1="-68.58" x2="-162.56" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-162.56" y="-68.58" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="M3-IMEAS" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D4/A6"/>
-<wire x1="-215.9" y1="-48.26" x2="-226.06" y2="-48.26" width="0.1524" layer="91"/>
-<label x="-226.06" y="-48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="Q8" gate="G$1" pin="OUT"/>
+<wire x1="-332.74" y1="53.34" x2="-340.36" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-340.36" y1="53.34" x2="-340.36" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-340.36" y1="43.18" x2="-335.28" y2="43.18" width="0.1524" layer="91"/>
+<label x="-335.28" y="43.18" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A0"/>
+<wire x1="-175.26" y1="-88.9" x2="-162.56" y2="-88.9" width="0.1524" layer="91"/>
+<label x="-162.56" y="-88.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="M4-IMEAS" class="0">
+<segment>
+<pinref part="Q10" gate="G$1" pin="OUT"/>
+<wire x1="-332.74" y1="149.86" x2="-340.36" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="-340.36" y1="149.86" x2="-340.36" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-340.36" y1="139.7" x2="-335.28" y2="139.7" width="0.1524" layer="91"/>
+<label x="-335.28" y="139.7" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A1"/>
+<wire x1="-175.26" y1="-93.98" x2="-162.56" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-162.56" y="-93.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="M5-IMEAS" class="0">
+<segment>
+<pinref part="Q13" gate="G$1" pin="OUT"/>
+<wire x1="-332.74" y1="251.46" x2="-340.36" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="-340.36" y1="251.46" x2="-340.36" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="-340.36" y1="241.3" x2="-335.28" y2="241.3" width="0.1524" layer="91"/>
+<label x="-335.28" y="241.3" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A2"/>
+<wire x1="-175.26" y1="-99.06" x2="-162.56" y2="-99.06" width="0.1524" layer="91"/>
+<label x="-162.56" y="-99.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="M6-IMEAS" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A3"/>
+<wire x1="-175.26" y1="-104.14" x2="-162.56" y2="-104.14" width="0.1524" layer="91"/>
+<label x="-162.56" y="-104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="Q15" gate="G$1" pin="OUT"/>
@@ -15756,54 +15798,7 @@ this Pi-Filter yet!!!</text>
 <label x="-167.64" y="248.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="M4-IMEAS" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D6~/A7"/>
-<wire x1="-175.26" y1="-53.34" x2="-162.56" y2="-53.34" width="0.1524" layer="91"/>
-<label x="-162.56" y="-53.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="Q8" gate="G$1" pin="OUT"/>
-<wire x1="-332.74" y1="53.34" x2="-340.36" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-340.36" y1="53.34" x2="-340.36" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-340.36" y1="43.18" x2="-335.28" y2="43.18" width="0.1524" layer="91"/>
-<label x="-335.28" y="43.18" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="M5-IMEAS" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D8/A8"/>
-<wire x1="-175.26" y1="-58.42" x2="-162.56" y2="-58.42" width="0.1524" layer="91"/>
-<label x="-162.56" y="-58.42" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="Q10" gate="G$1" pin="OUT"/>
-<wire x1="-332.74" y1="149.86" x2="-340.36" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="-340.36" y1="149.86" x2="-340.36" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="-340.36" y1="139.7" x2="-335.28" y2="139.7" width="0.1524" layer="91"/>
-<label x="-335.28" y="139.7" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="M6-IMEAS" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D9~/A9"/>
-<wire x1="-175.26" y1="-63.5" x2="-162.56" y2="-63.5" width="0.1524" layer="91"/>
-<label x="-162.56" y="-63.5" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="Q13" gate="G$1" pin="OUT"/>
-<wire x1="-332.74" y1="251.46" x2="-340.36" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="-340.36" y1="251.46" x2="-340.36" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="-340.36" y1="241.3" x2="-335.28" y2="241.3" width="0.1524" layer="91"/>
-<label x="-335.28" y="241.3" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="AUX_P-IMEAS" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D10~/A10"/>
-<wire x1="-175.26" y1="-68.58" x2="-162.56" y2="-68.58" width="0.1524" layer="91"/>
-<label x="-162.56" y="-68.58" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="Q19" gate="G$1" pin="OUT"/>
 <wire x1="-492.76" y1="86.36" x2="-500.38" y2="86.36" width="0.1524" layer="91"/>
@@ -15811,19 +15806,24 @@ this Pi-Filter yet!!!</text>
 <wire x1="-500.38" y1="76.2" x2="-495.3" y2="76.2" width="0.1524" layer="91"/>
 <label x="-495.3" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A4"/>
+<wire x1="-175.26" y1="-109.22" x2="-162.56" y2="-109.22" width="0.1524" layer="91"/>
+<label x="-162.56" y="-109.22" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="ARM_P-IMEAS" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D12/A11"/>
-<wire x1="-175.26" y1="-48.26" x2="-162.56" y2="-48.26" width="0.1524" layer="91"/>
-<label x="-162.56" y="-48.26" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="Q17" gate="G$1" pin="OUT"/>
 <wire x1="-492.76" y1="182.88" x2="-500.38" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="-500.38" y1="182.88" x2="-500.38" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="-500.38" y1="172.72" x2="-495.3" y2="172.72" width="0.1524" layer="91"/>
 <label x="-495.3" y="172.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="A5"/>
+<wire x1="-175.26" y1="-114.3" x2="-162.56" y2="-114.3" width="0.1524" layer="91"/>
+<label x="-162.56" y="-114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -15863,9 +15863,9 @@ this Pi-Filter yet!!!</text>
 <label x="167.64" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A1"/>
-<wire x1="-175.26" y1="-93.98" x2="-162.56" y2="-93.98" width="0.1524" layer="91"/>
-<label x="-162.56" y="-93.98" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D8/A8"/>
+<wire x1="-175.26" y1="-58.42" x2="-162.56" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-162.56" y="-58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -15934,9 +15934,9 @@ this Pi-Filter yet!!!</text>
 <label x="193.04" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A3"/>
-<wire x1="-175.26" y1="-104.14" x2="-162.56" y2="-104.14" width="0.1524" layer="91"/>
-<label x="-162.56" y="-104.14" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D6~/A7"/>
+<wire x1="-175.26" y1="-53.34" x2="-162.56" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-162.56" y="-53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="12V-AUX" class="0">
@@ -16001,9 +16001,9 @@ this Pi-Filter yet!!!</text>
 <label x="-251.46" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD5"/>
-<wire x1="-215.9" y1="-53.34" x2="-220.98" y2="-53.34" width="0.1524" layer="91"/>
-<label x="-220.98" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D5~"/>
+<wire x1="-175.26" y1="-73.66" x2="-170.18" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-170.18" y="-73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$100" class="0">
@@ -16025,9 +16025,9 @@ this Pi-Filter yet!!!</text>
 <label x="-167.64" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="A4"/>
-<wire x1="-175.26" y1="-109.22" x2="-162.56" y2="-109.22" width="0.1524" layer="91"/>
-<label x="-162.56" y="-109.22" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D9~/A9"/>
+<wire x1="-175.26" y1="-63.5" x2="-162.56" y2="-63.5" width="0.1524" layer="91"/>
+<label x="-162.56" y="-63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -16079,9 +16079,9 @@ this Pi-Filter yet!!!</text>
 <label x="-40.64" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PE2"/>
-<wire x1="-175.26" y1="-83.82" x2="-170.18" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-170.18" y="-83.82" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PD5"/>
+<wire x1="-215.9" y1="-53.34" x2="-220.98" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-220.98" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -16539,57 +16539,45 @@ this Pi-Filter yet!!!</text>
 <label x="-251.46" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D2"/>
-<wire x1="-215.9" y1="-68.58" x2="-220.98" y2="-68.58" width="0.1524" layer="91"/>
-<label x="-220.98" y="-68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D13~"/>
+<wire x1="-175.26" y1="-78.74" x2="-170.18" y2="-78.74" width="0.1524" layer="91"/>
+<label x="-170.18" y="-78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="M3-SIG" class="0">
-<segment>
-<pinref part="U$11" gate="G$1" pin="IN"/>
-<wire x1="-241.3" y1="254" x2="-251.46" y2="254" width="0.1524" layer="91"/>
-<label x="-251.46" y="254" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="D3~"/>
-<wire x1="-215.9" y1="-73.66" x2="-220.98" y2="-73.66" width="0.1524" layer="91"/>
-<label x="-220.98" y="-73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M4-SIG" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="IN"/>
 <wire x1="-408.94" y1="48.26" x2="-419.1" y2="48.26" width="0.1524" layer="91"/>
 <label x="-419.1" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D11~"/>
-<wire x1="-215.9" y1="-83.82" x2="-220.98" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-220.98" y="-83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PE2"/>
+<wire x1="-175.26" y1="-83.82" x2="-170.18" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-170.18" y="-83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="M5-SIG" class="0">
+<net name="M4-SIG" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="IN"/>
 <wire x1="-408.94" y1="144.78" x2="-419.1" y2="144.78" width="0.1524" layer="91"/>
 <label x="-419.1" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB0"/>
-<wire x1="-215.9" y1="-104.14" x2="-220.98" y2="-104.14" width="0.1524" layer="91"/>
-<label x="-220.98" y="-104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D2"/>
+<wire x1="-215.9" y1="-68.58" x2="-220.98" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-220.98" y="-68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M6-SIG" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="IN"/>
-<wire x1="-408.94" y1="246.38" x2="-419.1" y2="246.38" width="0.1524" layer="91"/>
-<label x="-419.1" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D11~"/>
+<wire x1="-215.9" y1="-83.82" x2="-220.98" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-220.98" y="-83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D7"/>
-<wire x1="-215.9" y1="-109.22" x2="-220.98" y2="-109.22" width="0.1524" layer="91"/>
-<label x="-220.98" y="-109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$11" gate="G$1" pin="IN"/>
+<wire x1="-241.3" y1="254" x2="-251.46" y2="254" width="0.1524" layer="91"/>
+<label x="-251.46" y="254" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ARM_P-SIG" class="0">
@@ -16599,9 +16587,9 @@ this Pi-Filter yet!!!</text>
 <label x="-579.12" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D5~"/>
-<wire x1="-175.26" y1="-73.66" x2="-170.18" y2="-73.66" width="0.1524" layer="91"/>
-<label x="-170.18" y="-73.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D7"/>
+<wire x1="-215.9" y1="-109.22" x2="-220.98" y2="-109.22" width="0.1524" layer="91"/>
+<label x="-220.98" y="-109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AUX_P-SIG" class="0">
@@ -16611,9 +16599,21 @@ this Pi-Filter yet!!!</text>
 <label x="-579.12" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D13~"/>
-<wire x1="-175.26" y1="-78.74" x2="-170.18" y2="-78.74" width="0.1524" layer="91"/>
-<label x="-170.18" y="-78.74" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PB0"/>
+<wire x1="-215.9" y1="-104.14" x2="-220.98" y2="-104.14" width="0.1524" layer="91"/>
+<label x="-220.98" y="-104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M5-SIG" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="IN"/>
+<wire x1="-408.94" y1="246.38" x2="-419.1" y2="246.38" width="0.1524" layer="91"/>
+<label x="-419.1" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D3~"/>
+<wire x1="-215.9" y1="-73.66" x2="-220.98" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-220.98" y="-73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
