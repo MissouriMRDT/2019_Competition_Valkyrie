@@ -14041,7 +14041,7 @@ High-power, low thermal resistance package.</description>
 <part name="R2" library="MRDT-2014-All" deviceset="R_FC4L110R001JER" device=""/>
 <part name="Q2" library="MRDT-2014-All" deviceset="Q_INA28" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C6" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="C6" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="U$2" library="MRDT-2014-All" deviceset="D_SD12T1G" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -14577,6 +14577,7 @@ this Pi-Filter yet!!!</text>
 <wire x1="35.56" y1="10.16" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="10.16" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
+<junction x="2.54" y="12.7"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -15573,6 +15574,7 @@ this Pi-Filter yet!!!</text>
 <wire x1="-7.62" y1="50.8" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="Q12" gate="G$1" pin="D"/>
 <wire x1="15.24" y1="58.42" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
+<junction x="15.24" y="58.42"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -15607,8 +15609,6 @@ this Pi-Filter yet!!!</text>
 <wire x1="121.92" y1="58.42" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="55.88" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="53.34" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="53.34" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <junction x="121.92" y="58.42"/>
 <pinref part="L2" gate="G$1" pin="7"/>
 <junction x="121.92" y="55.88"/>
@@ -15617,7 +15617,11 @@ this Pi-Filter yet!!!</text>
 <junction x="121.92" y="50.8"/>
 <pinref part="C20" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
-<junction x="129.54" y="53.34"/>
+<wire x1="129.54" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="53.34" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="50.8" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="50.8" x2="157.48" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -15941,9 +15945,11 @@ this Pi-Filter yet!!!</text>
 </net>
 <net name="12V-AUX" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="53.34" x2="259.08" y2="53.34" width="0.1524" layer="91"/>
-<label x="259.08" y="53.34" size="1.27" layer="95" xref="yes"/>
+<wire x1="144.78" y1="45.72" x2="259.08" y2="45.72" width="0.1524" layer="91"/>
+<label x="259.08" y="45.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="53.34" x2="144.78" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="12V-AUX" gate="G$1" pin="R"/>
