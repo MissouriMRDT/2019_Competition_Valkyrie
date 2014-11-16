@@ -13289,14 +13289,15 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="15.24" x2="12.7" y2="0" width="0.254" layer="94"/>
 <wire x1="12.7" y1="0" x2="-12.7" y2="0" width="0.254" layer="94"/>
-<pin name="FAULT" x="-17.78" y="12.7" length="middle"/>
+<pin name="FAULT" x="-17.78" y="12.7" length="middle" function="dot"/>
 <pin name="IN" x="-17.78" y="7.62" length="middle"/>
 <pin name="TIMER" x="-17.78" y="2.54" length="middle"/>
 <pin name="GND" x="0" y="-5.08" length="middle" rot="R90"/>
 <pin name="GATE" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="SENSE" x="17.78" y="7.62" length="middle" rot="R180"/>
 <pin name="V+" x="17.78" y="12.7" length="middle" rot="R180"/>
-<circle x="-13.208" y="12.7" radius="0.508" width="0.127" layer="94"/>
+<text x="-10.16" y="20.32" size="1.778" layer="95" rot="MR180">&gt;NAME</text>
+<text x="-10.16" y="17.78" size="1.778" layer="95" rot="MR180">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
