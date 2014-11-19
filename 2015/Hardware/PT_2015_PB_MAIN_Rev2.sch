@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.0.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15601,9 +15601,9 @@ this Pi-Filter yet!!!</text>
 <pinref part="U$21" gate="G$1" pin="VIOUT"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D12/A11"/>
-<wire x1="-175.26" y1="-48.26" x2="-162.56" y2="-48.26" width="0.1524" layer="91"/>
-<label x="-162.56" y="-48.26" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D6~/A7"/>
+<wire x1="-175.26" y1="-53.34" x2="-162.56" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-162.56" y="-53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -15806,9 +15806,9 @@ this Pi-Filter yet!!!</text>
 <label x="167.64" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D6~/A7"/>
-<wire x1="-175.26" y1="-53.34" x2="-162.56" y2="-53.34" width="0.1524" layer="91"/>
-<label x="-162.56" y="-53.34" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D12/A11"/>
+<wire x1="-175.26" y1="-48.26" x2="-162.56" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-162.56" y="-48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$36" class="0">
