@@ -16023,9 +16023,9 @@ this Pi-Filter yet!!!</text>
 <label x="-40.64" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD5"/>
-<wire x1="-215.9" y1="-53.34" x2="-220.98" y2="-53.34" width="0.1524" layer="91"/>
-<label x="-220.98" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PB0"/>
+<wire x1="-215.9" y1="-104.14" x2="-220.98" y2="-104.14" width="0.1524" layer="91"/>
+<label x="-220.98" y="-104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -16374,21 +16374,21 @@ this Pi-Filter yet!!!</text>
 <label x="-419.1" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D2"/>
-<wire x1="-215.9" y1="-68.58" x2="-220.98" y2="-68.58" width="0.1524" layer="91"/>
-<label x="-220.98" y="-68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PD5"/>
+<wire x1="-215.9" y1="-53.34" x2="-220.98" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-220.98" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M6-SIG" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D11~"/>
-<wire x1="-215.9" y1="-83.82" x2="-220.98" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-220.98" y="-83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$11" gate="G$1" pin="IN"/>
 <wire x1="-241.3" y1="254" x2="-251.46" y2="254" width="0.1524" layer="91"/>
 <label x="-251.46" y="254" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D3~"/>
+<wire x1="-215.9" y1="-73.66" x2="-220.98" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-220.98" y="-73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ARM_P-SIG" class="0">
@@ -16410,9 +16410,9 @@ this Pi-Filter yet!!!</text>
 <label x="-579.12" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB0"/>
-<wire x1="-215.9" y1="-104.14" x2="-220.98" y2="-104.14" width="0.1524" layer="91"/>
-<label x="-220.98" y="-104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D11~"/>
+<wire x1="-215.9" y1="-83.82" x2="-220.98" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-220.98" y="-83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M5-SIG" class="0">
@@ -16422,9 +16422,9 @@ this Pi-Filter yet!!!</text>
 <label x="-419.1" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D3~"/>
-<wire x1="-215.9" y1="-73.66" x2="-220.98" y2="-73.66" width="0.1524" layer="91"/>
-<label x="-220.98" y="-73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D2"/>
+<wire x1="-215.9" y1="-68.58" x2="-220.98" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-220.98" y="-68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
