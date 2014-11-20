@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -14174,56 +14188,56 @@ High-power, low thermal resistance package.</description>
 <part name="R28" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
 <part name="GND80" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$14" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C37" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C37" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C23" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
 <part name="U$15" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C38" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C38" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND82" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND51" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C25" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+13" library="supply1" deviceset="+5V" device=""/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
 <part name="U$16" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C27" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C27" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND56" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND61" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C29" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
 <part name="U$17" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C31" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C31" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND66" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND71" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C33" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+17" library="supply1" deviceset="+5V" device=""/>
 <part name="P+18" library="supply1" deviceset="+5V" device=""/>
 <part name="U$18" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C35" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C35" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND76" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND83" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C39" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+19" library="supply1" deviceset="+5V" device=""/>
 <part name="P+20" library="supply1" deviceset="+5V" device=""/>
 <part name="U$19" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C40" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C40" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND84" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND85" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C41" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+21" library="supply1" deviceset="+5V" device=""/>
 <part name="P+22" library="supply1" deviceset="+5V" device=""/>
 <part name="U$20" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C42" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C42" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND86" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C6" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="P+23" library="supply1" deviceset="+5V" device=""/>
 <part name="U$21" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C43" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C43" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND87" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Q1" library="MRDT-2015-PowerBoard" deviceset="Q_ACS711*LC" device=""/>
 <part name="GND88" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -15704,9 +15718,9 @@ this Pi-Filter yet!!!</text>
 <pinref part="U$19" gate="G$1" pin="VIOUT"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D10~/A10"/>
-<wire x1="-175.26" y1="-68.58" x2="-162.56" y2="-68.58" width="0.1524" layer="91"/>
-<label x="-162.56" y="-68.58" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D8/A8"/>
+<wire x1="-175.26" y1="-58.42" x2="-162.56" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-162.56" y="-58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="M4-IMEAS" class="0">
@@ -15947,9 +15961,9 @@ this Pi-Filter yet!!!</text>
 <label x="-251.46" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D5~"/>
-<wire x1="-175.26" y1="-73.66" x2="-170.18" y2="-73.66" width="0.1524" layer="91"/>
-<label x="-170.18" y="-73.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PE2"/>
+<wire x1="-175.26" y1="-83.82" x2="-170.18" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-170.18" y="-83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$100" class="0">
@@ -15969,9 +15983,9 @@ this Pi-Filter yet!!!</text>
 <pinref part="U$14" gate="G$1" pin="VIOUT"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D8/A8"/>
-<wire x1="-175.26" y1="-58.42" x2="-162.56" y2="-58.42" width="0.1524" layer="91"/>
-<label x="-162.56" y="-58.42" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D10~/A10"/>
+<wire x1="-175.26" y1="-68.58" x2="-162.56" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-162.56" y="-68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -16362,9 +16376,9 @@ this Pi-Filter yet!!!</text>
 <label x="-419.1" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PE2"/>
-<wire x1="-175.26" y1="-83.82" x2="-170.18" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-170.18" y="-83.82" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="D5~"/>
+<wire x1="-175.26" y1="-73.66" x2="-170.18" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-170.18" y="-73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="M4-SIG" class="0">
