@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -153,6 +153,7 @@
 <text x="99.06" y="113.411" size="1.778" layer="29" rot="R90">Jake Armenta
 Missouri MRDT
 Powerboard 2015</text>
+<dimension x1="45.72" y1="27.94" x2="81.28" y2="27.94" x3="63.5" y3="-24.13" textsize="1.778" layer="48" unit="inch" visible="yes"/>
 </plain>
 <libraries>
 <library name="MRDT-2015-PowerBoard">
