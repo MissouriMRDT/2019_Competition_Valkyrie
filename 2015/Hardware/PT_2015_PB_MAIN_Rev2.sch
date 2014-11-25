@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13996,9 +13996,9 @@ High-power, low thermal resistance package.</description>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C1" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
 <part name="C2" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
 <part name="C3" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
+<part name="C1" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
 <part name="C4" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -14283,9 +14283,9 @@ this Pi-Filter yet!!!</text>
 <instance part="SUPPLY5" gate="G$1" x="2.54" y="0"/>
 <instance part="SUPPLY6" gate="G$1" x="86.36" y="182.88"/>
 <instance part="GND6" gate="1" x="86.36" y="165.1"/>
-<instance part="C1" gate="G$1" x="96.52" y="172.72"/>
-<instance part="C2" gate="G$1" x="106.68" y="172.72"/>
-<instance part="C3" gate="G$1" x="116.84" y="172.72"/>
+<instance part="C2" gate="G$1" x="96.52" y="172.72"/>
+<instance part="C3" gate="G$1" x="106.68" y="172.72"/>
+<instance part="C1" gate="G$1" x="116.84" y="172.72"/>
 <instance part="C4" gate="G$1" x="127" y="172.72"/>
 <instance part="SUPPLY1" gate="G$1" x="-187.96" y="86.36"/>
 <instance part="GND1" gate="1" x="-152.4" y="48.26"/>
@@ -14580,11 +14580,11 @@ this Pi-Filter yet!!!</text>
 <wire x1="106.68" y1="167.64" x2="116.84" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="167.64" x2="127" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="127" y1="167.64" x2="127" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="-"/>
-<wire x1="116.84" y1="170.18" x2="116.84" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="-"/>
-<wire x1="106.68" y1="170.18" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="116.84" y1="170.18" x2="116.84" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="-"/>
+<wire x1="106.68" y1="170.18" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="96.52" y1="170.18" x2="96.52" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15182,14 +15182,14 @@ this Pi-Filter yet!!!</text>
 <pinref part="SUPPLY6" gate="G$1" pin="V_BATT"/>
 <wire x1="86.36" y1="182.88" x2="86.36" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="180.34" x2="96.52" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="+"/>
+<pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="96.52" y1="180.34" x2="106.68" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="180.34" x2="116.84" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="180.34" x2="127" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="177.8" x2="96.52" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="106.68" y1="177.8" x2="106.68" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="+"/>
+<wire x1="106.68" y1="177.8" x2="106.68" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="116.84" y1="177.8" x2="116.84" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="127" y1="177.8" x2="127" y2="180.34" width="0.1524" layer="91"/>
