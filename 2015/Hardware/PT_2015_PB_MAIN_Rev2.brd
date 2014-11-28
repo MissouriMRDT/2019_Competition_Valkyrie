@@ -2000,7 +2000,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C9" library="resistor" package="C1206" value="" x="126.365" y="74.93" rot="R180"/>
 <element name="C10" library="resistor" package="C1206" value="" x="81.153" y="52.197" rot="R180"/>
 <element name="C14" library="resistor" package="C1206" value="2.2µF" x="81.28" y="68.58" rot="R270"/>
-<element name="BATT-POS" library="MRDT-2015-PowerBoard" package="LARGE_TERMINAL_HOLE" value="TERMINAL_HOLE" x="62.103" y="13.462"/>
+<element name="BATT-POS" library="MRDT-2015-PowerBoard" package="LARGE_TERMINAL_HOLE" value="TERMINAL_HOLE" x="62.357" y="13.462"/>
 <element name="BATT-NEG" library="MRDT-2015-PowerBoard" package="LARGE_TERMINAL_HOLE" value="TERMINAL_HOLE" x="93.98" y="13.462"/>
 <element name="Q6" library="MRDT-2015-PowerBoard" package="D2PACK" value="Q_IRFS7437PbF" x="29.21" y="7.62" rot="R270"/>
 <element name="U$3" library="MAX3077" package="MAX3070E" value="MAX3077" x="113.411" y="39.37" rot="R270"/>
