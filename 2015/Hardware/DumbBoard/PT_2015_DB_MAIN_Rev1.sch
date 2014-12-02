@@ -13099,9 +13099,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="12V-AUX" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device=""/>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED1" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
-<part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED2" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
 <part name="GND34" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -13132,44 +13129,23 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="MOTOR_2" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device=""/>
 <part name="GND49" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED6" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
-<part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="MOTOR_3" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device=""/>
 <part name="GND54" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED7" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
-<part name="GND55" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="MOTOR_4" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device=""/>
 <part name="GND59" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED8" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R20" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
-<part name="GND60" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="MOTOR_5" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device=""/>
 <part name="GND64" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED9" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
-<part name="GND65" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="MOTOR_6" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device=""/>
 <part name="GND69" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED10" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R24" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
-<part name="GND70" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND74" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED11" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R26" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
-<part name="GND75" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="AUX_P" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device=""/>
 <part name="GND79" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED12" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R28" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
-<part name="GND80" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="ARM_P" library="MRDT-2015-PowerBoard" deviceset="H_WR-TBL_32*1*0002" device="HORIZ"/>
 </parts>
 <sheets>
@@ -13250,9 +13226,6 @@ this Pi-Filter yet!!!</text>
 <instance part="P+8" gate="1" x="264.16" y="134.62"/>
 <instance part="12V-AUX" gate="G$1" x="60.96" y="-91.44"/>
 <instance part="GND32" gate="1" x="45.72" y="-96.52"/>
-<instance part="LED1" gate="G$1" x="-170.18" y="22.86" rot="R90"/>
-<instance part="R9" gate="G$1" x="-180.34" y="22.86"/>
-<instance part="GND33" gate="1" x="-162.56" y="17.78"/>
 <instance part="LED2" gate="G$1" x="93.98" y="-86.36" rot="R90"/>
 <instance part="R10" gate="G$1" x="83.82" y="-86.36"/>
 <instance part="GND34" gate="1" x="101.6" y="-91.44"/>
@@ -13283,44 +13256,23 @@ this Pi-Filter yet!!!</text>
 <instance part="SUPPLY9" gate="G$1" x="-187.96" y="187.96"/>
 <instance part="MOTOR_2" gate="G$1" x="-200.66" y="119.38"/>
 <instance part="GND49" gate="1" x="-213.36" y="116.84"/>
-<instance part="LED6" gate="G$1" x="-170.18" y="124.46" rot="R90"/>
-<instance part="R16" gate="G$1" x="-180.34" y="124.46"/>
-<instance part="GND50" gate="1" x="-162.56" y="119.38"/>
 <instance part="SUPPLY10" gate="G$1" x="-355.6" y="83.82"/>
 <instance part="MOTOR_3" gate="G$1" x="-368.3" y="15.24"/>
 <instance part="GND54" gate="1" x="-381" y="12.7"/>
-<instance part="LED7" gate="G$1" x="-337.82" y="20.32" rot="R90"/>
-<instance part="R18" gate="G$1" x="-347.98" y="20.32"/>
-<instance part="GND55" gate="1" x="-330.2" y="15.24"/>
 <instance part="SUPPLY11" gate="G$1" x="-355.6" y="180.34"/>
 <instance part="MOTOR_4" gate="G$1" x="-368.3" y="111.76"/>
 <instance part="GND59" gate="1" x="-381" y="109.22"/>
-<instance part="LED8" gate="G$1" x="-337.82" y="116.84" rot="R90"/>
-<instance part="R20" gate="G$1" x="-347.98" y="116.84"/>
-<instance part="GND60" gate="1" x="-330.2" y="111.76"/>
 <instance part="SUPPLY12" gate="G$1" x="-355.6" y="281.94"/>
 <instance part="MOTOR_5" gate="G$1" x="-368.3" y="213.36"/>
 <instance part="GND64" gate="1" x="-381" y="210.82"/>
-<instance part="LED9" gate="G$1" x="-337.82" y="218.44" rot="R90"/>
-<instance part="R22" gate="G$1" x="-347.98" y="218.44"/>
-<instance part="GND65" gate="1" x="-330.2" y="213.36"/>
 <instance part="SUPPLY13" gate="G$1" x="-187.96" y="289.56"/>
 <instance part="MOTOR_6" gate="G$1" x="-200.66" y="220.98"/>
 <instance part="GND69" gate="1" x="-213.36" y="218.44"/>
-<instance part="LED10" gate="G$1" x="-170.18" y="226.06" rot="R90"/>
-<instance part="R24" gate="G$1" x="-180.34" y="226.06"/>
-<instance part="GND70" gate="1" x="-162.56" y="220.98"/>
 <instance part="SUPPLY14" gate="G$1" x="-515.62" y="213.36"/>
 <instance part="GND74" gate="1" x="-541.02" y="142.24"/>
-<instance part="LED11" gate="G$1" x="-497.84" y="149.86" rot="R90"/>
-<instance part="R26" gate="G$1" x="-508" y="149.86"/>
-<instance part="GND75" gate="1" x="-490.22" y="144.78"/>
 <instance part="SUPPLY15" gate="G$1" x="-515.62" y="116.84"/>
 <instance part="AUX_P" gate="G$1" x="-528.32" y="48.26"/>
 <instance part="GND79" gate="1" x="-541.02" y="45.72"/>
-<instance part="LED12" gate="G$1" x="-497.84" y="53.34" rot="R90"/>
-<instance part="R28" gate="G$1" x="-508" y="53.34"/>
-<instance part="GND80" gate="1" x="-490.22" y="48.26"/>
 <instance part="ARM_P" gate="G$1" x="-528.32" y="144.78"/>
 </instances>
 <busses>
@@ -13454,12 +13406,6 @@ this Pi-Filter yet!!!</text>
 <wire x1="45.72" y1="-88.9" x2="45.72" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="-165.1" y1="22.86" x2="-162.56" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="22.86" x2="-162.56" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="GND33" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="99.06" y1="-86.36" x2="101.6" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="-86.36" x2="101.6" y2="-88.9" width="0.1524" layer="91"/>
@@ -13527,22 +13473,10 @@ this Pi-Filter yet!!!</text>
 <wire x1="-213.36" y1="121.92" x2="-213.36" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED6" gate="G$1" pin="C"/>
-<wire x1="-165.1" y1="124.46" x2="-162.56" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="124.46" x2="-162.56" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="GND50" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="MOTOR_3" gate="G$1" pin="L"/>
 <pinref part="GND54" gate="1" pin="GND"/>
 <wire x1="-378.46" y1="17.78" x2="-381" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-381" y1="17.78" x2="-381" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED7" gate="G$1" pin="C"/>
-<wire x1="-332.74" y1="20.32" x2="-330.2" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-330.2" y1="20.32" x2="-330.2" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="GND55" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="MOTOR_4" gate="G$1" pin="L"/>
@@ -13551,22 +13485,10 @@ this Pi-Filter yet!!!</text>
 <wire x1="-381" y1="114.3" x2="-381" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED8" gate="G$1" pin="C"/>
-<wire x1="-332.74" y1="116.84" x2="-330.2" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-330.2" y1="116.84" x2="-330.2" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="GND60" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="MOTOR_5" gate="G$1" pin="L"/>
 <pinref part="GND64" gate="1" pin="GND"/>
 <wire x1="-378.46" y1="215.9" x2="-381" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="-381" y1="215.9" x2="-381" y2="213.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED9" gate="G$1" pin="C"/>
-<wire x1="-332.74" y1="218.44" x2="-330.2" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="-330.2" y1="218.44" x2="-330.2" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="GND65" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="MOTOR_6" gate="G$1" pin="L"/>
@@ -13575,34 +13497,16 @@ this Pi-Filter yet!!!</text>
 <wire x1="-213.36" y1="223.52" x2="-213.36" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED10" gate="G$1" pin="C"/>
-<wire x1="-165.1" y1="226.06" x2="-162.56" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="226.06" x2="-162.56" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="GND70" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND74" gate="1" pin="GND"/>
 <wire x1="-538.48" y1="147.32" x2="-541.02" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="-541.02" y1="147.32" x2="-541.02" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="ARM_P" gate="G$1" pin="L"/>
 </segment>
 <segment>
-<pinref part="LED11" gate="G$1" pin="C"/>
-<wire x1="-492.76" y1="149.86" x2="-490.22" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="-490.22" y1="149.86" x2="-490.22" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="GND75" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="AUX_P" gate="G$1" pin="L"/>
 <pinref part="GND79" gate="1" pin="GND"/>
 <wire x1="-538.48" y1="50.8" x2="-541.02" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-541.02" y1="50.8" x2="-541.02" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED12" gate="G$1" pin="C"/>
-<wire x1="-492.76" y1="53.34" x2="-490.22" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-490.22" y1="53.34" x2="-490.22" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="GND80" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -13702,77 +13606,51 @@ this Pi-Filter yet!!!</text>
 </segment>
 <segment>
 <pinref part="MOTOR_6" gate="G$1" pin="R"/>
-<wire x1="-187.96" y1="226.06" x2="-187.96" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="-190.5" y1="223.52" x2="-187.96" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="-187.96" y1="226.06" x2="-185.42" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="G$1" pin="V_BATT"/>
-<wire x1="-187.96" y1="226.06" x2="-187.96" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="223.52" x2="-187.96" y2="289.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MOTOR_2" gate="G$1" pin="R"/>
-<wire x1="-187.96" y1="124.46" x2="-187.96" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="-190.5" y1="121.92" x2="-187.96" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="-187.96" y1="124.46" x2="-185.42" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="V_BATT"/>
-<wire x1="-187.96" y1="124.46" x2="-187.96" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="121.92" x2="-187.96" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MOTOR_1" gate="G$1" pin="R"/>
-<wire x1="-187.96" y1="22.86" x2="-187.96" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-190.5" y1="20.32" x2="-187.96" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="-187.96" y1="22.86" x2="-185.42" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="V_BATT"/>
-<wire x1="-187.96" y1="22.86" x2="-187.96" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="20.32" x2="-187.96" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-515.62" y1="149.86" x2="-515.62" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="-518.16" y1="147.32" x2="-515.62" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="-515.62" y1="149.86" x2="-513.08" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="ARM_P" gate="G$1" pin="R"/>
 <pinref part="SUPPLY14" gate="G$1" pin="V_BATT"/>
-<wire x1="-515.62" y1="149.86" x2="-515.62" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-515.62" y1="147.32" x2="-515.62" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-355.6" y1="124.46" x2="-355.6" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="MOTOR_4" gate="G$1" pin="R"/>
-<wire x1="-355.6" y1="121.92" x2="-355.6" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-355.6" y1="116.84" x2="-355.6" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="-358.14" y1="114.3" x2="-355.6" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="-355.6" y1="116.84" x2="-353.06" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="G$1" pin="V_BATT"/>
-<wire x1="-355.6" y1="124.46" x2="-355.6" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="-355.6" y1="114.3" x2="-355.6" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MOTOR_5" gate="G$1" pin="R"/>
-<wire x1="-355.6" y1="218.44" x2="-355.6" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="-358.14" y1="215.9" x2="-355.6" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="-355.6" y1="218.44" x2="-353.06" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="G$1" pin="V_BATT"/>
-<wire x1="-355.6" y1="281.94" x2="-355.6" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="-355.6" y1="281.94" x2="-355.6" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MOTOR_3" gate="G$1" pin="R"/>
-<wire x1="-355.6" y1="20.32" x2="-355.6" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-358.14" y1="17.78" x2="-355.6" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="-355.6" y1="20.32" x2="-353.06" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="G$1" pin="V_BATT"/>
-<wire x1="-355.6" y1="20.32" x2="-355.6" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-355.6" y1="17.78" x2="-355.6" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="AUX_P" gate="G$1" pin="R"/>
-<wire x1="-515.62" y1="53.34" x2="-515.62" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-518.16" y1="50.8" x2="-515.62" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="-515.62" y1="53.34" x2="-513.08" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="G$1" pin="V_BATT"/>
-<wire x1="-515.62" y1="53.34" x2="-515.62" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-515.62" y1="50.8" x2="-515.62" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -14076,13 +13954,6 @@ this Pi-Filter yet!!!</text>
 <pinref part="L3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$39" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="-175.26" y1="22.86" x2="-172.72" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -14109,55 +13980,6 @@ this Pi-Filter yet!!!</text>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="LED5" gate="G$1" pin="A"/>
 <wire x1="269.24" y1="-83.82" x2="271.78" y2="-83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
-<wire x1="-175.26" y1="124.46" x2="-172.72" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="R18" gate="G$1" pin="2"/>
-<pinref part="LED7" gate="G$1" pin="A"/>
-<wire x1="-342.9" y1="20.32" x2="-340.36" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$57" class="0">
-<segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<pinref part="LED8" gate="G$1" pin="A"/>
-<wire x1="-342.9" y1="116.84" x2="-340.36" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$63" class="0">
-<segment>
-<pinref part="R22" gate="G$1" pin="2"/>
-<pinref part="LED9" gate="G$1" pin="A"/>
-<wire x1="-342.9" y1="218.44" x2="-340.36" y2="218.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$69" class="0">
-<segment>
-<pinref part="R24" gate="G$1" pin="2"/>
-<pinref part="LED10" gate="G$1" pin="A"/>
-<wire x1="-175.26" y1="226.06" x2="-172.72" y2="226.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$75" class="0">
-<segment>
-<pinref part="R26" gate="G$1" pin="2"/>
-<pinref part="LED11" gate="G$1" pin="A"/>
-<wire x1="-502.92" y1="149.86" x2="-500.38" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$81" class="0">
-<segment>
-<pinref part="R28" gate="G$1" pin="2"/>
-<pinref part="LED12" gate="G$1" pin="A"/>
-<wire x1="-502.92" y1="53.34" x2="-500.38" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
