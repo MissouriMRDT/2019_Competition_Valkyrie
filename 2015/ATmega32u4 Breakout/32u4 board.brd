@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.0.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1838,9 +1838,6 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -1942,7 +1939,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="15.0495" y="10.6045" size="0.4064" layer="26" font="vector" rot="SMR135" align="bottom-center"/>
 <attribute name="VALUE" x="14.54414375" y="12.546696875" size="0.6096" layer="28" font="vector" rot="MR315"/>
 </element>
-<element name="C6" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="6.6675" y="11.1125" smashed="yes" rot="MR225">
+<element name="C6" library="SparkFun-Capacitors" package="0603-CAP" value="1uF" x="6.6675" y="11.1125" smashed="yes" rot="MR225">
 <attribute name="PROD_ID" value="CAP-00810" x="6.6675" y="11.1125" size="1.778" layer="28" rot="MR225" display="off"/>
 <attribute name="VALUE" value="0.1uF" x="6.6675" y="11.1125" size="1.778" layer="28" rot="MR225" display="off"/>
 <attribute name="NAME" x="6.1286875" y="10.615396875" size="0.4064" layer="26" font="vector" rot="SMR225" align="bottom-center"/>
@@ -1979,12 +1976,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="OC_FARNELL" value="unknown" x="10.6045" y="5.0165" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="S1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD" value="SWITCH-MOMENTARY-2SMD" x="10.6045" y="30.48" smashed="yes"/>
-<element name="C18" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="11.6205" y="34.8615" smashed="yes" rot="MR90">
+<element name="C18" library="SparkFun-Capacitors" package="0603-CAP" value="18pF" x="11.6205" y="34.8615" smashed="yes" rot="MR90">
 <attribute name="PROD_ID" value="CAP-00810" x="17.2085" y="34.8615" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="12.3825" y="34.8615" size="0.4064" layer="26" font="vector" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="12.7635" y="36.3855" size="0.6096" layer="28" font="vector" rot="MR90"/>
 </element>
-<element name="C19" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="9.5885" y="34.8615" smashed="yes" rot="MR90">
+<element name="C19" library="SparkFun-Capacitors" package="0603-CAP" value="18pF" x="9.5885" y="34.8615" smashed="yes" rot="MR90">
 <attribute name="PROD_ID" value="CAP-00810" x="12.1285" y="31.8135" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="8.8265" y="34.8615" size="0.4064" layer="26" font="vector" rot="SMR270" align="bottom-center"/>
 <attribute name="VALUE" x="8.1915" y="36.3855" size="0.6096" layer="28" font="vector" rot="MR90"/>
@@ -1993,7 +1990,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="LED1" library="adafruit" package="CHIPLED_0603" value="" x="10.668" y="21.2725" smashed="yes" rot="R270">
 <attribute name="VALUE" x="9.398" y="19.3675" size="1.27" layer="27"/>
 </element>
-<element name="R1" library="SparkFun-Resistors" package="0603-RES" value="" x="10.668" y="22.6695" smashed="yes">
+<element name="R1" library="SparkFun-Resistors" package="0603-RES" value="1k" x="10.668" y="22.6695" smashed="yes">
 <attribute name="VALUE" x="9.652" y="21.5265" size="0.4064" layer="27" font="vector"/>
 </element>
 </elements>
