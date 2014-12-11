@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14043,7 +14043,7 @@ High-power, low thermal resistance package.</description>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R1206" value="585Ω"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R1206" value="590Ω"/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C7" library="resistor" deviceset="C-US" device="C1206" value="1uF"/>
 <part name="C8" library="resistor" deviceset="C-US" device="C1206" value="47µf"/>
