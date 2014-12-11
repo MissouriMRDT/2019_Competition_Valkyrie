@@ -6935,6 +6935,133 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-PowerIC">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find drivers, regulators, and amplifiers.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PTC">
+<wire x1="-3.81" y1="1.524" x2="3.81" y2="1.524" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="1.524" x2="3.81" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-1.524" x2="-3.81" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-1.524" x2="-3.81" y2="1.524" width="0.2032" layer="21"/>
+<pad name="P$1" x="-2.54" y="0" drill="0.8" diameter="1.8796"/>
+<pad name="P$2" x="2.54" y="0" drill="0.8" diameter="1.8796"/>
+<text x="-3.81" y="1.705" size="0.4318" layer="25">&gt;Name</text>
+<text x="-3.81" y="-2.14" size="0.4318" layer="27">&gt;Value</text>
+</package>
+<package name="PTC-1206">
+<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="0.75" x2="1.5" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.127" layer="51"/>
+<wire x1="0.635" y1="-0.762" x2="-0.635" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0.762" x2="0.635" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.143" y1="-1.016" x2="0.254" y2="1.016" width="0.127" layer="51"/>
+<wire x1="0.254" y1="1.016" x2="1.143" y2="1.016" width="0.127" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1" dy="1.8" layer="1"/>
+<text x="-1.524" y="1.27" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.524" y="-1.651" size="0.4064" layer="27">&gt;Value</text>
+</package>
+<package name="0603">
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="PTC-1206-WIDE">
+<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="0.75" x2="1.5" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.127" layer="51"/>
+<wire x1="0.635" y1="-0.762" x2="-0.635" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0.762" x2="0.635" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.143" y1="-1.016" x2="0.254" y2="1.016" width="0.127" layer="51"/>
+<wire x1="0.254" y1="1.016" x2="1.143" y2="1.016" width="0.127" layer="51"/>
+<smd name="1" x="-1.654" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="2" x="1.654" y="0" dx="1" dy="1.8" layer="1"/>
+<text x="-1.524" y="1.27" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.524" y="-1.651" size="0.4064" layer="27">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PTC">
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="3.048" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.302" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PTC" prefix="F">
+<description>&lt;b&gt;Resettable Fuse PTC&lt;/b&gt;
+Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
+<gates>
+<gate name="G$1" symbol="PTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH" package="PTC">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="PTC-1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11150"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-W" package="PTC-1206-WIDE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6977,6 +7104,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="1k"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO" value="SOLDERJUMPERNO"/>
+<part name="F1" library="SparkFun-PowerIC" deviceset="PTC" device="SMD"/>
 </parts>
 <sheets>
 <sheet>
@@ -7016,6 +7144,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <instance part="R1" gate="G$1" x="182.88" y="236.22"/>
 <instance part="GND4" gate="1" x="172.72" y="236.22" rot="R270"/>
 <instance part="SJ1" gate="1" x="238.76" y="238.76"/>
+<instance part="F1" gate="G$1" x="266.7" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -7276,8 +7405,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <pinref part="C7" gate="G$1" pin="1"/>
 <label x="248.92" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="248.92" y1="20.32" x2="261.62" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="20.32" x2="276.86" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="F1" gate="G$1" pin="1"/>
 <junction x="261.62" y="20.32"/>
 </segment>
 <segment>
@@ -7644,6 +7772,13 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="236.22" x2="190.5" y2="236.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="274.32" y1="20.32" x2="276.86" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
