@@ -385,6 +385,31 @@ OKI-78SR-5/1.5W36H</description>
 <pad name="9" x="-2.54" y="0" drill="1.27" diameter="1.27"/>
 <pad name="10" x="-5.08" y="0" drill="1.27" diameter="1.27"/>
 </package>
+<package name="SOIC8_ACS711_SKETCH">
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="7" x="-0.6858" y="2.6" dx="0.55" dy="2.2" layer="1"/>
+<smd name="1" x="-1.3208" y="-2.6" dx="1.8" dy="2.2" layer="1"/>
+<smd name="4" x="1.3208" y="-2.6" dx="1.8" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.6858" y="2.6" dx="0.55" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="UQW-12/20-T48NBS">
@@ -625,6 +650,19 @@ OKI-78SR-5/1.5W36H</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="_SKETCH" package="SOIC8_ACS711_SKETCH">
+<connects>
+<connect gate="G$1" pin="FAULT" pad="6"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="IP+" pad="1"/>
+<connect gate="G$1" pin="IP-" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VIOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="TERMINAL_HOLE">
@@ -765,11 +803,25 @@ Part Numbers:&lt;Br&gt;
 </devices>
 </deviceset>
 <deviceset name="Q_ACS714">
+<description>Sketch variant has increased clearance for traces.</description>
 <gates>
 <gate name="G$1" symbol="ACS714" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOIC8_ACS711">
+<connects>
+<connect gate="G$1" pin="FILTER" pad="6"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="IP+" pad="1"/>
+<connect gate="G$1" pin="IP-" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VIOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SKETCH" package="SOIC8_ACS711_SKETCH">
 <connects>
 <connect gate="G$1" pin="FILTER" pad="6"/>
 <connect gate="G$1" pin="GND" pad="5"/>
@@ -14342,49 +14394,49 @@ diameter 5 mm, horizontal, grid 17 mm</description>
 <part name="LED12" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R28" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
 <part name="GND80" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$14" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="U$14" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="_SKETCH" value="ACS714LLCTR-50A-T"/>
 <part name="C37" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C23" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
-<part name="U$15" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="U$15" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="_SKETCH" value="ACS714LLCTR-50A-T"/>
 <part name="C38" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND82" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND51" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C25" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+13" library="supply1" deviceset="+5V" device=""/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
-<part name="U$16" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="U$16" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="_SKETCH" value="ACS714LLCTR-50A-T"/>
 <part name="C27" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND56" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND61" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C29" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+15" library="supply1" deviceset="+5V" device=""/>
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
-<part name="U$17" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="U$17" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="_SKETCH" value="ACS714LLCTR-50A-T"/>
 <part name="C31" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND66" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND71" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C33" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+17" library="supply1" deviceset="+5V" device=""/>
 <part name="P+18" library="supply1" deviceset="+5V" device=""/>
-<part name="U$18" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="U$18" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="_SKETCH" value="ACS714LLCTR-50A-T"/>
 <part name="C35" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND76" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND83" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C39" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+19" library="supply1" deviceset="+5V" device=""/>
 <part name="P+20" library="supply1" deviceset="+5V" device=""/>
-<part name="U$19" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="U$19" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="_SKETCH" value="ACS714LLCTR-50A-T"/>
 <part name="C40" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND84" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND85" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C41" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="P+21" library="supply1" deviceset="+5V" device=""/>
 <part name="P+22" library="supply1" deviceset="+5V" device=""/>
-<part name="U$20" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="U$20" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="_SKETCH" value="ACS714LLCTR-50A-T"/>
 <part name="C42" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND86" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -14394,7 +14446,7 @@ diameter 5 mm, horizontal, grid 17 mm</description>
 <part name="U$21" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
 <part name="C43" library="resistor" deviceset="C-US" device="C0805" value="1nF"/>
 <part name="GND87" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="Q1" library="MRDT-2015-PowerBoard" deviceset="Q_ACS711*LC" device=""/>
+<part name="Q1" library="MRDT-2015-PowerBoard" deviceset="Q_ACS711*LC" device="_SKETCH" value="Q_ACS711LC_SKETCH"/>
 <part name="GND88" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+24" library="supply1" deviceset="+5V" device=""/>
 <part name="C44" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
