@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14521,12 +14521,12 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R1206" value="70kΩ"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="R1206" value="60kΩ"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R1206" value="10kΩ"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C1206"/>
 <part name="C12" library="resistor" deviceset="C-US" device="C1206" value="47µf"/>
 <part name="C13" library="resistor" deviceset="C-US" device="C1206" value="2.2µF"/>
-<part name="C15" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="C15" library="resistor" deviceset="C-US" device="C1206" value="2.2µF"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R1206" value="21kΩ"/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Q4" library="MRDT-2015-PowerBoard" deviceset="Q_ACS711*LC" device=""/>
@@ -14537,14 +14537,14 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="R7" library="resistor" deviceset="R-US_" device="R1206" value="590Ω"/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C7" library="resistor" deviceset="C-US" device="C1206" value="1uF"/>
-<part name="C8" library="resistor" deviceset="C-US" device="C1206" value="47µf"/>
+<part name="C8" library="resistor" deviceset="C-US" device="C1206" value="10µf"/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="U$5" library="MRDT-2014-All" deviceset="D_SD12T1G" device=""/>
 <part name="C9" library="resistor" deviceset="C-US" device="C1206"/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C10" library="resistor" deviceset="C-US" device="C1206"/>
+<part name="C10" library="resistor" deviceset="C-US" device="C1206" value="2.2µF"/>
 <part name="C14" library="resistor" deviceset="C-US" device="C1206" value="2.2µF"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="BATT-POS" library="MRDT-2015-PowerBoard" deviceset="TERMINAL_HOLE" device=""/>
