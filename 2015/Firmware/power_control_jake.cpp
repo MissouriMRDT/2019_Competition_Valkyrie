@@ -1,8 +1,8 @@
 /*
- * powre_control.cpp
+ * power_control.cpp
  *
  * Created: 4/23/2015 9:15:37 PM
- *  Author: Spencer Vogel
+ *  Author: Jake Armenta
  */
 
 #include "Arduino/Arduino.h"
@@ -17,6 +17,7 @@ uint16_t motorZeroValue[NUM_MOTORS];
 
 void initializeMotorController()
 {
+/*
 	uint8_t i;
 	uint16_t temp16;
 	extern uint8_t motorSingalPorts[NUM_IO_PORTS];
@@ -56,11 +57,11 @@ void initializeMotorController()
 			motorZeroValue[i] = MID_ANALOG_READ_VALUE;
 		}
 	}
-
-	DDRB |= motorSingalPorts[0];
-	DDRC |= motorSingalPorts[1];
-	DDRD |= motorSingalPorts[2];
-	DDRE |= motorSingalPorts[3];
+*/
+	DDRB |= 0b00000010;
+	DDRC |= 0b11000000;
+	DDRD |= 0b00100011;
+	DDRE |= 0b00000100;
 }
 
 void readMotorCurrents()
@@ -98,6 +99,7 @@ inline void turnOnMotorController(const uint8_t motorNumber)
 	*MOTOR_SIGNAL_PORT[motorNumber] |= MOTOR_SIGNAL_PIN[motorNumber];
 }
 
+/*
 void turnOnAllMotors()
 {
 	PORTB |= motorSingalPorts[0];
@@ -105,8 +107,8 @@ void turnOnAllMotors()
 	PORTD |= motorSingalPorts[2];
 	PORTE |= motorSingalPorts[3];
 }
+*/
 
-/*
 void turnOnAllMotors()
 {
 	PORTB |= 0b00000010;
@@ -114,9 +116,9 @@ void turnOnAllMotors()
 	PORTD |= 0b00100011;
 	PORTE |= 0b00000100;
 }
-*/
 
-/*
+
+
 void turnoffAllMotors()
 {
 	PORTB &= 0b11111101;
@@ -124,8 +126,8 @@ void turnoffAllMotors()
 	PORTD &= 0b11011100;
 	PORTE &= 0b11111011;
 }
-*/
 
+/*
 void turnoffAllMotors()
 {
 	PORTB &= ~(motorSingalPorts[0]);
@@ -133,3 +135,4 @@ void turnoffAllMotors()
 	PORTD &= ~(motorSingalPorts[2]);
 	PORTE &= ~(motorSingalPorts[3]);
 }
+*/
