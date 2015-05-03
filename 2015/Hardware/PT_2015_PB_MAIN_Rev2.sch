@@ -14442,6 +14442,70 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="jumper">
+<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="JP1">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-1.016" y1="0" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="0" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.254" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-2.54" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="2.286" x2="1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="2.286" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="2.54" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="2.286" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="2.286" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.254" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-2.54" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="-1.27" drill="0.9144" shape="long"/>
+<pad name="2" x="0" y="1.27" drill="0.9144" shape="long"/>
+<text x="-1.651" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="2.921" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.3048" y1="0.9652" x2="0.3048" y2="1.5748" layer="51"/>
+<rectangle x1="-0.3048" y1="-1.5748" x2="0.3048" y2="-0.9652" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="JP2E">
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
+<text x="-1.27" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JP1E" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="JP2E" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="JP1">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14713,9 +14777,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="D1" library="diode" deviceset="15KEXX" device="" value="1.5KE36A"/>
 <part name="D2" library="diode" deviceset="15KEXX" device="" value="1.5KE36A"/>
 <part name="LED13" library="SparkFun-LED" deviceset="LED" device="-FKIT-1206"/>
-<part name="LED14" library="SparkFun-LED" deviceset="LED" device="-FKIT-1206"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k Ohm"/>
-<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k Ohm"/>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="10k Ohm"/>
 <part name="GND91" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND92" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SG1" library="SparkFun-Electromechanical" deviceset="BUZZER" device="SMD2"/>
@@ -14734,6 +14797,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="P+26" library="supply1" deviceset="+5V" device=""/>
 <part name="GND96" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$22" library="MRDT-2015-General" deviceset="TEST" device=""/>
+<part name="JP1" library="jumper" deviceset="JP1E" device=""/>
+<part name="P+27" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15016,9 +15081,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <instance part="D1" gate="1" x="86.36" y="175.26" rot="R90"/>
 <instance part="D2" gate="1" x="78.74" y="175.26" rot="R90"/>
 <instance part="LED13" gate="G$1" x="-276.86" y="-167.64"/>
-<instance part="LED14" gate="G$1" x="-264.16" y="-167.64"/>
 <instance part="R1" gate="G$1" x="-276.86" y="-157.48" rot="R270"/>
-<instance part="R2" gate="G$1" x="-264.16" y="-157.48" rot="R270"/>
+<instance part="R2" gate="G$1" x="-259.08" y="-157.48"/>
 <instance part="GND91" gate="1" x="-276.86" y="-180.34"/>
 <instance part="GND92" gate="1" x="-264.16" y="-180.34"/>
 <instance part="SG1" gate="G$1" x="-287.02" y="-160.02" rot="R270"/>
@@ -15037,6 +15101,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <instance part="P+26" gate="1" x="-292.1" y="-154.94"/>
 <instance part="GND96" gate="1" x="-431.8" y="-38.1"/>
 <instance part="U$22" gate="G$1" x="-1163.32" y="-378.46"/>
+<instance part="JP1" gate="A" x="-261.62" y="-167.64" rot="R270"/>
+<instance part="P+27" gate="1" x="-251.46" y="-152.4"/>
 </instances>
 <busses>
 </busses>
@@ -15626,9 +15692,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <wire x1="-276.86" y1="-177.8" x2="-276.86" y2="-172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED14" gate="G$1" pin="C"/>
 <pinref part="GND92" gate="1" pin="GND"/>
-<wire x1="-264.16" y1="-177.8" x2="-264.16" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="-264.16" y1="-177.8" x2="-264.16" y2="-170.18" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="C46" gate="G$1" pin="-"/>
@@ -15979,6 +16045,12 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <pinref part="SG1" gate="G$1" pin="1"/>
 <wire x1="-292.1" y1="-157.48" x2="-292.1" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="-292.1" y1="-160.02" x2="-289.56" y2="-160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="P+27" gate="1" pin="+5V"/>
+<wire x1="-251.46" y1="-154.94" x2="-251.46" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="-251.46" y1="-157.48" x2="-254" y2="-157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -16934,13 +17006,6 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <wire x1="-276.86" y1="-162.56" x2="-276.86" y2="-165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="LED14" gate="G$1" pin="A"/>
-<wire x1="-264.16" y1="-165.1" x2="-264.16" y2="-162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="BUZZ_BUZZ_MOTHERFUCKER" class="0">
 <segment>
 <wire x1="-215.9" y1="-83.82" x2="-220.98" y2="-83.82" width="0.1524" layer="91"/>
@@ -16953,7 +17018,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <pinref part="Q2" gate="G$1" pin="G"/>
 </segment>
 </net>
-<net name="INFO_LED_1" class="0">
+<net name="INFO_LED" class="0">
 <segment>
 <wire x1="-215.9" y1="-88.9" x2="-220.98" y2="-88.9" width="0.1524" layer="91"/>
 <label x="-220.98" y="-88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -16964,18 +17029,6 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <wire x1="-276.86" y1="-152.4" x2="-276.86" y2="-147.32" width="0.1524" layer="91"/>
 <label x="-276.86" y="-147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 <label x="-276.86" y="-147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="INFO_LED_2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="MOSI"/>
-<wire x1="-215.9" y1="-93.98" x2="-220.98" y2="-93.98" width="0.1524" layer="91"/>
-<label x="-220.98" y="-93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-264.16" y1="-152.4" x2="-264.16" y2="-147.32" width="0.1524" layer="91"/>
-<label x="-264.16" y="-147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -17006,6 +17059,20 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <wire x1="-292.1" y1="-162.56" x2="-292.1" y2="-167.64" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="-292.1" y1="-167.64" x2="-294.64" y2="-167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="JUMPER_SIG_IN" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-264.16" y1="-157.48" x2="-264.16" y2="-139.7" width="0.1524" layer="91"/>
+<label x="-264.16" y="-139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="-264.16" y1="-157.48" x2="-264.16" y2="-167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="MOSI"/>
+<wire x1="-215.9" y1="-93.98" x2="-220.98" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-220.98" y="-93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
