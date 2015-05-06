@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14540,7 +14540,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="U$1" library="MRDT-2015-General" deviceset="32U4_BREAKOUT" device=""/>
-<part name="U$2" library="MRDT-2014-All" deviceset="D_SD12T1G" device=""/>
+<part name="U$2" library="MRDT-2014-All" deviceset="D_SD12T1G" device="" value="D_SD05T1G"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
