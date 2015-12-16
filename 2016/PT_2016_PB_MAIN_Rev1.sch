@@ -11563,47 +11563,6 @@ diameter 5 mm, grid 2.54 mm</description>
 </library>
 <library name="MRDT-2015-General">
 <packages>
-<package name="TEST">
-<wire x1="25.4" y1="0" x2="-25.4" y2="0" width="1.27" layer="30"/>
-<wire x1="-21.59" y1="2.54" x2="21.59" y2="2.54" width="0.8128" layer="30"/>
-<wire x1="-20.32" y1="5.08" x2="20.32" y2="5.08" width="0.8128" layer="30"/>
-<wire x1="19.05" y1="7.62" x2="-19.05" y2="7.62" width="0.8128" layer="30"/>
-<wire x1="-17.78" y1="10.16" x2="17.78" y2="10.16" width="0.8128" layer="30"/>
-<wire x1="16.51" y1="12.7" x2="-16.51" y2="12.7" width="0.8128" layer="30"/>
-<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.8128" layer="30"/>
-<wire x1="13.97" y1="17.78" x2="-13.97" y2="17.78" width="0.8128" layer="30"/>
-<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.8128" layer="30"/>
-<wire x1="11.43" y1="22.86" x2="-11.43" y2="22.86" width="0.8128" layer="30"/>
-<wire x1="-10.16" y1="25.4" x2="10.16" y2="25.4" width="0.8128" layer="30"/>
-<wire x1="8.89" y1="27.94" x2="-8.89" y2="27.94" width="0.8128" layer="30"/>
-<wire x1="-7.62" y1="30.48" x2="7.62" y2="30.48" width="0.8128" layer="30"/>
-<wire x1="6.35" y1="33.02" x2="-6.35" y2="33.02" width="0.8128" layer="30"/>
-<wire x1="-25.4" y1="0" x2="0" y2="49.53" width="1.27" layer="30"/>
-<wire x1="0" y1="49.53" x2="25.4" y2="0" width="1.27" layer="30"/>
-<wire x1="6.35" y1="36.83" x2="-6.35" y2="36.83" width="1.27" layer="30"/>
-<circle x="0" y="41.91" radius="1.27" width="0.3048" layer="30"/>
-<wire x1="3.81" y1="41.91" x2="3.522346875" y2="42.10176875" width="0.3048" layer="30"/>
-<wire x1="3.522346875" y1="42.10176875" x2="-3.522346875" y2="42.10176875" width="0.3048" layer="30" curve="67.380119"/>
-<wire x1="-3.522346875" y1="42.10176875" x2="-3.81" y2="41.91" width="0.3048" layer="30"/>
-<wire x1="3.81" y1="41.91" x2="3.522346875" y2="41.71823125" width="0.3048" layer="30"/>
-<wire x1="3.522346875" y1="41.71823125" x2="-3.522346875" y2="41.71823125" width="0.3048" layer="30" curve="-67.380119"/>
-<wire x1="-3.522346875" y1="41.71823125" x2="-3.81" y2="41.91" width="0.3048" layer="30"/>
-<wire x1="6.35" y1="41.91" x2="11.43" y2="41.91" width="0.3048" layer="30"/>
-<wire x1="6.35" y1="40.64" x2="10.16" y2="39.37" width="0.3048" layer="30"/>
-<wire x1="6.35" y1="39.37" x2="8.89" y2="36.83" width="0.3048" layer="30"/>
-<wire x1="6.35" y1="43.18" x2="10.16" y2="44.45" width="0.3048" layer="30"/>
-<wire x1="6.35" y1="44.45" x2="8.89" y2="46.99" width="0.3048" layer="30"/>
-<wire x1="5.08" y1="45.72" x2="7.62" y2="49.53" width="0.3048" layer="30"/>
-<wire x1="3.81" y1="46.99" x2="5.08" y2="50.8" width="0.3048" layer="30"/>
-<wire x1="-3.81" y1="46.99" x2="-5.08" y2="50.8" width="0.3048" layer="30"/>
-<wire x1="-5.08" y1="45.72" x2="-7.62" y2="49.53" width="0.3048" layer="30"/>
-<wire x1="-6.35" y1="44.45" x2="-8.89" y2="46.99" width="0.3048" layer="30"/>
-<wire x1="-6.35" y1="43.18" x2="-10.16" y2="44.45" width="0.3048" layer="30"/>
-<wire x1="-6.35" y1="41.91" x2="-11.43" y2="41.91" width="0.3048" layer="30"/>
-<wire x1="-6.35" y1="40.64" x2="-10.16" y2="39.37" width="0.3048" layer="30"/>
-<wire x1="-6.35" y1="39.37" x2="-8.89" y2="36.83" width="0.3048" layer="30"/>
-<circle x="0" y="41.91" radius="0.127" width="0.254" layer="30"/>
-</package>
 <package name="TIVA-C-CONNECTED">
 <description>Package for Tiva C Connected development board
 
@@ -12948,11 +12907,6 @@ WARNING: The mounting holes on this board are only for reference. They will not 
 </package>
 </packages>
 <symbols>
-<symbol name="TEST">
-<wire x1="-2.54" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-</symbol>
 <symbol name="TM4C1294">
 <pin name="PA4" x="-5.08" y="109.22" length="middle"/>
 <pin name="PA5" x="-5.08" y="106.68" length="middle"/>
@@ -13036,18 +12990,6 @@ WARNING: The mounting holes on this board are only for reference. They will not 
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TEST">
-<gates>
-<gate name="G$1" symbol="TEST" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEST">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TIVA-C-CONNECTED">
 <description>TIVA C CONNECTED LAUNCHPAD</description>
 <gates>
@@ -14576,8 +14518,8 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 </class>
 </classes>
 <parts>
-<part name="SIDEOUS-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
-<part name="PALPATINE-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
+<part name="FINN-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
+<part name="POE-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
@@ -14763,7 +14705,6 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="C52" library="resistor" deviceset="C-US" device="C1206" value="10uF"/>
 <part name="P+25" library="supply1" deviceset="+5V" device=""/>
 <part name="GND95" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$22" library="MRDT-2015-General" deviceset="TEST" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="Q1" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
 <part name="U$1" library="Jake" deviceset="LT1910" device=""/>
@@ -14782,7 +14723,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="U$2" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="_SKETCH" value="ACS714LLCTR-50A-T"/>
 <part name="C9" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$3" library="Murata_5V_DC-DC_Converter" deviceset="MURATA_5V_DC-DC_CONVERTER" device=""/>
+<part name="REY-5V" library="Murata_5V_DC-DC_Converter" deviceset="MURATA_5V_DC-DC_CONVERTER" device=""/>
 <part name="U$4" library="MRDT-2015-General" deviceset="TIVA-C-CONNECTED" device=""/>
 <part name="U$5" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
@@ -14835,8 +14776,8 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="25.4" y1="-58.42" x2="25.4" y2="-99.06" width="0.1524" layer="97"/>
 </plain>
 <instances>
-<instance part="SIDEOUS-12V" gate="G$1" x="63.5" y="73.66"/>
-<instance part="PALPATINE-12V" gate="G$1" x="63.5" y="43.18"/>
+<instance part="FINN-12V" gate="G$1" x="63.5" y="73.66"/>
+<instance part="POE-12V" gate="G$1" x="63.5" y="43.18"/>
 <instance part="GND3" gate="1" x="35.56" y="30.48"/>
 <instance part="GND4" gate="1" x="35.56" y="60.96"/>
 <instance part="SUPPLY3" gate="G$1" x="35.56" y="83.82"/>
@@ -15022,7 +14963,6 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <instance part="C52" gate="G$1" x="251.46" y="78.74"/>
 <instance part="P+25" gate="1" x="226.06" y="91.44"/>
 <instance part="GND95" gate="1" x="226.06" y="66.04"/>
-<instance part="U$22" gate="G$1" x="-1163.32" y="-378.46"/>
 <instance part="SUPPLY2" gate="G$1" x="-518.16" y="231.14"/>
 <instance part="Q1" gate="G$1" x="-520.7" y="182.88"/>
 <instance part="U$1" gate="G$1" x="-553.72" y="187.96"/>
@@ -15041,7 +14981,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <instance part="U$2" gate="G$1" x="-495.3" y="210.82"/>
 <instance part="C9" gate="G$1" x="-474.98" y="203.2"/>
 <instance part="GND13" gate="1" x="-487.68" y="231.14"/>
-<instance part="U$3" gate="G$1" x="109.22" y="129.54"/>
+<instance part="REY-5V" gate="G$1" x="109.22" y="129.54"/>
 <instance part="U$4" gate="G$1" x="-162.56" y="-147.32"/>
 <instance part="U$5" gate="G$1" x="-462.28" y="-53.34" rot="R180"/>
 <instance part="R1" gate="G$1" x="-429.26" y="-58.42"/>
@@ -15079,13 +15019,13 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="SIDEOUS-12V" gate="G$1" pin="-VIN"/>
+<pinref part="FINN-12V" gate="G$1" pin="-VIN"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="40.64" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="66.04" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PALPATINE-12V" gate="G$1" pin="-VIN"/>
+<pinref part="POE-12V" gate="G$1" pin="-VIN"/>
 <wire x1="40.64" y1="35.56" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="35.56" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -15112,11 +15052,11 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="86.36" y1="172.72" x2="86.36" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SIDEOUS-12V" gate="G$1" pin="-VOUT"/>
+<pinref part="FINN-12V" gate="G$1" pin="-VOUT"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PALPATINE-12V" gate="G$1" pin="-VOUT"/>
+<pinref part="POE-12V" gate="G$1" pin="-VOUT"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -15569,11 +15509,11 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="-VIN"/>
+<pinref part="REY-5V" gate="G$1" pin="-VIN"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="93.98" y1="127" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="127" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="-VOUT"/>
+<pinref part="REY-5V" gate="G$1" pin="-VOUT"/>
 <wire x1="76.2" y1="124.46" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
 </segment>
@@ -15605,14 +15545,14 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="V_BATT"/>
 <wire x1="35.56" y1="81.28" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="SIDEOUS-12V" gate="G$1" pin="+VIN"/>
+<pinref part="FINN-12V" gate="G$1" pin="+VIN"/>
 <wire x1="35.56" y1="81.28" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="V_BATT"/>
 <wire x1="33.02" y1="50.8" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
 <junction x="33.02" y="50.8"/>
-<pinref part="PALPATINE-12V" gate="G$1" pin="+VIN"/>
+<pinref part="POE-12V" gate="G$1" pin="+VIN"/>
 <junction x="33.02" y="50.8"/>
 <wire x1="40.64" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
 </segment>
@@ -15699,7 +15639,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="-518.16" y1="215.9" x2="-508" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="+VIN"/>
+<pinref part="REY-5V" gate="G$1" pin="+VIN"/>
 <pinref part="SUPPLY5" gate="G$1" pin="V_BATT"/>
 <wire x1="93.98" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="132.08" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
@@ -15868,10 +15808,10 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="PALPATINE-12V" gate="G$1" pin="REMOTE"/>
+<pinref part="POE-12V" gate="G$1" pin="REMOTE"/>
 <wire x1="40.64" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="43.18" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="SIDEOUS-12V" gate="G$1" pin="REMOTE"/>
+<pinref part="FINN-12V" gate="G$1" pin="REMOTE"/>
 <wire x1="15.24" y1="58.42" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="50.8" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
@@ -15882,10 +15822,10 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="PALPATINE-12V" gate="G$1" pin="+VOUT"/>
+<pinref part="POE-12V" gate="G$1" pin="+VOUT"/>
 <wire x1="88.9" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="50.8" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="SIDEOUS-12V" gate="G$1" pin="+VOUT"/>
+<pinref part="FINN-12V" gate="G$1" pin="+VOUT"/>
 <wire x1="96.52" y1="53.34" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="53.34" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
@@ -16773,7 +16713,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <junction x="137.16" y="-86.36"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="+VOUT"/>
+<pinref part="REY-5V" gate="G$1" pin="+VOUT"/>
 <wire x1="127" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
 <label x="132.08" y="132.08" size="1.778" layer="95" xref="yes"/>
 </segment>
