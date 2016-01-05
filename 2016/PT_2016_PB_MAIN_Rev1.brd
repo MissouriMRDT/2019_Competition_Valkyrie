@@ -167,7 +167,7 @@
 <hole x="140.97" y="0.508" drill="5.08"/>
 <text x="13.462" y="-1.27" size="0.6096" layer="1" rot="R180">ROVE DOWN FOR WHAT</text>
 <text x="25.908" y="137.922" size="1.4224" layer="1" rot="R180" align="bottom-center">Missouri S&amp;T Mars Rover 
-Design Team</text>
+Design Team - 2016</text>
 <text x="133.858" y="115.824" size="2.1844" layer="29" rot="R90">HORIZON / 2015</text>
 <text x="129.032" y="107.442" size="1.27" layer="29" rot="R90">Missouri S&amp;T Mars Rover Design Team</text>
 <text x="40.64" y="154.432" size="2.1844" layer="29">Jake Armenta
@@ -3427,7 +3427,9 @@ design rules under a new name.</description>
 <element name="R6" library="SparkFun-Passives" package="1206" value="120 Ohm" x="126.492" y="160.782"/>
 <element name="C10" library="resistor" package="C1206" value="1uF" x="64.516" y="137.922"/>
 <element name="U$12" library="MAX3077" package="MAX3070E" value="MAX3077" x="126.492" y="165.608" rot="R270"/>
-<element name="OKI-78SR-5/1.5-W36H" library="MRDT-2015-PowerBoard" package="OKI-78SRH" value="Q_OKI-78SR" x="43.688" y="134.112" rot="R270"/>
+<element name="BB-8-5V" library="MRDT-2015-PowerBoard" package="OKI-78SRH" value="Q_OKI-78SR" x="43.688" y="134.112" smashed="yes" rot="R270">
+<attribute name="NAME" x="40.894" y="139.7" size="1.016" layer="25" rot="R270"/>
+</element>
 <element name="U$23" library="SparkFun-Connectors" package="RJ45-8" value="RJ45-8PTH" x="141.478" y="148.082" rot="R90"/>
 <element name="R2" library="SparkFun-Passives" package="1206" value="120 Ohm" x="126.492" y="153.416"/>
 <element name="R7" library="SparkFun-Passives" package="1206" value="120 Ohm" x="126.492" y="143.256"/>
@@ -3738,7 +3740,7 @@ design rules under a new name.</description>
 <wire x1="69.977" y1="128.397" x2="70.104" y2="128.27" width="0.4064" layer="16"/>
 <wire x1="141.732" y1="40.132" x2="143.74" y2="38.124" width="0.4064" layer="1"/>
 <wire x1="143.74" y1="38.124" x2="143.74" y2="34.036" width="0.4064" layer="1"/>
-<contactref element="OKI-78SR-5/1.5-W36H" pad="2"/>
+<contactref element="BB-8-5V" pad="2"/>
 <wire x1="47.12" y1="-0.508" x2="47.12" y2="-2.156" width="0.4064" layer="1"/>
 <wire x1="47.12" y1="-2.156" x2="47.117" y2="-2.159" width="0.4064" layer="1"/>
 <via x="47.117" y="-2.159" extent="1-16" drill="0.5"/>
@@ -3832,7 +3834,7 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="1"/>
 <contactref element="REY-5V" pad="P$3"/>
 <wire x1="79.654" y1="126.848" x2="79.756" y2="126.746" width="0.4064" layer="1"/>
-<contactref element="OKI-78SR-5/1.5-W36H" pad="1"/>
+<contactref element="BB-8-5V" pad="1"/>
 <wire x1="76.81" y1="130.5052" x2="76.81" y2="126.644" width="0.4064" layer="1"/>
 <wire x1="76.81" y1="126.644" x2="76.962" y2="126.492" width="0.4064" layer="1"/>
 <polygon width="0.4064" layer="1" thermals="no">
@@ -3946,7 +3948,7 @@ design rules under a new name.</description>
 <wire x1="40.64" y1="114.046" x2="41.656" y2="115.062" width="0.254" layer="1"/>
 <wire x1="41.656" y1="115.062" x2="42.294" y2="115.062" width="0.254" layer="1"/>
 <wire x1="42.294" y1="115.062" x2="42.418" y2="114.938" width="0.254" layer="1"/>
-<contactref element="OKI-78SR-5/1.5-W36H" pad="3"/>
+<contactref element="BB-8-5V" pad="3"/>
 <wire x1="43.688" y1="136.652" x2="44.958" y2="137.922" width="1.016" layer="1"/>
 <wire x1="44.958" y1="137.922" x2="60.96" y2="137.922" width="1.016" layer="1"/>
 <wire x1="60.96" y1="137.922" x2="63.116" y2="137.922" width="1.016" layer="1"/>
@@ -3994,7 +3996,8 @@ design rules under a new name.</description>
 <wire x1="143.51" y1="138.684" x2="129.032" y2="138.684" width="0.4064" layer="1"/>
 <via x="129.032" y="138.684" extent="1-16" drill="0.381"/>
 <wire x1="129.032" y1="138.684" x2="126.238" y2="138.684" width="0.4064" layer="16"/>
-<wire x1="137.541" y1="194.957" x2="135.128" y2="194.945" width="0" layer="19" extent="1-1"/>
+<wire x1="137.541" y1="194.957" x2="135.473" y2="194.957" width="0.4064" layer="1"/>
+<wire x1="135.473" y1="194.957" x2="134.977" y2="195.453" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="POE-12V" pad="2"/>
@@ -4273,6 +4276,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="12V-SIG">
 <contactref element="R15" pad="2"/>
+<contactref element="U$4" pad="PN3"/>
+<wire x1="83.439" y1="63.9195" x2="83.2235" y2="63.9195" width="0.4064" layer="1"/>
+<wire x1="83.2235" y1="63.9195" x2="82.804" y2="63.5" width="0.4064" layer="1"/>
+<wire x1="82.804" y1="63.5" x2="82.804" y2="61.976" width="0.4064" layer="1"/>
+<via x="82.804" y="61.976" extent="1-16" drill="0.381"/>
+<wire x1="82.804" y1="61.976" x2="82.804" y2="144.272" width="0.4064" layer="16"/>
+<wire x1="82.804" y1="144.272" x2="84.836" y2="146.304" width="0.4064" layer="16"/>
+<wire x1="84.836" y1="146.304" x2="97.536" y2="146.304" width="0.4064" layer="16"/>
+<wire x1="97.536" y1="146.304" x2="99.314" y2="148.082" width="0.4064" layer="16"/>
+<wire x1="99.314" y1="148.082" x2="99.314" y2="149.606" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$28">
 <contactref element="Q7" pad="TAB"/>
@@ -5018,9 +5031,6 @@ design rules under a new name.</description>
 <signal name="N$58">
 <contactref element="U$4" pad="PF3"/>
 </signal>
-<signal name="N$70">
-<contactref element="U$4" pad="PH3"/>
-</signal>
 <signal name="N$75">
 <contactref element="U$4" pad="PK4"/>
 </signal>
@@ -5127,9 +5137,6 @@ design rules under a new name.</description>
 <signal name="N$127">
 <contactref element="U$4" pad="PN2"/>
 </signal>
-<signal name="N$128">
-<contactref element="U$4" pad="PN3"/>
-</signal>
 <signal name="N$129">
 <contactref element="U$4" pad="PN4"/>
 </signal>
@@ -5144,6 +5151,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$134">
 <contactref element="U$4" pad="PQ3/PA2"/>
+</signal>
+<signal name="N$21">
+<contactref element="U$4" pad="PH3"/>
 </signal>
 </signals>
 <errors>

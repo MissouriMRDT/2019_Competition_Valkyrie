@@ -14735,7 +14735,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="C10" library="resistor" deviceset="C-US" device="C1206" value="1uF"/>
 <part name="U$12" library="MAX3077" deviceset="MAX3077" device=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
-<part name="OKI-78SR-5/1.5-W36H" library="MRDT-2015-PowerBoard" deviceset="Q_OKI-78SR" device=""/>
+<part name="BB-8-5V" library="MRDT-2015-PowerBoard" deviceset="Q_OKI-78SR" device=""/>
 <part name="U$23" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH"/>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
@@ -14993,7 +14993,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <instance part="C10" gate="G$1" x="-55.88" y="-78.74"/>
 <instance part="U$12" gate="G$1" x="-408.94" y="-53.34" rot="R180"/>
 <instance part="P+10" gate="1" x="-55.88" y="-71.12"/>
-<instance part="OKI-78SR-5/1.5-W36H" gate="G$1" x="-48.26" y="-38.1"/>
+<instance part="BB-8-5V" gate="G$1" x="-48.26" y="-38.1"/>
 <instance part="U$23" gate="G$1" x="-462.28" y="-88.9" rot="R180"/>
 <instance part="R2" gate="G$1" x="-429.26" y="-93.98"/>
 <instance part="R7" gate="G$1" x="-429.26" y="-83.82"/>
@@ -15530,7 +15530,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="OKI-78SR-5/1.5-W36H" gate="G$1" pin="GND"/>
+<pinref part="BB-8-5V" gate="G$1" pin="GND"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="-45.72" y1="-48.26" x2="-45.72" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
@@ -15646,7 +15646,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="G$1" pin="V_BATT"/>
-<pinref part="OKI-78SR-5/1.5-W36H" gate="G$1" pin="VI"/>
+<pinref part="BB-8-5V" gate="G$1" pin="VI"/>
 <wire x1="-68.58" y1="-30.48" x2="-68.58" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-38.1" x2="-55.88" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
@@ -15794,7 +15794,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <pinref part="U$24" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="OKI-78SR-5/1.5-W36H" gate="G$1" pin="VO"/>
+<pinref part="BB-8-5V" gate="G$1" pin="VO"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
 <wire x1="-35.56" y1="-38.1" x2="-22.86" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="-38.1" x2="-22.86" y2="-30.48" width="0.1524" layer="91"/>
@@ -16053,6 +16053,11 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="-33.02" y1="45.72" x2="-40.64" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <label x="-40.64" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="PN3"/>
+<wire x1="-132.08" y1="-127" x2="-127" y2="-127" width="0.1524" layer="91"/>
+<label x="-127" y="-127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -16766,12 +16771,6 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="-167.64" y1="-68.58" x2="-172.72" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$70" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="PH3"/>
-<wire x1="-167.64" y1="-81.28" x2="-172.72" y2="-81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$75" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="PK4"/>
@@ -16976,12 +16975,6 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="-132.08" y1="-124.46" x2="-127" y2="-124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$128" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="PN3"/>
-<wire x1="-132.08" y1="-127" x2="-127" y2="-127" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$129" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="PN4"/>
@@ -17010,6 +17003,12 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <segment>
 <pinref part="U$4" gate="G$1" pin="PQ3/PA2"/>
 <wire x1="-132.08" y1="-144.78" x2="-127" y2="-144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="PH3"/>
+<wire x1="-167.64" y1="-81.28" x2="-172.72" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
