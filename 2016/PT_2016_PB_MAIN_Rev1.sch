@@ -14550,9 +14550,9 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C16" library="resistor" deviceset="C-US" device="C1206" value="10µF"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="MOTOR_1" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="MOTOR_1" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="12V-AUX" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="12V-AUX" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED1" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
@@ -14579,7 +14579,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="GND47" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C24" library="resistor" deviceset="C-US" device="C1206" value="10µF"/>
 <part name="GND48" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="MOTOR_2" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="MOTOR_2" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND49" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED6" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
@@ -14590,7 +14590,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="GND52" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C26" library="resistor" deviceset="C-US" device="C1206" value="10µF"/>
 <part name="GND53" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="MOTOR_3" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="MOTOR_3" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND54" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED7" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
@@ -14601,7 +14601,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="GND57" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C28" library="resistor" deviceset="C-US" device="C1206" value="10µF"/>
 <part name="GND58" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="MOTOR_4" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="MOTOR_4" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND59" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED8" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R20" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
@@ -14612,7 +14612,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="GND62" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C30" library="resistor" deviceset="C-US" device="C1206" value="10µF"/>
 <part name="GND63" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="MOTOR_5" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="MOTOR_5" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND64" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED9" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
@@ -14623,7 +14623,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="GND67" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C32" library="resistor" deviceset="C-US" device="C1206" value="10µF"/>
 <part name="GND68" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="MOTOR_6" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="MOTOR_6" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND69" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED10" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R24" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
@@ -14634,7 +14634,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="GND77" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C36" library="resistor" deviceset="C-US" device="C1206" value="10µF"/>
 <part name="GND78" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="AUX_P" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="AUX_P" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND79" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED12" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R28" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
@@ -14711,7 +14711,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C7" library="resistor" deviceset="C-US" device="C1206" value="10µF"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="AUX_P2" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="AUX_P2" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED11" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
@@ -14737,15 +14737,12 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="BB-8-5V" library="MRDT-2015-PowerBoard" deviceset="Q_OKI-78SR" device=""/>
 <part name="U$23" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH"/>
-<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
-<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$24" library="MAX3077" deviceset="MAX3077" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="5V-AUX" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="HORIZ"/>
+<part name="5V-AUX" library="MRDT-2015-PowerBoard" deviceset="H_20020618-M02*" device="VERT" value="H_20020618-M02VERT"/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED3" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
@@ -14768,6 +14765,9 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="R11" library="resistor" deviceset="R-US_" device="R1206" value="1k"/>
 <part name="C22" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="10µF"/>
 <part name="GND42" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
+<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
+<part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15008,11 +15008,8 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <instance part="P+10" gate="1" x="-55.88" y="-71.12"/>
 <instance part="BB-8-5V" gate="G$1" x="-48.26" y="-38.1"/>
 <instance part="U$23" gate="G$1" x="-462.28" y="-88.9" rot="R180"/>
-<instance part="R2" gate="G$1" x="-429.26" y="-93.98"/>
-<instance part="R7" gate="G$1" x="-429.26" y="-83.82"/>
 <instance part="GND14" gate="1" x="-383.54" y="-81.28"/>
 <instance part="P+7" gate="1" x="-383.54" y="-96.52"/>
-<instance part="GND15" gate="1" x="-441.96" y="-76.2"/>
 <instance part="U$24" gate="G$1" x="-408.94" y="-88.9" rot="R180"/>
 <instance part="SUPPLY5" gate="G$1" x="-5.08" y="137.16"/>
 <instance part="GND19" gate="1" x="-5.08" y="119.38"/>
@@ -15039,6 +15036,9 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <instance part="R11" gate="G$1" x="-45.72" y="116.84" rot="R180"/>
 <instance part="C22" gate="G$1" x="73.66" y="124.46"/>
 <instance part="GND42" gate="1" x="73.66" y="114.3"/>
+<instance part="R2" gate="G$1" x="-431.8" y="-93.98"/>
+<instance part="R7" gate="G$1" x="-431.8" y="-83.82"/>
+<instance part="GND15" gate="1" x="-441.96" y="-76.2"/>
 </instances>
 <busses>
 </busses>
@@ -15525,16 +15525,6 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <pinref part="U$24" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$23" gate="G$1" pin="8"/>
-<pinref part="U$23" gate="G$1" pin="7"/>
-<wire x1="-449.58" y1="-83.82" x2="-449.58" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="-449.58" y="-81.28"/>
-<wire x1="-449.58" y1="-81.28" x2="-449.58" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-449.58" y1="-71.12" x2="-441.96" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-441.96" y1="-71.12" x2="-441.96" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="GND15" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="REY-5V" gate="G$1" pin="-VIN"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="12.7" y1="127" x2="-5.08" y2="127" width="0.1524" layer="91"/>
@@ -15597,6 +15587,17 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <pinref part="C22" gate="G$1" pin="-"/>
 <pinref part="GND42" gate="1" pin="GND"/>
 <wire x1="73.66" y1="119.38" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<junction x="-449.58" y="-81.28"/>
+<wire x1="-449.58" y1="-78.74" x2="-449.58" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-449.58" y1="-71.12" x2="-441.96" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-441.96" y1="-71.12" x2="-441.96" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<pinref part="U$23" gate="G$1" pin="7"/>
+<wire x1="-449.58" y1="-81.28" x2="-449.58" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="U$23" gate="G$1" pin="8"/>
+<wire x1="-449.58" y1="-78.74" x2="-449.58" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -16667,56 +16668,6 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <label x="-177.8" y="-132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="REC+_2" class="0">
-<segment>
-<wire x1="-424.18" y1="-81.28" x2="-441.96" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="-441.96" y1="-81.28" x2="-441.96" y2="-99.06" width="0.1524" layer="91"/>
-<pinref part="U$23" gate="G$1" pin="1"/>
-<wire x1="-441.96" y1="-99.06" x2="-449.58" y2="-99.06" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="-424.18" y1="-81.28" x2="-424.18" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="Y"/>
-<junction x="-424.18" y="-81.28"/>
-</segment>
-</net>
-<net name="REC-_2" class="0">
-<segment>
-<wire x1="-424.18" y1="-86.36" x2="-434.34" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="-434.34" y1="-86.36" x2="-444.5" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="-444.5" y1="-86.36" x2="-444.5" y2="-96.52" width="0.1524" layer="91"/>
-<pinref part="U$23" gate="G$1" pin="2"/>
-<wire x1="-444.5" y1="-96.52" x2="-449.58" y2="-96.52" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="-434.34" y1="-83.82" x2="-434.34" y2="-86.36" width="0.1524" layer="91"/>
-<junction x="-434.34" y="-86.36"/>
-<pinref part="U$24" gate="G$1" pin="Z"/>
-</segment>
-</net>
-<net name="TRANS-_2" class="0">
-<segment>
-<wire x1="-424.18" y1="-91.44" x2="-447.04" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="-447.04" y1="-91.44" x2="-447.04" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="U$23" gate="G$1" pin="6"/>
-<wire x1="-447.04" y1="-86.36" x2="-449.58" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="-424.18" y1="-91.44" x2="-424.18" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="B"/>
-<junction x="-424.18" y="-91.44"/>
-</segment>
-</net>
-<net name="TRANS+_2" class="0">
-<segment>
-<wire x1="-424.18" y1="-96.52" x2="-434.34" y2="-96.52" width="0.1524" layer="91"/>
-<wire x1="-434.34" y1="-96.52" x2="-439.42" y2="-96.52" width="0.1524" layer="91"/>
-<wire x1="-439.42" y1="-96.52" x2="-439.42" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="U$23" gate="G$1" pin="3"/>
-<wire x1="-439.42" y1="-93.98" x2="-449.58" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-434.34" y1="-93.98" x2="-434.34" y2="-96.52" width="0.1524" layer="91"/>
-<junction x="-434.34" y="-96.52"/>
-<pinref part="U$24" gate="G$1" pin="A"/>
-</segment>
-</net>
 <net name="TX2" class="0">
 <segment>
 <wire x1="-393.7" y1="-86.36" x2="-373.38" y2="-86.36" width="0.1524" layer="91"/>
@@ -17132,6 +17083,56 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <pinref part="U$12" gate="G$1" pin="Z"/>
 <wire x1="-449.58" y1="-50.8" x2="-436.88" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="-436.88" y="-50.8"/>
+</segment>
+</net>
+<net name="REC+1" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-426.72" y1="-96.52" x2="-436.88" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-449.58" y1="-99.06" x2="-436.88" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="-436.88" y1="-99.06" x2="-436.88" y2="-96.52" width="0.1524" layer="91"/>
+<junction x="-436.88" y="-96.52"/>
+<pinref part="U$23" gate="G$1" pin="1"/>
+<wire x1="-436.88" y1="-96.52" x2="-436.88" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="U$24" gate="G$1" pin="A"/>
+<wire x1="-426.72" y1="-96.52" x2="-424.18" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="REC-1" class="0">
+<segment>
+<wire x1="-449.58" y1="-96.52" x2="-439.42" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-439.42" y1="-96.52" x2="-439.42" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="-439.42" y1="-91.44" x2="-426.72" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="-426.72" y="-91.44"/>
+<pinref part="U$23" gate="G$1" pin="2"/>
+<wire x1="-426.72" y1="-91.44" x2="-426.72" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="U$24" gate="G$1" pin="B"/>
+<wire x1="-426.72" y1="-91.44" x2="-424.18" y2="-91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TRANS+1" class="0">
+<segment>
+<wire x1="-444.5" y1="-93.98" x2="-444.5" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="-444.5" y1="-81.28" x2="-426.72" y2="-81.28" width="0.1524" layer="91"/>
+<junction x="-426.72" y="-81.28"/>
+<pinref part="U$23" gate="G$1" pin="3"/>
+<wire x1="-444.5" y1="-93.98" x2="-449.58" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-426.72" y1="-81.28" x2="-426.72" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="U$24" gate="G$1" pin="Y"/>
+<wire x1="-426.72" y1="-81.28" x2="-424.18" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TRANS-1" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="-424.18" y1="-86.36" x2="-436.88" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="-436.88" y="-86.36"/>
+<pinref part="U$23" gate="G$1" pin="6"/>
+<wire x1="-449.58" y1="-86.36" x2="-436.88" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="U$24" gate="G$1" pin="Z"/>
+<wire x1="-436.88" y1="-86.36" x2="-436.88" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
