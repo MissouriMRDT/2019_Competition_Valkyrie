@@ -14463,14 +14463,14 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="11.176" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51" curve="-180"/>
 <wire x1="8.89" y1="0" x2="11.176" y2="0" width="0.127" layer="51" curve="-180"/>
 <wire x1="24.638" y1="0" x2="24.638" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="-0.508" x2="12.065" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.065" y1="-0.508" x2="12.065" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="-0.508" x2="12.319" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="-0.508" x2="12.319" y2="0" width="0.127" layer="49" style="shortdash"/>
 <wire x1="24.638" y1="7.874" x2="24.638" y2="7.366" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="7.366" x2="12.065" y2="7.366" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.065" y1="7.366" x2="12.065" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="2.286" x2="12.065" y2="2.286" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.065" y1="2.286" x2="12.065" y2="5.588" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.065" y1="5.588" x2="24.638" y2="5.588" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="7.366" x2="12.319" y2="7.366" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="7.366" x2="12.319" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="2.286" x2="12.319" y2="2.286" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="2.286" x2="12.319" y2="5.588" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="5.588" x2="24.638" y2="5.588" width="0.127" layer="49" style="shortdash"/>
 </package>
 <package name="PP45_PCB_VERT">
 <wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
@@ -14483,16 +14483,10 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="0.762" y1="7.112" x2="7.112" y2="7.112" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.112" y1="7.112" x2="7.112" y2="4.572" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.112" y1="4.572" x2="7.874" y2="4.572" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="4.572" x2="7.874" y2="6.223" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="6.223" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="7.874" x2="6.223" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="1.651" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="7.874" x2="0" y2="4.572" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.874" y1="6.223" x2="8.382" y2="6.223" width="0.127" layer="49" style="shortdash"/>
 <wire x1="8.382" y1="6.223" x2="8.382" y2="1.651" width="0.127" layer="49" style="shortdash"/>
 <wire x1="8.382" y1="1.651" x2="7.874" y2="1.651" width="0.127" layer="49" style="shortdash"/>
 <wire x1="1.651" y1="8.382" x2="1.651" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="1.651" y1="7.874" x2="6.223" y2="7.874" width="0.127" layer="49" style="shortdash"/>
 <wire x1="6.223" y1="7.874" x2="6.223" y2="8.382" width="0.127" layer="49" style="shortdash"/>
 <wire x1="1.651" y1="8.382" x2="6.223" y2="8.382" width="0.127" layer="49" style="shortdash"/>
 <polygon width="0.127" layer="49" pour="hatch">
@@ -14507,29 +14501,10 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="1.651" y1="0.508" x2="1.651" y2="0" width="0.127" layer="49" style="shortdash"/>
 <wire x1="6.223" y1="0" x2="6.223" y2="0.508" width="0.127" layer="49" style="shortdash"/>
 <wire x1="1.651" y1="0.508" x2="6.223" y2="0.508" width="0.127" layer="49" style="shortdash"/>
-</package>
-<package name="PP45_PCB_HORIZ_RIGHT_2HIGH">
-<wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
-<wire x1="0" y1="7.874" x2="8.001" y2="7.874" width="0.127" layer="51"/>
-<wire x1="8.001" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51"/>
-<wire x1="11.176" y1="7.874" x2="24.638" y2="7.874" width="0.127" layer="51"/>
-<wire x1="24.638" y1="7.874" x2="24.638" y2="0" width="0.127" layer="51"/>
-<wire x1="24.638" y1="0" x2="11.176" y2="0" width="0.127" layer="51"/>
-<wire x1="8.89" y1="0" x2="8.001" y2="0" width="0.127" layer="51"/>
-<wire x1="8.001" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
-<wire x1="8.001" y1="0" x2="8.001" y2="7.874" width="0.127" layer="51" style="shortdash"/>
-<pad name="P$2" x="36.068" y="3.937" drill="4.064"/>
-<wire x1="11.176" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51" curve="-180"/>
-<wire x1="8.89" y1="0" x2="11.176" y2="0" width="0.127" layer="51" curve="-180"/>
-<wire x1="24.638" y1="0" x2="24.638" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="-0.508" x2="12.065" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.065" y1="-0.508" x2="12.065" y2="0" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="7.874" x2="24.638" y2="7.366" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="7.366" x2="12.065" y2="7.366" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.065" y1="7.366" x2="12.065" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="2.286" x2="12.065" y2="2.286" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.065" y1="2.286" x2="12.065" y2="5.588" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.065" y1="5.588" x2="24.638" y2="5.588" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="0" x2="7.874" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="0" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="7.874" x2="0" y2="0" width="0.127" layer="49" style="shortdash"/>
 </package>
 <package name="APP_12V_VERT_CONFIG">
 <wire x1="7.874" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
@@ -14540,13 +14515,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="3.302" y1="0.762" x2="0.762" y2="0.762" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="0.762" x2="0.762" y2="7.112" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="7.112" x2="3.302" y2="7.112" width="0.127" layer="49" style="shortdash"/>
-<wire x1="3.302" y1="7.112" x2="3.302" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="1.651" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="7.874" x2="0" y2="6.223" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="1.651" x2="0" y2="0" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="0" x2="3.302" y2="0" width="0.127" layer="49" style="shortdash"/>
 <wire x1="-0.508" y1="1.651" x2="0" y2="1.651" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="1.651" x2="0" y2="6.223" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0" y1="6.223" x2="-0.508" y2="6.223" width="0.127" layer="49" style="shortdash"/>
 <wire x1="-0.508" y1="1.651" x2="-0.508" y2="6.223" width="0.127" layer="49" style="shortdash"/>
 <polygon width="0.127" layer="49" pour="hatch">
@@ -14567,18 +14536,12 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="51"/>
 <wire x1="0" y1="7.874" x2="0" y2="15.748" width="0.127" layer="51"/>
 <wire x1="7.874" y1="15.748" x2="7.874" y2="7.874" width="0.127" layer="51"/>
-<wire x1="3.302" y1="7.874" x2="3.302" y2="8.636" width="0.127" layer="49" style="shortdash"/>
+<wire x1="3.302" y1="7.112" x2="3.302" y2="8.636" width="0.127" layer="49" style="shortdash"/>
 <wire x1="3.302" y1="8.636" x2="0.762" y2="8.636" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="8.636" x2="0.762" y2="14.986" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="14.986" x2="3.302" y2="14.986" width="0.127" layer="49" style="shortdash"/>
 <wire x1="3.302" y1="14.986" x2="3.302" y2="15.748" width="0.127" layer="49" style="shortdash"/>
-<wire x1="3.302" y1="15.748" x2="1.651" y2="15.748" width="0.127" layer="49" style="shortdash"/>
-<wire x1="1.651" y1="15.748" x2="0" y2="15.748" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="15.748" x2="0" y2="14.097" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="9.525" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="1.651" y1="7.874" x2="3.302" y2="7.874" width="0.127" layer="49" style="shortdash"/>
 <wire x1="-0.508" y1="9.525" x2="0" y2="9.525" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="9.525" x2="0" y2="14.097" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0" y1="14.097" x2="-0.508" y2="14.097" width="0.127" layer="49" style="shortdash"/>
 <wire x1="-0.508" y1="9.525" x2="-0.508" y2="14.097" width="0.127" layer="49" style="shortdash"/>
 <polygon width="0.127" layer="49" pour="hatch">
@@ -14597,6 +14560,13 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="1.651" y1="16.256" x2="1.651" y2="15.748" width="0.127" layer="49" style="shortdash"/>
 <wire x1="6.223" y1="15.748" x2="6.223" y2="16.256" width="0.127" layer="49" style="shortdash"/>
 <wire x1="1.651" y1="16.256" x2="6.223" y2="16.256" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="7.874" x2="0" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="0" x2="7.874" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="0" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="7.874" x2="0" y2="15.748" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="15.748" x2="7.874" y2="15.748" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="15.748" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
 </package>
 <package name="APP_5V_VERT_CONFIG">
 <pad name="GND" x="3.937" y="4.699" drill="4.064" rot="R270"/>
@@ -14609,13 +14579,9 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="7.112" y1="8.636" x2="0.762" y2="8.636" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="8.636" x2="0.762" y2="11.176" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="11.176" x2="0" y2="11.176" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="11.176" x2="0" y2="9.525" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="9.525" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="7.874" x2="7.874" y2="11.176" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0" y1="9.525" x2="-0.508" y2="9.525" width="0.127" layer="49" style="shortdash"/>
 <wire x1="-0.508" y1="9.525" x2="-0.508" y2="14.097" width="0.127" layer="49" style="shortdash"/>
 <wire x1="-0.508" y1="14.097" x2="0" y2="14.097" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
 <polygon width="0.127" layer="49" pour="hatch">
 <vertex x="7.112" y="11.43"/>
 <vertex x="0.762" y="11.43"/>
@@ -14638,13 +14604,9 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="7.112" y1="0.762" x2="0.762" y2="0.762" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="0.762" x2="0.762" y2="3.302" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="3.302" x2="0" y2="3.302" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="3.302" x2="0" y2="1.651" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="1.651" x2="0" y2="0" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="0" x2="7.874" y2="3.302" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0" y1="1.651" x2="-0.508" y2="1.651" width="0.127" layer="49" style="shortdash"/>
 <wire x1="-0.508" y1="1.651" x2="-0.508" y2="6.223" width="0.127" layer="49" style="shortdash"/>
 <wire x1="-0.508" y1="6.223" x2="0" y2="6.223" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="0" x2="0" y2="0" width="0.127" layer="49" style="shortdash"/>
 <polygon width="0.127" layer="49" pour="hatch">
 <vertex x="7.112" y="3.556"/>
 <vertex x="0.762" y="3.556"/>
@@ -14661,6 +14623,89 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="6.223" y1="-0.508" x2="6.223" y2="0" width="0.127" layer="49" style="shortdash"/>
 <wire x1="1.651" y1="0" x2="1.651" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
 <wire x1="6.223" y1="-0.508" x2="1.651" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="7.874" x2="7.874" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="0" x2="0" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="7.874" x2="0" y2="15.748" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="15.748" x2="7.874" y2="15.748" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="15.748" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+</package>
+<package name="PP_MOUNTING_WING_HORIZ">
+<wire x1="0" y1="0" x2="-16.764" y2="0" width="0.127" layer="51"/>
+<wire x1="-16.764" y1="0" x2="-16.764" y2="1.651" width="0.127" layer="51"/>
+<wire x1="-16.764" y1="1.651" x2="-16.764" y2="6.223" width="0.127" layer="51"/>
+<wire x1="-16.764" y1="6.223" x2="-16.764" y2="7.874" width="0.127" layer="51"/>
+<wire x1="-16.764" y1="7.874" x2="0" y2="7.874" width="0.127" layer="51"/>
+<wire x1="0" y1="7.874" x2="0" y2="6.223" width="0.127" layer="51"/>
+<wire x1="0" y1="6.223" x2="0" y2="1.651" width="0.127" layer="51"/>
+<wire x1="0" y1="1.651" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="7.874" x2="0" y2="8.382" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="8.382" x2="-12.319" y2="8.382" width="0.127" layer="49" style="shortdash"/>
+<wire x1="-12.319" y1="8.382" x2="-12.319" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="0" x2="0" y2="0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="-12.319" y1="0.508" x2="-12.319" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="-9.652" y1="6.223" x2="-9.652" y2="1.651" width="0.127" layer="51"/>
+<wire x1="-9.652" y1="1.651" x2="-5.08" y2="1.651" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="1.651" x2="-5.08" y2="6.223" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="6.223" x2="-9.652" y2="6.223" width="0.127" layer="51"/>
+<wire x1="0" y1="6.223" x2="-16.764" y2="6.223" width="0.127" layer="51" style="shortdash"/>
+<wire x1="0" y1="1.651" x2="-16.764" y2="1.651" width="0.127" layer="51" style="shortdash"/>
+<hole x="-7.366" y="3.937" drill="4.318"/>
+<wire x1="-12.319" y1="0.508" x2="0" y2="0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="-10.795" y1="3.937" x2="-7.366" y2="0.508" width="0.127" layer="49" style="shortdash" curve="90"/>
+<wire x1="-7.366" y1="0.508" x2="-3.937" y2="3.937" width="0.127" layer="49" style="shortdash" curve="90"/>
+<wire x1="-3.937" y1="3.937" x2="-7.366" y2="7.366" width="0.127" layer="49" style="shortdash" curve="90"/>
+<wire x1="-7.366" y1="7.366" x2="-10.795" y2="3.937" width="0.127" layer="49" style="shortdash" curve="90"/>
+<dimension x1="-7.366" y1="3.937" x2="-4.9413375" y2="6.3616625" x3="-6.15366875" y3="5.14933125" textsize="1.27" layer="47" dtype="radius" unit="inch" precision="3" visible="yes"/>
+<dimension x1="-5.31779375" y1="4.619734375" x2="-9.41420625" y2="3.254265625" x3="-9.41420625" y3="3.254265625" textsize="1.27" layer="47" dtype="diameter" unit="inch" precision="3" visible="yes"/>
+<dimension x1="0" y1="6.223" x2="0" y2="1.651" x3="1.397" y3="3.937" textsize="1.27" layer="47" unit="inch" precision="3" visible="yes"/>
+<dimension x1="0" y1="0" x2="-0.762" y2="7.874" x3="5.969" y3="3.937" textsize="1.27" layer="47" dtype="vertical" unit="inch" precision="3" visible="yes"/>
+<dimension x1="0" y1="0" x2="-16.764" y2="0" x3="-8.382" y3="-3.556" textsize="1.27" layer="47" dtype="vertical" unit="inch" precision="3" visible="yes"/>
+</package>
+<package name="PP45_PCB_HORIZ_RIGHT_2HIGH">
+<wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
+<wire x1="0" y1="7.874" x2="8.001" y2="7.874" width="0.127" layer="51"/>
+<wire x1="8.001" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51"/>
+<wire x1="11.176" y1="7.874" x2="24.638" y2="7.874" width="0.127" layer="51"/>
+<wire x1="24.638" y1="7.874" x2="24.638" y2="0" width="0.127" layer="51"/>
+<wire x1="24.638" y1="0" x2="11.176" y2="0" width="0.127" layer="51"/>
+<wire x1="8.89" y1="0" x2="8.001" y2="0" width="0.127" layer="51"/>
+<wire x1="8.001" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="8.001" y1="0" x2="8.001" y2="7.874" width="0.127" layer="51" style="shortdash"/>
+<pad name="P$2" x="36.068" y="3.937" drill="4.064"/>
+<wire x1="11.176" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51" curve="-180"/>
+<wire x1="8.89" y1="0" x2="11.176" y2="0" width="0.127" layer="51" curve="-180"/>
+<wire x1="24.638" y1="0" x2="24.638" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="-0.508" x2="12.319" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="-0.508" x2="12.319" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="7.874" x2="24.638" y2="7.366" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="7.366" x2="12.319" y2="7.366" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="7.366" x2="12.319" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="2.286" x2="12.319" y2="2.286" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="2.286" x2="12.319" y2="5.588" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="5.588" x2="24.638" y2="5.588" width="0.127" layer="49" style="shortdash"/>
+</package>
+<package name="PP_MOUNTING_WING_VERT">
+<wire x1="0" y1="0" x2="7.874" y2="0" width="0.127" layer="51"/>
+<wire x1="7.874" y1="0" x2="7.874" y2="7.874" width="0.127" layer="51"/>
+<wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="51"/>
+<wire x1="0" y1="7.874" x2="0" y2="0" width="0.127" layer="51"/>
+<dimension x1="0" y1="0" x2="7.874" y2="0" x3="3.937" y3="-5.08" textsize="1.27" layer="47" unit="inch" precision="3" visible="yes"/>
+<dimension x1="7.874" y1="0" x2="7.874" y2="7.874" x3="12.7" y3="3.937" textsize="1.27" layer="47" unit="inch" precision="3" visible="yes"/>
+<wire x1="1.651" y1="6.223" x2="1.651" y2="1.651" width="0.127" layer="51"/>
+<wire x1="1.651" y1="1.651" x2="6.223" y2="1.651" width="0.127" layer="51"/>
+<wire x1="6.223" y1="1.651" x2="6.223" y2="6.223" width="0.127" layer="51"/>
+<wire x1="6.223" y1="6.223" x2="1.651" y2="6.223" width="0.127" layer="51"/>
+<hole x="3.937" y="3.937" drill="4.318"/>
+<wire x1="3.937" y1="0.508" x2="7.366" y2="3.937" width="0.127" layer="49" style="shortdash" curve="90"/>
+<wire x1="7.366" y1="3.937" x2="3.937" y2="7.366" width="0.127" layer="49" style="shortdash" curve="90"/>
+<wire x1="3.937" y1="7.366" x2="0.508" y2="3.937" width="0.127" layer="49" style="shortdash" curve="90"/>
+<wire x1="0.508" y1="3.937" x2="3.937" y2="0.508" width="0.127" layer="49" style="shortdash" curve="90"/>
+<dimension x1="6.223" y1="1.651" x2="6.223" y2="6.223" x3="19.05" y3="3.937" textsize="1.27" layer="47" dtype="vertical" unit="inch" precision="3" visible="yes"/>
+<dimension x1="1.651" y1="1.651" x2="6.223" y2="1.651" x3="3.937" y3="-8.89" textsize="1.27" layer="47" dtype="vertical" unit="inch" precision="3" visible="yes"/>
+<dimension x1="3.741534375" y1="1.786865625" x2="4.132465625" y2="6.087134375" x3="4.132465625" y3="6.087134375" textsize="1.27" layer="47" dtype="diameter" unit="inch" precision="3" visible="yes"/>
+<dimension x1="3.937" y1="3.937" x2="1.925859375" y2="6.714290625" x3="-2.648915625" y3="13.031840625" textsize="1.27" layer="47" dtype="radius" unit="inch" precision="3" visible="yes"/>
 </package>
 </packages>
 <symbols>
@@ -14673,6 +14718,15 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 <text x="3.175" y="0.635" size="1.778" layer="95">&gt;Name</text>
 <text x="3.175" y="-1.905" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="APP_MOUNTING_WING">
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94" style="shortdash"/>
+<text x="5.08" y="1.524" size="1.27" layer="97" align="center">MOUNTING
+WING
+</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14728,6 +14782,23 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <connect gate="GND" pin="P$1" pad="GND"/>
 <connect gate="VCC" pin="P$1" pad="VCC"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APP_MOUTING_WING">
+<gates>
+<gate name="G$1" symbol="APP_MOUNTING_WING" x="0" y="0"/>
+</gates>
+<devices>
+<device name="HORIZ" package="PP_MOUNTING_WING_HORIZ">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="VERT" package="PP_MOUNTING_WING_VERT">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -15004,6 +15075,8 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <part name="U$40" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
 <part name="U$45" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="5V_VERT"/>
 <part name="U$46" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="12V_VERT"/>
+<part name="U$41" library="MRDT-Connectors" deviceset="APP_MOUTING_WING" device="HORIZ"/>
+<part name="U$42" library="MRDT-Connectors" deviceset="APP_MOUTING_WING" device="HORIZ"/>
 </parts>
 <sheets>
 <sheet>
@@ -15285,6 +15358,8 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <instance part="U$45" gate="VCC" x="127" y="-96.52" rot="R270"/>
 <instance part="U$46" gate="GND" x="53.34" y="-96.52" rot="R270"/>
 <instance part="U$46" gate="VCC" x="63.5" y="-96.52" rot="R270"/>
+<instance part="U$41" gate="G$1" x="-607.06" y="160.02"/>
+<instance part="U$42" gate="G$1" x="-607.06" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -17386,4 +17461,10 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
