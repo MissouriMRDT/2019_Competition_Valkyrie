@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -161,7 +161,7 @@
 <board>
 <plain>
 <hole x="140.97" y="0.508" drill="4.318"/>
-<text x="35.052" y="-0.508" size="0.6096" layer="1" rot="R180">ROVE DOWN FOR WHAT</text>
+<text x="31.75" y="-1.27" size="0.6096" layer="1" rot="R180">ROVE DOWN FOR WHAT</text>
 <text x="123.698" y="7.112" size="1.6764" layer="21" rot="R180" align="bottom-center">Missouri S&amp;T Mars Rover 
 Design Team 
 Power Board 2016</text>
@@ -8744,6 +8744,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -8852,8 +8855,8 @@ design rules under a new name.</description>
 <element name="Q6" library="MRDT-2015-PowerBoard" package="D2PACK" value="Q_IRFS7437PbF" x="29.21" y="7.62" rot="R270"/>
 <element name="U$6" library="Jake" package="SO8" value="LT1910" x="20.32" y="12.7" rot="MR180"/>
 <element name="C16" library="resistor" package="C1206" value="10µF" x="16.51" y="12.7" rot="MR270"/>
-<element name="LED1" library="SparkFun-LED" package="LED-1206" value="" x="21.59" y="-0.508" rot="R180"/>
-<element name="R9" library="SparkFun-Passives" package="1206" value="5kΩ" x="21.59" y="2.032"/>
+<element name="LED1" library="SparkFun-LED" package="LED-1206" value="" x="20.828" y="2.032"/>
+<element name="R9" library="SparkFun-Passives" package="1206" value="5kΩ" x="17.272" y="3.302" rot="R270"/>
 <element name="LED2" library="SparkFun-LED" package="LED-1206" value="" x="142.24" y="34.036"/>
 <element name="R10" library="SparkFun-Passives" package="1206" value="1kΩ" x="134.62" y="34.036"/>
 <element name="LED5" library="SparkFun-LED" package="LED-1206" value="" x="133.477" y="195.453" rot="R180"/>
@@ -9172,60 +9175,6 @@ design rules under a new name.</description>
 <vertex x="143.256" y="42.418"/>
 </polygon>
 <polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.286" y="114.046"/>
-<vertex x="14.478" y="114.046"/>
-<vertex x="14.478" y="108.966"/>
-<vertex x="2.286" y="108.966"/>
-</polygon>
-<polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.286" y="98.298"/>
-<vertex x="14.478" y="98.298"/>
-<vertex x="14.478" y="93.218"/>
-<vertex x="2.286" y="93.218"/>
-</polygon>
-<polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.54" y="81.534"/>
-<vertex x="14.732" y="81.534"/>
-<vertex x="14.732" y="76.454"/>
-<vertex x="2.54" y="76.454"/>
-</polygon>
-<polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.54" y="65.024"/>
-<vertex x="14.732" y="65.024"/>
-<vertex x="14.732" y="59.944"/>
-<vertex x="2.54" y="59.944"/>
-</polygon>
-<polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.54" y="65.024"/>
-<vertex x="14.732" y="65.024"/>
-<vertex x="14.732" y="59.944"/>
-<vertex x="2.54" y="59.944"/>
-</polygon>
-<polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.032" y="48.26"/>
-<vertex x="14.224" y="48.26"/>
-<vertex x="14.224" y="43.18"/>
-<vertex x="2.032" y="43.18"/>
-</polygon>
-<polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.032" y="48.26"/>
-<vertex x="14.224" y="48.26"/>
-<vertex x="14.224" y="43.18"/>
-<vertex x="2.032" y="43.18"/>
-</polygon>
-<polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.794" y="31.75"/>
-<vertex x="14.986" y="31.75"/>
-<vertex x="14.986" y="26.67"/>
-<vertex x="2.794" y="26.67"/>
-</polygon>
-<polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.794" y="15.24"/>
-<vertex x="14.986" y="15.24"/>
-<vertex x="14.986" y="10.16"/>
-<vertex x="2.794" y="10.16"/>
-</polygon>
-<polygon width="0.4064" layer="16" thermals="no">
 <vertex x="68.326" y="113.284"/>
 <vertex x="78.486" y="113.284"/>
 <vertex x="78.486" y="104.902"/>
@@ -9272,12 +9221,6 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="5"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C8" pad="1"/>
-<polygon width="0.4064" layer="16" thermals="no">
-<vertex x="2.54" y="130.81"/>
-<vertex x="14.732" y="130.81"/>
-<vertex x="14.732" y="125.73"/>
-<vertex x="2.54" y="125.73"/>
-</polygon>
 <contactref element="U$12" pad="GND"/>
 <contactref element="U$5" pad="8"/>
 <contactref element="U$5" pad="7"/>
@@ -9850,8 +9793,6 @@ design rules under a new name.</description>
 <vertex x="5.334" y="3.81"/>
 </polygon>
 <contactref element="M1+" pad="P$1"/>
-<wire x1="20.19" y1="2.032" x2="20.19" y2="4.335" width="0.4064" layer="1"/>
-<wire x1="20.19" y1="4.335" x2="20.935" y2="5.08" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$42">
 <contactref element="Q6" pad="1"/>
@@ -9893,8 +9834,8 @@ design rules under a new name.</description>
 <signal name="N$39">
 <contactref element="R9" pad="2"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="22.99" y1="2.032" x2="22.99" y2="-0.408" width="0.4064" layer="1"/>
-<wire x1="22.99" y1="-0.408" x2="23.09" y2="-0.508" width="0.4064" layer="1"/>
+<wire x1="17.272" y1="1.902" x2="19.328" y2="1.902" width="0.4064" layer="1"/>
+<wire x1="19.328" y1="1.902" x2="19.328" y2="2.032" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$46">
 <contactref element="R10" pad="2"/>
