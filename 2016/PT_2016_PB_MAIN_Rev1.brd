@@ -161,7 +161,7 @@
 <board>
 <plain>
 <hole x="140.97" y="0.508" drill="5.08"/>
-<text x="13.462" y="-1.27" size="0.6096" layer="1" rot="R180">ROVE DOWN FOR WHAT</text>
+<text x="33.782" y="-1.524" size="0.6096" layer="1" rot="R180">ROVE DOWN FOR WHAT</text>
 <text x="123.698" y="7.112" size="1.6764" layer="21" rot="R180" align="bottom-center">Missouri S&amp;T Mars Rover 
 Design Team 
 Power Board 2016</text>
@@ -179,6 +179,9 @@ Power Board 2016</text>
 <text x="66.294" y="-1.778" size="6.4516" layer="21">+</text>
 <text x="144.272" y="16.51" size="1.27" layer="21" rot="R90">GND</text>
 <text x="144.272" y="38.608" size="1.27" layer="21" rot="R90">GND</text>
+<hole x="0" y="0.254" drill="5.08"/>
+<hole x="53.086" y="65.278" drill="5.08"/>
+<hole x="17.272" y="192.532" drill="5.08"/>
 </plain>
 <libraries>
 <library name="MRDT-2015-PowerBoard">
@@ -9599,8 +9602,6 @@ design rules under a new name.</description>
 <signal name="AUX_P-IMEAS">
 <contactref element="U$20" pad="7"/>
 <wire x1="41.3258" y1="101.54" x2="41.3258" y2="102.0318" width="0.4064" layer="1"/>
-<wire x1="41.3258" y1="102.0318" x2="41.529" y2="102.108" width="0.4064" layer="1"/>
-<via x="41.529" y="102.108" extent="1-16" drill="0.5"/>
 <wire x1="1.27" y1="109.474" x2="1.27" y2="165.354" width="0.4064" layer="16"/>
 <wire x1="42.418" y1="168.91" x2="4.826" y2="168.91" width="0.4064" layer="16"/>
 <wire x1="4.826" y1="168.91" x2="1.27" y2="165.354" width="0.4064" layer="16"/>
@@ -9701,14 +9702,15 @@ design rules under a new name.</description>
 <wire x1="41.3258" y1="2.48" x2="41.3258" y2="3.1242" width="0.4064" layer="1"/>
 <wire x1="41.3258" y1="3.1242" x2="41.529" y2="3.175" width="0.4064" layer="1"/>
 <via x="41.529" y="3.175" extent="1-16" drill="0.5"/>
-<wire x1="41.529" y1="3.175" x2="-1.397" y2="3.175" width="0.4064" layer="16"/>
-<wire x1="-1.397" y1="3.175" x2="-3.683" y2="5.461" width="0.4064" layer="16"/>
 <wire x1="-3.683" y1="5.461" x2="-3.683" y2="166.497" width="0.4064" layer="16"/>
 <wire x1="-3.683" y1="166.497" x2="3.302" y2="173.482" width="0.4064" layer="16"/>
 <contactref element="U$4" pad="PK3"/>
 <wire x1="3.302" y1="173.482" x2="34.036" y2="173.482" width="0.4064" layer="16"/>
 <wire x1="34.036" y1="173.482" x2="38.354" y2="177.8" width="0.4064" layer="16"/>
 <wire x1="38.354" y1="177.8" x2="38.354" y2="192.786" width="0.4064" layer="16"/>
+<wire x1="-3.683" y1="5.461" x2="-2.032" y2="3.81" width="0.4064" layer="16"/>
+<wire x1="-2.032" y1="3.81" x2="40.894" y2="3.81" width="0.4064" layer="16"/>
+<wire x1="40.894" y1="3.81" x2="41.529" y2="3.175" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$39">
 <contactref element="R9" pad="2"/>
