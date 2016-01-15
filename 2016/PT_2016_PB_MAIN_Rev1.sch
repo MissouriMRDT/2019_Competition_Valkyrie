@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="13" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -14749,7 +14749,9 @@ WING
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COLOR" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="PP45_PCB_VERT" package="PP45_PCB_VERT">
@@ -14774,7 +14776,9 @@ WING
 <connect gate="VCC" pin="P$1" pad="VCC"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COLOR" value="YELLOW, BLACK"/>
+</technology>
 </technologies>
 </device>
 <device name="5V_VERT" package="APP_5V_VERT_CONFIG">
@@ -14783,7 +14787,9 @@ WING
 <connect gate="VCC" pin="P$1" pad="VCC"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COLOR" value="RED, BLACK"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14795,12 +14801,16 @@ WING
 <devices>
 <device name="HORIZ" package="PP_MOUNTING_WING_HORIZ">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COLOR" value="RED"/>
+</technology>
 </technologies>
 </device>
 <device name="VERT" package="PP_MOUNTING_WING_VERT">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="COLOR" value="RED"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -15057,22 +15067,54 @@ WING
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$25" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$26" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$27" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$28" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$29" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$30" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$31" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$32" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$33" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$34" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$35" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$36" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$37" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$38" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$39" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
-<part name="U$40" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT"/>
+<part name="M5-" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Black"/>
+</part>
+<part name="AUX2+" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Grey"/>
+</part>
+<part name="M3-" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Black"/>
+</part>
+<part name="M5+" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Purple"/>
+</part>
+<part name="AUX1-" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Black"/>
+</part>
+<part name="AUX1+" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Grey"/>
+</part>
+<part name="AUX2-" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Black"/>
+</part>
+<part name="M3+" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Green"/>
+</part>
+<part name="M6-" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Black"/>
+</part>
+<part name="M4+" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Pink"/>
+</part>
+<part name="M1-" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Black"/>
+</part>
+<part name="M6+" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Blue"/>
+</part>
+<part name="M4-" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Black"/>
+</part>
+<part name="M2+" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="White"/>
+</part>
+<part name="M2-" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Black"/>
+</part>
+<part name="M1+" library="MRDT-Connectors" deviceset="ANDERSON_POWERPOLE" device="PP45_PCB_HORIZ_RIGHT">
+<attribute name="COLOR" value="Orange"/>
+</part>
 <part name="U$45" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="5V_VERT"/>
 <part name="U$46" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="12V_VERT"/>
 <part name="U$41" library="MRDT-Connectors" deviceset="APP_MOUTING_WING" device="HORIZ"/>
@@ -15338,22 +15380,22 @@ WING
 <instance part="R2" gate="G$1" x="-431.8" y="-93.98"/>
 <instance part="R7" gate="G$1" x="-431.8" y="-83.82"/>
 <instance part="GND15" gate="1" x="-441.96" y="-76.2"/>
-<instance part="U$25" gate="G$1" x="-538.48" y="160.02" rot="R270"/>
-<instance part="U$26" gate="G$1" x="-528.32" y="160.02" rot="R270"/>
-<instance part="U$27" gate="G$1" x="-375.92" y="210.82" rot="R270"/>
-<instance part="U$28" gate="G$1" x="-365.76" y="210.82" rot="R270"/>
-<instance part="U$29" gate="G$1" x="-535.94" y="45.72" rot="R270"/>
-<instance part="U$30" gate="G$1" x="-528.32" y="45.72" rot="R270"/>
-<instance part="U$31" gate="G$1" x="-375.92" y="12.7" rot="R270"/>
-<instance part="U$32" gate="G$1" x="-365.76" y="12.7" rot="R270"/>
-<instance part="U$33" gate="G$1" x="-375.92" y="109.22" rot="R270"/>
-<instance part="U$34" gate="G$1" x="-365.76" y="109.22" rot="R270"/>
-<instance part="U$35" gate="G$1" x="-205.74" y="215.9" rot="R270"/>
-<instance part="U$36" gate="G$1" x="-198.12" y="215.9" rot="R270"/>
-<instance part="U$37" gate="G$1" x="-205.74" y="116.84" rot="R270"/>
-<instance part="U$38" gate="G$1" x="-198.12" y="116.84" rot="R270"/>
-<instance part="U$39" gate="G$1" x="-205.74" y="15.24" rot="R270"/>
-<instance part="U$40" gate="G$1" x="-198.12" y="15.24" rot="R270"/>
+<instance part="M5-" gate="G$1" x="-538.48" y="160.02" rot="R270"/>
+<instance part="AUX2+" gate="G$1" x="-528.32" y="160.02" rot="R270"/>
+<instance part="M3-" gate="G$1" x="-375.92" y="210.82" rot="R270"/>
+<instance part="M5+" gate="G$1" x="-365.76" y="210.82" rot="R270"/>
+<instance part="AUX1-" gate="G$1" x="-535.94" y="45.72" rot="R270"/>
+<instance part="AUX1+" gate="G$1" x="-528.32" y="45.72" rot="R270"/>
+<instance part="AUX2-" gate="G$1" x="-375.92" y="12.7" rot="R270"/>
+<instance part="M3+" gate="G$1" x="-365.76" y="12.7" rot="R270"/>
+<instance part="M6-" gate="G$1" x="-375.92" y="109.22" rot="R270"/>
+<instance part="M4+" gate="G$1" x="-365.76" y="109.22" rot="R270"/>
+<instance part="M1-" gate="G$1" x="-205.74" y="215.9" rot="R270"/>
+<instance part="M6+" gate="G$1" x="-198.12" y="215.9" rot="R270"/>
+<instance part="M4-" gate="G$1" x="-205.74" y="116.84" rot="R270"/>
+<instance part="M2+" gate="G$1" x="-198.12" y="116.84" rot="R270"/>
+<instance part="M2-" gate="G$1" x="-205.74" y="15.24" rot="R270"/>
+<instance part="M1+" gate="G$1" x="-198.12" y="15.24" rot="R270"/>
 <instance part="U$45" gate="GND" x="116.84" y="-96.52" rot="R270"/>
 <instance part="U$45" gate="VCC" x="127" y="-96.52" rot="R270"/>
 <instance part="U$46" gate="GND" x="53.34" y="-96.52" rot="R270"/>
@@ -15430,7 +15472,7 @@ WING
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="-213.36" y1="20.32" x2="-213.36" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U$39" gate="G$1" pin="P$1"/>
+<pinref part="M2-" gate="G$1" pin="P$1"/>
 <wire x1="-213.36" y1="20.32" x2="-205.74" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15491,7 +15533,7 @@ WING
 <segment>
 <pinref part="GND49" gate="1" pin="GND"/>
 <wire x1="-213.36" y1="121.92" x2="-213.36" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U$37" gate="G$1" pin="P$1"/>
+<pinref part="M4-" gate="G$1" pin="P$1"/>
 <wire x1="-213.36" y1="121.92" x2="-205.74" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15514,7 +15556,7 @@ WING
 <segment>
 <pinref part="GND54" gate="1" pin="GND"/>
 <wire x1="-381" y1="17.78" x2="-381" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$31" gate="G$1" pin="P$1"/>
+<pinref part="AUX2-" gate="G$1" pin="P$1"/>
 <wire x1="-381" y1="17.78" x2="-375.92" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15537,7 +15579,7 @@ WING
 <segment>
 <pinref part="GND59" gate="1" pin="GND"/>
 <wire x1="-381" y1="114.3" x2="-381" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U$33" gate="G$1" pin="P$1"/>
+<pinref part="M6-" gate="G$1" pin="P$1"/>
 <wire x1="-381" y1="114.3" x2="-375.92" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15560,7 +15602,7 @@ WING
 <segment>
 <pinref part="GND64" gate="1" pin="GND"/>
 <wire x1="-381" y1="215.9" x2="-381" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="U$27" gate="G$1" pin="P$1"/>
+<pinref part="M3-" gate="G$1" pin="P$1"/>
 <wire x1="-381" y1="215.9" x2="-375.92" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15583,7 +15625,7 @@ WING
 <segment>
 <pinref part="GND69" gate="1" pin="GND"/>
 <wire x1="-213.36" y1="223.52" x2="-213.36" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="U$35" gate="G$1" pin="P$1"/>
+<pinref part="M1-" gate="G$1" pin="P$1"/>
 <wire x1="-213.36" y1="223.52" x2="-205.74" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15606,7 +15648,7 @@ WING
 <segment>
 <pinref part="GND79" gate="1" pin="GND"/>
 <wire x1="-541.02" y1="50.8" x2="-541.02" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$29" gate="G$1" pin="P$1"/>
+<pinref part="AUX1-" gate="G$1" pin="P$1"/>
 <wire x1="-541.02" y1="50.8" x2="-535.94" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15789,7 +15831,7 @@ WING
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="-543.56" y1="165.1" x2="-543.56" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U$25" gate="G$1" pin="P$1"/>
+<pinref part="M5-" gate="G$1" pin="P$1"/>
 <wire x1="-543.56" y1="165.1" x2="-538.48" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -16379,7 +16421,7 @@ WING
 <wire x1="-187.96" y1="22.86" x2="-187.96" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-187.96" y1="22.86" x2="-185.42" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="U$40" gate="G$1" pin="P$1"/>
+<pinref part="M1+" gate="G$1" pin="P$1"/>
 <wire x1="-198.12" y1="22.86" x2="-187.96" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16474,7 +16516,7 @@ WING
 <wire x1="-187.96" y1="124.46" x2="-187.96" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="-187.96" y1="124.46" x2="-185.42" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U$38" gate="G$1" pin="P$1"/>
+<pinref part="M2+" gate="G$1" pin="P$1"/>
 <wire x1="-198.12" y1="124.46" x2="-187.96" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16519,7 +16561,7 @@ WING
 <wire x1="-355.6" y1="20.32" x2="-355.6" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="-355.6" y1="20.32" x2="-353.06" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U$32" gate="G$1" pin="P$1"/>
+<pinref part="M3+" gate="G$1" pin="P$1"/>
 <wire x1="-365.76" y1="20.32" x2="-355.6" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16564,7 +16606,7 @@ WING
 <wire x1="-355.6" y1="116.84" x2="-355.6" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="-355.6" y1="116.84" x2="-353.06" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U$34" gate="G$1" pin="P$1"/>
+<pinref part="M4+" gate="G$1" pin="P$1"/>
 <wire x1="-365.76" y1="116.84" x2="-355.6" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16609,7 +16651,7 @@ WING
 <wire x1="-355.6" y1="218.44" x2="-355.6" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="-355.6" y1="218.44" x2="-353.06" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="U$28" gate="G$1" pin="P$1"/>
+<pinref part="M5+" gate="G$1" pin="P$1"/>
 <wire x1="-365.76" y1="218.44" x2="-355.6" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16654,7 +16696,7 @@ WING
 <wire x1="-187.96" y1="226.06" x2="-187.96" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="-187.96" y1="226.06" x2="-185.42" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="U$36" gate="G$1" pin="P$1"/>
+<pinref part="M6+" gate="G$1" pin="P$1"/>
 <wire x1="-198.12" y1="223.52" x2="-187.96" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16699,7 +16741,7 @@ WING
 <wire x1="-515.62" y1="53.34" x2="-515.62" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="-515.62" y1="53.34" x2="-513.08" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$30" gate="G$1" pin="P$1"/>
+<pinref part="AUX1+" gate="G$1" pin="P$1"/>
 <wire x1="-528.32" y1="53.34" x2="-515.62" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16887,7 +16929,7 @@ WING
 <wire x1="-518.16" y1="167.64" x2="-518.16" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="-518.16" y1="167.64" x2="-515.62" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="U$26" gate="G$1" pin="P$1"/>
+<pinref part="AUX2+" gate="G$1" pin="P$1"/>
 <wire x1="-528.32" y1="167.64" x2="-518.16" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
