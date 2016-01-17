@@ -167,11 +167,11 @@
 <wire x1="29.464" y1="18.669" x2="29.464" y2="-18.669" width="0.127" layer="21"/>
 <wire x1="29.464" y1="-18.669" x2="-29.464" y2="-18.669" width="0.127" layer="21"/>
 <wire x1="-29.464" y1="-18.669" x2="-29.464" y2="18.669" width="0.127" layer="21"/>
-<pad name="2" x="-25.4" y="0" drill="1.3"/>
-<pad name="1" x="-25.4" y="7.62" drill="1.3"/>
-<pad name="3" x="-25.4" y="-7.62" drill="1.3"/>
-<pad name="8" x="25.4" y="7.62" drill="2"/>
-<pad name="4" x="25.4" y="-7.62" drill="2"/>
+<pad name="2" x="-25.4" y="0" drill="1.3" thermals="no"/>
+<pad name="1" x="-25.4" y="7.62" drill="1.3" thermals="no"/>
+<pad name="3" x="-25.4" y="-7.62" drill="1.3" thermals="no"/>
+<pad name="8" x="25.4" y="7.62" drill="2" thermals="no"/>
+<pad name="4" x="25.4" y="-7.62" drill="2" thermals="no"/>
 <text x="-11.43" y="0" size="1.778" layer="21">&gt;VALUE</text>
 <text x="-27.94" y="8.89" size="1.778" layer="21">+VIN</text>
 <text x="-22.86" y="-8.89" size="1.778" layer="21" rot="R180">-VIN</text>
@@ -235,8 +235,8 @@
 </package>
 <package name="D2PACK">
 <description>3-Pin D&lt;sup&gt;2&lt;/sup&gt;PAK
-&lt;br&gt;
-2-pin w/ tab</description>
+						&lt;br&gt;
+						2-pin w/ tab</description>
 <wire x1="-5.2" y1="-4.575" x2="-5.2" y2="4.575" width="0.2032" layer="51"/>
 <wire x1="5.2" y1="4.575" x2="5.2" y2="-4.575" width="0.2032" layer="51"/>
 <wire x1="5.2" y1="-4.575" x2="-5.2" y2="-4.575" width="0.2032" layer="21"/>
@@ -324,7 +324,7 @@
 </package>
 <package name="OKI-78SRH">
 <description>OKI-78SR-3.3/1.5W36H&lt;br&gt;
-OKI-78SR-5/1.5W36H</description>
+						OKI-78SR-5/1.5W36H</description>
 <wire x1="5.08" y1="-1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-1.27" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="10.16" x2="-5.08" y2="15.24" width="0.127" layer="21"/>
@@ -357,6 +357,28 @@ OKI-78SR-5/1.5W36H</description>
 <wire x1="5.08" y1="5.08" x2="2.54" y2="2.54" width="0.127" layer="51"/>
 <wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="51"/>
 <wire x1="-2.54" y1="2.54" x2="-5.08" y2="5.08" width="0.127" layer="51"/>
+</package>
+<package name="MURATA_5V_DC-DC_CONVERTER">
+<wire x1="-27.94" y1="17.78" x2="30.48" y2="17.78" width="0.127" layer="21"/>
+<wire x1="30.48" y1="17.78" x2="30.48" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="30.48" y1="-19.05" x2="-27.94" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="-27.94" y1="-19.05" x2="-27.94" y2="17.78" width="0.127" layer="21"/>
+<pad name="P$1" x="-24.13" y="-0.635" drill="1.016" thermals="no"/>
+<pad name="P$2" x="-24.13" y="6.985" drill="1.016" thermals="no"/>
+<pad name="P$3" x="-24.13" y="-8.255" drill="1.016" thermals="no"/>
+<pad name="P$4" x="26.67" y="-0.635" drill="1.016" thermals="no"/>
+<pad name="P$5" x="26.67" y="6.985" drill="1.5748" thermals="no"/>
+<pad name="P$6" x="26.67" y="-8.255" drill="1.5748" thermals="no"/>
+<pad name="P$7" x="26.67" y="-4.445" drill="1.016" thermals="no"/>
+<pad name="P$8" x="26.67" y="3.175" drill="1.016" thermals="no"/>
+<text x="-22.86" y="-7.62" size="1.778" layer="25">+Vin</text>
+<text x="-22.86" y="0" size="1.778" layer="25">On/Off</text>
+<text x="-22.86" y="7.62" size="1.778" layer="25">-Vin</text>
+<text x="17.78" y="6.35" size="1.778" layer="25">-Vout</text>
+<text x="17.78" y="2.54" size="1.778" layer="25">-Sense</text>
+<text x="17.78" y="-1.27" size="1.778" layer="25">Trim</text>
+<text x="16.51" y="-5.08" size="1.778" layer="25">+Sense</text>
+<text x="17.145" y="-8.89" size="1.778" layer="25">+Vout</text>
 </package>
 </packages>
 <symbols>
@@ -469,6 +491,22 @@ OKI-78SR-5/1.5W36H</description>
 <text x="0" y="7.62" size="1.778" layer="95" align="top-center">&gt;NAME</text>
 <text x="-9.652" y="3.302" size="1.778" layer="95">OKI-78SRH DCDC CONV</text>
 </symbol>
+<symbol name="MURATA_5V_DC-DC_CONVERTER">
+<wire x1="-10.16" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<pin name="+VIN" x="-15.24" y="2.54" length="middle"/>
+<pin name="ON/OFF" x="-15.24" y="0" length="middle"/>
+<pin name="-VIN" x="-15.24" y="-2.54" length="middle"/>
+<pin name="-VOUT" x="-15.24" y="-5.08" length="middle"/>
+<pin name="+VOUT" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="+SENSE" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="TRIM" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="-SENSE" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<text x="-10.16" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="UQW-12/20-T48NBS">
@@ -535,12 +573,12 @@ OKI-78SR-5/1.5W36H</description>
 </deviceset>
 <deviceset name="H_WR-TBL_32*1*0002">
 <description>Wurth Electronic's 2-pin 10A pluggable screw terminal headers. Vertical and Horizantal
-&lt;Br&gt;
-&lt;Br&gt;
-Part Numbers:&lt;Br&gt;
-691322110002 (Horizantal)
-&lt;Br&gt;
-691321100002 (Vertical)</description>
+						&lt;Br&gt;
+						&lt;Br&gt;
+						Part Numbers:&lt;Br&gt;
+						691322110002 (Horizantal)
+						&lt;Br&gt;
+						691321100002 (Vertical)</description>
 <gates>
 <gate name="G$1" symbol="2-PIN_HEADER" x="0" y="0"/>
 </gates>
@@ -605,12 +643,12 @@ Part Numbers:&lt;Br&gt;
 </deviceset>
 <deviceset name="Q_OKI-78SR">
 <description>4.95W DC/DC Converter
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt; Manufacturer:&lt;/b&gt;&lt;br&gt;
-Murata
-&lt;br&gt;&lt;br&gt;&lt;b&gt;Part Number:&lt;/b&gt;&lt;br&gt;
-OKI-78SR-5/1.5-W36H-C&lt;br&gt;
-OKI-78SR-3.3/1.5-W36H-C</description>
+						&lt;br&gt;&lt;br&gt;
+						&lt;b&gt; Manufacturer:&lt;/b&gt;&lt;br&gt;
+						Murata
+						&lt;br&gt;&lt;br&gt;&lt;b&gt;Part Number:&lt;/b&gt;&lt;br&gt;
+						OKI-78SR-5/1.5-W36H-C&lt;br&gt;
+						OKI-78SR-3.3/1.5-W36H-C</description>
 <gates>
 <gate name="G$1" symbol="5V_REG" x="-2.54" y="0"/>
 </gates>
@@ -620,6 +658,28 @@ OKI-78SR-3.3/1.5-W36H-C</description>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VI" pad="1"/>
 <connect gate="G$1" pin="VO" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MURATA_5V_DC-DC_CONVERTER">
+<gates>
+<gate name="G$1" symbol="MURATA_5V_DC-DC_CONVERTER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MURATA_5V_DC-DC_CONVERTER">
+<connects>
+<connect gate="G$1" pin="+SENSE" pad="P$7"/>
+<connect gate="G$1" pin="+VIN" pad="P$3"/>
+<connect gate="G$1" pin="+VOUT" pad="P$6"/>
+<connect gate="G$1" pin="-SENSE" pad="P$8"/>
+<connect gate="G$1" pin="-VIN" pad="P$2"/>
+<connect gate="G$1" pin="-VOUT" pad="P$5"/>
+<connect gate="G$1" pin="ON/OFF" pad="P$1"/>
+<connect gate="G$1" pin="TRIM" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14266,74 +14326,6 @@ diameter 5 mm, horizontal, grid 17 mm</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Murata_5V_DC-DC_Converter">
-<packages>
-<package name="MURATA_5V_DC-DC_CONVERTER">
-<wire x1="-27.94" y1="17.78" x2="30.48" y2="17.78" width="0.127" layer="21"/>
-<wire x1="30.48" y1="17.78" x2="30.48" y2="-19.05" width="0.127" layer="21"/>
-<wire x1="30.48" y1="-19.05" x2="-27.94" y2="-19.05" width="0.127" layer="21"/>
-<wire x1="-27.94" y1="-19.05" x2="-27.94" y2="17.78" width="0.127" layer="21"/>
-<pad name="P$1" x="-24.13" y="-0.635" drill="1.016"/>
-<pad name="P$2" x="-24.13" y="6.985" drill="1.016"/>
-<pad name="P$3" x="-24.13" y="-8.255" drill="1.016"/>
-<pad name="P$4" x="26.67" y="-0.635" drill="1.016"/>
-<pad name="P$5" x="26.67" y="6.985" drill="1.5748"/>
-<pad name="P$6" x="26.67" y="-8.255" drill="1.5748"/>
-<pad name="P$7" x="26.67" y="-4.445" drill="1.016"/>
-<pad name="P$8" x="26.67" y="3.175" drill="1.016"/>
-<text x="-22.86" y="-7.62" size="1.778" layer="25">+Vin</text>
-<text x="-22.86" y="0" size="1.778" layer="25">On/Off</text>
-<text x="-22.86" y="7.62" size="1.778" layer="25">-Vin</text>
-<text x="17.78" y="6.35" size="1.778" layer="25">-Vout</text>
-<text x="17.78" y="2.54" size="1.778" layer="25">-Sense</text>
-<text x="17.78" y="-1.27" size="1.778" layer="25">Trim</text>
-<text x="16.51" y="-5.08" size="1.778" layer="25">+Sense</text>
-<text x="17.145" y="-8.89" size="1.778" layer="25">+Vout</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MURATA_5V_DC-DC_CONVERTER">
-<wire x1="-10.16" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="5.08" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<pin name="+VIN" x="-15.24" y="2.54" length="middle"/>
-<pin name="ON/OFF" x="-15.24" y="0" length="middle"/>
-<pin name="-VIN" x="-15.24" y="-2.54" length="middle"/>
-<pin name="-VOUT" x="-15.24" y="-5.08" length="middle"/>
-<pin name="+VOUT" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="+SENSE" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="TRIM" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="-SENSE" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<text x="-10.16" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MURATA_5V_DC-DC_CONVERTER">
-<gates>
-<gate name="G$1" symbol="MURATA_5V_DC-DC_CONVERTER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MURATA_5V_DC-DC_CONVERTER">
-<connects>
-<connect gate="G$1" pin="+SENSE" pad="P$7"/>
-<connect gate="G$1" pin="+VIN" pad="P$3"/>
-<connect gate="G$1" pin="+VOUT" pad="P$6"/>
-<connect gate="G$1" pin="-SENSE" pad="P$8"/>
-<connect gate="G$1" pin="-VIN" pad="P$2"/>
-<connect gate="G$1" pin="-VOUT" pad="P$5"/>
-<connect gate="G$1" pin="ON/OFF" pad="P$1"/>
-<connect gate="G$1" pin="TRIM" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
@@ -14490,8 +14482,8 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 </library>
 <library name="MRDT-Connectors">
 <packages>
-<package name="PP45_PCB_HORIZ_RIGHT">
-<pad name="P$1" x="28.194" y="3.937" drill="4.064"/>
+<package name="APP45_PCB_HORIZ_RIGHT">
+<pad name="P$1" x="28.194" y="3.937" drill="4.064" thermals="no"/>
 <wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
 <wire x1="0" y1="7.874" x2="8.001" y2="7.874" width="0.127" layer="51"/>
 <wire x1="8.001" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51"/>
@@ -14519,45 +14511,11 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <dimension x1="24.638" y1="7.874" x2="24.638" y2="0" x3="34.798" y3="3.937" textsize="1.27" layer="47" dtype="horizontal" unit="inch" precision="3" visible="yes"/>
 <dimension x1="11.176" y1="7.874" x2="8.89" y2="7.874" x3="10.033" y3="9.398" textsize="1.27" layer="47" dtype="diameter" unit="inch" precision="3" visible="yes"/>
 </package>
-<package name="PP45_PCB_VERT">
-<wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
-<wire x1="0" y1="7.874" x2="7.874" y2="7.874" width="0.127" layer="51"/>
-<wire x1="7.874" y1="7.874" x2="7.874" y2="0" width="0.127" layer="51"/>
-<wire x1="7.874" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
-<pad name="P$1" x="3.937" y="3.175" drill="4.064"/>
-<wire x1="0" y1="4.572" x2="0.762" y2="4.572" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0.762" y1="4.572" x2="0.762" y2="7.112" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0.762" y1="7.112" x2="7.112" y2="7.112" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.112" y1="7.112" x2="7.112" y2="4.572" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.112" y1="4.572" x2="7.874" y2="4.572" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="6.223" x2="8.382" y2="6.223" width="0.127" layer="49" style="shortdash"/>
-<wire x1="8.382" y1="6.223" x2="8.382" y2="1.651" width="0.127" layer="49" style="shortdash"/>
-<wire x1="8.382" y1="1.651" x2="7.874" y2="1.651" width="0.127" layer="49" style="shortdash"/>
-<wire x1="1.651" y1="8.382" x2="1.651" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="6.223" y1="7.874" x2="6.223" y2="8.382" width="0.127" layer="49" style="shortdash"/>
-<wire x1="1.651" y1="8.382" x2="6.223" y2="8.382" width="0.127" layer="49" style="shortdash"/>
-<polygon width="0.127" layer="49" pour="hatch">
-<vertex x="0.762" y="4.318"/>
-<vertex x="7.112" y="4.318"/>
-<vertex x="7.112" y="0.762"/>
-<vertex x="0.762" y="0.762"/>
-</polygon>
-<wire x1="0" y1="6.223" x2="0.508" y2="6.223" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0.508" y1="6.223" x2="0.508" y2="1.651" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0.508" y1="1.651" x2="0" y2="1.651" width="0.127" layer="49" style="shortdash"/>
-<wire x1="1.651" y1="0.508" x2="1.651" y2="0" width="0.127" layer="49" style="shortdash"/>
-<wire x1="6.223" y1="0" x2="6.223" y2="0.508" width="0.127" layer="49" style="shortdash"/>
-<wire x1="1.651" y1="0.508" x2="6.223" y2="0.508" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="0" x2="7.874" y2="0" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="0" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="0" y1="7.874" x2="0" y2="0" width="0.127" layer="49" style="shortdash"/>
-</package>
-<package name="APP_12V_VERT_CONFIG">
+<package name="APP45_12V_VERT_CONFIG">
 <wire x1="7.874" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
 <wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
 <wire x1="7.874" y1="7.874" x2="7.874" y2="0" width="0.127" layer="51"/>
-<pad name="GND" x="4.699" y="3.937" drill="4.064" rot="R90"/>
+<pad name="GND" x="4.699" y="3.937" drill="4.064" rot="R90" thermals="no"/>
 <wire x1="3.302" y1="0" x2="3.302" y2="0.762" width="0.127" layer="49" style="shortdash"/>
 <wire x1="3.302" y1="0.762" x2="0.762" y2="0.762" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="0.762" x2="0.762" y2="7.112" width="0.127" layer="49" style="shortdash"/>
@@ -14577,7 +14535,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="7.366" y1="1.651" x2="7.874" y2="1.651" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.874" y1="6.223" x2="7.366" y2="6.223" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.366" y1="1.651" x2="7.366" y2="6.223" width="0.127" layer="49" style="shortdash"/>
-<pad name="VCC" x="4.699" y="11.811" drill="4.064"/>
+<pad name="VCC" x="4.699" y="11.811" drill="4.064" thermals="no"/>
 <text x="2.032" y="10.668" size="0.8128" layer="21" rot="R90">12V</text>
 <text x="2.032" y="2.54" size="0.8128" layer="21" rot="R90">GND</text>
 <wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="51"/>
@@ -14615,12 +14573,12 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="0" y1="15.748" x2="7.874" y2="15.748" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.874" y1="15.748" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
 </package>
-<package name="APP_5V_VERT_CONFIG">
-<pad name="GND" x="3.937" y="4.699" drill="4.064" rot="R270"/>
+<package name="APP45_5V_VERT_CONFIG">
+<pad name="GND" x="3.937" y="4.699" drill="4.064" rot="R270" thermals="no"/>
 <wire x1="7.874" y1="15.748" x2="7.874" y2="7.874" width="0.127" layer="51"/>
 <wire x1="0" y1="7.874" x2="0" y2="15.748" width="0.127" layer="51"/>
 <wire x1="0" y1="15.748" x2="7.874" y2="15.748" width="0.127" layer="51"/>
-<pad name="VCC" x="3.937" y="12.573" drill="4.064" rot="R180"/>
+<pad name="VCC" x="3.937" y="12.573" drill="4.064" rot="R180" thermals="no"/>
 <wire x1="7.874" y1="11.176" x2="7.112" y2="11.176" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.112" y1="11.176" x2="7.112" y2="8.636" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.112" y1="8.636" x2="0.762" y2="8.636" width="0.127" layer="49" style="shortdash"/>
@@ -14678,7 +14636,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="7.874" y1="15.748" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
 </package>
-<package name="PP_MOUNTING_WING_HORIZ">
+<package name="APP45_MOUNTING_WING_HORIZ">
 <wire x1="0" y1="0" x2="-16.764" y2="0" width="0.127" layer="51"/>
 <wire x1="-16.764" y1="0" x2="-16.764" y2="1.651" width="0.127" layer="51"/>
 <wire x1="-16.764" y1="1.651" x2="-16.764" y2="6.223" width="0.127" layer="51"/>
@@ -14710,35 +14668,12 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <dimension x1="0" y1="0" x2="-0.762" y2="7.874" x3="5.969" y3="3.937" textsize="1.27" layer="47" dtype="vertical" unit="inch" precision="3" visible="yes"/>
 <dimension x1="0" y1="0" x2="-16.764" y2="0" x3="-8.382" y3="-3.556" textsize="1.27" layer="47" dtype="vertical" unit="inch" precision="3" visible="yes"/>
 </package>
-<package name="PP45_PCB_HORIZ_RIGHT_2HIGH">
-<wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
-<wire x1="0" y1="7.874" x2="8.001" y2="7.874" width="0.127" layer="51"/>
-<wire x1="8.001" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51"/>
-<wire x1="11.176" y1="7.874" x2="24.638" y2="7.874" width="0.127" layer="51"/>
-<wire x1="24.638" y1="7.874" x2="24.638" y2="0" width="0.127" layer="51"/>
-<wire x1="24.638" y1="0" x2="11.176" y2="0" width="0.127" layer="51"/>
-<wire x1="8.89" y1="0" x2="8.001" y2="0" width="0.127" layer="51"/>
-<wire x1="8.001" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
-<wire x1="8.001" y1="0" x2="8.001" y2="7.874" width="0.127" layer="51" style="shortdash"/>
-<pad name="P$2" x="36.068" y="3.937" drill="4.064"/>
-<wire x1="11.176" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51" curve="-180"/>
-<wire x1="8.89" y1="0" x2="11.176" y2="0" width="0.127" layer="51" curve="-180"/>
-<wire x1="24.638" y1="0" x2="24.638" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="-0.508" x2="12.319" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.319" y1="-0.508" x2="12.319" y2="0" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="7.874" x2="24.638" y2="7.366" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="7.366" x2="12.319" y2="7.366" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.319" y1="7.366" x2="12.319" y2="7.874" width="0.127" layer="49" style="shortdash"/>
-<wire x1="24.638" y1="2.286" x2="12.319" y2="2.286" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.319" y1="2.286" x2="12.319" y2="5.588" width="0.127" layer="49" style="shortdash"/>
-<wire x1="12.319" y1="5.588" x2="24.638" y2="5.588" width="0.127" layer="49" style="shortdash"/>
-</package>
 <package name="APP45_MOCO_VERT_CONFIG_DUMMY">
 <wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
 <wire x1="0" y1="7.874" x2="7.874" y2="7.874" width="0.127" layer="51"/>
 <wire x1="7.874" y1="7.874" x2="7.874" y2="0" width="0.127" layer="51"/>
 <wire x1="7.874" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
-<pad name="GND" x="3.937" y="3.175" drill="4.064"/>
+<pad name="GND" x="3.937" y="3.175" drill="4.064" thermals="no"/>
 <wire x1="0" y1="4.572" x2="0.762" y2="4.572" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="4.572" x2="0.762" y2="7.112" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="7.112" x2="7.112" y2="7.112" width="0.127" layer="49" style="shortdash"/>
@@ -14799,7 +14734,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="15.748" y1="7.874" x2="23.622" y2="7.874" width="0.127" layer="51"/>
 <wire x1="23.622" y1="7.874" x2="23.622" y2="0" width="0.127" layer="51"/>
 <wire x1="23.622" y1="0" x2="15.748" y2="0" width="0.127" layer="51"/>
-<pad name="VCC" x="19.685" y="3.175" drill="4.064"/>
+<pad name="VCC" x="19.685" y="3.175" drill="4.064" thermals="no"/>
 <wire x1="15.748" y1="4.572" x2="16.51" y2="4.572" width="0.127" layer="49" style="shortdash"/>
 <wire x1="16.51" y1="4.572" x2="16.51" y2="7.112" width="0.127" layer="49" style="shortdash"/>
 <wire x1="16.51" y1="7.112" x2="22.86" y2="7.112" width="0.127" layer="49" style="shortdash"/>
@@ -14836,7 +14771,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
 <wire x1="0" y1="7.874" x2="7.874" y2="7.874" width="0.127" layer="51"/>
 <wire x1="7.874" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
-<pad name="GND" x="3.937" y="3.175" drill="4.064"/>
+<pad name="GND" x="3.937" y="3.175" drill="4.064" thermals="no"/>
 <wire x1="0" y1="4.572" x2="0.762" y2="4.572" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="4.572" x2="0.762" y2="7.112" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0.762" y1="7.112" x2="7.112" y2="7.112" width="0.127" layer="49" style="shortdash"/>
@@ -14863,7 +14798,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="7.874" y1="7.874" x2="15.748" y2="7.874" width="0.127" layer="51"/>
 <wire x1="15.748" y1="7.874" x2="15.748" y2="0" width="0.127" layer="51"/>
 <wire x1="15.748" y1="0" x2="7.874" y2="0" width="0.127" layer="51"/>
-<pad name="VCC" x="11.811" y="3.175" drill="4.064"/>
+<pad name="VCC" x="11.811" y="3.175" drill="4.064" thermals="no"/>
 <wire x1="7.112" y1="4.572" x2="8.636" y2="4.572" width="0.127" layer="49" style="shortdash"/>
 <wire x1="8.636" y1="4.572" x2="8.636" y2="7.112" width="0.127" layer="49" style="shortdash"/>
 <wire x1="8.636" y1="7.112" x2="14.986" y2="7.112" width="0.127" layer="49" style="shortdash"/>
@@ -14894,12 +14829,65 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <text x="2.032" y="6.096" size="1.27" layer="21">GND</text>
 <text x="9.144" y="6.096" size="1.27" layer="21">V_MOT</text>
 </package>
-<package name="PP_MOUNTING_WING_VERT">
-<wire x1="0" y1="0" x2="7.874" y2="0" width="0.127" layer="51"/>
-<wire x1="7.874" y1="0" x2="7.874" y2="7.874" width="0.127" layer="51"/>
-<wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="51"/>
-<wire x1="0" y1="7.874" x2="0" y2="0" width="0.127" layer="51"/>
-<dimension x1="0" y1="0" x2="7.874" y2="0" x3="3.937" y3="-5.08" textsize="1.27" layer="47" unit="inch" precision="3" visible="yes"/>
+<package name="APP45_PCB_HORIZ_RIGHT_2HIGH">
+<wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
+<wire x1="0" y1="7.874" x2="8.001" y2="7.874" width="0.127" layer="51"/>
+<wire x1="8.001" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51"/>
+<wire x1="11.176" y1="7.874" x2="24.638" y2="7.874" width="0.127" layer="51"/>
+<wire x1="24.638" y1="7.874" x2="24.638" y2="0" width="0.127" layer="51"/>
+<wire x1="24.638" y1="0" x2="11.176" y2="0" width="0.127" layer="51"/>
+<wire x1="8.89" y1="0" x2="8.001" y2="0" width="0.127" layer="51"/>
+<wire x1="8.001" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="8.001" y1="0" x2="8.001" y2="7.874" width="0.127" layer="51" style="shortdash"/>
+<pad name="P$2" x="36.068" y="3.937" drill="4.064" thermals="no"/>
+<wire x1="11.176" y1="7.874" x2="8.89" y2="7.874" width="0.127" layer="51" curve="-180"/>
+<wire x1="8.89" y1="0" x2="11.176" y2="0" width="0.127" layer="51" curve="-180"/>
+<wire x1="24.638" y1="0" x2="24.638" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="-0.508" x2="12.319" y2="-0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="-0.508" x2="12.319" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="7.874" x2="24.638" y2="7.366" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="7.366" x2="12.319" y2="7.366" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="7.366" x2="12.319" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="24.638" y1="2.286" x2="12.319" y2="2.286" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="2.286" x2="12.319" y2="5.588" width="0.127" layer="49" style="shortdash"/>
+<wire x1="12.319" y1="5.588" x2="24.638" y2="5.588" width="0.127" layer="49" style="shortdash"/>
+</package>
+<package name="APP45_PCB_VERT">
+<wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
+<wire x1="0" y1="7.874" x2="7.874" y2="7.874" width="0.127" layer="51"/>
+<wire x1="7.874" y1="7.874" x2="7.874" y2="0" width="0.127" layer="51"/>
+<wire x1="7.874" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<pad name="P$1" x="3.937" y="3.175" drill="4.064" thermals="no"/>
+<wire x1="0" y1="4.572" x2="0.762" y2="4.572" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0.762" y1="4.572" x2="0.762" y2="7.112" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0.762" y1="7.112" x2="7.112" y2="7.112" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.112" y1="7.112" x2="7.112" y2="4.572" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.112" y1="4.572" x2="7.874" y2="4.572" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="6.223" x2="8.382" y2="6.223" width="0.127" layer="49" style="shortdash"/>
+<wire x1="8.382" y1="6.223" x2="8.382" y2="1.651" width="0.127" layer="49" style="shortdash"/>
+<wire x1="8.382" y1="1.651" x2="7.874" y2="1.651" width="0.127" layer="49" style="shortdash"/>
+<wire x1="1.651" y1="8.382" x2="1.651" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="6.223" y1="7.874" x2="6.223" y2="8.382" width="0.127" layer="49" style="shortdash"/>
+<wire x1="1.651" y1="8.382" x2="6.223" y2="8.382" width="0.127" layer="49" style="shortdash"/>
+<polygon width="0.127" layer="49" pour="hatch">
+<vertex x="0.762" y="4.318"/>
+<vertex x="7.112" y="4.318"/>
+<vertex x="7.112" y="0.762"/>
+<vertex x="0.762" y="0.762"/>
+</polygon>
+<wire x1="0" y1="6.223" x2="0.508" y2="6.223" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0.508" y1="6.223" x2="0.508" y2="1.651" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0.508" y1="1.651" x2="0" y2="1.651" width="0.127" layer="49" style="shortdash"/>
+<wire x1="1.651" y1="0.508" x2="1.651" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="6.223" y1="0" x2="6.223" y2="0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="1.651" y1="0.508" x2="6.223" y2="0.508" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="0" x2="7.874" y2="0" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="0" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
+<wire x1="0" y1="7.874" x2="0" y2="0" width="0.127" layer="49" style="shortdash"/>
+</package>
+<package name="APP45_MOUNTING_WING_VERT">
+<dimension x1="0" y1="0" x2="7.874" y2="0" x3="3.937" y3="-11.176" textsize="1.27" layer="47" unit="inch" precision="3" visible="yes"/>
 <dimension x1="7.874" y1="0" x2="7.874" y2="7.874" x3="12.7" y3="3.937" textsize="1.27" layer="47" unit="inch" precision="3" visible="yes"/>
 <wire x1="1.651" y1="6.223" x2="1.651" y2="1.651" width="0.127" layer="51"/>
 <wire x1="1.651" y1="1.651" x2="6.223" y2="1.651" width="0.127" layer="51"/>
@@ -14911,9 +14899,8 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="3.937" y1="7.366" x2="0.508" y2="3.937" width="0.127" layer="49" style="shortdash" curve="90"/>
 <wire x1="0.508" y1="3.937" x2="3.937" y2="0.508" width="0.127" layer="49" style="shortdash" curve="90"/>
 <dimension x1="6.223" y1="1.651" x2="6.223" y2="6.223" x3="19.05" y3="3.937" textsize="1.27" layer="47" dtype="vertical" unit="inch" precision="3" visible="yes"/>
-<dimension x1="1.651" y1="1.651" x2="6.223" y2="1.651" x3="3.937" y3="-8.89" textsize="1.27" layer="47" dtype="vertical" unit="inch" precision="3" visible="yes"/>
+<dimension x1="1.651" y1="1.651" x2="6.223" y2="1.651" x3="3.937" y3="-8.128" textsize="1.27" layer="47" dtype="vertical" unit="inch" precision="3" visible="yes"/>
 <dimension x1="3.741534375" y1="1.786865625" x2="4.132465625" y2="6.087134375" x3="4.132465625" y3="6.087134375" textsize="1.27" layer="47" dtype="diameter" unit="inch" precision="3" visible="yes"/>
-<dimension x1="3.937" y1="3.937" x2="1.925859375" y2="6.714290625" x3="-2.648915625" y3="13.031840625" textsize="1.27" layer="47" dtype="radius" unit="inch" precision="3" visible="yes"/>
 <wire x1="0" y1="0" x2="0" y2="7.874" width="0.127" layer="51"/>
 <wire x1="0" y1="7.874" x2="7.874" y2="7.874" width="0.127" layer="51"/>
 <wire x1="7.874" y1="7.874" x2="7.874" y2="0" width="0.127" layer="51"/>
@@ -14934,6 +14921,7 @@ Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ether
 <wire x1="7.874" y1="0" x2="7.874" y2="7.874" width="0.127" layer="49" style="shortdash"/>
 <wire x1="7.874" y1="7.874" x2="0" y2="7.874" width="0.127" layer="49" style="shortdash"/>
 <wire x1="0" y1="7.874" x2="0" y2="0" width="0.127" layer="49" style="shortdash"/>
+<dimension x1="7.366" y1="3.937" x2="0.508" y2="3.937" x3="0.508" y3="3.937" textsize="1.27" layer="47" dtype="diameter" unit="inch" precision="4" visible="yes"/>
 </package>
 </packages>
 <symbols>
@@ -14964,7 +14952,7 @@ WING
 <gate name="G$1" symbol="ANDERSON_POWERPOLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PP45_PCB_HORIZ_RIGHT_2HIGH" package="PP45_PCB_HORIZ_RIGHT_2HIGH">
+<device name="PP45_PCB_HORIZ_RIGHT_2HIGH" package="APP45_PCB_HORIZ_RIGHT_2HIGH">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$2"/>
 </connects>
@@ -14974,7 +14962,7 @@ WING
 </technology>
 </technologies>
 </device>
-<device name="PP45_PCB_HORIZ_RIGHT" package="PP45_PCB_HORIZ_RIGHT">
+<device name="PP45_PCB_HORIZ_RIGHT" package="APP45_PCB_HORIZ_RIGHT">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
@@ -14984,7 +14972,7 @@ WING
 </technology>
 </technologies>
 </device>
-<device name="PP45_PCB_VERT" package="PP45_PCB_VERT">
+<device name="PP45_PCB_VERT" package="APP45_PCB_VERT">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
@@ -15002,7 +14990,7 @@ WING
 <gate name="VCC" symbol="ANDERSON_POWERPOLE" x="0" y="5.08"/>
 </gates>
 <devices>
-<device name="12V_VERT" package="APP_12V_VERT_CONFIG">
+<device name="12V_VERT" package="APP45_12V_VERT_CONFIG">
 <connects>
 <connect gate="GND" pin="P$1" pad="GND"/>
 <connect gate="VCC" pin="P$1" pad="VCC"/>
@@ -15014,7 +15002,7 @@ WING
 </technology>
 </technologies>
 </device>
-<device name="5V_VERT" package="APP_5V_VERT_CONFIG">
+<device name="5V_VERT" package="APP45_5V_VERT_CONFIG">
 <connects>
 <connect gate="GND" pin="P$1" pad="GND"/>
 <connect gate="VCC" pin="P$1" pad="VCC"/>
@@ -15057,14 +15045,14 @@ WING
 <gate name="G$1" symbol="APP_MOUNTING_WING" x="0" y="0"/>
 </gates>
 <devices>
-<device name="HORIZ" package="PP_MOUNTING_WING_HORIZ">
+<device name="HORIZ" package="APP45_MOUNTING_WING_HORIZ">
 <technologies>
 <technology name="">
 <attribute name="COLOR1" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="VERT" package="PP_MOUNTING_WING_VERT">
+<device name="VERT" package="APP45_MOUNTING_WING_VERT">
 <technologies>
 <technology name="">
 <attribute name="COLOR1" value="" constant="no"/>
@@ -15281,7 +15269,7 @@ WING
 <part name="U$2" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="_SKETCH" value="ACS714LLCTR-50A-T"/>
 <part name="C9" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="REY-5V" library="Murata_5V_DC-DC_Converter" deviceset="MURATA_5V_DC-DC_CONVERTER" device=""/>
+<part name="REY-5V" library="MRDT-2015-PowerBoard" deviceset="MURATA_5V_DC-DC_CONVERTER" device=""/>
 <part name="U$4" library="MRDT-2015-General" deviceset="TIVA-C-CONNECTED" device=""/>
 <part name="U$5" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
