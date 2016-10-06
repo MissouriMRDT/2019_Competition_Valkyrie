@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2869,6 +2869,37 @@ FQP27P06 -
 <text x="54.102" y="41.91" size="1.27" layer="49" rot="R90">10</text>
 <text x="54.102" y="6.858" size="1.27" layer="49" rot="R90">10</text>
 </package>
+<package name="SO8">
+<description>&lt;b&gt;8-Lead Small Outline IC&lt;/b&gt; (SO-8)&lt;p&gt;
+                        Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<circle x="-1.905" y="-0.9525" radius="0.3175" width="0.127" layer="21"/>
+<smd name="SUBSTRATE" x="0" y="0" dx="2.54" dy="1.27" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TM4C123G">
@@ -2917,6 +2948,21 @@ FQP27P06 -
 <pin name="GND" x="15.24" y="-25.4" length="middle" direction="pwr" rot="R180"/>
 <text x="-10.16" y="35.56" size="1.778" layer="95">&gt;NAME</text>
 <pin name="PF3" x="15.24" y="-15.24" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MAX3077">
+<wire x1="-17.78" y1="0" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="20.32" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<text x="-17.78" y="20.32" size="1.6764" layer="95">MAX3077</text>
+<pin name="VCC" x="-22.86" y="17.78" length="middle"/>
+<pin name="RO" x="-22.86" y="12.7" length="middle"/>
+<pin name="DI" x="-22.86" y="7.62" length="middle"/>
+<pin name="GND" x="-22.86" y="2.54" length="middle"/>
+<pin name="Y" x="5.08" y="2.54" length="middle" rot="R180"/>
+<pin name="Z" x="5.08" y="7.62" length="middle" rot="R180"/>
+<pin name="B" x="5.08" y="12.7" length="middle" rot="R180"/>
+<pin name="A" x="5.08" y="17.78" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2967,6 +3013,28 @@ FQP27P06 -
 <connect gate="G$1" pin="PF3" pad="PF3"/>
 <connect gate="G$1" pin="PF4" pad="PF4"/>
 <connect gate="G$1" pin="RST" pad="RST"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX3077">
+<gates>
+<gate name="G$1" symbol="MAX3077" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO8">
+<connects>
+<connect gate="G$1" pin="A" pad="8"/>
+<connect gate="G$1" pin="B" pad="7"/>
+<connect gate="G$1" pin="DI" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="RO" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="Y" pad="5"/>
+<connect gate="G$1" pin="Z" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3847,15 +3915,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="3.175" y="0.635" size="1.778" layer="95">&gt;Name</text>
 <text x="3.175" y="-1.905" size="1.778" layer="96">&gt;Value</text>
 </symbol>
-<symbol name="SL03">
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<pin name="1" x="-7.62" y="-2.54" length="middle"/>
-<pin name="2" x="-7.62" y="0" length="middle"/>
-<pin name="3" x="-7.62" y="2.54" length="middle"/>
-</symbol>
 <symbol name="SERVO">
 <wire x1="0" y1="0" x2="0" y2="10.16" width="0.254" layer="94"/>
 <wire x1="0" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -3900,42 +3959,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technologies>
 <technology name="">
 <attribute name="COLOR1" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SL03" prefix="J">
-<description>Molex 3-pin SL connector
-
-Locking 3 pin connector with standard header spacing. Backward compatible with standard RC servo connectors.</description>
-<gates>
-<gate name="G$1" symbol="SL03" x="0" y="0"/>
-</gates>
-<devices>
-<device name="THROUGH_HOLE" package="MOLEX_SL_03_THROUGH_HOLE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ORIENT" value="HORIZ" constant="no"/>
-<attribute name="PARTNO" value="0705550002" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="SMD" package="MOLEX_0015912035">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ORIENT" value="HORIZ" constant="no"/>
-<attribute name="PARTNO" value="0015912035" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -4461,11 +4484,15 @@ Locking 3 pin connector with standard header spacing. Backward compatible with s
 <part name="C34" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH4" value="220u"/>
 <part name="C35" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH4" value="220u"/>
 <part name="GND35" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J2" library="MRDT-Connectors" deviceset="SL03" device="THROUGH_HOLE"/>
-<part name="GND34" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J1" library="MRDT-Connectors" deviceset="SERVO" device="MOLEX_SL_THRU_HOLE"/>
 <part name="J3" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="5V_HORIZ"/>
 <part name="C38" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH4" value="220u"/>
+<part name="U$3" library="MRDT-2015-General" deviceset="MAX3077" device=""/>
+<part name="R30" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="3.3"/>
+<part name="R31" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="3.3"/>
+<part name="U$4" library="Molex-SL" deviceset="5PIN" device=""/>
+<part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND37" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4658,12 +4685,16 @@ Locking 3 pin connector with standard header spacing. Backward compatible with s
 <instance part="C34" gate="G$1" x="-53.34" y="-121.92"/>
 <instance part="C35" gate="G$1" x="-63.5" y="-121.92"/>
 <instance part="GND35" gate="1" x="274.32" y="-195.58"/>
-<instance part="J2" gate="G$1" x="289.56" y="-167.64"/>
-<instance part="GND34" gate="1" x="276.86" y="-175.26"/>
 <instance part="J1" gate="G$1" x="284.48" y="-193.04"/>
 <instance part="J3" gate="GND" x="256.54" y="-53.34"/>
 <instance part="J3" gate="VCC" x="256.54" y="-45.72"/>
 <instance part="C38" gate="G$1" x="-73.66" y="-121.92"/>
+<instance part="U$3" gate="G$1" x="-121.92" y="-96.52"/>
+<instance part="R30" gate="G$1" x="-106.68" y="-91.44"/>
+<instance part="R31" gate="G$1" x="-106.68" y="-81.28"/>
+<instance part="U$4" gate="G$1" x="-86.36" y="-91.44"/>
+<instance part="GND36" gate="1" x="-96.52" y="-104.14"/>
+<instance part="GND37" gate="1" x="-147.32" y="-101.6"/>
 </instances>
 <busses>
 </busses>
@@ -4967,10 +4998,16 @@ Locking 3 pin connector with standard header spacing. Backward compatible with s
 <pinref part="J1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="281.94" y1="-170.18" x2="276.86" y2="-170.18" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="-170.18" x2="276.86" y2="-172.72" width="0.1524" layer="91"/>
-<pinref part="GND34" gate="1" pin="GND"/>
+<pinref part="U$4" gate="G$1" pin="5"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+<wire x1="-93.98" y1="-99.06" x2="-96.52" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="-99.06" x2="-96.52" y2="-101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="GND37" gate="1" pin="GND"/>
+<wire x1="-144.78" y1="-93.98" x2="-147.32" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="-93.98" x2="-147.32" y2="-99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5127,6 +5164,12 @@ Locking 3 pin connector with standard header spacing. Backward compatible with s
 <segment>
 <pinref part="U$13" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VCC"/>
+<wire x1="-144.78" y1="-78.74" x2="-147.32" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="-78.74" x2="-147.32" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-147.32" y="-73.66" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6003,9 +6046,9 @@ Locking 3 pin connector with standard header spacing. Backward compatible with s
 <label x="284.48" y="38.1" size="1.6764" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="281.94" y1="-165.1" x2="276.86" y2="-165.1" width="0.1524" layer="91"/>
-<label x="276.86" y="-165.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="DI"/>
+<wire x1="-144.78" y1="-88.9" x2="-147.32" y2="-88.9" width="0.1524" layer="91"/>
+<label x="-147.32" y="-88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -6015,9 +6058,9 @@ Locking 3 pin connector with standard header spacing. Backward compatible with s
 <label x="284.48" y="40.64" size="1.6764" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="281.94" y1="-167.64" x2="276.86" y2="-167.64" width="0.1524" layer="91"/>
-<label x="276.86" y="-167.64" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="RO"/>
+<wire x1="-144.78" y1="-83.82" x2="-147.32" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-147.32" y="-83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SPEED_IN" class="0">
@@ -6030,6 +6073,54 @@ Locking 3 pin connector with standard header spacing. Backward compatible with s
 <wire x1="279.4" y1="-187.96" x2="274.32" y2="-187.96" width="0.1524" layer="91"/>
 <label x="274.32" y="-187.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="SIG"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="Y"/>
+<pinref part="U$4" gate="G$1" pin="4"/>
+<wire x1="-116.84" y1="-93.98" x2="-99.06" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="-99.06" y1="-93.98" x2="-93.98" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-91.44" x2="-99.06" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="-91.44" x2="-99.06" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="-99.06" y="-93.98"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="Z"/>
+<pinref part="U$4" gate="G$1" pin="3"/>
+<wire x1="-116.84" y1="-88.9" x2="-114.3" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="-114.3" y1="-88.9" x2="-93.98" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="-91.44" x2="-114.3" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-91.44" x2="-114.3" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="-114.3" y="-88.9"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="B"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
+<wire x1="-116.84" y1="-83.82" x2="-99.06" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="R31" gate="G$1" pin="2"/>
+<wire x1="-99.06" y1="-83.82" x2="-93.98" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-81.28" x2="-99.06" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="-81.28" x2="-99.06" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="-99.06" y="-83.82"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="A"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
+<wire x1="-116.84" y1="-78.74" x2="-114.3" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="R31" gate="G$1" pin="1"/>
+<wire x1="-114.3" y1="-78.74" x2="-93.98" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="-81.28" x2="-114.3" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-81.28" x2="-114.3" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="-114.3" y="-78.74"/>
 </segment>
 </net>
 </nets>
