@@ -20564,172 +20564,172 @@ Most frame-mounted PCB's - M8</description>
 </class>
 </classes>
 <parts>
-<part name="DARYL-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
-<part name="MICHONNE-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
+<part name="NEMO-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
+<part name="DORY-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C1" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
-<part name="C2" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
-<part name="C3" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
-<part name="C4" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
+<part name="C.51" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
+<part name="C.52" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
+<part name="C.53" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
+<part name="C.54" library="MRDT-2014-All" deviceset="C_POL" device="12.5MM_NORMAL" value="1mF"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R1206" value="100k 1%"/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R1206" value="10kΩ 1%"/>
+<part name="R.16" library="resistor" deviceset="R-US_" device="R1206" value="100k 1%"/>
+<part name="R.17" library="resistor" deviceset="R-US_" device="R1206" value="10kΩ 1%"/>
 <part name="BATT-POS" library="MRDT-2015-PowerBoard" deviceset="TERMINAL_HOLE" device=""/>
 <part name="BATT-NEG" library="MRDT-2015-PowerBoard" deviceset="TERMINAL_HOLE" device=""/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="LED2" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
+<part name="LED-8" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.8" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
 <part name="GND34" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Q12" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW" value="2N7002"/>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R15" library="resistor" deviceset="R-US_" device="R1206" value="1k"/>
-<part name="C19" library="resistor" deviceset="C-US" device="C1206" value="47uF"/>
-<part name="C20" library="resistor" deviceset="C-US" device="C1206" value="47uF"/>
+<part name="R.15" library="resistor" deviceset="R-US_" device="R1206" value="1k"/>
+<part name="C.34" library="resistor" deviceset="C-US" device="C1206" value="47uF"/>
+<part name="C.35" library="resistor" deviceset="C-US" device="C1206" value="47uF"/>
 <part name="GND39" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND40" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C6" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="U$21" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C43" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.23" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U21" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.39" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND87" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C45" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
+<part name="C.27" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
 <part name="GND90" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="15KEXX" device="" value="1.5KE36A"/>
 <part name="D2" library="diode" deviceset="15KEXX" device="" value="1.5KE36A"/>
-<part name="C46" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
+<part name="C.26" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
 <part name="GND94" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C47" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
-<part name="C48" library="resistor" deviceset="C-US" device="C1206" value="10uF"/>
-<part name="C49" library="resistor" deviceset="C-US" device="C1206" value=".1uF"/>
+<part name="C.43" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.46" library="resistor" deviceset="C-US" device="C1206" value="10uF"/>
+<part name="C.49" library="resistor" deviceset="C-US" device="C1206" value=".1uF"/>
 <part name="GND95" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="FET-M1" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
-<part name="LT1910-M1" library="Jake" deviceset="LT1910" device=""/>
+<part name="Q1" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
+<part name="U1" library="Jake" deviceset="LT1910" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LT1910CAP-M1" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="C.15" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED-M1" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="LEDRES-M1" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
+<part name="LED-1" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.1" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="ACS714CAP-M1" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="ACS714-M1" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="FILTERCAP-M1" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.8" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U8" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.1" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="BB-8-5V" library="MRDT-2015-PowerBoard" deviceset="Q_OKI-78SR" device=""/>
+<part name="3.3V-OKI" library="MRDT-2015-PowerBoard" deviceset="Q_OKI-78SR" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="U$24" library="MAX3077" deviceset="MAX3077" device=""/>
+<part name="U24" library="MAX3077" deviceset="MAX3077" device=""/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
-<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
+<part name="R.13" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
+<part name="R.12" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C18" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
-<part name="C21" library="resistor" deviceset="C-US" device="C1206" value="10uF"/>
-<part name="C22" library="resistor" deviceset="C-US" device="C1206" value=".1uF"/>
+<part name="C.44" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.47" library="resistor" deviceset="C-US" device="C1206" value="10uF"/>
+<part name="C.50" library="resistor" deviceset="C-US" device="C1206" value=".1uF"/>
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="FET-M2" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
-<part name="LT1910-M2" library="Jake" deviceset="LT1910" device=""/>
+<part name="Q2" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
+<part name="U2" library="Jake" deviceset="LT1910" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LT1910CAP-M2" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="C.16" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED-M2" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="LEDRES-M2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
+<part name="LED-2" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="ACS714CAP-M2" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="ACS714-M2" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="FILTERCAP-M2" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.9" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U9" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.2" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="FET-M3" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
-<part name="LT1910-M3" library="Jake" deviceset="LT1910" device=""/>
+<part name="Q3" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
+<part name="U3" library="Jake" deviceset="LT1910" device=""/>
 <part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LT1910CAP-M3" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="C.17" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="GND47" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND48" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED-M3" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="LEDRES-M3" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
+<part name="LED-3" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.3" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
 <part name="GND49" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="ACS714CAP-M3" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="ACS714-M3" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="FILTERCAP-M3" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.10" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U10" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.3" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND51" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="FET-M4" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
-<part name="LT1910-M4" library="Jake" deviceset="LT1910" device=""/>
+<part name="Q4" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
+<part name="U4" library="Jake" deviceset="LT1910" device=""/>
 <part name="GND52" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LT1910CAP-M4" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="C.18" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="GND53" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND54" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED-M4" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="LEDRES-M4" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
+<part name="LED-4" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.4" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
 <part name="GND55" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND56" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="ACS714CAP-M4" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="ACS714-M4" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="FILTERCAP-M4" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.11" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U11" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.4" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND57" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="FET-M5" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
-<part name="LT1910-M5" library="Jake" deviceset="LT1910" device=""/>
+<part name="Q5" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
+<part name="U5" library="Jake" deviceset="LT1910" device=""/>
 <part name="GND58" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LT1910CAP-M5" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="C.19" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="GND59" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND60" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED-M5" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="LEDRES-M5" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
+<part name="LED-5" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.5" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
 <part name="GND61" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND62" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="ACS714CAP-M5" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="ACS714-M5" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="FILTERCAP-M5" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.12" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U13" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.5" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND63" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="FET-M6" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
-<part name="LT1910-M6" library="Jake" deviceset="LT1910" device=""/>
+<part name="Q6" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
+<part name="U6" library="Jake" deviceset="LT1910" device=""/>
 <part name="GND64" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LT1910CAP-M6" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="C.20" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="GND65" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND66" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED-M6" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="LEDRES-M6" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
+<part name="LED-6" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.6" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
 <part name="GND67" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND68" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="ACS714CAP-M6" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="ACS714-M6" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="FILTERCAP-M6" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.13" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U14" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.6" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND69" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
-<part name="FET-M7" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
-<part name="LT1910-M7" library="Jake" deviceset="LT1910" device=""/>
+<part name="Q7" library="MRDT-2015-PowerBoard" deviceset="Q_IRF*7437" device="SMD" value="Q_IRFS7437PbF"/>
+<part name="U7" library="Jake" deviceset="LT1910" device=""/>
 <part name="GND70" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LT1910CAP-M7" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="C.21" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
 <part name="GND71" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND76" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED-M7" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="LEDRES-M7" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
+<part name="LED-7" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.7" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="5kΩ"/>
 <part name="GND77" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND78" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="ACS714CAP-M7" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="ACS714-M7" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="FILTERCAP-M7" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.14" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U15" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.7" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND79" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$1" library="MRDT-2015-General" deviceset="TIVA-C-CONNECTED" device=""/>
 <part name="U$8" library="MRDT-Hardware" deviceset="MOUNTING_HOLE" device="#8"/>
@@ -20743,57 +20743,57 @@ Most frame-mounted PCB's - M8</description>
 <part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY27" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="BB-8-5V1" library="MRDT-2015-PowerBoard" deviceset="Q_OKI-78SR" device=""/>
+<part name="5V-OKI" library="MRDT-2015-PowerBoard" deviceset="Q_OKI-78SR" device=""/>
 <part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY29" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="C5" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
-<part name="C7" library="resistor" deviceset="C-US" device="C1206" value="10uF"/>
-<part name="C8" library="resistor" deviceset="C-US" device="C1206" value=".1uF"/>
+<part name="C.42" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.45" library="resistor" deviceset="C-US" device="C1206" value="10uF"/>
+<part name="C.48" library="resistor" deviceset="C-US" device="C1206" value=".1uF"/>
 <part name="GND86" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY30" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R1206" value="100k"/>
+<part name="R.14" library="resistor" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="GND91" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="FET-M" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDD8780"/>
-<part name="FET-D" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDD8780"/>
-<part name="U$6" library="LM5050" deviceset="LM5050" device=""/>
-<part name="U$9" library="LM5050" deviceset="LM5050" device=""/>
+<part name="Q8" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDD8780"/>
+<part name="Q9" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDD8780"/>
+<part name="U17" library="LM5050" deviceset="LM5050" device=""/>
+<part name="U16" library="LM5050" deviceset="LM5050" device=""/>
 <part name="GND92" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND93" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED1" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
+<part name="LED-9" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.9" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED3" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
+<part name="LED-10" library="SparkFun-LED" deviceset="LED" device="1206"/>
+<part name="R.10" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C9" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="U$11" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C10" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.22" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U20" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.38" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C11" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
+<part name="C.33" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
 <part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C12" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
+<part name="C.32" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
 <part name="GND31" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="RICK-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
+<part name="MARLIN-12V" library="MRDT-2015-PowerBoard" deviceset="UQW-12/20-T48NBS" device=""/>
 <part name="GND35" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C13" library="resistor" deviceset="C-US" device="C1206" value="47uF"/>
+<part name="C.36" library="resistor" deviceset="C-US" device="C1206" value="47uF"/>
 <part name="GND37" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND41" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C14" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="U$12" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C15" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.24" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U22" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.40" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND42" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C16" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
+<part name="C.29" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
 <part name="GND43" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C17" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
+<part name="C.28" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
 <part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="FET-R2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDD8780"/>
-<part name="U$13" library="LM5050" deviceset="LM5050" device=""/>
+<part name="Q10" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDD8780"/>
+<part name="U18" library="LM5050" deviceset="LM5050" device=""/>
 <part name="GND72" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$3" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="MOCO_VERT"/>
 <part name="U$7" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="MOCO_VERT"/>
@@ -20811,23 +20811,23 @@ Most frame-mounted PCB's - M8</description>
 <part name="U$28" library="MRDT-Hardware" deviceset="ATC_FUSE_BLOCK" device=""/>
 <part name="U$39" library="MRDT-Hardware" deviceset="MOUNTING_HOLE" device="#8"/>
 <part name="U$40" library="MRDT-Hardware" deviceset="MOUNTING_HOLE" device="#8"/>
-<part name="C23" library="resistor" deviceset="C-US" device="C1206" value="47uF"/>
+<part name="C.37" library="resistor" deviceset="C-US" device="C1206" value="47uF"/>
 <part name="GND73" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND74" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C24" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
-<part name="U$2" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
-<part name="C25" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="C.25" library="resistor" deviceset="C-US" device="C1206" value=".1µF"/>
+<part name="U23" library="MRDT-2015-PowerBoard" deviceset="Q_ACS714" device="" value="ACS714LLCTR-50A-T"/>
+<part name="C.41" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
 <part name="GND75" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C26" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
+<part name="C.31" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
 <part name="GND80" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C27" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
+<part name="C.30" library="resistor" deviceset="CPOL-US" device="E5-8.5" value="330µF"/>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="FET-R1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDD8780"/>
-<part name="U$4" library="LM5050" deviceset="LM5050" device=""/>
+<part name="Q11" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FDD8780"/>
+<part name="U19" library="LM5050" deviceset="LM5050" device=""/>
 <part name="GND82" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED4" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
+<part name="R.11" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1kΩ"/>
 <part name="GND84" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY31" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY32" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -20838,7 +20838,7 @@ Most frame-mounted PCB's - M8</description>
 <part name="U$34" library="MRDT-Hardware" deviceset="MOUNTING_HOLE" device="#8"/>
 <part name="U$35" library="MRDT-Hardware" deviceset="MOUNTING_HOLE" device="#8"/>
 <part name="U$41" library="MRDT-2015-General" deviceset="MRDT_LOGO" device=""/>
-<part name="U$42" library="MRDT-2015-General" deviceset="RJ45" device="KEYSTONE-949"/>
+<part name="RJ45" library="MRDT-2015-General" deviceset="RJ45" device="KEYSTONE-949"/>
 <part name="J1" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="12V_VERT"/>
 <part name="J2" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="12V_VERT"/>
 <part name="J3" library="MRDT-Connectors" deviceset="APP_2POS_CONFIG" device="12V_VERT"/>
@@ -20849,7 +20849,7 @@ Most frame-mounted PCB's - M8</description>
 <part name="GND83" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$5" library="MRDT-Hardware" deviceset="MOUNTING_HOLE" device="#8"/>
 <part name="U$16" library="MRDT-Hardware" deviceset="MOUNTING_HOLE" device="#8"/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW" value="2N7002PW"/>
+<part name="Q13" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="2N7002PW" value="2N7002PW"/>
 <part name="GND85" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY33" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="X1" library="con-molex" deviceset="22-23-2021" device=""/>
@@ -20910,7 +20910,7 @@ Most frame-mounted PCB's - M8</description>
 <text x="144.78" y="-154.94" size="5.08" layer="125">DATA</text>
 <text x="266.7" y="-154.94" size="5.08" layer="125">On-Board Power</text>
 <text x="22.86" y="-154.94" size="5.08" layer="125">Decoupling Capacitors</text>
-<text x="132.08" y="-15.24" size="5.08" layer="125">Arm 12V</text>
+<text x="132.08" y="-15.24" size="5.08" layer="125">Extra 12V</text>
 <text x="124.46" y="38.1" size="5.08" layer="125">Actuation 12V</text>
 <text x="134.62" y="88.9" size="5.08" layer="125">Logic 12V</text>
 <text x="139.7" y="144.78" size="5.08" layer="125">Comunication 12V</text>
@@ -20921,184 +20921,184 @@ Most frame-mounted PCB's - M8</description>
 <text x="35.56" y="-195.58" size="5.08" layer="150">Fan Power/Control</text>
 </plain>
 <instances>
-<instance part="DARYL-12V" gate="G$1" x="99.06" y="27.94"/>
-<instance part="MICHONNE-12V" gate="G$1" x="99.06" y="-25.4"/>
+<instance part="NEMO-12V" gate="G$1" x="99.06" y="27.94"/>
+<instance part="DORY-12V" gate="G$1" x="99.06" y="-25.4"/>
 <instance part="GND3" gate="1" x="71.12" y="-38.1"/>
 <instance part="GND4" gate="1" x="71.12" y="15.24"/>
 <instance part="SUPPLY3" gate="G$1" x="71.12" y="38.1"/>
 <instance part="SUPPLY4" gate="G$1" x="68.58" y="-10.16"/>
 <instance part="SUPPLY6" gate="G$1" x="104.14" y="215.9"/>
 <instance part="GND6" gate="1" x="104.14" y="198.12"/>
-<instance part="C1" gate="G$1" x="114.3" y="205.74"/>
-<instance part="C2" gate="G$1" x="124.46" y="205.74"/>
-<instance part="C3" gate="G$1" x="134.62" y="205.74"/>
-<instance part="C4" gate="G$1" x="144.78" y="205.74"/>
+<instance part="C.51" gate="G$1" x="114.3" y="205.74"/>
+<instance part="C.52" gate="G$1" x="124.46" y="205.74"/>
+<instance part="C.53" gate="G$1" x="134.62" y="205.74"/>
+<instance part="C.54" gate="G$1" x="144.78" y="205.74"/>
 <instance part="GND11" gate="1" x="124.46" y="17.78"/>
 <instance part="GND12" gate="1" x="124.46" y="-35.56"/>
 <instance part="SUPPLY7" gate="G$1" x="254" y="213.36"/>
 <instance part="GND18" gate="1" x="254" y="180.34"/>
-<instance part="R3" gate="G$1" x="254" y="205.74" rot="R90"/>
-<instance part="R4" gate="G$1" x="254" y="190.5" rot="R90"/>
+<instance part="R.16" gate="G$1" x="254" y="205.74" rot="R90"/>
+<instance part="R.17" gate="G$1" x="254" y="190.5" rot="R90"/>
 <instance part="BATT-POS" gate="G$1" x="25.4" y="203.2"/>
 <instance part="BATT-NEG" gate="G$1" x="45.72" y="203.2"/>
 <instance part="GND26" gate="1" x="45.72" y="195.58"/>
 <instance part="SUPPLY8" gate="G$1" x="25.4" y="218.44"/>
-<instance part="LED2" gate="G$1" x="91.44" y="-91.44" rot="R90"/>
-<instance part="R10" gate="G$1" x="81.28" y="-91.44"/>
+<instance part="LED-8" gate="G$1" x="91.44" y="-91.44" rot="R90"/>
+<instance part="R.8" gate="G$1" x="81.28" y="-91.44"/>
 <instance part="GND34" gate="1" x="99.06" y="-96.52"/>
 <instance part="Q12" gate="G$1" x="27.94" y="-12.7"/>
 <instance part="GND38" gate="1" x="27.94" y="-27.94"/>
-<instance part="R15" gate="G$1" x="7.62" y="-12.7" rot="R180"/>
-<instance part="C19" gate="G$1" x="154.94" y="-25.4"/>
-<instance part="C20" gate="G$1" x="154.94" y="27.94"/>
+<instance part="R.15" gate="G$1" x="7.62" y="-12.7" rot="R180"/>
+<instance part="C.34" gate="G$1" x="154.94" y="-25.4"/>
+<instance part="C.35" gate="G$1" x="154.94" y="27.94"/>
 <instance part="GND39" gate="1" x="154.94" y="-35.56"/>
 <instance part="GND40" gate="1" x="154.94" y="17.78"/>
 <instance part="GND7" gate="1" x="292.1" y="12.7"/>
-<instance part="C6" gate="G$1" x="292.1" y="45.72"/>
-<instance part="U$21" gate="G$1" x="276.86" y="30.48"/>
-<instance part="C43" gate="G$1" x="297.18" y="22.86"/>
+<instance part="C.23" gate="G$1" x="292.1" y="45.72"/>
+<instance part="U21" gate="G$1" x="276.86" y="30.48"/>
+<instance part="C.39" gate="G$1" x="297.18" y="22.86"/>
 <instance part="GND87" gate="1" x="284.48" y="45.72"/>
-<instance part="C45" gate="G$1" x="238.76" y="25.4"/>
+<instance part="C.27" gate="G$1" x="238.76" y="25.4"/>
 <instance part="GND90" gate="1" x="238.76" y="15.24"/>
 <instance part="D1" gate="1" x="104.14" y="208.28" rot="R90"/>
 <instance part="D2" gate="1" x="96.52" y="208.28" rot="R90"/>
-<instance part="C46" gate="G$1" x="231.14" y="25.4"/>
+<instance part="C.26" gate="G$1" x="231.14" y="25.4"/>
 <instance part="GND94" gate="1" x="231.14" y="15.24"/>
-<instance part="C47" gate="G$1" x="55.88" y="-170.18"/>
-<instance part="C48" gate="G$1" x="66.04" y="-170.18" smashed="yes">
+<instance part="C.43" gate="G$1" x="55.88" y="-170.18"/>
+<instance part="C.46" gate="G$1" x="66.04" y="-170.18" smashed="yes">
 <attribute name="NAME" x="67.056" y="-169.545" size="1.778" layer="95"/>
 <attribute name="VALUE" x="67.056" y="-174.371" size="1.778" layer="96"/>
 </instance>
-<instance part="C49" gate="G$1" x="76.2" y="-170.18" smashed="yes">
+<instance part="C.49" gate="G$1" x="76.2" y="-170.18" smashed="yes">
 <attribute name="NAME" x="77.216" y="-169.545" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.216" y="-174.371" size="1.778" layer="96"/>
 </instance>
 <instance part="GND95" gate="1" x="76.2" y="-182.88"/>
 <instance part="SUPPLY2" gate="G$1" x="436.88" y="190.5"/>
-<instance part="FET-M1" gate="G$1" x="434.34" y="127"/>
-<instance part="LT1910-M1" gate="G$1" x="401.32" y="132.08"/>
+<instance part="Q1" gate="G$1" x="434.34" y="127"/>
+<instance part="U1" gate="G$1" x="401.32" y="132.08"/>
 <instance part="GND2" gate="1" x="401.32" y="121.92"/>
-<instance part="LT1910CAP-M1" gate="G$1" x="424.18" y="152.4"/>
+<instance part="C.15" gate="G$1" x="424.18" y="152.4"/>
 <instance part="GND5" gate="1" x="416.56" y="160.02"/>
 <instance part="GND8" gate="1" x="411.48" y="104.14"/>
-<instance part="LED-M1" gate="G$1" x="454.66" y="111.76" rot="R90"/>
-<instance part="LEDRES-M1" gate="G$1" x="444.5" y="111.76"/>
+<instance part="LED-1" gate="G$1" x="454.66" y="111.76" rot="R90"/>
+<instance part="R.1" gate="G$1" x="444.5" y="111.76"/>
 <instance part="GND1" gate="1" x="462.28" y="106.68"/>
 <instance part="GND10" gate="1" x="474.98" y="137.16"/>
-<instance part="ACS714CAP-M1" gate="G$1" x="474.98" y="172.72"/>
-<instance part="ACS714-M1" gate="G$1" x="459.74" y="154.94"/>
-<instance part="FILTERCAP-M1" gate="G$1" x="480.06" y="147.32"/>
+<instance part="C.8" gate="G$1" x="474.98" y="172.72"/>
+<instance part="U8" gate="G$1" x="459.74" y="154.94"/>
+<instance part="C.1" gate="G$1" x="480.06" y="147.32"/>
 <instance part="GND13" gate="1" x="467.36" y="175.26"/>
-<instance part="BB-8-5V" gate="G$1" x="289.56" y="-177.8"/>
+<instance part="3.3V-OKI" gate="G$1" x="289.56" y="-177.8"/>
 <instance part="GND14" gate="1" x="231.14" y="-175.26"/>
 <instance part="P+7" gate="1" x="231.14" y="-190.5"/>
-<instance part="U$24" gate="G$1" x="205.74" y="-182.88" rot="R180"/>
+<instance part="U24" gate="G$1" x="205.74" y="-182.88" rot="R180"/>
 <instance part="SUPPLY14" gate="G$1" x="269.24" y="-170.18"/>
 <instance part="GND23" gate="1" x="292.1" y="-190.5"/>
 <instance part="GND" gate="1" x="-20.32" y="-106.68"/>
-<instance part="R2" gate="G$1" x="182.88" y="-187.96"/>
-<instance part="R7" gate="G$1" x="182.88" y="-177.8"/>
+<instance part="R.13" gate="G$1" x="182.88" y="-187.96"/>
+<instance part="R.12" gate="G$1" x="182.88" y="-177.8"/>
 <instance part="GND15" gate="1" x="172.72" y="-170.18"/>
-<instance part="C18" gate="G$1" x="91.44" y="-170.18"/>
-<instance part="C21" gate="G$1" x="101.6" y="-170.18" smashed="yes">
+<instance part="C.44" gate="G$1" x="91.44" y="-170.18"/>
+<instance part="C.47" gate="G$1" x="101.6" y="-170.18" smashed="yes">
 <attribute name="NAME" x="102.616" y="-169.545" size="1.778" layer="95"/>
 <attribute name="VALUE" x="102.616" y="-174.371" size="1.778" layer="96"/>
 </instance>
-<instance part="C22" gate="G$1" x="111.76" y="-170.18" smashed="yes">
+<instance part="C.50" gate="G$1" x="111.76" y="-170.18" smashed="yes">
 <attribute name="NAME" x="112.776" y="-169.545" size="1.778" layer="95"/>
 <attribute name="VALUE" x="112.776" y="-174.371" size="1.778" layer="96"/>
 </instance>
 <instance part="GND45" gate="1" x="111.76" y="-182.88"/>
 <instance part="SUPPLY16" gate="G$1" x="111.76" y="-162.56"/>
 <instance part="SUPPLY1" gate="G$1" x="434.34" y="88.9"/>
-<instance part="FET-M2" gate="G$1" x="431.8" y="25.4"/>
-<instance part="LT1910-M2" gate="G$1" x="398.78" y="30.48"/>
+<instance part="Q2" gate="G$1" x="431.8" y="25.4"/>
+<instance part="U2" gate="G$1" x="398.78" y="30.48"/>
 <instance part="GND9" gate="1" x="398.78" y="20.32"/>
-<instance part="LT1910CAP-M2" gate="G$1" x="421.64" y="50.8"/>
+<instance part="C.16" gate="G$1" x="421.64" y="50.8"/>
 <instance part="GND22" gate="1" x="414.02" y="58.42"/>
 <instance part="GND27" gate="1" x="408.94" y="2.54"/>
-<instance part="LED-M2" gate="G$1" x="452.12" y="10.16" rot="R90"/>
-<instance part="LEDRES-M2" gate="G$1" x="441.96" y="10.16"/>
+<instance part="LED-2" gate="G$1" x="452.12" y="10.16" rot="R90"/>
+<instance part="R.2" gate="G$1" x="441.96" y="10.16"/>
 <instance part="GND28" gate="1" x="459.74" y="5.08"/>
 <instance part="GND29" gate="1" x="472.44" y="35.56"/>
-<instance part="ACS714CAP-M2" gate="G$1" x="472.44" y="71.12"/>
-<instance part="ACS714-M2" gate="G$1" x="457.2" y="53.34"/>
-<instance part="FILTERCAP-M2" gate="G$1" x="477.52" y="45.72"/>
+<instance part="C.9" gate="G$1" x="472.44" y="71.12"/>
+<instance part="U9" gate="G$1" x="457.2" y="53.34"/>
+<instance part="C.2" gate="G$1" x="477.52" y="45.72"/>
 <instance part="GND33" gate="1" x="464.82" y="73.66"/>
 <instance part="SUPPLY9" gate="G$1" x="436.88" y="-15.24"/>
-<instance part="FET-M3" gate="G$1" x="434.34" y="-76.2"/>
-<instance part="LT1910-M3" gate="G$1" x="401.32" y="-71.12"/>
+<instance part="Q3" gate="G$1" x="434.34" y="-76.2"/>
+<instance part="U3" gate="G$1" x="401.32" y="-71.12"/>
 <instance part="GND46" gate="1" x="401.32" y="-81.28"/>
-<instance part="LT1910CAP-M3" gate="G$1" x="424.18" y="-50.8"/>
+<instance part="C.17" gate="G$1" x="424.18" y="-50.8"/>
 <instance part="GND47" gate="1" x="416.56" y="-43.18"/>
 <instance part="GND48" gate="1" x="411.48" y="-99.06"/>
-<instance part="LED-M3" gate="G$1" x="454.66" y="-91.44" rot="R90"/>
-<instance part="LEDRES-M3" gate="G$1" x="444.5" y="-91.44"/>
+<instance part="LED-3" gate="G$1" x="454.66" y="-91.44" rot="R90"/>
+<instance part="R.3" gate="G$1" x="444.5" y="-91.44"/>
 <instance part="GND49" gate="1" x="462.28" y="-96.52"/>
 <instance part="GND50" gate="1" x="474.98" y="-66.04"/>
-<instance part="ACS714CAP-M3" gate="G$1" x="474.98" y="-30.48"/>
-<instance part="ACS714-M3" gate="G$1" x="459.74" y="-48.26"/>
-<instance part="FILTERCAP-M3" gate="G$1" x="480.06" y="-55.88"/>
+<instance part="C.10" gate="G$1" x="474.98" y="-30.48"/>
+<instance part="U10" gate="G$1" x="459.74" y="-48.26"/>
+<instance part="C.3" gate="G$1" x="480.06" y="-55.88"/>
 <instance part="GND51" gate="1" x="467.36" y="-27.94"/>
 <instance part="SUPPLY10" gate="G$1" x="431.8" y="-116.84"/>
-<instance part="FET-M4" gate="G$1" x="429.26" y="-177.8"/>
-<instance part="LT1910-M4" gate="G$1" x="396.24" y="-172.72"/>
+<instance part="Q4" gate="G$1" x="429.26" y="-177.8"/>
+<instance part="U4" gate="G$1" x="396.24" y="-172.72"/>
 <instance part="GND52" gate="1" x="396.24" y="-182.88"/>
-<instance part="LT1910CAP-M4" gate="G$1" x="419.1" y="-152.4"/>
+<instance part="C.18" gate="G$1" x="419.1" y="-152.4"/>
 <instance part="GND53" gate="1" x="411.48" y="-144.78"/>
 <instance part="GND54" gate="1" x="406.4" y="-200.66"/>
-<instance part="LED-M4" gate="G$1" x="449.58" y="-193.04" rot="R90"/>
-<instance part="LEDRES-M4" gate="G$1" x="439.42" y="-193.04"/>
+<instance part="LED-4" gate="G$1" x="449.58" y="-193.04" rot="R90"/>
+<instance part="R.4" gate="G$1" x="439.42" y="-193.04"/>
 <instance part="GND55" gate="1" x="457.2" y="-198.12"/>
 <instance part="GND56" gate="1" x="469.9" y="-167.64"/>
-<instance part="ACS714CAP-M4" gate="G$1" x="469.9" y="-132.08"/>
-<instance part="ACS714-M4" gate="G$1" x="454.66" y="-149.86"/>
-<instance part="FILTERCAP-M4" gate="G$1" x="474.98" y="-157.48"/>
+<instance part="C.11" gate="G$1" x="469.9" y="-132.08"/>
+<instance part="U11" gate="G$1" x="454.66" y="-149.86"/>
+<instance part="C.4" gate="G$1" x="474.98" y="-157.48"/>
 <instance part="GND57" gate="1" x="462.28" y="-129.54"/>
 <instance part="SUPPLY11" gate="G$1" x="607.06" y="-60.96"/>
-<instance part="FET-M5" gate="G$1" x="604.52" y="-121.92"/>
-<instance part="LT1910-M5" gate="G$1" x="571.5" y="-116.84"/>
+<instance part="Q5" gate="G$1" x="604.52" y="-121.92"/>
+<instance part="U5" gate="G$1" x="571.5" y="-116.84"/>
 <instance part="GND58" gate="1" x="571.5" y="-127"/>
-<instance part="LT1910CAP-M5" gate="G$1" x="594.36" y="-96.52"/>
+<instance part="C.19" gate="G$1" x="594.36" y="-96.52"/>
 <instance part="GND59" gate="1" x="586.74" y="-88.9"/>
 <instance part="GND60" gate="1" x="581.66" y="-144.78"/>
-<instance part="LED-M5" gate="G$1" x="624.84" y="-137.16" rot="R90"/>
-<instance part="LEDRES-M5" gate="G$1" x="614.68" y="-137.16"/>
+<instance part="LED-5" gate="G$1" x="624.84" y="-137.16" rot="R90"/>
+<instance part="R.5" gate="G$1" x="614.68" y="-137.16"/>
 <instance part="GND61" gate="1" x="632.46" y="-142.24"/>
 <instance part="GND62" gate="1" x="645.16" y="-111.76"/>
-<instance part="ACS714CAP-M5" gate="G$1" x="645.16" y="-76.2"/>
-<instance part="ACS714-M5" gate="G$1" x="629.92" y="-93.98"/>
-<instance part="FILTERCAP-M5" gate="G$1" x="650.24" y="-101.6"/>
+<instance part="C.12" gate="G$1" x="645.16" y="-76.2"/>
+<instance part="U13" gate="G$1" x="629.92" y="-93.98"/>
+<instance part="C.5" gate="G$1" x="650.24" y="-101.6"/>
 <instance part="GND63" gate="1" x="637.54" y="-73.66"/>
 <instance part="SUPPLY12" gate="G$1" x="591.82" y="48.26"/>
-<instance part="FET-M6" gate="G$1" x="589.28" y="-12.7"/>
-<instance part="LT1910-M6" gate="G$1" x="556.26" y="-7.62"/>
+<instance part="Q6" gate="G$1" x="589.28" y="-12.7"/>
+<instance part="U6" gate="G$1" x="556.26" y="-7.62"/>
 <instance part="GND64" gate="1" x="556.26" y="-17.78"/>
-<instance part="LT1910CAP-M6" gate="G$1" x="579.12" y="12.7"/>
+<instance part="C.20" gate="G$1" x="579.12" y="12.7"/>
 <instance part="GND65" gate="1" x="571.5" y="20.32"/>
 <instance part="GND66" gate="1" x="566.42" y="-35.56"/>
-<instance part="LED-M6" gate="G$1" x="609.6" y="-27.94" rot="R90"/>
-<instance part="LEDRES-M6" gate="G$1" x="599.44" y="-27.94"/>
+<instance part="LED-6" gate="G$1" x="609.6" y="-27.94" rot="R90"/>
+<instance part="R.6" gate="G$1" x="599.44" y="-27.94"/>
 <instance part="GND67" gate="1" x="617.22" y="-33.02"/>
 <instance part="GND68" gate="1" x="629.92" y="-2.54"/>
-<instance part="ACS714CAP-M6" gate="G$1" x="629.92" y="33.02"/>
-<instance part="ACS714-M6" gate="G$1" x="614.68" y="15.24"/>
-<instance part="FILTERCAP-M6" gate="G$1" x="635" y="7.62"/>
+<instance part="C.13" gate="G$1" x="629.92" y="33.02"/>
+<instance part="U14" gate="G$1" x="614.68" y="15.24"/>
+<instance part="C.6" gate="G$1" x="635" y="7.62"/>
 <instance part="GND69" gate="1" x="622.3" y="35.56"/>
 <instance part="SUPPLY13" gate="G$1" x="581.66" y="154.94"/>
-<instance part="FET-M7" gate="G$1" x="579.12" y="91.44"/>
-<instance part="LT1910-M7" gate="G$1" x="546.1" y="96.52"/>
+<instance part="Q7" gate="G$1" x="579.12" y="91.44"/>
+<instance part="U7" gate="G$1" x="546.1" y="96.52"/>
 <instance part="GND70" gate="1" x="546.1" y="86.36"/>
-<instance part="LT1910CAP-M7" gate="G$1" x="568.96" y="116.84"/>
+<instance part="C.21" gate="G$1" x="568.96" y="116.84"/>
 <instance part="GND71" gate="1" x="561.34" y="124.46"/>
 <instance part="GND76" gate="1" x="556.26" y="68.58"/>
-<instance part="LED-M7" gate="G$1" x="599.44" y="76.2" rot="R90"/>
-<instance part="LEDRES-M7" gate="G$1" x="589.28" y="76.2"/>
+<instance part="LED-7" gate="G$1" x="599.44" y="76.2" rot="R90"/>
+<instance part="R.7" gate="G$1" x="589.28" y="76.2"/>
 <instance part="GND77" gate="1" x="607.06" y="71.12"/>
 <instance part="GND78" gate="1" x="619.76" y="101.6"/>
-<instance part="ACS714CAP-M7" gate="G$1" x="619.76" y="137.16"/>
-<instance part="ACS714-M7" gate="G$1" x="604.52" y="119.38"/>
-<instance part="FILTERCAP-M7" gate="G$1" x="624.84" y="111.76"/>
+<instance part="C.14" gate="G$1" x="619.76" y="137.16"/>
+<instance part="U15" gate="G$1" x="604.52" y="119.38"/>
+<instance part="C.7" gate="G$1" x="624.84" y="111.76"/>
 <instance part="GND79" gate="1" x="612.14" y="139.7"/>
 <instance part="U$1" gate="G$1" x="-63.5" y="-210.82"/>
 <instance part="U$8" gate="G$1" x="0" y="27.94"/>
@@ -21112,63 +21112,63 @@ Most frame-mounted PCB's - M8</description>
 <instance part="SUPPLY26" gate="G$1" x="647.7" y="35.56"/>
 <instance part="SUPPLY27" gate="G$1" x="662.94" y="-73.66"/>
 <instance part="SUPPLY17" gate="G$1" x="-20.32" y="-93.98"/>
-<instance part="BB-8-5V1" gate="G$1" x="289.56" y="-208.28"/>
+<instance part="5V-OKI" gate="G$1" x="289.56" y="-208.28"/>
 <instance part="SUPPLY28" gate="G$1" x="269.24" y="-200.66"/>
 <instance part="GND24" gate="1" x="292.1" y="-220.98"/>
 <instance part="SUPPLY29" gate="G$1" x="314.96" y="-200.66"/>
-<instance part="C5" gate="G$1" x="20.32" y="-170.18"/>
-<instance part="C7" gate="G$1" x="30.48" y="-170.18" smashed="yes">
+<instance part="C.42" gate="G$1" x="20.32" y="-170.18"/>
+<instance part="C.45" gate="G$1" x="30.48" y="-170.18" smashed="yes">
 <attribute name="NAME" x="31.496" y="-169.545" size="1.778" layer="95"/>
 <attribute name="VALUE" x="31.496" y="-174.371" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="40.64" y="-170.18" smashed="yes">
+<instance part="C.48" gate="G$1" x="40.64" y="-170.18" smashed="yes">
 <attribute name="NAME" x="41.656" y="-169.545" size="1.778" layer="95"/>
 <attribute name="VALUE" x="41.656" y="-174.371" size="1.778" layer="96"/>
 </instance>
 <instance part="GND86" gate="1" x="40.64" y="-182.88"/>
 <instance part="SUPPLY30" gate="G$1" x="40.64" y="-162.56"/>
-<instance part="R5" gate="G$1" x="17.78" y="-20.32" rot="R270"/>
+<instance part="R.14" gate="G$1" x="17.78" y="-20.32" rot="R270"/>
 <instance part="GND91" gate="1" x="17.78" y="-27.94"/>
-<instance part="FET-M" gate="G$1" x="172.72" y="-17.78" rot="MR90"/>
-<instance part="FET-D" gate="G$1" x="172.72" y="35.56" rot="MR90"/>
-<instance part="U$6" gate="G$1" x="190.5" y="12.7"/>
-<instance part="U$9" gate="G$1" x="190.5" y="-40.64"/>
+<instance part="Q8" gate="G$1" x="172.72" y="-17.78" rot="MR90"/>
+<instance part="Q9" gate="G$1" x="172.72" y="35.56" rot="MR90"/>
+<instance part="U17" gate="G$1" x="190.5" y="12.7"/>
+<instance part="U16" gate="G$1" x="190.5" y="-40.64"/>
 <instance part="GND92" gate="1" x="180.34" y="2.54"/>
 <instance part="GND93" gate="1" x="180.34" y="-50.8"/>
-<instance part="LED1" gate="G$1" x="157.48" y="-91.44" rot="R90"/>
-<instance part="R1" gate="G$1" x="147.32" y="-91.44"/>
+<instance part="LED-9" gate="G$1" x="157.48" y="-91.44" rot="R90"/>
+<instance part="R.9" gate="G$1" x="147.32" y="-91.44"/>
 <instance part="GND16" gate="1" x="165.1" y="-96.52"/>
-<instance part="LED3" gate="G$1" x="223.52" y="-91.44" rot="R90"/>
-<instance part="R6" gate="G$1" x="213.36" y="-91.44"/>
+<instance part="LED-10" gate="G$1" x="223.52" y="-91.44" rot="R90"/>
+<instance part="R.10" gate="G$1" x="213.36" y="-91.44"/>
 <instance part="GND19" gate="1" x="231.14" y="-96.52"/>
 <instance part="GND21" gate="1" x="292.1" y="-40.64"/>
-<instance part="C9" gate="G$1" x="292.1" y="-7.62"/>
-<instance part="U$11" gate="G$1" x="276.86" y="-22.86"/>
-<instance part="C10" gate="G$1" x="297.18" y="-30.48"/>
+<instance part="C.22" gate="G$1" x="292.1" y="-7.62"/>
+<instance part="U20" gate="G$1" x="276.86" y="-22.86"/>
+<instance part="C.38" gate="G$1" x="297.18" y="-30.48"/>
 <instance part="GND25" gate="1" x="284.48" y="-7.62"/>
-<instance part="C11" gate="G$1" x="238.76" y="-27.94"/>
+<instance part="C.33" gate="G$1" x="238.76" y="-27.94"/>
 <instance part="GND30" gate="1" x="238.76" y="-38.1"/>
-<instance part="C12" gate="G$1" x="231.14" y="-27.94"/>
+<instance part="C.32" gate="G$1" x="231.14" y="-27.94"/>
 <instance part="GND31" gate="1" x="231.14" y="-38.1"/>
 <instance part="SUPPLY5" gate="G$1" x="309.88" y="-10.16"/>
-<instance part="RICK-12V" gate="G$1" x="91.44" y="109.22"/>
+<instance part="MARLIN-12V" gate="G$1" x="91.44" y="109.22"/>
 <instance part="GND35" gate="1" x="63.5" y="96.52"/>
 <instance part="SUPPLY15" gate="G$1" x="63.5" y="119.38"/>
 <instance part="GND36" gate="1" x="116.84" y="99.06"/>
-<instance part="C13" gate="G$1" x="134.62" y="78.74"/>
+<instance part="C.36" gate="G$1" x="134.62" y="78.74"/>
 <instance part="GND37" gate="1" x="134.62" y="68.58"/>
 <instance part="GND41" gate="1" x="297.18" y="63.5"/>
-<instance part="C14" gate="G$1" x="297.18" y="96.52"/>
-<instance part="U$12" gate="G$1" x="281.94" y="81.28"/>
-<instance part="C15" gate="G$1" x="302.26" y="73.66"/>
+<instance part="C.24" gate="G$1" x="297.18" y="96.52"/>
+<instance part="U22" gate="G$1" x="281.94" y="81.28"/>
+<instance part="C.40" gate="G$1" x="302.26" y="73.66"/>
 <instance part="GND42" gate="1" x="289.56" y="96.52"/>
-<instance part="C16" gate="G$1" x="243.84" y="76.2"/>
+<instance part="C.29" gate="G$1" x="243.84" y="76.2"/>
 <instance part="GND43" gate="1" x="243.84" y="66.04"/>
-<instance part="C17" gate="G$1" x="236.22" y="76.2"/>
+<instance part="C.28" gate="G$1" x="236.22" y="76.2"/>
 <instance part="GND44" gate="1" x="236.22" y="66.04"/>
 <instance part="SUPPLY20" gate="G$1" x="314.96" y="93.98"/>
-<instance part="FET-R2" gate="G$1" x="177.8" y="86.36" rot="MR90"/>
-<instance part="U$13" gate="G$1" x="195.58" y="63.5"/>
+<instance part="Q10" gate="G$1" x="177.8" y="86.36" rot="MR90"/>
+<instance part="U18" gate="G$1" x="195.58" y="63.5"/>
 <instance part="GND72" gate="1" x="185.42" y="53.34"/>
 <instance part="U$3" gate="GND" x="419.1" y="101.6" rot="R270"/>
 <instance part="U$3" gate="VCC" x="426.72" y="101.6" rot="R270"/>
@@ -21193,23 +21193,23 @@ Most frame-mounted PCB's - M8</description>
 <instance part="U$28" gate="G$1" x="581.66" y="135.89" rot="R90"/>
 <instance part="U$39" gate="G$1" x="12.7" y="20.32"/>
 <instance part="U$40" gate="G$1" x="12.7" y="27.94"/>
-<instance part="C23" gate="G$1" x="134.62" y="149.86" rot="R180"/>
+<instance part="C.37" gate="G$1" x="134.62" y="149.86" rot="R180"/>
 <instance part="GND73" gate="1" x="134.62" y="162.56" rot="R180"/>
 <instance part="GND74" gate="1" x="297.18" y="119.38"/>
-<instance part="C24" gate="G$1" x="297.18" y="152.4"/>
-<instance part="U$2" gate="G$1" x="281.94" y="137.16"/>
-<instance part="C25" gate="G$1" x="302.26" y="129.54"/>
+<instance part="C.25" gate="G$1" x="297.18" y="152.4"/>
+<instance part="U23" gate="G$1" x="281.94" y="137.16"/>
+<instance part="C.41" gate="G$1" x="302.26" y="129.54"/>
 <instance part="GND75" gate="1" x="289.56" y="152.4"/>
-<instance part="C26" gate="G$1" x="243.84" y="132.08"/>
+<instance part="C.31" gate="G$1" x="243.84" y="132.08"/>
 <instance part="GND80" gate="1" x="243.84" y="121.92"/>
-<instance part="C27" gate="G$1" x="236.22" y="132.08"/>
+<instance part="C.30" gate="G$1" x="236.22" y="132.08"/>
 <instance part="GND81" gate="1" x="236.22" y="121.92"/>
 <instance part="SUPPLY24" gate="G$1" x="314.96" y="149.86"/>
-<instance part="FET-R1" gate="G$1" x="177.8" y="142.24" rot="MR90"/>
-<instance part="U$4" gate="G$1" x="195.58" y="119.38"/>
+<instance part="Q11" gate="G$1" x="177.8" y="142.24" rot="MR90"/>
+<instance part="U19" gate="G$1" x="195.58" y="119.38"/>
 <instance part="GND82" gate="1" x="185.42" y="109.22"/>
 <instance part="LED4" gate="G$1" x="294.64" y="-91.44" rot="R90"/>
-<instance part="R8" gate="G$1" x="284.48" y="-91.44"/>
+<instance part="R.11" gate="G$1" x="284.48" y="-91.44"/>
 <instance part="GND84" gate="1" x="302.26" y="-96.52"/>
 <instance part="SUPPLY31" gate="G$1" x="492.76" y="175.26"/>
 <instance part="SUPPLY32" gate="G$1" x="490.22" y="73.66"/>
@@ -21220,7 +21220,7 @@ Most frame-mounted PCB's - M8</description>
 <instance part="U$34" gate="G$1" x="12.7" y="35.56"/>
 <instance part="U$35" gate="G$1" x="0" y="35.56"/>
 <instance part="U$41" gate="G$1" x="0" y="43.18"/>
-<instance part="U$42" gate="G$1" x="152.4" y="-185.42"/>
+<instance part="RJ45" gate="G$1" x="152.4" y="-185.42"/>
 <instance part="J1" gate="GND" x="248.92" y="-107.188" rot="R270"/>
 <instance part="J1" gate="VCC" x="264.668" y="-107.442" rot="R270"/>
 <instance part="J2" gate="GND" x="179.832" y="-106.426" rot="R270"/>
@@ -21235,7 +21235,7 @@ Most frame-mounted PCB's - M8</description>
 <instance part="GND83" gate="1" x="48.26" y="-94.234" rot="R180"/>
 <instance part="U$5" gate="G$1" x="0" y="12.7"/>
 <instance part="U$16" gate="G$1" x="12.7" y="12.7"/>
-<instance part="Q1" gate="G$1" x="50.8" y="-208.28" rot="MR90"/>
+<instance part="Q13" gate="G$1" x="50.8" y="-208.28" rot="MR90"/>
 <instance part="GND85" gate="1" x="43.18" y="-213.36"/>
 <instance part="SUPPLY33" gate="G$1" x="68.58" y="-205.74"/>
 <instance part="X1" gate="-1" x="73.66" y="-208.28"/>
@@ -21246,30 +21246,30 @@ Most frame-mounted PCB's - M8</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="DARYL-12V" gate="G$1" pin="-VIN"/>
+<pinref part="NEMO-12V" gate="G$1" pin="-VIN"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="76.2" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="20.32" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MICHONNE-12V" gate="G$1" pin="-VIN"/>
+<pinref part="DORY-12V" gate="G$1" pin="-VIN"/>
 <wire x1="76.2" y1="-33.02" x2="71.12" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-33.02" x2="71.12" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="C4" gate="G$1" pin="-"/>
+<pinref part="C.54" gate="G$1" pin="-"/>
 <wire x1="104.14" y1="200.66" x2="114.3" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="200.66" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="200.66" x2="134.62" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="200.66" x2="144.78" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="200.66" x2="144.78" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="-"/>
+<pinref part="C.53" gate="G$1" pin="-"/>
 <wire x1="134.62" y1="203.2" x2="134.62" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="-"/>
+<pinref part="C.52" gate="G$1" pin="-"/>
 <wire x1="124.46" y1="203.2" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="-"/>
+<pinref part="C.51" gate="G$1" pin="-"/>
 <wire x1="114.3" y1="203.2" x2="114.3" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="D2" gate="1" pin="A"/>
 <wire x1="96.52" y1="205.74" x2="96.52" y2="203.2" width="0.1524" layer="91"/>
@@ -21284,16 +21284,16 @@ Most frame-mounted PCB's - M8</description>
 <junction x="104.14" y="200.66"/>
 </segment>
 <segment>
-<pinref part="DARYL-12V" gate="G$1" pin="-VOUT"/>
+<pinref part="NEMO-12V" gate="G$1" pin="-VOUT"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="MICHONNE-12V" gate="G$1" pin="-VOUT"/>
+<pinref part="DORY-12V" gate="G$1" pin="-VOUT"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R.17" gate="G$1" pin="1"/>
 <wire x1="254" y1="185.42" x2="254" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -21302,7 +21302,7 @@ Most frame-mounted PCB's - M8</description>
 <wire x1="45.72" y1="203.2" x2="45.72" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="LED-8" gate="G$1" pin="C"/>
 <wire x1="96.52" y1="-91.44" x2="99.06" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="-91.44" x2="99.06" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="GND34" gate="1" pin="GND"/>
@@ -21313,49 +21313,49 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="GND38" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="C.34" gate="G$1" pin="2"/>
 <pinref part="GND39" gate="1" pin="GND"/>
 <wire x1="154.94" y1="-33.02" x2="154.94" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="C.35" gate="G$1" pin="2"/>
 <pinref part="GND40" gate="1" pin="GND"/>
 <wire x1="154.94" y1="20.32" x2="154.94" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$21" gate="G$1" pin="GND"/>
+<pinref part="U21" gate="G$1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="289.56" y1="22.86" x2="292.1" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="22.86" x2="292.1" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C43" gate="G$1" pin="2"/>
+<pinref part="C.39" gate="G$1" pin="2"/>
 <wire x1="292.1" y1="17.78" x2="292.1" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="17.78" x2="292.1" y2="17.78" width="0.1524" layer="91"/>
 <junction x="292.1" y="17.78"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C.23" gate="G$1" pin="1"/>
 <wire x1="292.1" y1="48.26" x2="292.1" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="50.8" x2="284.48" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="GND87" gate="1" pin="GND"/>
 <wire x1="284.48" y1="50.8" x2="284.48" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C45" gate="G$1" pin="-"/>
+<pinref part="C.27" gate="G$1" pin="-"/>
 <pinref part="GND90" gate="1" pin="GND"/>
 <wire x1="238.76" y1="17.78" x2="238.76" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C46" gate="G$1" pin="-"/>
+<pinref part="C.26" gate="G$1" pin="-"/>
 <pinref part="GND94" gate="1" pin="GND"/>
 <wire x1="231.14" y1="17.78" x2="231.14" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C47" gate="G$1" pin="2"/>
+<pinref part="C.43" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="-175.26" x2="55.88" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-177.8" x2="66.04" y2="-177.8" width="0.1524" layer="91"/>
-<pinref part="C49" gate="G$1" pin="2"/>
+<pinref part="C.49" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="-175.26" x2="76.2" y2="-177.8" width="0.1524" layer="91"/>
-<pinref part="C48" gate="G$1" pin="2"/>
+<pinref part="C.46" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="-177.8" x2="66.04" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-177.8" x2="66.04" y2="-175.26" width="0.1524" layer="91"/>
 <pinref part="GND95" gate="1" pin="GND"/>
@@ -21364,12 +21364,12 @@ Most frame-mounted PCB's - M8</description>
 <junction x="76.2" y="-177.8"/>
 </segment>
 <segment>
-<pinref part="LT1910-M1" gate="G$1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="401.32" y1="124.46" x2="401.32" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910CAP-M1" gate="G$1" pin="1"/>
+<pinref part="C.15" gate="G$1" pin="1"/>
 <wire x1="424.18" y1="154.94" x2="424.18" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="165.1" x2="416.56" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -21382,23 +21382,23 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="U$3" gate="GND" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="LED-M1" gate="G$1" pin="C"/>
+<pinref part="LED-1" gate="G$1" pin="C"/>
 <wire x1="459.74" y1="111.76" x2="462.28" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="462.28" y1="111.76" x2="462.28" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ACS714-M1" gate="G$1" pin="GND"/>
+<pinref part="U8" gate="G$1" pin="GND"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="472.44" y1="147.32" x2="474.98" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="474.98" y1="147.32" x2="474.98" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="FILTERCAP-M1" gate="G$1" pin="2"/>
+<pinref part="C.1" gate="G$1" pin="2"/>
 <wire x1="474.98" y1="142.24" x2="474.98" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="480.06" y1="142.24" x2="474.98" y2="142.24" width="0.1524" layer="91"/>
 <junction x="474.98" y="142.24"/>
 </segment>
 <segment>
-<pinref part="ACS714CAP-M1" gate="G$1" pin="1"/>
+<pinref part="C.8" gate="G$1" pin="1"/>
 <wire x1="474.98" y1="175.26" x2="474.98" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="474.98" y1="180.34" x2="467.36" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -21410,10 +21410,10 @@ Most frame-mounted PCB's - M8</description>
 <wire x1="231.14" y1="-170.18" x2="231.14" y2="-172.72" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="226.06" y1="-175.26" x2="220.98" y2="-175.26" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="GND"/>
+<pinref part="U24" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="BB-8-5V" gate="G$1" pin="GND"/>
+<pinref part="3.3V-OKI" gate="G$1" pin="GND"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="292.1" y1="-187.96" x2="292.1" y2="-185.42" width="0.1524" layer="91"/>
 </segment>
@@ -21428,18 +21428,18 @@ Most frame-mounted PCB's - M8</description>
 <wire x1="172.72" y1="-165.1" x2="172.72" y2="-167.64" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="160.02" y1="-177.8" x2="160.02" y2="-175.26" width="0.1524" layer="91"/>
-<pinref part="U$42" gate="G$1" pin="8"/>
+<pinref part="RJ45" gate="G$1" pin="8"/>
 <wire x1="160.02" y1="-175.26" x2="160.02" y2="-165.1" width="0.1524" layer="91"/>
 <junction x="160.02" y="-175.26"/>
-<pinref part="U$42" gate="G$1" pin="7"/>
+<pinref part="RJ45" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="C.44" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="-175.26" x2="91.44" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-177.8" x2="101.6" y2="-177.8" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="2"/>
+<pinref part="C.50" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="-175.26" x2="111.76" y2="-177.8" width="0.1524" layer="91"/>
-<pinref part="C21" gate="G$1" pin="2"/>
+<pinref part="C.47" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="-177.8" x2="101.6" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="-177.8" x2="101.6" y2="-175.26" width="0.1524" layer="91"/>
 <pinref part="GND45" gate="1" pin="GND"/>
@@ -21448,12 +21448,12 @@ Most frame-mounted PCB's - M8</description>
 <junction x="111.76" y="-177.8"/>
 </segment>
 <segment>
-<pinref part="LT1910-M2" gate="G$1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="398.78" y1="22.86" x2="398.78" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910CAP-M2" gate="G$1" pin="1"/>
+<pinref part="C.16" gate="G$1" pin="1"/>
 <wire x1="421.64" y1="53.34" x2="421.64" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="63.5" x2="414.02" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -21466,35 +21466,35 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="U$23" gate="GND" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="LED-M2" gate="G$1" pin="C"/>
+<pinref part="LED-2" gate="G$1" pin="C"/>
 <wire x1="457.2" y1="10.16" x2="459.74" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="459.74" y1="10.16" x2="459.74" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ACS714-M2" gate="G$1" pin="GND"/>
+<pinref part="U9" gate="G$1" pin="GND"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="469.9" y1="45.72" x2="472.44" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="472.44" y1="45.72" x2="472.44" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="FILTERCAP-M2" gate="G$1" pin="2"/>
+<pinref part="C.2" gate="G$1" pin="2"/>
 <wire x1="472.44" y1="40.64" x2="472.44" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="477.52" y1="40.64" x2="472.44" y2="40.64" width="0.1524" layer="91"/>
 <junction x="472.44" y="40.64"/>
 </segment>
 <segment>
-<pinref part="ACS714CAP-M2" gate="G$1" pin="1"/>
+<pinref part="C.9" gate="G$1" pin="1"/>
 <wire x1="472.44" y1="73.66" x2="472.44" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="472.44" y1="78.74" x2="464.82" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND33" gate="1" pin="GND"/>
 <wire x1="464.82" y1="78.74" x2="464.82" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910-M3" gate="G$1" pin="GND"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND46" gate="1" pin="GND"/>
 <wire x1="401.32" y1="-78.74" x2="401.32" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910CAP-M3" gate="G$1" pin="1"/>
+<pinref part="C.17" gate="G$1" pin="1"/>
 <wire x1="424.18" y1="-48.26" x2="424.18" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="-38.1" x2="416.56" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="GND47" gate="1" pin="GND"/>
@@ -21507,35 +21507,35 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="U$7" gate="GND" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="LED-M3" gate="G$1" pin="C"/>
+<pinref part="LED-3" gate="G$1" pin="C"/>
 <wire x1="459.74" y1="-91.44" x2="462.28" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="462.28" y1="-91.44" x2="462.28" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="GND49" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ACS714-M3" gate="G$1" pin="GND"/>
+<pinref part="U10" gate="G$1" pin="GND"/>
 <pinref part="GND50" gate="1" pin="GND"/>
 <wire x1="472.44" y1="-55.88" x2="474.98" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="474.98" y1="-55.88" x2="474.98" y2="-60.96" width="0.1524" layer="91"/>
-<pinref part="FILTERCAP-M3" gate="G$1" pin="2"/>
+<pinref part="C.3" gate="G$1" pin="2"/>
 <wire x1="474.98" y1="-60.96" x2="474.98" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="480.06" y1="-60.96" x2="474.98" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="474.98" y="-60.96"/>
 </segment>
 <segment>
-<pinref part="ACS714CAP-M3" gate="G$1" pin="1"/>
+<pinref part="C.10" gate="G$1" pin="1"/>
 <wire x1="474.98" y1="-27.94" x2="474.98" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="474.98" y1="-22.86" x2="467.36" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="GND51" gate="1" pin="GND"/>
 <wire x1="467.36" y1="-22.86" x2="467.36" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910-M4" gate="G$1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
 <pinref part="GND52" gate="1" pin="GND"/>
 <wire x1="396.24" y1="-180.34" x2="396.24" y2="-177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910CAP-M4" gate="G$1" pin="1"/>
+<pinref part="C.18" gate="G$1" pin="1"/>
 <wire x1="419.1" y1="-149.86" x2="419.1" y2="-139.7" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="-139.7" x2="411.48" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="GND53" gate="1" pin="GND"/>
@@ -21548,35 +21548,35 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="U$15" gate="GND" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="LED-M4" gate="G$1" pin="C"/>
+<pinref part="LED-4" gate="G$1" pin="C"/>
 <wire x1="454.66" y1="-193.04" x2="457.2" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="-193.04" x2="457.2" y2="-195.58" width="0.1524" layer="91"/>
 <pinref part="GND55" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ACS714-M4" gate="G$1" pin="GND"/>
+<pinref part="U11" gate="G$1" pin="GND"/>
 <pinref part="GND56" gate="1" pin="GND"/>
 <wire x1="467.36" y1="-157.48" x2="469.9" y2="-157.48" width="0.1524" layer="91"/>
 <wire x1="469.9" y1="-157.48" x2="469.9" y2="-162.56" width="0.1524" layer="91"/>
-<pinref part="FILTERCAP-M4" gate="G$1" pin="2"/>
+<pinref part="C.4" gate="G$1" pin="2"/>
 <wire x1="469.9" y1="-162.56" x2="469.9" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="474.98" y1="-162.56" x2="469.9" y2="-162.56" width="0.1524" layer="91"/>
 <junction x="469.9" y="-162.56"/>
 </segment>
 <segment>
-<pinref part="ACS714CAP-M4" gate="G$1" pin="1"/>
+<pinref part="C.11" gate="G$1" pin="1"/>
 <wire x1="469.9" y1="-129.54" x2="469.9" y2="-124.46" width="0.1524" layer="91"/>
 <wire x1="469.9" y1="-124.46" x2="462.28" y2="-124.46" width="0.1524" layer="91"/>
 <pinref part="GND57" gate="1" pin="GND"/>
 <wire x1="462.28" y1="-124.46" x2="462.28" y2="-127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910-M5" gate="G$1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="GND"/>
 <pinref part="GND58" gate="1" pin="GND"/>
 <wire x1="571.5" y1="-124.46" x2="571.5" y2="-121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910CAP-M5" gate="G$1" pin="1"/>
+<pinref part="C.19" gate="G$1" pin="1"/>
 <wire x1="594.36" y1="-93.98" x2="594.36" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="594.36" y1="-83.82" x2="586.74" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="GND59" gate="1" pin="GND"/>
@@ -21589,35 +21589,35 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="U$19" gate="GND" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="LED-M5" gate="G$1" pin="C"/>
+<pinref part="LED-5" gate="G$1" pin="C"/>
 <wire x1="629.92" y1="-137.16" x2="632.46" y2="-137.16" width="0.1524" layer="91"/>
 <wire x1="632.46" y1="-137.16" x2="632.46" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="GND61" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ACS714-M5" gate="G$1" pin="GND"/>
+<pinref part="U13" gate="G$1" pin="GND"/>
 <pinref part="GND62" gate="1" pin="GND"/>
 <wire x1="642.62" y1="-101.6" x2="645.16" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="645.16" y1="-101.6" x2="645.16" y2="-106.68" width="0.1524" layer="91"/>
-<pinref part="FILTERCAP-M5" gate="G$1" pin="2"/>
+<pinref part="C.5" gate="G$1" pin="2"/>
 <wire x1="645.16" y1="-106.68" x2="645.16" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="650.24" y1="-106.68" x2="645.16" y2="-106.68" width="0.1524" layer="91"/>
 <junction x="645.16" y="-106.68"/>
 </segment>
 <segment>
-<pinref part="ACS714CAP-M5" gate="G$1" pin="1"/>
+<pinref part="C.12" gate="G$1" pin="1"/>
 <wire x1="645.16" y1="-73.66" x2="645.16" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="645.16" y1="-68.58" x2="637.54" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="GND63" gate="1" pin="GND"/>
 <wire x1="637.54" y1="-68.58" x2="637.54" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910-M6" gate="G$1" pin="GND"/>
+<pinref part="U6" gate="G$1" pin="GND"/>
 <pinref part="GND64" gate="1" pin="GND"/>
 <wire x1="556.26" y1="-15.24" x2="556.26" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910CAP-M6" gate="G$1" pin="1"/>
+<pinref part="C.20" gate="G$1" pin="1"/>
 <wire x1="579.12" y1="15.24" x2="579.12" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="25.4" x2="571.5" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="GND65" gate="1" pin="GND"/>
@@ -21630,35 +21630,35 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="U$20" gate="GND" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="LED-M6" gate="G$1" pin="C"/>
+<pinref part="LED-6" gate="G$1" pin="C"/>
 <wire x1="614.68" y1="-27.94" x2="617.22" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="617.22" y1="-27.94" x2="617.22" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="GND67" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ACS714-M6" gate="G$1" pin="GND"/>
+<pinref part="U14" gate="G$1" pin="GND"/>
 <pinref part="GND68" gate="1" pin="GND"/>
 <wire x1="627.38" y1="7.62" x2="629.92" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="629.92" y1="7.62" x2="629.92" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="FILTERCAP-M6" gate="G$1" pin="2"/>
+<pinref part="C.6" gate="G$1" pin="2"/>
 <wire x1="629.92" y1="2.54" x2="629.92" y2="0" width="0.1524" layer="91"/>
 <wire x1="635" y1="2.54" x2="629.92" y2="2.54" width="0.1524" layer="91"/>
 <junction x="629.92" y="2.54"/>
 </segment>
 <segment>
-<pinref part="ACS714CAP-M6" gate="G$1" pin="1"/>
+<pinref part="C.13" gate="G$1" pin="1"/>
 <wire x1="629.92" y1="35.56" x2="629.92" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="629.92" y1="40.64" x2="622.3" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND69" gate="1" pin="GND"/>
 <wire x1="622.3" y1="40.64" x2="622.3" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910-M7" gate="G$1" pin="GND"/>
+<pinref part="U7" gate="G$1" pin="GND"/>
 <pinref part="GND70" gate="1" pin="GND"/>
 <wire x1="546.1" y1="88.9" x2="546.1" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LT1910CAP-M7" gate="G$1" pin="1"/>
+<pinref part="C.21" gate="G$1" pin="1"/>
 <wire x1="568.96" y1="119.38" x2="568.96" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="568.96" y1="129.54" x2="561.34" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND71" gate="1" pin="GND"/>
@@ -21671,40 +21671,40 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="U$22" gate="GND" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="LED-M7" gate="G$1" pin="C"/>
+<pinref part="LED-7" gate="G$1" pin="C"/>
 <wire x1="604.52" y1="76.2" x2="607.06" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="607.06" y1="76.2" x2="607.06" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND77" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="ACS714-M7" gate="G$1" pin="GND"/>
+<pinref part="U15" gate="G$1" pin="GND"/>
 <pinref part="GND78" gate="1" pin="GND"/>
 <wire x1="617.22" y1="111.76" x2="619.76" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="619.76" y1="111.76" x2="619.76" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="FILTERCAP-M7" gate="G$1" pin="2"/>
+<pinref part="C.7" gate="G$1" pin="2"/>
 <wire x1="619.76" y1="106.68" x2="619.76" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="624.84" y1="106.68" x2="619.76" y2="106.68" width="0.1524" layer="91"/>
 <junction x="619.76" y="106.68"/>
 </segment>
 <segment>
-<pinref part="ACS714CAP-M7" gate="G$1" pin="1"/>
+<pinref part="C.14" gate="G$1" pin="1"/>
 <wire x1="619.76" y1="139.7" x2="619.76" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="619.76" y1="144.78" x2="612.14" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="GND79" gate="1" pin="GND"/>
 <wire x1="612.14" y1="144.78" x2="612.14" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="BB-8-5V1" gate="G$1" pin="GND"/>
+<pinref part="5V-OKI" gate="G$1" pin="GND"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 <wire x1="292.1" y1="-218.44" x2="292.1" y2="-215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C.42" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="-175.26" x2="20.32" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="-177.8" x2="30.48" y2="-177.8" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C.48" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="-175.26" x2="40.64" y2="-177.8" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C.45" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="-177.8" x2="30.48" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-177.8" x2="30.48" y2="-175.26" width="0.1524" layer="91"/>
 <pinref part="GND86" gate="1" pin="GND"/>
@@ -21713,139 +21713,139 @@ Most frame-mounted PCB's - M8</description>
 <junction x="40.64" y="-177.8"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R.14" gate="G$1" pin="2"/>
 <pinref part="GND91" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="GND"/>
+<pinref part="U17" gate="G$1" pin="GND"/>
 <pinref part="GND92" gate="1" pin="GND"/>
 <wire x1="180.34" y1="7.62" x2="180.34" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="GND"/>
+<pinref part="U16" gate="G$1" pin="GND"/>
 <pinref part="GND93" gate="1" pin="GND"/>
 <wire x1="180.34" y1="-45.72" x2="180.34" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LED-9" gate="G$1" pin="C"/>
 <wire x1="162.56" y1="-91.44" x2="165.1" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="-91.44" x2="165.1" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="LED-10" gate="G$1" pin="C"/>
 <wire x1="228.6" y1="-91.44" x2="231.14" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="-91.44" x2="231.14" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="GND"/>
+<pinref part="U20" gate="G$1" pin="GND"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="289.56" y1="-30.48" x2="292.1" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="-30.48" x2="292.1" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C.38" gate="G$1" pin="2"/>
 <wire x1="292.1" y1="-35.56" x2="292.1" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="-35.56" x2="292.1" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="292.1" y="-35.56"/>
 </segment>
 <segment>
-<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="C.22" gate="G$1" pin="1"/>
 <wire x1="292.1" y1="-5.08" x2="292.1" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="-2.54" x2="284.48" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="284.48" y1="-2.54" x2="284.48" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C11" gate="G$1" pin="-"/>
+<pinref part="C.33" gate="G$1" pin="-"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="238.76" y1="-35.56" x2="238.76" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C12" gate="G$1" pin="-"/>
+<pinref part="C.32" gate="G$1" pin="-"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="231.14" y1="-35.56" x2="231.14" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RICK-12V" gate="G$1" pin="-VIN"/>
+<pinref part="MARLIN-12V" gate="G$1" pin="-VIN"/>
 <pinref part="GND35" gate="1" pin="GND"/>
 <wire x1="68.58" y1="101.6" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="101.6" x2="63.5" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RICK-12V" gate="G$1" pin="-VOUT"/>
+<pinref part="MARLIN-12V" gate="G$1" pin="-VOUT"/>
 <pinref part="GND36" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C13" gate="G$1" pin="2"/>
+<pinref part="C.36" gate="G$1" pin="2"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 <wire x1="134.62" y1="71.12" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="GND"/>
+<pinref part="U22" gate="G$1" pin="GND"/>
 <pinref part="GND41" gate="1" pin="GND"/>
 <wire x1="294.64" y1="73.66" x2="297.18" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="73.66" x2="297.18" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="2"/>
+<pinref part="C.40" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="68.58" x2="297.18" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="68.58" x2="297.18" y2="68.58" width="0.1524" layer="91"/>
 <junction x="297.18" y="68.58"/>
 </segment>
 <segment>
-<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="C.24" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="99.06" x2="297.18" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="101.6" x2="289.56" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND42" gate="1" pin="GND"/>
 <wire x1="289.56" y1="101.6" x2="289.56" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C16" gate="G$1" pin="-"/>
+<pinref part="C.29" gate="G$1" pin="-"/>
 <pinref part="GND43" gate="1" pin="GND"/>
 <wire x1="243.84" y1="68.58" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C17" gate="G$1" pin="-"/>
+<pinref part="C.28" gate="G$1" pin="-"/>
 <pinref part="GND44" gate="1" pin="GND"/>
 <wire x1="236.22" y1="68.58" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="GND"/>
+<pinref part="U18" gate="G$1" pin="GND"/>
 <pinref part="GND72" gate="1" pin="GND"/>
 <wire x1="185.42" y1="58.42" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C23" gate="G$1" pin="2"/>
+<pinref part="C.37" gate="G$1" pin="2"/>
 <pinref part="GND73" gate="1" pin="GND"/>
 <wire x1="134.62" y1="160.02" x2="134.62" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="U23" gate="G$1" pin="GND"/>
 <pinref part="GND74" gate="1" pin="GND"/>
 <wire x1="294.64" y1="129.54" x2="297.18" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="129.54" x2="297.18" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C25" gate="G$1" pin="2"/>
+<pinref part="C.41" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="124.46" x2="297.18" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="124.46" x2="297.18" y2="124.46" width="0.1524" layer="91"/>
 <junction x="297.18" y="124.46"/>
 </segment>
 <segment>
-<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="C.25" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="154.94" x2="297.18" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="157.48" x2="289.56" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="GND75" gate="1" pin="GND"/>
 <wire x1="289.56" y1="157.48" x2="289.56" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C26" gate="G$1" pin="-"/>
+<pinref part="C.31" gate="G$1" pin="-"/>
 <pinref part="GND80" gate="1" pin="GND"/>
 <wire x1="243.84" y1="124.46" x2="243.84" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C27" gate="G$1" pin="-"/>
+<pinref part="C.30" gate="G$1" pin="-"/>
 <pinref part="GND81" gate="1" pin="GND"/>
 <wire x1="236.22" y1="124.46" x2="236.22" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="U19" gate="G$1" pin="GND"/>
 <pinref part="GND82" gate="1" pin="GND"/>
 <wire x1="185.42" y1="114.3" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
 </segment>
@@ -21879,13 +21879,13 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="GND85" gate="1" pin="GND"/>
 <wire x1="43.18" y1="-210.82" x2="43.18" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-208.28" x2="45.72" y2="-208.28" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="Q13" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R.8" gate="G$1" pin="2"/>
+<pinref part="LED-8" gate="G$1" pin="A"/>
 <wire x1="86.36" y1="-91.44" x2="88.9" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -21893,8 +21893,8 @@ Most frame-mounted PCB's - M8</description>
 <segment>
 <pinref part="Q12" gate="G$1" pin="G"/>
 <wire x1="12.7" y1="-12.7" x2="17.78" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R.15" gate="G$1" pin="1"/>
+<pinref part="R.14" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="-12.7" x2="20.32" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-15.24" x2="17.78" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="17.78" y="-12.7"/>
@@ -21903,7 +21903,7 @@ Most frame-mounted PCB's - M8</description>
 <net name="SIG-12V" class="0">
 <segment>
 <wire x1="2.54" y1="-12.7" x2="-5.08" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R.15" gate="G$1" pin="2"/>
 <label x="-5.08" y="-12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -21914,27 +21914,27 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U$21" gate="G$1" pin="FILTER"/>
-<pinref part="C43" gate="G$1" pin="1"/>
+<pinref part="U21" gate="G$1" pin="FILTER"/>
+<pinref part="C.39" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="27.94" x2="297.18" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="27.94" x2="297.18" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DRAIN-M1" class="0">
 <segment>
-<pinref part="FET-M1" gate="G$1" pin="D"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="436.88" y1="149.86" x2="436.88" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="LT1910-M1" gate="G$1" pin="V+"/>
+<pinref part="U1" gate="G$1" pin="V+"/>
 <wire x1="436.88" y1="144.78" x2="436.88" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="436.88" y1="144.78" x2="429.26" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="LT1910-M1" gate="G$1" pin="SENSE"/>
+<pinref part="U1" gate="G$1" pin="SENSE"/>
 <wire x1="429.26" y1="144.78" x2="424.18" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="144.78" x2="419.1" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="139.7" x2="429.26" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="429.26" y1="139.7" x2="429.26" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="LT1910CAP-M1" gate="G$1" pin="2"/>
+<pinref part="C.15" gate="G$1" pin="2"/>
 <wire x1="424.18" y1="147.32" x2="424.18" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="ACS714-M1" gate="G$1" pin="IP-"/>
+<pinref part="U8" gate="G$1" pin="IP-"/>
 <wire x1="436.88" y1="149.86" x2="447.04" y2="149.86" width="0.1524" layer="91"/>
 <junction x="429.26" y="144.78"/>
 <junction x="424.18" y="144.78"/>
@@ -21943,10 +21943,10 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SOURCE-M1" class="0">
 <segment>
-<pinref part="FET-M1" gate="G$1" pin="S"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
 <wire x1="436.88" y1="119.38" x2="436.88" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="436.88" y1="111.76" x2="436.88" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="LEDRES-M1" gate="G$1" pin="1"/>
+<pinref part="R.1" gate="G$1" pin="1"/>
 <wire x1="436.88" y1="111.76" x2="439.42" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="109.22" x2="436.88" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="VCC" pin="P$1"/>
@@ -21955,24 +21955,24 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="GATE-M1" class="0">
 <segment>
-<pinref part="FET-M1" gate="G$1" pin="G"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="426.72" y1="129.54" x2="421.64" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="LT1910-M1" gate="G$1" pin="GATE"/>
+<pinref part="U1" gate="G$1" pin="GATE"/>
 <wire x1="419.1" y1="134.62" x2="421.64" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="134.62" x2="421.64" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEDLINE-M1" class="0">
 <segment>
-<pinref part="LEDRES-M1" gate="G$1" pin="2"/>
-<pinref part="LED-M1" gate="G$1" pin="A"/>
+<pinref part="R.1" gate="G$1" pin="2"/>
+<pinref part="LED-1" gate="G$1" pin="A"/>
 <wire x1="449.58" y1="111.76" x2="452.12" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FILTER-M1" class="0">
 <segment>
-<pinref part="ACS714-M1" gate="G$1" pin="FILTER"/>
-<pinref part="FILTERCAP-M1" gate="G$1" pin="1"/>
+<pinref part="U8" gate="G$1" pin="FILTER"/>
+<pinref part="C.1" gate="G$1" pin="1"/>
 <wire x1="472.44" y1="152.4" x2="480.06" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="480.06" y1="152.4" x2="480.06" y2="149.86" width="0.1524" layer="91"/>
 </segment>
@@ -21985,7 +21985,7 @@ Most frame-mounted PCB's - M8</description>
 </segment>
 <segment>
 <wire x1="241.3" y1="-185.42" x2="220.98" y2="-185.42" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="R0"/>
+<pinref part="U24" gate="G$1" pin="R0"/>
 <label x="241.3" y="-185.42" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -21997,7 +21997,7 @@ Most frame-mounted PCB's - M8</description>
 </segment>
 <segment>
 <wire x1="220.98" y1="-180.34" x2="241.3" y2="-180.34" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="DI"/>
+<pinref part="U24" gate="G$1" pin="DI"/>
 <label x="241.3" y="-180.34" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -22023,56 +22023,56 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="REC+1" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R.13" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="-190.5" x2="177.8" y2="-190.5" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="-193.04" x2="177.8" y2="-190.5" width="0.1524" layer="91"/>
 <junction x="177.8" y="-190.5"/>
 <wire x1="177.8" y1="-190.5" x2="177.8" y2="-187.96" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="A"/>
+<pinref part="U24" gate="G$1" pin="A"/>
 <wire x1="177.8" y1="-193.04" x2="160.02" y2="-193.04" width="0.1524" layer="91"/>
-<pinref part="U$42" gate="G$1" pin="1"/>
+<pinref part="RJ45" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="REC-1" class="0">
 <segment>
 <wire x1="175.26" y1="-190.5" x2="175.26" y2="-185.42" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R.13" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="-185.42" x2="187.96" y2="-185.42" width="0.1524" layer="91"/>
 <junction x="187.96" y="-185.42"/>
 <wire x1="187.96" y1="-185.42" x2="187.96" y2="-187.96" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="B"/>
+<pinref part="U24" gate="G$1" pin="B"/>
 <wire x1="187.96" y1="-185.42" x2="190.5" y2="-185.42" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-190.5" x2="160.02" y2="-190.5" width="0.1524" layer="91"/>
-<pinref part="U$42" gate="G$1" pin="2"/>
+<pinref part="RJ45" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="TRANS+1" class="0">
 <segment>
 <wire x1="170.18" y1="-187.96" x2="170.18" y2="-175.26" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R.12" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="-175.26" x2="187.96" y2="-175.26" width="0.1524" layer="91"/>
 <junction x="187.96" y="-175.26"/>
 <wire x1="187.96" y1="-175.26" x2="187.96" y2="-177.8" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="Y"/>
+<pinref part="U24" gate="G$1" pin="Y"/>
 <wire x1="187.96" y1="-175.26" x2="190.5" y2="-175.26" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="-187.96" x2="160.02" y2="-187.96" width="0.1524" layer="91"/>
-<pinref part="U$42" gate="G$1" pin="3"/>
+<pinref part="RJ45" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="TRANS-1" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R.12" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="-180.34" x2="177.8" y2="-180.34" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="Z"/>
+<pinref part="U24" gate="G$1" pin="Z"/>
 <wire x1="177.8" y1="-180.34" x2="177.8" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="-180.34" x2="177.8" y2="-180.34" width="0.1524" layer="91"/>
 <junction x="177.8" y="-180.34"/>
-<pinref part="U$42" gate="G$1" pin="6"/>
+<pinref part="RJ45" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="SIG-M1" class="0">
 <segment>
-<pinref part="LT1910-M1" gate="G$1" pin="IN"/>
+<pinref part="U1" gate="G$1" pin="IN"/>
 <wire x1="383.54" y1="139.7" x2="373.38" y2="139.7" width="0.1524" layer="91"/>
 <label x="373.38" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -22085,7 +22085,7 @@ Most frame-mounted PCB's - M8</description>
 <net name="IMEAS-M1" class="0">
 <segment>
 <label x="482.6" y="157.48" size="1.27" layer="95" xref="yes"/>
-<pinref part="ACS714-M1" gate="G$1" pin="VIOUT"/>
+<pinref part="U8" gate="G$1" pin="VIOUT"/>
 <wire x1="472.44" y1="157.48" x2="482.6" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22096,19 +22096,19 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="DRAIN-M2" class="0">
 <segment>
-<pinref part="FET-M2" gate="G$1" pin="D"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="434.34" y1="48.26" x2="434.34" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="LT1910-M2" gate="G$1" pin="V+"/>
+<pinref part="U2" gate="G$1" pin="V+"/>
 <wire x1="434.34" y1="43.18" x2="434.34" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="434.34" y1="43.18" x2="426.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="LT1910-M2" gate="G$1" pin="SENSE"/>
+<pinref part="U2" gate="G$1" pin="SENSE"/>
 <wire x1="426.72" y1="43.18" x2="421.64" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="43.18" x2="416.56" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="38.1" x2="426.72" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="38.1" x2="426.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="LT1910CAP-M2" gate="G$1" pin="2"/>
+<pinref part="C.16" gate="G$1" pin="2"/>
 <wire x1="421.64" y1="45.72" x2="421.64" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="ACS714-M2" gate="G$1" pin="IP-"/>
+<pinref part="U9" gate="G$1" pin="IP-"/>
 <wire x1="434.34" y1="48.26" x2="444.5" y2="48.26" width="0.1524" layer="91"/>
 <junction x="421.64" y="43.18"/>
 <junction x="426.72" y="43.18"/>
@@ -22117,10 +22117,10 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SOURCE-M2" class="0">
 <segment>
-<pinref part="FET-M2" gate="G$1" pin="S"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
 <wire x1="434.34" y1="17.78" x2="434.34" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="434.34" y1="10.16" x2="434.34" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="LEDRES-M2" gate="G$1" pin="1"/>
+<pinref part="R.2" gate="G$1" pin="1"/>
 <wire x1="434.34" y1="10.16" x2="436.88" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="7.62" x2="434.34" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="U$23" gate="VCC" pin="P$1"/>
@@ -22129,43 +22129,43 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="GATE-M2" class="0">
 <segment>
-<pinref part="FET-M2" gate="G$1" pin="G"/>
+<pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="424.18" y1="27.94" x2="419.1" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="LT1910-M2" gate="G$1" pin="GATE"/>
+<pinref part="U2" gate="G$1" pin="GATE"/>
 <wire x1="416.56" y1="33.02" x2="419.1" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="33.02" x2="419.1" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEDLINE-M2" class="0">
 <segment>
-<pinref part="LEDRES-M2" gate="G$1" pin="2"/>
-<pinref part="LED-M2" gate="G$1" pin="A"/>
+<pinref part="R.2" gate="G$1" pin="2"/>
+<pinref part="LED-2" gate="G$1" pin="A"/>
 <wire x1="447.04" y1="10.16" x2="449.58" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FILTER-M2" class="0">
 <segment>
-<pinref part="ACS714-M2" gate="G$1" pin="FILTER"/>
-<pinref part="FILTERCAP-M2" gate="G$1" pin="1"/>
+<pinref part="U9" gate="G$1" pin="FILTER"/>
+<pinref part="C.2" gate="G$1" pin="1"/>
 <wire x1="469.9" y1="50.8" x2="477.52" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="477.52" y1="50.8" x2="477.52" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DRAIN-M3" class="0">
 <segment>
-<pinref part="FET-M3" gate="G$1" pin="D"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
 <wire x1="436.88" y1="-53.34" x2="436.88" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="LT1910-M3" gate="G$1" pin="V+"/>
+<pinref part="U3" gate="G$1" pin="V+"/>
 <wire x1="436.88" y1="-58.42" x2="436.88" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="436.88" y1="-58.42" x2="429.26" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="LT1910-M3" gate="G$1" pin="SENSE"/>
+<pinref part="U3" gate="G$1" pin="SENSE"/>
 <wire x1="429.26" y1="-58.42" x2="424.18" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="-58.42" x2="419.1" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="-63.5" x2="429.26" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="429.26" y1="-63.5" x2="429.26" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="LT1910CAP-M3" gate="G$1" pin="2"/>
+<pinref part="C.17" gate="G$1" pin="2"/>
 <wire x1="424.18" y1="-55.88" x2="424.18" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="ACS714-M3" gate="G$1" pin="IP-"/>
+<pinref part="U10" gate="G$1" pin="IP-"/>
 <wire x1="436.88" y1="-53.34" x2="447.04" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="436.88" y="-58.42"/>
 <junction x="424.18" y="-58.42"/>
@@ -22174,10 +22174,10 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SOURCE-M3" class="0">
 <segment>
-<pinref part="FET-M3" gate="G$1" pin="S"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
 <wire x1="436.88" y1="-83.82" x2="436.88" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="436.88" y1="-91.44" x2="436.88" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="LEDRES-M3" gate="G$1" pin="1"/>
+<pinref part="R.3" gate="G$1" pin="1"/>
 <wire x1="436.88" y1="-91.44" x2="439.42" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="-93.98" x2="436.88" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="VCC" pin="P$1"/>
@@ -22186,43 +22186,43 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="GATE-M3" class="0">
 <segment>
-<pinref part="FET-M3" gate="G$1" pin="G"/>
+<pinref part="Q3" gate="G$1" pin="G"/>
 <wire x1="426.72" y1="-73.66" x2="421.64" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="LT1910-M3" gate="G$1" pin="GATE"/>
+<pinref part="U3" gate="G$1" pin="GATE"/>
 <wire x1="419.1" y1="-68.58" x2="421.64" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="-68.58" x2="421.64" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEDLINE-M3" class="0">
 <segment>
-<pinref part="LEDRES-M3" gate="G$1" pin="2"/>
-<pinref part="LED-M3" gate="G$1" pin="A"/>
+<pinref part="R.3" gate="G$1" pin="2"/>
+<pinref part="LED-3" gate="G$1" pin="A"/>
 <wire x1="449.58" y1="-91.44" x2="452.12" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FILTER-M3" class="0">
 <segment>
-<pinref part="ACS714-M3" gate="G$1" pin="FILTER"/>
-<pinref part="FILTERCAP-M3" gate="G$1" pin="1"/>
+<pinref part="U10" gate="G$1" pin="FILTER"/>
+<pinref part="C.3" gate="G$1" pin="1"/>
 <wire x1="472.44" y1="-50.8" x2="480.06" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="480.06" y1="-50.8" x2="480.06" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DRAIN-M4" class="0">
 <segment>
-<pinref part="FET-M4" gate="G$1" pin="D"/>
+<pinref part="Q4" gate="G$1" pin="D"/>
 <wire x1="431.8" y1="-154.94" x2="431.8" y2="-160.02" width="0.1524" layer="91"/>
-<pinref part="LT1910-M4" gate="G$1" pin="V+"/>
+<pinref part="U4" gate="G$1" pin="V+"/>
 <wire x1="431.8" y1="-160.02" x2="431.8" y2="-170.18" width="0.1524" layer="91"/>
 <wire x1="431.8" y1="-160.02" x2="424.18" y2="-160.02" width="0.1524" layer="91"/>
-<pinref part="LT1910-M4" gate="G$1" pin="SENSE"/>
+<pinref part="U4" gate="G$1" pin="SENSE"/>
 <wire x1="424.18" y1="-160.02" x2="419.1" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="-160.02" x2="414.02" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="414.02" y1="-165.1" x2="424.18" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="-165.1" x2="424.18" y2="-160.02" width="0.1524" layer="91"/>
-<pinref part="LT1910CAP-M4" gate="G$1" pin="2"/>
+<pinref part="C.18" gate="G$1" pin="2"/>
 <wire x1="419.1" y1="-157.48" x2="419.1" y2="-160.02" width="0.1524" layer="91"/>
-<pinref part="ACS714-M4" gate="G$1" pin="IP-"/>
+<pinref part="U11" gate="G$1" pin="IP-"/>
 <wire x1="431.8" y1="-154.94" x2="441.96" y2="-154.94" width="0.1524" layer="91"/>
 <junction x="424.18" y="-160.02"/>
 <junction x="431.8" y="-160.02"/>
@@ -22231,10 +22231,10 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SOURCE-M4" class="0">
 <segment>
-<pinref part="FET-M4" gate="G$1" pin="S"/>
+<pinref part="Q4" gate="G$1" pin="S"/>
 <wire x1="431.8" y1="-185.42" x2="431.8" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="431.8" y1="-193.04" x2="431.8" y2="-195.58" width="0.1524" layer="91"/>
-<pinref part="LEDRES-M4" gate="G$1" pin="1"/>
+<pinref part="R.4" gate="G$1" pin="1"/>
 <wire x1="431.8" y1="-193.04" x2="434.34" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="-195.58" x2="431.8" y2="-195.58" width="0.1524" layer="91"/>
 <pinref part="U$15" gate="VCC" pin="P$1"/>
@@ -22243,43 +22243,43 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="GATE-M4" class="0">
 <segment>
-<pinref part="FET-M4" gate="G$1" pin="G"/>
+<pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="421.64" y1="-175.26" x2="416.56" y2="-175.26" width="0.1524" layer="91"/>
-<pinref part="LT1910-M4" gate="G$1" pin="GATE"/>
+<pinref part="U4" gate="G$1" pin="GATE"/>
 <wire x1="414.02" y1="-170.18" x2="416.56" y2="-170.18" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="-170.18" x2="416.56" y2="-175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEDLINE-M4" class="0">
 <segment>
-<pinref part="LEDRES-M4" gate="G$1" pin="2"/>
-<pinref part="LED-M4" gate="G$1" pin="A"/>
+<pinref part="R.4" gate="G$1" pin="2"/>
+<pinref part="LED-4" gate="G$1" pin="A"/>
 <wire x1="444.5" y1="-193.04" x2="447.04" y2="-193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FILTER-M4" class="0">
 <segment>
-<pinref part="ACS714-M4" gate="G$1" pin="FILTER"/>
-<pinref part="FILTERCAP-M4" gate="G$1" pin="1"/>
+<pinref part="U11" gate="G$1" pin="FILTER"/>
+<pinref part="C.4" gate="G$1" pin="1"/>
 <wire x1="467.36" y1="-152.4" x2="474.98" y2="-152.4" width="0.1524" layer="91"/>
 <wire x1="474.98" y1="-152.4" x2="474.98" y2="-154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DRAIN-M5" class="0">
 <segment>
-<pinref part="FET-M5" gate="G$1" pin="D"/>
+<pinref part="Q5" gate="G$1" pin="D"/>
 <wire x1="607.06" y1="-99.06" x2="607.06" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="LT1910-M5" gate="G$1" pin="V+"/>
+<pinref part="U5" gate="G$1" pin="V+"/>
 <wire x1="607.06" y1="-104.14" x2="607.06" y2="-114.3" width="0.1524" layer="91"/>
 <wire x1="607.06" y1="-104.14" x2="599.44" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="LT1910-M5" gate="G$1" pin="SENSE"/>
+<pinref part="U5" gate="G$1" pin="SENSE"/>
 <wire x1="599.44" y1="-104.14" x2="594.36" y2="-104.14" width="0.1524" layer="91"/>
 <wire x1="594.36" y1="-104.14" x2="589.28" y2="-104.14" width="0.1524" layer="91"/>
 <wire x1="589.28" y1="-109.22" x2="599.44" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="599.44" y1="-109.22" x2="599.44" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="LT1910CAP-M5" gate="G$1" pin="2"/>
+<pinref part="C.19" gate="G$1" pin="2"/>
 <wire x1="594.36" y1="-101.6" x2="594.36" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="ACS714-M5" gate="G$1" pin="IP-"/>
+<pinref part="U13" gate="G$1" pin="IP-"/>
 <wire x1="607.06" y1="-99.06" x2="617.22" y2="-99.06" width="0.1524" layer="91"/>
 <junction x="599.44" y="-104.14"/>
 <junction x="594.36" y="-104.14"/>
@@ -22288,10 +22288,10 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SOURCE-M5" class="0">
 <segment>
-<pinref part="FET-M5" gate="G$1" pin="S"/>
+<pinref part="Q5" gate="G$1" pin="S"/>
 <wire x1="607.06" y1="-129.54" x2="607.06" y2="-137.16" width="0.1524" layer="91"/>
 <wire x1="607.06" y1="-137.16" x2="607.06" y2="-139.7" width="0.1524" layer="91"/>
-<pinref part="LEDRES-M5" gate="G$1" pin="1"/>
+<pinref part="R.5" gate="G$1" pin="1"/>
 <wire x1="607.06" y1="-137.16" x2="609.6" y2="-137.16" width="0.1524" layer="91"/>
 <wire x1="596.9" y1="-139.7" x2="607.06" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="U$19" gate="VCC" pin="P$1"/>
@@ -22300,43 +22300,43 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="GATE-M5" class="0">
 <segment>
-<pinref part="FET-M5" gate="G$1" pin="G"/>
+<pinref part="Q5" gate="G$1" pin="G"/>
 <wire x1="596.9" y1="-119.38" x2="591.82" y2="-119.38" width="0.1524" layer="91"/>
-<pinref part="LT1910-M5" gate="G$1" pin="GATE"/>
+<pinref part="U5" gate="G$1" pin="GATE"/>
 <wire x1="589.28" y1="-114.3" x2="591.82" y2="-114.3" width="0.1524" layer="91"/>
 <wire x1="591.82" y1="-114.3" x2="591.82" y2="-119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEDLINE-M5" class="0">
 <segment>
-<pinref part="LEDRES-M5" gate="G$1" pin="2"/>
-<pinref part="LED-M5" gate="G$1" pin="A"/>
+<pinref part="R.5" gate="G$1" pin="2"/>
+<pinref part="LED-5" gate="G$1" pin="A"/>
 <wire x1="619.76" y1="-137.16" x2="622.3" y2="-137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FILTER-M5" class="0">
 <segment>
-<pinref part="ACS714-M5" gate="G$1" pin="FILTER"/>
-<pinref part="FILTERCAP-M5" gate="G$1" pin="1"/>
+<pinref part="U13" gate="G$1" pin="FILTER"/>
+<pinref part="C.5" gate="G$1" pin="1"/>
 <wire x1="642.62" y1="-96.52" x2="650.24" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="650.24" y1="-96.52" x2="650.24" y2="-99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DRAIN-M6" class="0">
 <segment>
-<pinref part="FET-M6" gate="G$1" pin="D"/>
+<pinref part="Q6" gate="G$1" pin="D"/>
 <wire x1="591.82" y1="10.16" x2="591.82" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="LT1910-M6" gate="G$1" pin="V+"/>
+<pinref part="U6" gate="G$1" pin="V+"/>
 <wire x1="591.82" y1="5.08" x2="591.82" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="591.82" y1="5.08" x2="584.2" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="LT1910-M6" gate="G$1" pin="SENSE"/>
+<pinref part="U6" gate="G$1" pin="SENSE"/>
 <wire x1="584.2" y1="5.08" x2="579.12" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="5.08" x2="574.04" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="574.04" y1="0" x2="584.2" y2="0" width="0.1524" layer="91"/>
 <wire x1="584.2" y1="0" x2="584.2" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="LT1910CAP-M6" gate="G$1" pin="2"/>
+<pinref part="C.20" gate="G$1" pin="2"/>
 <wire x1="579.12" y1="7.62" x2="579.12" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="ACS714-M6" gate="G$1" pin="IP-"/>
+<pinref part="U14" gate="G$1" pin="IP-"/>
 <wire x1="591.82" y1="10.16" x2="601.98" y2="10.16" width="0.1524" layer="91"/>
 <junction x="584.2" y="5.08"/>
 <junction x="579.12" y="5.08"/>
@@ -22345,10 +22345,10 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SOURCE-M6" class="0">
 <segment>
-<pinref part="FET-M6" gate="G$1" pin="S"/>
+<pinref part="Q6" gate="G$1" pin="S"/>
 <wire x1="591.82" y1="-20.32" x2="591.82" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="591.82" y1="-27.94" x2="591.82" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="LEDRES-M6" gate="G$1" pin="1"/>
+<pinref part="R.6" gate="G$1" pin="1"/>
 <wire x1="591.82" y1="-27.94" x2="594.36" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="581.66" y1="-30.48" x2="591.82" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="U$20" gate="VCC" pin="P$1"/>
@@ -22357,43 +22357,43 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="GATE-M6" class="0">
 <segment>
-<pinref part="FET-M6" gate="G$1" pin="G"/>
+<pinref part="Q6" gate="G$1" pin="G"/>
 <wire x1="581.66" y1="-10.16" x2="576.58" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="LT1910-M6" gate="G$1" pin="GATE"/>
+<pinref part="U6" gate="G$1" pin="GATE"/>
 <wire x1="574.04" y1="-5.08" x2="576.58" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="576.58" y1="-5.08" x2="576.58" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEDLINE-M6" class="0">
 <segment>
-<pinref part="LEDRES-M6" gate="G$1" pin="2"/>
-<pinref part="LED-M6" gate="G$1" pin="A"/>
+<pinref part="R.6" gate="G$1" pin="2"/>
+<pinref part="LED-6" gate="G$1" pin="A"/>
 <wire x1="604.52" y1="-27.94" x2="607.06" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FILTER-M6" class="0">
 <segment>
-<pinref part="ACS714-M6" gate="G$1" pin="FILTER"/>
-<pinref part="FILTERCAP-M6" gate="G$1" pin="1"/>
+<pinref part="U14" gate="G$1" pin="FILTER"/>
+<pinref part="C.6" gate="G$1" pin="1"/>
 <wire x1="627.38" y1="12.7" x2="635" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="635" y1="12.7" x2="635" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DRAIN-M7" class="0">
 <segment>
-<pinref part="FET-M7" gate="G$1" pin="D"/>
+<pinref part="Q7" gate="G$1" pin="D"/>
 <wire x1="581.66" y1="114.3" x2="581.66" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="LT1910-M7" gate="G$1" pin="V+"/>
+<pinref part="U7" gate="G$1" pin="V+"/>
 <wire x1="581.66" y1="109.22" x2="581.66" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="581.66" y1="109.22" x2="574.04" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="LT1910-M7" gate="G$1" pin="SENSE"/>
+<pinref part="U7" gate="G$1" pin="SENSE"/>
 <wire x1="574.04" y1="109.22" x2="568.96" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="568.96" y1="109.22" x2="563.88" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="563.88" y1="104.14" x2="574.04" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="574.04" y1="104.14" x2="574.04" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="LT1910CAP-M7" gate="G$1" pin="2"/>
+<pinref part="C.21" gate="G$1" pin="2"/>
 <wire x1="568.96" y1="111.76" x2="568.96" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="ACS714-M7" gate="G$1" pin="IP-"/>
+<pinref part="U15" gate="G$1" pin="IP-"/>
 <wire x1="581.66" y1="114.3" x2="591.82" y2="114.3" width="0.1524" layer="91"/>
 <junction x="574.04" y="109.22"/>
 <junction x="568.96" y="109.22"/>
@@ -22402,10 +22402,10 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SOURCE-M7" class="0">
 <segment>
-<pinref part="FET-M7" gate="G$1" pin="S"/>
+<pinref part="Q7" gate="G$1" pin="S"/>
 <wire x1="581.66" y1="83.82" x2="581.66" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="581.66" y1="76.2" x2="581.66" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="LEDRES-M7" gate="G$1" pin="1"/>
+<pinref part="R.7" gate="G$1" pin="1"/>
 <wire x1="581.66" y1="76.2" x2="584.2" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="571.5" y1="73.66" x2="581.66" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$22" gate="VCC" pin="P$1"/>
@@ -22414,24 +22414,24 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="GATE-M7" class="0">
 <segment>
-<pinref part="FET-M7" gate="G$1" pin="G"/>
+<pinref part="Q7" gate="G$1" pin="G"/>
 <wire x1="571.5" y1="93.98" x2="566.42" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="LT1910-M7" gate="G$1" pin="GATE"/>
+<pinref part="U7" gate="G$1" pin="GATE"/>
 <wire x1="563.88" y1="99.06" x2="566.42" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="566.42" y1="99.06" x2="566.42" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEDLINE-M7" class="0">
 <segment>
-<pinref part="LEDRES-M7" gate="G$1" pin="2"/>
-<pinref part="LED-M7" gate="G$1" pin="A"/>
+<pinref part="R.7" gate="G$1" pin="2"/>
+<pinref part="LED-7" gate="G$1" pin="A"/>
 <wire x1="594.36" y1="76.2" x2="596.9" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FILTER-M7" class="0">
 <segment>
-<pinref part="ACS714-M7" gate="G$1" pin="FILTER"/>
-<pinref part="FILTERCAP-M7" gate="G$1" pin="1"/>
+<pinref part="U15" gate="G$1" pin="FILTER"/>
+<pinref part="C.7" gate="G$1" pin="1"/>
 <wire x1="617.22" y1="116.84" x2="624.84" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="624.84" y1="116.84" x2="624.84" y2="114.3" width="0.1524" layer="91"/>
 </segment>
@@ -22439,7 +22439,7 @@ Most frame-mounted PCB's - M8</description>
 <net name="IMEAS-M2" class="0">
 <segment>
 <label x="480.06" y="55.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="ACS714-M2" gate="G$1" pin="VIOUT"/>
+<pinref part="U9" gate="G$1" pin="VIOUT"/>
 <wire x1="469.9" y1="55.88" x2="480.06" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22450,7 +22450,7 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SIG-M2" class="0">
 <segment>
-<pinref part="LT1910-M2" gate="G$1" pin="IN"/>
+<pinref part="U2" gate="G$1" pin="IN"/>
 <wire x1="381" y1="38.1" x2="370.84" y2="38.1" width="0.1524" layer="91"/>
 <label x="370.84" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -22463,7 +22463,7 @@ Most frame-mounted PCB's - M8</description>
 <net name="IMEAS-M3" class="0">
 <segment>
 <label x="482.6" y="-45.72" size="1.27" layer="95" xref="yes"/>
-<pinref part="ACS714-M3" gate="G$1" pin="VIOUT"/>
+<pinref part="U10" gate="G$1" pin="VIOUT"/>
 <wire x1="472.44" y1="-45.72" x2="482.6" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22474,7 +22474,7 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SIG-M3" class="0">
 <segment>
-<pinref part="LT1910-M3" gate="G$1" pin="IN"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
 <wire x1="383.54" y1="-63.5" x2="373.38" y2="-63.5" width="0.1524" layer="91"/>
 <label x="373.38" y="-63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -22487,7 +22487,7 @@ Most frame-mounted PCB's - M8</description>
 <net name="IMEAS-M4" class="0">
 <segment>
 <label x="477.52" y="-147.32" size="1.27" layer="95" xref="yes"/>
-<pinref part="ACS714-M4" gate="G$1" pin="VIOUT"/>
+<pinref part="U11" gate="G$1" pin="VIOUT"/>
 <wire x1="467.36" y1="-147.32" x2="477.52" y2="-147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22498,7 +22498,7 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SIG-M4" class="0">
 <segment>
-<pinref part="LT1910-M4" gate="G$1" pin="IN"/>
+<pinref part="U4" gate="G$1" pin="IN"/>
 <wire x1="378.46" y1="-165.1" x2="368.3" y2="-165.1" width="0.1524" layer="91"/>
 <label x="368.3" y="-165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -22511,7 +22511,7 @@ Most frame-mounted PCB's - M8</description>
 <net name="IMEAS-M5" class="0">
 <segment>
 <label x="652.78" y="-91.44" size="1.27" layer="95" xref="yes"/>
-<pinref part="ACS714-M5" gate="G$1" pin="VIOUT"/>
+<pinref part="U13" gate="G$1" pin="VIOUT"/>
 <wire x1="642.62" y1="-91.44" x2="652.78" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22522,7 +22522,7 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SIG-M5" class="0">
 <segment>
-<pinref part="LT1910-M5" gate="G$1" pin="IN"/>
+<pinref part="U5" gate="G$1" pin="IN"/>
 <wire x1="553.72" y1="-109.22" x2="543.56" y2="-109.22" width="0.1524" layer="91"/>
 <label x="543.56" y="-109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -22535,7 +22535,7 @@ Most frame-mounted PCB's - M8</description>
 <net name="IMEAS-M6" class="0">
 <segment>
 <label x="637.54" y="17.78" size="1.27" layer="95" xref="yes"/>
-<pinref part="ACS714-M6" gate="G$1" pin="VIOUT"/>
+<pinref part="U14" gate="G$1" pin="VIOUT"/>
 <wire x1="627.38" y1="17.78" x2="637.54" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22546,7 +22546,7 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SIG-M6" class="0">
 <segment>
-<pinref part="LT1910-M6" gate="G$1" pin="IN"/>
+<pinref part="U6" gate="G$1" pin="IN"/>
 <wire x1="538.48" y1="0" x2="528.32" y2="0" width="0.1524" layer="91"/>
 <label x="528.32" y="0" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -22559,7 +22559,7 @@ Most frame-mounted PCB's - M8</description>
 <net name="IMEAS-M7" class="0">
 <segment>
 <label x="627.38" y="121.92" size="1.27" layer="95" xref="yes"/>
-<pinref part="ACS714-M7" gate="G$1" pin="VIOUT"/>
+<pinref part="U15" gate="G$1" pin="VIOUT"/>
 <wire x1="617.22" y1="121.92" x2="627.38" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22570,7 +22570,7 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="SIG-M7" class="0">
 <segment>
-<pinref part="LT1910-M7" gate="G$1" pin="IN"/>
+<pinref part="U7" gate="G$1" pin="IN"/>
 <wire x1="528.32" y1="104.14" x2="515.62" y2="104.14" width="0.1524" layer="91"/>
 <label x="515.62" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -22589,8 +22589,8 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="VMEAS-VBATT" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R.17" gate="G$1" pin="2"/>
+<pinref part="R.16" gate="G$1" pin="1"/>
 <wire x1="254" y1="200.66" x2="254" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="254" y1="198.12" x2="254" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="254" y1="198.12" x2="238.76" y2="198.12" width="0.1524" layer="91"/>
@@ -22605,23 +22605,23 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="U$21" gate="G$1" pin="VCC"/>
+<pinref part="U21" gate="G$1" pin="VCC"/>
 <wire x1="309.88" y1="38.1" x2="309.88" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="38.1" x2="292.1" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C.23" gate="G$1" pin="2"/>
 <wire x1="292.1" y1="38.1" x2="309.88" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="40.64" x2="292.1" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY19" gate="G$1" pin="3.3V"/>
 <junction x="292.1" y="38.1"/>
 </segment>
 <segment>
-<pinref part="C47" gate="G$1" pin="1"/>
+<pinref part="C.43" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="-167.64" x2="55.88" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-165.1" x2="66.04" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="-162.56" x2="76.2" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="C49" gate="G$1" pin="1"/>
+<pinref part="C.49" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="-167.64" x2="76.2" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="C48" gate="G$1" pin="1"/>
+<pinref part="C.46" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="-165.1" x2="66.04" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-165.1" x2="66.04" y2="-167.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
@@ -22629,10 +22629,10 @@ Most frame-mounted PCB's - M8</description>
 <junction x="76.2" y="-165.1"/>
 </segment>
 <segment>
-<pinref part="ACS714-M1" gate="G$1" pin="VCC"/>
+<pinref part="U8" gate="G$1" pin="VCC"/>
 <wire x1="492.76" y1="162.56" x2="492.76" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="472.44" y1="162.56" x2="474.98" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="ACS714CAP-M1" gate="G$1" pin="2"/>
+<pinref part="C.8" gate="G$1" pin="2"/>
 <wire x1="474.98" y1="162.56" x2="492.76" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="474.98" y1="167.64" x2="474.98" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY31" gate="G$1" pin="3.3V"/>
@@ -22644,99 +22644,99 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="226.06" y1="-195.58" x2="231.14" y2="-195.58" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="-195.58" x2="231.14" y2="-193.04" width="0.1524" layer="91"/>
-<pinref part="U$24" gate="G$1" pin="VCC"/>
+<pinref part="U24" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="BB-8-5V" gate="G$1" pin="VO"/>
+<pinref part="3.3V-OKI" gate="G$1" pin="VO"/>
 <wire x1="302.26" y1="-177.8" x2="314.96" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="-177.8" x2="314.96" y2="-170.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="ACS714-M2" gate="G$1" pin="VCC"/>
+<pinref part="U9" gate="G$1" pin="VCC"/>
 <wire x1="490.22" y1="60.96" x2="490.22" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="469.9" y1="60.96" x2="472.44" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="ACS714CAP-M2" gate="G$1" pin="2"/>
+<pinref part="C.9" gate="G$1" pin="2"/>
 <wire x1="472.44" y1="60.96" x2="490.22" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="472.44" y1="66.04" x2="472.44" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY32" gate="G$1" pin="3.3V"/>
 <junction x="472.44" y="60.96"/>
 </segment>
 <segment>
-<pinref part="ACS714-M3" gate="G$1" pin="VCC"/>
+<pinref part="U10" gate="G$1" pin="VCC"/>
 <wire x1="492.76" y1="-40.64" x2="492.76" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="472.44" y1="-40.64" x2="474.98" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="ACS714CAP-M3" gate="G$1" pin="2"/>
+<pinref part="C.10" gate="G$1" pin="2"/>
 <wire x1="474.98" y1="-40.64" x2="492.76" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="474.98" y1="-35.56" x2="474.98" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY23" gate="G$1" pin="3.3V"/>
 <junction x="474.98" y="-40.64"/>
 </segment>
 <segment>
-<pinref part="ACS714-M4" gate="G$1" pin="VCC"/>
+<pinref part="U11" gate="G$1" pin="VCC"/>
 <wire x1="487.68" y1="-142.24" x2="487.68" y2="-129.54" width="0.1524" layer="91"/>
 <wire x1="467.36" y1="-142.24" x2="469.9" y2="-142.24" width="0.1524" layer="91"/>
-<pinref part="ACS714CAP-M4" gate="G$1" pin="2"/>
+<pinref part="C.11" gate="G$1" pin="2"/>
 <wire x1="469.9" y1="-142.24" x2="487.68" y2="-142.24" width="0.1524" layer="91"/>
 <wire x1="469.9" y1="-137.16" x2="469.9" y2="-142.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY22" gate="G$1" pin="3.3V"/>
 <junction x="469.9" y="-142.24"/>
 </segment>
 <segment>
-<pinref part="ACS714-M5" gate="G$1" pin="VCC"/>
+<pinref part="U13" gate="G$1" pin="VCC"/>
 <wire x1="662.94" y1="-86.36" x2="662.94" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="642.62" y1="-86.36" x2="645.16" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="ACS714CAP-M5" gate="G$1" pin="2"/>
+<pinref part="C.12" gate="G$1" pin="2"/>
 <wire x1="645.16" y1="-86.36" x2="662.94" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="645.16" y1="-81.28" x2="645.16" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="SUPPLY27" gate="G$1" pin="3.3V"/>
 <junction x="645.16" y="-86.36"/>
 </segment>
 <segment>
-<pinref part="ACS714-M6" gate="G$1" pin="VCC"/>
+<pinref part="U14" gate="G$1" pin="VCC"/>
 <wire x1="647.7" y1="22.86" x2="647.7" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="627.38" y1="22.86" x2="629.92" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="ACS714CAP-M6" gate="G$1" pin="2"/>
+<pinref part="C.13" gate="G$1" pin="2"/>
 <wire x1="629.92" y1="22.86" x2="647.7" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="629.92" y1="27.94" x2="629.92" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY26" gate="G$1" pin="3.3V"/>
 <junction x="629.92" y="22.86"/>
 </segment>
 <segment>
-<pinref part="ACS714-M7" gate="G$1" pin="VCC"/>
+<pinref part="U15" gate="G$1" pin="VCC"/>
 <wire x1="637.54" y1="127" x2="637.54" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="617.22" y1="127" x2="619.76" y2="127" width="0.1524" layer="91"/>
-<pinref part="ACS714CAP-M7" gate="G$1" pin="2"/>
+<pinref part="C.14" gate="G$1" pin="2"/>
 <wire x1="619.76" y1="127" x2="637.54" y2="127" width="0.1524" layer="91"/>
 <wire x1="619.76" y1="132.08" x2="619.76" y2="127" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="G$1" pin="3.3V"/>
 <junction x="619.76" y="127"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="VCC"/>
+<pinref part="U20" gate="G$1" pin="VCC"/>
 <wire x1="309.88" y1="-15.24" x2="309.88" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="-15.24" x2="292.1" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C.22" gate="G$1" pin="2"/>
 <wire x1="292.1" y1="-15.24" x2="309.88" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="-12.7" x2="292.1" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
 <junction x="292.1" y="-15.24"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="VCC"/>
+<pinref part="U22" gate="G$1" pin="VCC"/>
 <wire x1="314.96" y1="88.9" x2="314.96" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="88.9" x2="297.18" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="2"/>
+<pinref part="C.24" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="88.9" x2="314.96" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="91.44" x2="297.18" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY20" gate="G$1" pin="3.3V"/>
 <junction x="297.18" y="88.9"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="VCC"/>
+<pinref part="U23" gate="G$1" pin="VCC"/>
 <wire x1="314.96" y1="144.78" x2="314.96" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="144.78" x2="297.18" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="C24" gate="G$1" pin="2"/>
+<pinref part="C.25" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="144.78" x2="314.96" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="147.32" x2="297.18" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
@@ -22751,19 +22751,19 @@ Most frame-mounted PCB's - M8</description>
 <pinref part="SUPPLY17" gate="G$1" pin="5V"/>
 </segment>
 <segment>
-<pinref part="BB-8-5V1" gate="G$1" pin="VO"/>
+<pinref part="5V-OKI" gate="G$1" pin="VO"/>
 <wire x1="302.26" y1="-208.28" x2="314.96" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="-208.28" x2="314.96" y2="-200.66" width="0.1524" layer="91"/>
 <pinref part="SUPPLY29" gate="G$1" pin="5V"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C.42" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="-167.64" x2="20.32" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="-165.1" x2="30.48" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-162.56" x2="40.64" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C.48" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="-167.64" x2="40.64" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C.45" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="-165.1" x2="30.48" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-165.1" x2="30.48" y2="-167.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY30" gate="G$1" pin="5V"/>
@@ -22779,12 +22779,12 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="FET-D" gate="G$1" pin="S"/>
+<pinref part="Q9" gate="G$1" pin="S"/>
 <wire x1="154.94" y1="35.56" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="C.35" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="35.56" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="30.48" x2="154.94" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="IN"/>
+<pinref part="U17" gate="G$1" pin="IN"/>
 <wire x1="180.34" y1="12.7" x2="165.1" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="12.7" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
 <junction x="154.94" y="35.56"/>
@@ -22795,12 +22795,12 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="FET-M" gate="G$1" pin="S"/>
+<pinref part="Q8" gate="G$1" pin="S"/>
 <wire x1="154.94" y1="-17.78" x2="165.1" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="C.34" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="-17.78" x2="167.64" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-22.86" x2="154.94" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="IN"/>
+<pinref part="U16" gate="G$1" pin="IN"/>
 <wire x1="180.34" y1="-40.64" x2="165.1" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="-40.64" x2="165.1" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="154.94" y="-17.78"/>
@@ -22811,58 +22811,58 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="GATE"/>
-<pinref part="FET-D" gate="G$1" pin="G"/>
+<pinref part="U17" gate="G$1" pin="GATE"/>
+<pinref part="Q9" gate="G$1" pin="G"/>
 <wire x1="180.34" y1="17.78" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="17.78" x2="172.72" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="GATE"/>
-<pinref part="FET-M" gate="G$1" pin="G"/>
+<pinref part="U16" gate="G$1" pin="GATE"/>
+<pinref part="Q8" gate="G$1" pin="G"/>
 <wire x1="180.34" y1="-35.56" x2="172.72" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="-35.56" x2="172.72" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="R.9" gate="G$1" pin="2"/>
+<pinref part="LED-9" gate="G$1" pin="A"/>
 <wire x1="152.4" y1="-91.44" x2="154.94" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="R.10" gate="G$1" pin="2"/>
+<pinref part="LED-10" gate="G$1" pin="A"/>
 <wire x1="218.44" y1="-91.44" x2="220.98" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U$11" gate="G$1" pin="FILTER"/>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="U20" gate="G$1" pin="FILTER"/>
+<pinref part="C.38" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="-25.4" x2="297.18" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="-25.4" x2="297.18" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="C11" gate="G$1" pin="+"/>
+<pinref part="C.33" gate="G$1" pin="+"/>
 <wire x1="238.76" y1="-25.4" x2="238.76" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="-22.86" x2="238.76" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="+"/>
+<pinref part="C.32" gate="G$1" pin="+"/>
 <wire x1="231.14" y1="-25.4" x2="231.14" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="FET-M" gate="G$1" pin="D"/>
+<pinref part="Q8" gate="G$1" pin="D"/>
 <wire x1="177.8" y1="-17.78" x2="210.82" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="VS"/>
+<pinref part="U16" gate="G$1" pin="VS"/>
 <wire x1="205.74" y1="-35.56" x2="210.82" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="-35.56" x2="210.82" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="OUT"/>
+<pinref part="U16" gate="G$1" pin="OUT"/>
 <wire x1="205.74" y1="-40.64" x2="210.82" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="-40.64" x2="210.82" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="U$11" gate="G$1" pin="IP+"/>
+<pinref part="U20" gate="G$1" pin="IP+"/>
 <wire x1="264.16" y1="-17.78" x2="238.76" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="210.82" y="-17.78"/>
 <wire x1="238.76" y1="-17.78" x2="210.82" y2="-17.78" width="0.1524" layer="91"/>
@@ -22874,21 +22874,21 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="C45" gate="G$1" pin="+"/>
+<pinref part="C.27" gate="G$1" pin="+"/>
 <wire x1="238.76" y1="27.94" x2="238.76" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="30.48" x2="238.76" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="C46" gate="G$1" pin="+"/>
+<pinref part="C.26" gate="G$1" pin="+"/>
 <wire x1="231.14" y1="27.94" x2="231.14" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$21" gate="G$1" pin="IP+"/>
+<pinref part="U21" gate="G$1" pin="IP+"/>
 <wire x1="210.82" y1="35.56" x2="238.76" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="VS"/>
+<pinref part="U17" gate="G$1" pin="VS"/>
 <wire x1="238.76" y1="35.56" x2="264.16" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="17.78" x2="210.82" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="OUT"/>
+<pinref part="U17" gate="G$1" pin="OUT"/>
 <wire x1="205.74" y1="12.7" x2="210.82" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="12.7" x2="210.82" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="17.78" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="FET-D" gate="G$1" pin="D"/>
+<pinref part="Q9" gate="G$1" pin="D"/>
 <wire x1="177.8" y1="35.56" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="30.48" x2="238.76" y2="35.56" width="0.1524" layer="91"/>
 <junction x="238.76" y="30.48"/>
@@ -22899,12 +22899,12 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="RICK-12V" gate="G$1" pin="REMOTE"/>
+<pinref part="MARLIN-12V" gate="G$1" pin="REMOTE"/>
 <wire x1="50.8" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="MICHONNE-12V" gate="G$1" pin="REMOTE"/>
+<pinref part="DORY-12V" gate="G$1" pin="REMOTE"/>
 <wire x1="76.2" y1="-25.4" x2="50.8" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="-25.4" x2="50.8" y2="0" width="0.1524" layer="91"/>
-<pinref part="DARYL-12V" gate="G$1" pin="REMOTE"/>
+<pinref part="NEMO-12V" gate="G$1" pin="REMOTE"/>
 <wire x1="50.8" y1="0" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="27.94" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-7.62" x2="27.94" y2="0" width="0.1524" layer="91"/>
@@ -22917,37 +22917,37 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$12" gate="G$1" pin="FILTER"/>
-<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="U22" gate="G$1" pin="FILTER"/>
+<pinref part="C.40" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="78.74" x2="302.26" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="78.74" x2="302.26" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U$13" gate="G$1" pin="GATE"/>
-<pinref part="FET-R2" gate="G$1" pin="G"/>
+<pinref part="U18" gate="G$1" pin="GATE"/>
+<pinref part="Q10" gate="G$1" pin="G"/>
 <wire x1="185.42" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="68.58" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="C16" gate="G$1" pin="+"/>
+<pinref part="C.29" gate="G$1" pin="+"/>
 <wire x1="243.84" y1="78.74" x2="243.84" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="81.28" x2="243.84" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="+"/>
+<pinref part="C.28" gate="G$1" pin="+"/>
 <wire x1="236.22" y1="78.74" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="IP+"/>
+<pinref part="U22" gate="G$1" pin="IP+"/>
 <wire x1="215.9" y1="86.36" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$1" pin="VS"/>
+<pinref part="U18" gate="G$1" pin="VS"/>
 <wire x1="243.84" y1="86.36" x2="269.24" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$1" pin="OUT"/>
+<pinref part="U18" gate="G$1" pin="OUT"/>
 <wire x1="210.82" y1="63.5" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="63.5" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="68.58" x2="215.9" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="FET-R2" gate="G$1" pin="D"/>
+<pinref part="Q10" gate="G$1" pin="D"/>
 <wire x1="182.88" y1="86.36" x2="215.9" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="81.28" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
 <junction x="243.84" y="81.28"/>
@@ -22958,42 +22958,42 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="V_BATT_M4" class="0">
 <segment>
-<pinref part="ACS714-M4" gate="G$1" pin="IP+"/>
+<pinref part="U11" gate="G$1" pin="IP+"/>
 <wire x1="431.8" y1="-144.78" x2="441.96" y2="-144.78" width="0.1524" layer="91"/>
 <pinref part="U$37" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="V_BATT_M2" class="0">
 <segment>
-<pinref part="ACS714-M2" gate="G$1" pin="IP+"/>
+<pinref part="U9" gate="G$1" pin="IP+"/>
 <wire x1="434.34" y1="58.42" x2="444.5" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U$27" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="V_BATT_M3" class="0">
 <segment>
-<pinref part="ACS714-M3" gate="G$1" pin="IP+"/>
+<pinref part="U10" gate="G$1" pin="IP+"/>
 <wire x1="436.88" y1="-43.18" x2="447.04" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="U$36" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="V_BATT_M7" class="0">
 <segment>
-<pinref part="ACS714-M7" gate="G$1" pin="IP+"/>
+<pinref part="U15" gate="G$1" pin="IP+"/>
 <wire x1="581.66" y1="124.46" x2="591.82" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="U$28" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="V_BATT_M6" class="0">
 <segment>
-<pinref part="ACS714-M6" gate="G$1" pin="IP+"/>
+<pinref part="U14" gate="G$1" pin="IP+"/>
 <wire x1="591.82" y1="20.32" x2="601.98" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U$29" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="V_BATT_M5" class="0">
 <segment>
-<pinref part="ACS714-M5" gate="G$1" pin="IP+"/>
+<pinref part="U13" gate="G$1" pin="IP+"/>
 <wire x1="607.06" y1="-88.9" x2="617.22" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="U$38" gate="G$1" pin="OUT"/>
 </segment>
@@ -23012,29 +23012,29 @@ Most frame-mounted PCB's - M8</description>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="V_BATT"/>
 <wire x1="71.12" y1="35.56" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="DARYL-12V" gate="G$1" pin="+VIN"/>
+<pinref part="NEMO-12V" gate="G$1" pin="+VIN"/>
 <wire x1="71.12" y1="35.56" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="V_BATT"/>
 <wire x1="68.58" y1="-17.78" x2="68.58" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="MICHONNE-12V" gate="G$1" pin="+VIN"/>
+<pinref part="DORY-12V" gate="G$1" pin="+VIN"/>
 <wire x1="68.58" y1="-17.78" x2="76.2" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="V_BATT"/>
 <wire x1="104.14" y1="215.9" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="213.36" x2="114.3" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="+"/>
+<pinref part="C.51" gate="G$1" pin="+"/>
 <wire x1="114.3" y1="213.36" x2="124.46" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="213.36" x2="134.62" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="213.36" x2="144.78" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="210.82" x2="114.3" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="+"/>
+<pinref part="C.52" gate="G$1" pin="+"/>
 <wire x1="124.46" y1="210.82" x2="124.46" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="+"/>
+<pinref part="C.53" gate="G$1" pin="+"/>
 <wire x1="134.62" y1="210.82" x2="134.62" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="+"/>
+<pinref part="C.54" gate="G$1" pin="+"/>
 <wire x1="144.78" y1="210.82" x2="144.78" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="C"/>
 <wire x1="104.14" y1="213.36" x2="104.14" y2="210.82" width="0.1524" layer="91"/>
@@ -23047,7 +23047,7 @@ Most frame-mounted PCB's - M8</description>
 <junction x="104.14" y="210.82"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R.16" gate="G$1" pin="2"/>
 <pinref part="SUPPLY7" gate="G$1" pin="V_BATT"/>
 <wire x1="254" y1="213.36" x2="254" y2="210.82" width="0.1524" layer="91"/>
 </segment>
@@ -23062,18 +23062,18 @@ Most frame-mounted PCB's - M8</description>
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="G$1" pin="V_BATT"/>
-<pinref part="BB-8-5V" gate="G$1" pin="VI"/>
+<pinref part="3.3V-OKI" gate="G$1" pin="VI"/>
 <wire x1="269.24" y1="-170.18" x2="269.24" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="-177.8" x2="281.94" y2="-177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C18" gate="G$1" pin="1"/>
+<pinref part="C.44" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="-167.64" x2="91.44" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-165.1" x2="101.6" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-162.56" x2="111.76" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="1"/>
+<pinref part="C.50" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="-167.64" x2="111.76" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="C21" gate="G$1" pin="1"/>
+<pinref part="C.47" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="-165.1" x2="101.6" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="-165.1" x2="101.6" y2="-167.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY16" gate="G$1" pin="V_BATT"/>
@@ -23082,14 +23082,14 @@ Most frame-mounted PCB's - M8</description>
 </segment>
 <segment>
 <pinref part="SUPPLY28" gate="G$1" pin="V_BATT"/>
-<pinref part="BB-8-5V1" gate="G$1" pin="VI"/>
+<pinref part="5V-OKI" gate="G$1" pin="VI"/>
 <wire x1="269.24" y1="-200.66" x2="269.24" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="-208.28" x2="281.94" y2="-208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY15" gate="G$1" pin="V_BATT"/>
 <wire x1="63.5" y1="116.84" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="RICK-12V" gate="G$1" pin="+VIN"/>
+<pinref part="MARLIN-12V" gate="G$1" pin="+VIN"/>
 <wire x1="63.5" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -23120,27 +23120,27 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="V_BATT_M1" class="0">
 <segment>
-<pinref part="ACS714-M1" gate="G$1" pin="IP+"/>
+<pinref part="U8" gate="G$1" pin="IP+"/>
 <wire x1="436.88" y1="160.02" x2="447.04" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U$26" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="FILTER"/>
-<pinref part="C25" gate="G$1" pin="1"/>
+<pinref part="U23" gate="G$1" pin="FILTER"/>
+<pinref part="C.41" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="134.62" x2="302.26" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="134.62" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="FET-R2" gate="G$1" pin="S"/>
+<pinref part="Q10" gate="G$1" pin="S"/>
 <wire x1="134.62" y1="86.36" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="C.36" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="86.36" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="81.28" x2="134.62" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$1" pin="IN"/>
+<pinref part="U18" gate="G$1" pin="IN"/>
 <wire x1="185.42" y1="63.5" x2="170.18" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="63.5" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$31" gate="G$1" pin="OUT"/>
@@ -23152,29 +23152,29 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="GATE"/>
-<pinref part="FET-R1" gate="G$1" pin="G"/>
+<pinref part="U19" gate="G$1" pin="GATE"/>
+<pinref part="Q11" gate="G$1" pin="G"/>
 <wire x1="185.42" y1="124.46" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="124.46" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="C26" gate="G$1" pin="+"/>
+<pinref part="C.31" gate="G$1" pin="+"/>
 <wire x1="243.84" y1="134.62" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="C27" gate="G$1" pin="+"/>
+<pinref part="C.30" gate="G$1" pin="+"/>
 <wire x1="236.22" y1="134.62" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="IP+"/>
+<pinref part="U23" gate="G$1" pin="IP+"/>
 <wire x1="215.9" y1="142.24" x2="243.84" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="VS"/>
+<pinref part="U19" gate="G$1" pin="VS"/>
 <wire x1="243.84" y1="142.24" x2="269.24" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="124.46" x2="215.9" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="OUT"/>
+<pinref part="U19" gate="G$1" pin="OUT"/>
 <wire x1="210.82" y1="119.38" x2="215.9" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="119.38" x2="215.9" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="124.46" x2="215.9" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="FET-R1" gate="G$1" pin="D"/>
+<pinref part="Q11" gate="G$1" pin="D"/>
 <wire x1="182.88" y1="142.24" x2="215.9" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="137.16" x2="243.84" y2="142.24" width="0.1524" layer="91"/>
 <junction x="243.84" y="137.16"/>
@@ -23185,14 +23185,14 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R.11" gate="G$1" pin="2"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="289.56" y1="-91.44" x2="292.1" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ACT-12V-SIG" class="0">
 <segment>
-<pinref part="U$21" gate="G$1" pin="VIOUT"/>
+<pinref part="U21" gate="G$1" pin="VIOUT"/>
 <wire x1="289.56" y1="33.02" x2="299.72" y2="33.02" width="0.1524" layer="91"/>
 <label x="299.72" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -23204,7 +23204,7 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="LOGIC-12V-SIG" class="0">
 <segment>
-<pinref part="U$12" gate="G$1" pin="VIOUT"/>
+<pinref part="U22" gate="G$1" pin="VIOUT"/>
 <wire x1="294.64" y1="83.82" x2="304.8" y2="83.82" width="0.1524" layer="91"/>
 <label x="304.8" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -23216,7 +23216,7 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="COM-12V-SIG" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="VIOUT"/>
+<pinref part="U23" gate="G$1" pin="VIOUT"/>
 <wire x1="294.64" y1="139.7" x2="304.8" y2="139.7" width="0.1524" layer="91"/>
 <label x="304.8" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -23232,7 +23232,7 @@ Most frame-mounted PCB's - M8</description>
 <label x="144.78" y="-81.28" size="1.27" layer="95" xref="yes"/>
 <wire x1="137.16" y1="-91.44" x2="137.16" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="-81.28" x2="144.78" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R.9" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="-91.44" x2="137.16" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="137.16" y="-91.44"/>
 <wire x1="124.46" y1="-93.98" x2="137.16" y2="-93.98" width="0.1524" layer="91"/>
@@ -23241,7 +23241,7 @@ Most frame-mounted PCB's - M8</description>
 </segment>
 <segment>
 <label x="261.62" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$21" gate="G$1" pin="IP-"/>
+<pinref part="U21" gate="G$1" pin="IP-"/>
 <wire x1="261.62" y1="25.4" x2="264.16" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -23251,7 +23251,7 @@ Most frame-mounted PCB's - M8</description>
 <label x="281.94" y="-81.28" size="1.27" layer="95" xref="yes"/>
 <wire x1="274.32" y1="-91.44" x2="274.32" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="-81.28" x2="281.94" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R.11" gate="G$1" pin="1"/>
 <wire x1="279.4" y1="-91.44" x2="274.32" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="274.32" y="-91.44"/>
 <pinref part="J1" gate="VCC" pin="P$1"/>
@@ -23260,14 +23260,14 @@ Most frame-mounted PCB's - M8</description>
 </segment>
 <segment>
 <label x="266.7" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="G$1" pin="IP-"/>
+<pinref part="U23" gate="G$1" pin="IP-"/>
 <wire x1="266.7" y1="132.08" x2="269.24" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12V-AUX-LOGIC" class="0">
 <segment>
 <label x="266.7" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$12" gate="G$1" pin="IP-"/>
+<pinref part="U22" gate="G$1" pin="IP-"/>
 <wire x1="266.7" y1="76.2" x2="269.24" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -23275,7 +23275,7 @@ Most frame-mounted PCB's - M8</description>
 <label x="210.82" y="-81.28" size="1.27" layer="95" xref="yes"/>
 <wire x1="203.2" y1="-91.44" x2="203.2" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="-81.28" x2="210.82" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R.10" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="-91.44" x2="203.2" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="203.2" y="-91.44"/>
 <wire x1="190.5" y1="-93.98" x2="203.2" y2="-93.98" width="0.1524" layer="91"/>
@@ -23285,13 +23285,13 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="FET-R1" gate="G$1" pin="S"/>
+<pinref part="Q11" gate="G$1" pin="S"/>
 <wire x1="170.18" y1="142.24" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="IN"/>
+<pinref part="U19" gate="G$1" pin="IN"/>
 <wire x1="185.42" y1="119.38" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="119.38" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="C23" gate="G$1" pin="1"/>
+<pinref part="C.37" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="147.32" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="129.286" y1="141.224" x2="129.286" y2="141.986" width="0.1524" layer="91"/>
 <wire x1="129.286" y1="141.986" x2="134.62" y2="141.986" width="0.1524" layer="91"/>
@@ -23303,7 +23303,7 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="DARYL-12V" gate="G$1" pin="+VOUT"/>
+<pinref part="NEMO-12V" gate="G$1" pin="+VOUT"/>
 <pinref part="U$30" gate="G$1" pin="IN"/>
 <wire x1="124.46" y1="35.56" x2="126.492" y2="35.56" width="0.1524" layer="91"/>
 </segment>
@@ -23312,12 +23312,12 @@ Most frame-mounted PCB's - M8</description>
 <segment>
 <wire x1="124.46" y1="-17.78" x2="126.492" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="IN"/>
-<pinref part="MICHONNE-12V" gate="G$1" pin="+VOUT"/>
+<pinref part="DORY-12V" gate="G$1" pin="+VOUT"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="RICK-12V" gate="G$1" pin="+VOUT"/>
+<pinref part="MARLIN-12V" gate="G$1" pin="+VOUT"/>
 <pinref part="U$32" gate="G$1" pin="IN"/>
 <wire x1="116.84" y1="116.84" x2="129.286" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="129.286" y1="116.84" x2="129.286" y2="118.364" width="0.1524" layer="91"/>
@@ -23332,7 +23332,7 @@ Most frame-mounted PCB's - M8</description>
 <label x="78.74" y="-81.28" size="1.27" layer="95" xref="yes"/>
 <wire x1="71.12" y1="-91.44" x2="71.12" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-81.28" x2="78.74" y2="-81.28" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R.8" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="-91.44" x2="71.12" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="71.12" y="-91.44"/>
 <wire x1="60.96" y1="-93.98" x2="71.12" y2="-93.98" width="0.1524" layer="91"/>
@@ -23341,13 +23341,13 @@ Most frame-mounted PCB's - M8</description>
 </segment>
 <segment>
 <label x="261.62" y="-27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$11" gate="G$1" pin="IP-"/>
+<pinref part="U20" gate="G$1" pin="IP-"/>
 <wire x1="261.62" y1="-27.94" x2="264.16" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EXTRA-12V-SIG" class="0">
 <segment>
-<pinref part="U$11" gate="G$1" pin="VIOUT"/>
+<pinref part="U20" gate="G$1" pin="VIOUT"/>
 <wire x1="289.56" y1="-20.32" x2="299.72" y2="-20.32" width="0.1524" layer="91"/>
 <label x="299.72" y="-20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -23359,14 +23359,14 @@ Most frame-mounted PCB's - M8</description>
 </net>
 <net name="N$66" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="D"/>
+<pinref part="Q13" gate="G$1" pin="D"/>
 <wire x1="55.88" y1="-208.28" x2="71.12" y2="-208.28" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="FAN_CTL_1" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="G"/>
+<pinref part="Q13" gate="G$1" pin="G"/>
 <wire x1="50.8" y1="-215.9" x2="50.8" y2="-218.44" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="-218.44" x2="66.04" y2="-218.44" width="0.1524" layer="91"/>
 <label x="66.04" y="-218.44" size="1.778" layer="95" xref="yes"/>
