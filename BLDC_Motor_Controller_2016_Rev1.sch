@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4959,34 +4959,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="GND33" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="-73.66" x2="142.24" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="-73.66" x2="129.54" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-<pinref part="C24" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="-71.12" x2="129.54" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-73.66" x2="63.5" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="-73.66" x2="63.5" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="129.54" y="-73.66"/>
-<pinref part="U$1" gate="G$1" pin="SP2"/>
-<wire x1="63.5" y1="-55.88" x2="17.78" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<junction x="142.24" y="-73.66"/>
-</segment>
-<segment>
-<wire x1="142.24" y1="7.62" x2="142.24" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="7.62" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="10.16" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="7.62" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
-<junction x="129.54" y="7.62"/>
-<wire x1="81.28" y1="7.62" x2="81.28" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SP1"/>
-<wire x1="81.28" y1="-45.72" x2="17.78" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="1"/>
-<junction x="142.24" y="7.62"/>
-</segment>
-<segment>
 <pinref part="GND20" gate="1" pin="GND"/>
 <pinref part="Q6" gate="G$1" pin="S"/>
 <wire x1="142.24" y1="-144.78" x2="142.24" y2="-134.62" width="0.1524" layer="91"/>
@@ -6121,6 +6093,48 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="-111.76" y1="-81.28" x2="-114.3" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="-114.3" y1="-81.28" x2="-114.3" y2="-78.74" width="0.1524" layer="91"/>
 <junction x="-114.3" y="-78.74"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="U$13" gate="G$1" pin="3-"/>
+<wire x1="246.38" y1="-134.62" x2="248.92" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-134.62" x2="248.92" y2="-137.16" width="0.1524" layer="91"/>
+<pinref part="U$13" gate="G$1" pin="OUT3"/>
+<wire x1="248.92" y1="-137.16" x2="223.52" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-137.16" x2="223.52" y2="-134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SP1" class="0">
+<segment>
+<wire x1="142.24" y1="7.62" x2="142.24" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="7.62" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="10.16" x2="129.54" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="7.62" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
+<junction x="129.54" y="7.62"/>
+<wire x1="81.28" y1="7.62" x2="81.28" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SP1"/>
+<wire x1="81.28" y1="-45.72" x2="17.78" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<junction x="142.24" y="7.62"/>
+</segment>
+</net>
+<net name="SP2" class="0">
+<segment>
+<wire x1="142.24" y1="-73.66" x2="142.24" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="-73.66" x2="129.54" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="-71.12" x2="129.54" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-73.66" x2="63.5" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-73.66" x2="63.5" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="129.54" y="-73.66"/>
+<pinref part="U$1" gate="G$1" pin="SP2"/>
+<wire x1="63.5" y1="-55.88" x2="17.78" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<junction x="142.24" y="-73.66"/>
 </segment>
 </net>
 </nets>
