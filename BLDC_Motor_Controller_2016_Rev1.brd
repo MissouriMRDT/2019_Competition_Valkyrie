@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -119,7 +119,7 @@
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
 <layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
@@ -10226,117 +10226,324 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="SparkFun-Passives" package="0805" value="6800p" x="35.8775" y="44.1325"/>
-<element name="C10" library="SparkFun-Passives" package="1206" value="4.7u" x="49.53" y="13.97" rot="R90"/>
-<element name="C11" library="SparkFun-Passives" package="0805" value="0.1u" x="63.1825" y="20.0025" rot="R270"/>
-<element name="C12" library="SparkFun-Passives" package="0805" value="0.1u" x="68.2625" y="23.8125" rot="R270"/>
-<element name="C13" library="SparkFun-Passives" package="0805" value="0.1u" x="64.4525" y="31.4325" rot="R270"/>
-<element name="C14" library="SparkFun-Passives" package="0805" value="0.1u" x="58.7375" y="32.0675" rot="R270"/>
-<element name="C15" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="78.74" y="71.12"/>
-<element name="C16" library="SparkFun-Passives" package="0805" value="0.015u" x="51.7525" y="34.6075" rot="R180"/>
-<element name="C17" library="SparkFun-Passives" package="1206" value="4.7u" x="52.705" y="13.97" rot="R90"/>
-<element name="C18" library="SparkFun-Passives" package="0805" value="0.1u" x="47.9425" y="37.7825" rot="R270"/>
-<element name="C19" library="SparkFun-Passives" package="1206" value="2.2u" x="24.13" y="65.24625" rot="R90"/>
-<element name="C2" library="SparkFun-Passives" package="0805" value="120p" x="35.8775" y="38.735"/>
-<element name="C20" library="SparkFun-Passives" package="0805" value="0.1u" x="56.8325" y="41.5925" rot="R180"/>
-<element name="C21" library="SparkFun-Passives" package="0805" value="1000p" x="62.70625" y="15.5575" rot="R270"/>
-<element name="C22" library="SparkFun-Passives" package="1206" value="2.2u" x="85.09" y="65.24625" rot="R90"/>
-<element name="C23" library="SparkFun-Passives" package="0805" value="0.1u" x="51.7525" y="44.1325" rot="R180"/>
-<element name="C24" library="SparkFun-Passives" package="0805" value="1000p" x="60.16625" y="15.5575" rot="R270"/>
-<element name="C25" library="SparkFun-Passives" package="1206" value="2.2u" x="54.61" y="65.24625" rot="R90"/>
-<element name="C26" library="SparkFun-Passives" package="0805" value="0.1u" x="68.2625" y="20.0025" rot="R270"/>
-<element name="C29" library="SparkFun-Passives" package="0805" value="0.1u" x="47.9425" y="34.6075" rot="R180"/>
-<element name="C3" library="SparkFun-Passives" package="1206" value="2.2u" x="30.32125" y="26.67" rot="R270"/>
-<element name="C30" library="SparkFun-Passives" package="0805" value="0.01u" x="28.194" y="54.51475"/>
-<element name="C31" library="SparkFun-Passives" package="0805" value="0.1u" x="61.9125" y="44.1325"/>
-<element name="C32" library="SparkFun-Passives" package="0805" value="1u" x="70.58025" y="45.72" rot="R90"/>
-<element name="C33" library="SparkFun-Passives" package="0805" value="0.1u" x="72.9615" y="45.72" rot="R90"/>
-<element name="C36" library="SparkFun-Passives" package="CPOL-RADIAL-100UF-25V" value="47u" x="99.53625" y="15.90675" rot="R90"/>
-<element name="C37" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="20.32" y="22.7965"/>
-<element name="C4" library="SparkFun-Passives" package="0805" value=".022u" x="36.195" y="26.67" rot="R180"/>
-<element name="C5" library="SparkFun-Passives" package="0805" value="1u" x="34.29" y="16.51" rot="R270"/>
-<element name="C6" library="SparkFun-Passives" package="0805" value="2200p" x="46.6725" y="44.1325" rot="R180"/>
-<element name="C7" library="SparkFun-Passives" package="0805" value="2200p" x="41.5925" y="44.1325" rot="R180"/>
-<element name="C8" library="SparkFun-Passives" package="0805" value="1u" x="42.2275" y="16.8275" rot="R180"/>
-<element name="C9" library="SparkFun-Passives" package="0805" value="0.1u" x="50.4825" y="37.7825" rot="R90"/>
-<element name="D1" library="SparkFun-DiscreteSemi" package="SMB-DIODE" value="DIODE-ZENERSMB" x="59.53125" y="36.35375" rot="R180"/>
-<element name="D2" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="75.8825" y="40.9575" rot="R180">
+<element name="C1" library="SparkFun-Passives" package="0805" value="6800p" x="35.8775" y="44.1325" smashed="yes">
+<attribute name="NAME" x="35.1155" y="44.958" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="34.8615" y="42.7355" size="0.4064" layer="27"/>
+</element>
+<element name="C10" library="SparkFun-Passives" package="1206" value="4.7u" x="49.53" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="48.387" y="12.7" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="51.054" y="12.573" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C11" library="SparkFun-Passives" package="0805" value="0.1u" x="63.1825" y="20.0025" smashed="yes" rot="R270">
+<attribute name="NAME" x="64.008" y="20.7645" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="61.7855" y="21.0185" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C12" library="SparkFun-Passives" package="0805" value="0.1u" x="68.2625" y="23.8125" smashed="yes" rot="R270">
+<attribute name="NAME" x="69.088" y="24.5745" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="66.8655" y="24.8285" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C13" library="SparkFun-Passives" package="0805" value="0.1u" x="64.4525" y="31.4325" smashed="yes" rot="R270">
+<attribute name="NAME" x="65.278" y="32.1945" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="63.0555" y="32.4485" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C14" library="SparkFun-Passives" package="0805" value="0.1u" x="58.7375" y="32.0675" smashed="yes" rot="R270">
+<attribute name="NAME" x="59.563" y="32.8295" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="57.3405" y="33.0835" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C15" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="78.74" y="71.12" smashed="yes">
+<attribute name="VALUE" x="76.835" y="66.802" size="0.8128" layer="27"/>
+<attribute name="NAME" x="77.978" y="74.041" size="0.6096" layer="25"/>
+</element>
+<element name="C16" library="SparkFun-Passives" package="0805" value="0.015u" x="51.7525" y="34.6075" smashed="yes" rot="R180">
+<attribute name="NAME" x="53.0225" y="33.782" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="52.7685" y="36.0045" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C17" library="SparkFun-Passives" package="1206" value="4.7u" x="52.705" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="51.562" y="12.7" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="54.229" y="12.573" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C18" library="SparkFun-Passives" package="0805" value="0.1u" x="47.9425" y="37.7825" smashed="yes" rot="R270">
+<attribute name="NAME" x="46.482" y="38.2905" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="46.5455" y="38.7985" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C19" library="SparkFun-Passives" package="1206" value="2.2u" x="24.13" y="65.24625" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.987" y="63.97625" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.654" y="63.84925" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C2" library="SparkFun-Passives" package="0805" value="120p" x="35.8775" y="38.735" smashed="yes">
+<attribute name="NAME" x="35.1155" y="39.5605" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="34.8615" y="37.338" size="0.4064" layer="27"/>
+</element>
+<element name="C20" library="SparkFun-Passives" package="0805" value="0.1u" x="56.8325" y="41.5925" smashed="yes" rot="R180">
+<attribute name="NAME" x="57.5945" y="40.767" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="57.8485" y="42.9895" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C21" library="SparkFun-Passives" package="0805" value="1000p" x="62.70625" y="15.5575" smashed="yes" rot="R270">
+<attribute name="NAME" x="63.53175" y="16.3195" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="61.30925" y="16.5735" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C22" library="SparkFun-Passives" package="1206" value="2.2u" x="85.09" y="65.24625" smashed="yes" rot="R90">
+<attribute name="NAME" x="83.947" y="63.97625" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="86.614" y="63.84925" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C23" library="SparkFun-Passives" package="0805" value="0.1u" x="51.7525" y="44.1325" smashed="yes" rot="R180">
+<attribute name="NAME" x="52.5145" y="43.307" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="52.7685" y="45.5295" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C24" library="SparkFun-Passives" package="0805" value="1000p" x="60.16625" y="15.5575" smashed="yes" rot="R270">
+<attribute name="NAME" x="60.99175" y="16.3195" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="58.76925" y="16.5735" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C25" library="SparkFun-Passives" package="1206" value="2.2u" x="54.61" y="65.24625" smashed="yes" rot="R90">
+<attribute name="NAME" x="53.467" y="63.97625" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="56.134" y="63.84925" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C26" library="SparkFun-Passives" package="0805" value="0.1u" x="68.2625" y="20.0025" smashed="yes" rot="R270">
+<attribute name="NAME" x="69.088" y="20.7645" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="66.8655" y="21.0185" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C29" library="SparkFun-Passives" package="0805" value="0.1u" x="47.9425" y="34.6075" smashed="yes" rot="R180">
+<attribute name="NAME" x="49.2125" y="33.782" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="48.9585" y="36.0045" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C3" library="SparkFun-Passives" package="1206" value="2.2u" x="30.32125" y="26.67" smashed="yes" rot="R270">
+<attribute name="NAME" x="31.46425" y="27.94" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="28.79725" y="28.067" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C30" library="SparkFun-Passives" package="0805" value="0.01u" x="28.194" y="54.51475" smashed="yes">
+<attribute name="NAME" x="27.432" y="55.34025" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="27.178" y="53.11775" size="0.4064" layer="27"/>
+</element>
+<element name="C31" library="SparkFun-Passives" package="0805" value="0.1u" x="61.9125" y="44.1325" smashed="yes">
+<attribute name="NAME" x="61.1505" y="42.672" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="60.8965" y="42.7355" size="0.4064" layer="27"/>
+</element>
+<element name="C32" library="SparkFun-Passives" package="0805" value="1u" x="70.58025" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.75475" y="44.958" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="71.97725" y="44.704" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C33" library="SparkFun-Passives" package="0805" value="0.1u" x="72.9615" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="72.136" y="44.958" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="74.3585" y="44.704" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C36" library="SparkFun-Passives" package="CPOL-RADIAL-100UF-25V" value="47u" x="99.28225" y="15.90675" rot="R90"/>
+<element name="C37" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="20.32" y="22.7965" smashed="yes">
+<attribute name="VALUE" x="18.415" y="18.4785" size="0.8128" layer="27"/>
+<attribute name="NAME" x="19.558" y="25.7175" size="0.6096" layer="25"/>
+</element>
+<element name="C4" library="SparkFun-Passives" package="0805" value=".022u" x="36.195" y="26.67" smashed="yes" rot="R180">
+<attribute name="NAME" x="36.957" y="25.8445" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="37.211" y="28.067" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C5" library="SparkFun-Passives" package="0805" value="1u" x="34.29" y="16.51" smashed="yes" rot="R270">
+<attribute name="NAME" x="35.1155" y="17.272" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="32.893" y="17.526" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C6" library="SparkFun-Passives" package="0805" value="2200p" x="46.6725" y="44.1325" smashed="yes" rot="R180">
+<attribute name="NAME" x="47.4345" y="43.307" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="47.6885" y="45.5295" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C7" library="SparkFun-Passives" package="0805" value="2200p" x="41.5925" y="44.1325" smashed="yes" rot="R180">
+<attribute name="NAME" x="42.3545" y="43.307" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="42.6085" y="45.5295" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C8" library="SparkFun-Passives" package="0805" value="1u" x="42.2275" y="16.8275" smashed="yes" rot="R180">
+<attribute name="NAME" x="42.9895" y="16.002" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="43.2435" y="18.2245" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C9" library="SparkFun-Passives" package="0805" value="0.1u" x="50.4825" y="37.7825" smashed="yes" rot="R90">
+<attribute name="NAME" x="49.657" y="37.0205" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="51.8795" y="36.7665" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="D1" library="SparkFun-DiscreteSemi" package="SMB-DIODE" value="DIODE-ZENERSMB" x="59.53125" y="36.35375" smashed="yes" rot="R180">
+<attribute name="NAME" x="61.69025" y="34.19475" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="61.43625" y="39.78275" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="D2" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="75.8825" y="40.9575" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="DIO-11284" x="75.8825" y="40.9575" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.7715" y="39.9415" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="76.8985" y="42.3545" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="D3" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="75.8825" y="38.4175" rot="R180">
+<element name="D3" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="75.8825" y="38.4175" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="DIO-11284" x="75.8825" y="38.4175" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.7715" y="37.4015" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="76.8985" y="39.8145" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="D4" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="75.8825" y="35.8775" rot="R180">
+<element name="D4" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="75.8825" y="35.8775" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="DIO-11284" x="75.8825" y="35.8775" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.7715" y="34.8615" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="76.8985" y="37.2745" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="D5" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="75.8825" y="43.4975" rot="R180">
+<element name="D5" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="75.8825" y="43.4975" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="DIO-11284" x="75.8825" y="43.4975" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="76.7715" y="42.4815" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="76.8985" y="44.8945" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="D6" library="SparkFun-LED" package="LED-1206" value="" x="2.06375" y="58.9915" rot="R180"/>
-<element name="D7" library="SparkFun-LED" package="LED-1206" value="" x="2.06375" y="53.6575" rot="R180"/>
-<element name="D8" library="SparkFun-LED" package="LED-1206" value="" x="105.56875" y="50.165"/>
-<element name="D9" library="SparkFun-LED" package="LED-1206" value="" x="105.56875" y="43.815"/>
+<element name="D6" library="SparkFun-LED" package="LED-1206" value="" x="2.06375" y="58.9915" smashed="yes" rot="R180">
+<attribute name="NAME" x="2.69875" y="60.6425" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="3.07975" y="60.7695" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="D7" library="SparkFun-LED" package="LED-1206" value="" x="2.06375" y="53.6575" smashed="yes" rot="R180">
+<attribute name="NAME" x="2.69875" y="55.3085" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="3.07975" y="55.4355" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="D8" library="SparkFun-LED" package="LED-1206" value="" x="105.56875" y="50.165" smashed="yes">
+<attribute name="NAME" x="104.67975" y="51.562" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="104.55275" y="48.387" size="0.4064" layer="27"/>
+</element>
+<element name="D9" library="SparkFun-LED" package="LED-1206" value="" x="105.56875" y="43.815" smashed="yes">
+<attribute name="NAME" x="104.67975" y="45.212" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="104.55275" y="42.037" size="0.4064" layer="27"/>
+</element>
 <element name="Q1" library="SparkFun-DiscreteSemi" package="TO220V" value="MOSFET-NCHANNELFQP30N06L" x="24.13" y="60.16625" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="TRANS-10060" x="24.13" y="60.16625" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="27.686" y="56.73725" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="NAME" x="27.686" y="56.73725" size="0.6096" layer="26" ratio="10" rot="MR180"/>
 </element>
 <element name="Q2" library="SparkFun-DiscreteSemi" package="TO220V" value="MOSFET-NCHANNELFQP30N06L" x="40.64" y="60.16625" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="TRANS-10060" x="40.64" y="60.16625" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="44.196" y="56.73725" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="NAME" x="44.196" y="56.73725" size="0.6096" layer="26" ratio="10" rot="MR180"/>
 </element>
 <element name="Q3" library="SparkFun-DiscreteSemi" package="TO220V" value="MOSFET-NCHANNELFQP30N06L" x="54.61" y="60.16625" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="TRANS-10060" x="54.61" y="60.16625" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="58.166" y="56.73725" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="NAME" x="58.166" y="56.73725" size="0.6096" layer="26" ratio="10" rot="MR180"/>
 </element>
 <element name="Q4" library="SparkFun-DiscreteSemi" package="TO220V" value="MOSFET-NCHANNELFQP30N06L" x="71.12" y="60.16625" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="TRANS-10060" x="71.12" y="60.16625" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="74.676" y="56.73725" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="NAME" x="74.676" y="56.73725" size="0.6096" layer="26" ratio="10" rot="MR180"/>
 </element>
 <element name="Q5" library="SparkFun-DiscreteSemi" package="TO220V" value="MOSFET-NCHANNELFQP30N06L" x="85.09" y="60.16625" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="TRANS-10060" x="85.09" y="60.16625" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="88.646" y="56.73725" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="NAME" x="88.646" y="56.73725" size="0.6096" layer="26" ratio="10" rot="MR180"/>
 </element>
 <element name="Q6" library="SparkFun-DiscreteSemi" package="TO220V" value="MOSFET-NCHANNELFQP30N06L" x="101.6" y="60.16625" smashed="yes" rot="MR0">
 <attribute name="PROD_ID" value="TRANS-10060" x="101.6" y="60.16625" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="98.044" y="63.59525" size="1.27" layer="26" ratio="10" rot="MR0"/>
+<attribute name="NAME" x="98.044" y="63.59525" size="0.6096" layer="26" ratio="10" rot="MR0"/>
 </element>
-<element name="Q7" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MOSFET-PCHANNEL" x="97.94875" y="50.165" rot="R270">
-<attribute name="PROD_ID" value="TRANS-08285" x="97.94875" y="50.165" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="Q7" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MOSFET-PCHANNEL" x="99.21875" y="50.165" smashed="yes" rot="R270">
+<attribute name="PROD_ID" value="TRANS-08285" x="99.21875" y="50.165" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="96.67875" y="50.7365" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="99.02825" y="51.181" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="Q8" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MOSFET-PCHANNEL" x="97.94875" y="43.815" rot="R270">
-<attribute name="PROD_ID" value="TRANS-08285" x="97.94875" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="Q8" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MOSFET-PCHANNEL" x="99.21875" y="43.815" smashed="yes" rot="R270">
+<attribute name="PROD_ID" value="TRANS-08285" x="99.21875" y="43.815" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="96.67875" y="44.3865" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="99.02825" y="44.831" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="R1" library="SparkFun-Passives" package="0805" value="205k" x="44.45" y="36.195" rot="R270"/>
-<element name="R10" library="SparkFun-Passives" package="0805" value="56" x="41.5925" y="41.5925"/>
+<element name="R1" library="SparkFun-Passives" package="0805" value="205k" x="44.45" y="36.195" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.2755" y="36.957" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="43.053" y="37.211" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="R10" library="SparkFun-Passives" package="0805" value="56" x="41.5925" y="41.5925" smashed="yes">
+<attribute name="NAME" x="40.8305" y="40.132" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="40.5765" y="40.1955" size="0.4064" layer="27"/>
+</element>
 <element name="R11" library="SparkFun-Passives" package="0805" value="10" x="21.5265" y="56.1975" rot="MR270"/>
 <element name="R12" library="SparkFun-Passives" package="0805" value="10" x="38.13175" y="55.59425" rot="MR270"/>
-<element name="R14" library="SparkFun-Passives" package="0805" value="46.4k" x="66.9925" y="32.7025" rot="R90"/>
-<element name="R15" library="SparkFun-Passives" package="0805" value="4.99k" x="56.8325" y="44.1325" rot="R180"/>
-<element name="R16" library="SparkFun-Passives" package="0805" value="10" x="53.62575" y="57.15" rot="MR180"/>
-<element name="R17" library="SparkFun-Passives" package="0805" value="10" x="77.089" y="53.94325" rot="MR270"/>
-<element name="R19" library="SparkFun-Passives" package="0805" value="46.4k" x="70.8025" y="23.8125" rot="R90"/>
-<element name="R2" library="SparkFun-Passives" package="0805" value="16.2k" x="35.8775" y="41.275" rot="R180"/>
-<element name="R20" library="SparkFun-Passives" package="0805" value="4.99k" x="51.7525" y="41.5925" rot="R180"/>
-<element name="R21" library="SparkFun-Passives" package="0805" value="10" x="80.264" y="55.34025" rot="MR270"/>
-<element name="R22" library="SparkFun-Passives" package="0805" value="10" x="92.93225" y="56.642" rot="MR0"/>
-<element name="R23" library="SparkFun-Passives" package="0805" value="3.3" x="31.877" y="54.51475"/>
-<element name="R24" library="SparkFun-Passives" package="0805" value="46.4k" x="65.7225" y="20.0025" rot="R90"/>
-<element name="R25" library="SparkFun-Passives" package="0805" value="4.99k" x="70.8025" y="20.0025" rot="R270"/>
-<element name="R26" library="SparkFun-Passives" package="0805" value="46.4k" x="53.0225" y="37.7825" rot="R90"/>
-<element name="R27" library="SparkFun-Passives" package="0805" value="4.99k" x="61.9125" y="41.5925"/>
-<element name="R28" library="SparkFun-Passives" package="0805" value="1k" x="31.59125" y="21.74875" rot="R270"/>
-<element name="R29" library="SparkFun-Passives" package="0805" value="1k" x="35.433" y="29.845" rot="R180"/>
-<element name="R3" library="SparkFun-Passives" package="0805" value="31.6k" x="32.385" y="37.465" rot="R180"/>
-<element name="R32" library="SparkFun-Passives" package="0805" value="330" x="2.06375" y="56.22925"/>
-<element name="R33" library="SparkFun-Passives" package="0805" value="330" x="2.06375" y="50.673"/>
-<element name="R34" library="SparkFun-Passives" package="0805" value="330" x="105.56875" y="47.625" rot="R180"/>
-<element name="R35" library="SparkFun-Passives" package="0805" value="330" x="105.56875" y="41.275" rot="R180"/>
-<element name="R4" library="SparkFun-Passives" package="0805" value="10k" x="35.8775" y="36.195"/>
-<element name="R5" library="SparkFun-Passives" package="0805" value="10k" x="32.385" y="34.925" rot="R180"/>
-<element name="R6" library="SparkFun-Passives" package="0805" value="10k" x="35.8775" y="33.655" rot="R180"/>
-<element name="R7" library="SparkFun-Passives" package="0805" value="10k" x="32.385" y="32.385" rot="R180"/>
+<element name="R14" library="SparkFun-Passives" package="0805" value="46.4k" x="66.9925" y="32.7025" smashed="yes" rot="R90">
+<attribute name="NAME" x="68.453" y="31.9405" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="68.3895" y="31.6865" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R15" library="SparkFun-Passives" package="0805" value="4.99k" x="56.8325" y="44.1325" smashed="yes" rot="R180">
+<attribute name="NAME" x="57.5945" y="43.307" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="57.8485" y="45.5295" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R16" library="SparkFun-Passives" package="0805" value="10" x="53.62575" y="57.15" smashed="yes" rot="MR180">
+<attribute name="NAME" x="52.86375" y="56.3245" size="0.6096" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="52.60975" y="58.547" size="0.4064" layer="28" rot="MR180"/>
+</element>
+<element name="R17" library="SparkFun-Passives" package="0805" value="10" x="77.089" y="53.94325" smashed="yes" rot="MR270">
+<attribute name="NAME" x="76.2635" y="54.70525" size="0.6096" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="78.486" y="54.95925" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="R19" library="SparkFun-Passives" package="0805" value="46.4k" x="70.8025" y="23.8125" smashed="yes" rot="R90">
+<attribute name="NAME" x="72.263" y="23.0505" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="72.1995" y="22.7965" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R2" library="SparkFun-Passives" package="0805" value="16.2k" x="35.8775" y="41.275" smashed="yes" rot="R180">
+<attribute name="NAME" x="36.3855" y="42.7355" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="36.8935" y="42.672" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R20" library="SparkFun-Passives" package="0805" value="4.99k" x="51.7525" y="41.5925" smashed="yes" rot="R180">
+<attribute name="NAME" x="52.5145" y="40.767" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="52.7685" y="42.9895" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R21" library="SparkFun-Passives" package="0805" value="10" x="80.264" y="55.34025" smashed="yes" rot="MR270">
+<attribute name="NAME" x="79.4385" y="56.10225" size="0.6096" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="81.661" y="56.35625" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="R22" library="SparkFun-Passives" package="0805" value="10" x="92.93225" y="56.642" smashed="yes" rot="MR0">
+<attribute name="NAME" x="93.69425" y="57.4675" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="93.94825" y="55.245" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="R23" library="SparkFun-Passives" package="0805" value="3.3" x="31.877" y="54.51475" smashed="yes">
+<attribute name="NAME" x="31.115" y="55.34025" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="30.861" y="53.11775" size="0.4064" layer="27"/>
+</element>
+<element name="R24" library="SparkFun-Passives" package="0805" value="46.4k" x="65.7225" y="20.0025" smashed="yes" rot="R90">
+<attribute name="NAME" x="67.183" y="19.2405" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="67.1195" y="18.9865" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R25" library="SparkFun-Passives" package="0805" value="4.99k" x="70.8025" y="20.0025" smashed="yes" rot="R270">
+<attribute name="NAME" x="71.628" y="20.7645" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="69.4055" y="21.0185" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="R26" library="SparkFun-Passives" package="0805" value="46.4k" x="53.0225" y="37.7825" smashed="yes" rot="R90">
+<attribute name="NAME" x="52.197" y="37.0205" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="54.4195" y="36.7665" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R27" library="SparkFun-Passives" package="0805" value="4.99k" x="61.9125" y="41.5925" smashed="yes">
+<attribute name="NAME" x="61.1505" y="40.132" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="60.8965" y="40.1955" size="0.4064" layer="27"/>
+</element>
+<element name="R28" library="SparkFun-Passives" package="0805" value="1k" x="31.59125" y="21.74875" smashed="yes" rot="R270">
+<attribute name="NAME" x="32.41675" y="22.51075" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="30.19425" y="22.76475" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="R29" library="SparkFun-Passives" package="0805" value="1k" x="35.433" y="29.845" smashed="yes" rot="R180">
+<attribute name="NAME" x="36.195" y="29.0195" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="36.449" y="31.242" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R3" library="SparkFun-Passives" package="0805" value="31.6k" x="32.385" y="37.465" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.147" y="36.6395" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="33.401" y="38.862" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R32" library="SparkFun-Passives" package="0805" value="330" x="2.06375" y="56.22925" smashed="yes">
+<attribute name="NAME" x="1.30175" y="57.05475" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="1.04775" y="54.83225" size="0.4064" layer="27"/>
+</element>
+<element name="R33" library="SparkFun-Passives" package="0805" value="330" x="2.06375" y="50.673" smashed="yes">
+<attribute name="NAME" x="1.30175" y="51.4985" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="1.04775" y="49.276" size="0.4064" layer="27"/>
+</element>
+<element name="R34" library="SparkFun-Passives" package="0805" value="330" x="105.56875" y="47.625" smashed="yes" rot="R180">
+<attribute name="NAME" x="106.33075" y="46.7995" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="106.58475" y="49.022" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R35" library="SparkFun-Passives" package="0805" value="330" x="105.56875" y="41.275" smashed="yes" rot="R180">
+<attribute name="NAME" x="106.33075" y="40.4495" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="106.58475" y="42.672" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R4" library="SparkFun-Passives" package="0805" value="10k" x="35.8775" y="36.195" smashed="yes">
+<attribute name="NAME" x="35.1155" y="37.0205" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="34.8615" y="34.798" size="0.4064" layer="27"/>
+</element>
+<element name="R5" library="SparkFun-Passives" package="0805" value="10k" x="32.385" y="34.925" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.147" y="34.0995" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="33.401" y="36.322" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R6" library="SparkFun-Passives" package="0805" value="10k" x="35.8775" y="33.655" smashed="yes" rot="R180">
+<attribute name="NAME" x="36.1315" y="35.1155" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="36.8935" y="35.052" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="R7" library="SparkFun-Passives" package="0805" value="10k" x="32.385" y="32.385" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.147" y="31.5595" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="33.401" y="33.782" size="0.4064" layer="27" rot="R180"/>
+</element>
 <element name="R8" library="SparkFun-Passives" package="0805" value="1" x="39.6875" y="31.115" rot="R180"/>
-<element name="R9" library="SparkFun-Passives" package="0805" value="56" x="46.6725" y="41.5925"/>
+<element name="R9" library="SparkFun-Passives" package="0805" value="56" x="46.6725" y="41.5925" smashed="yes">
+<attribute name="NAME" x="46.1645" y="40.132" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="45.6565" y="40.1955" size="0.4064" layer="27"/>
+</element>
 <element name="U$1" library="DRV8301" package="DCA" value="DRV8301" x="50.8" y="25.4" rot="R270"/>
 <element name="U$2" library="MRDT-2015-General" package="TIVA-C" value="TIVA-C" x="93.98" y="52.07" rot="R180"/>
 <element name="U$5" library="MRDT-Connectors" package="APP45_PCB_HORIZ_RIGHT" value="APPPP45_PCB_HORIZ_RIGHT" x="29.21" y="88.9" rot="R270">
@@ -10348,56 +10555,116 @@ design rules under a new name.</description>
 <element name="U$7" library="MRDT-Connectors" package="APP45_PCB_HORIZ_RIGHT" value="APPPP45_PCB_HORIZ_RIGHT" x="90.17" y="88.9" rot="R270">
 <attribute name="COLOR1" value="" x="90.17" y="88.9" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C27" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="20.32" y="35.4965"/>
-<element name="C28" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="20.32" y="10.0965" rot="R90"/>
+<element name="C27" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="20.32" y="35.4965" smashed="yes">
+<attribute name="VALUE" x="18.415" y="31.1785" size="0.8128" layer="27"/>
+<attribute name="NAME" x="19.558" y="38.4175" size="0.6096" layer="25"/>
+</element>
+<element name="C28" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="20.32" y="10.0965" smashed="yes" rot="R90">
+<attribute name="VALUE" x="24.638" y="8.1915" size="0.8128" layer="27" rot="R90"/>
+<attribute name="NAME" x="17.399" y="9.3345" size="0.6096" layer="25" rot="R90"/>
+</element>
 <element name="U$14" library="Inductor_DR74" package="INDUCTOR_DR74" value="33u" x="68.0085" y="39.37" rot="R90"/>
 <element name="U$8" library="Molex-SL" package="5PIN" value="5PIN" x="96.99625" y="30.48" rot="R270"/>
-<element name="R13" library="SparkFun-Passives" package="1206" value=".001" x="47.625" y="63.34125" rot="MR270"/>
-<element name="R18" library="SparkFun-Passives" package="1206" value=".001" x="78.105" y="63.34125" rot="MR270"/>
-<element name="C34" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="48.26" y="71.12"/>
-<element name="C35" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="17.78" y="71.12"/>
+<element name="R13" library="SparkFun-Passives" package="1206" value=".001" x="47.625" y="63.34125" smashed="yes" rot="MR270">
+<attribute name="NAME" x="46.482" y="64.61125" size="0.6096" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="49.149" y="64.73825" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="R18" library="SparkFun-Passives" package="1206" value=".001" x="78.105" y="63.34125" smashed="yes" rot="MR270">
+<attribute name="NAME" x="76.962" y="64.61125" size="0.6096" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="79.629" y="64.73825" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="C34" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="48.26" y="71.12" smashed="yes">
+<attribute name="VALUE" x="46.355" y="66.802" size="0.8128" layer="27"/>
+<attribute name="NAME" x="47.498" y="74.041" size="0.6096" layer="25"/>
+</element>
+<element name="C35" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="17.78" y="71.12" smashed="yes">
+<attribute name="VALUE" x="15.875" y="66.802" size="0.8128" layer="27"/>
+<attribute name="NAME" x="17.018" y="74.041" size="0.6096" layer="25"/>
+</element>
 <element name="U$9" library="MRDT-Hardware" package="MRDT_LOGO" value="" x="76.0476" y="17.4498"/>
 <element name="J3" library="MRDT-Connectors" package="APP45_5V_HORIZ_CONFIG" value="APP_2POS_CONFIG5V_HORIZ" x="-12.22375" y="40.79875">
 <attribute name="COLOR1" value="RED" x="-12.22375" y="40.79875" size="1.778" layer="27" display="off"/>
 <attribute name="COLOR2" value="BLACK" x="-12.22375" y="40.79875" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C38" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="14.478" y="57.404"/>
-<element name="R30" library="SparkFun-Passives" package="0805" value="120" x="15.08125" y="29.94025" rot="MR270"/>
+<element name="C38" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="14.478" y="57.404" smashed="yes">
+<attribute name="VALUE" x="12.573" y="53.086" size="0.8128" layer="27"/>
+<attribute name="NAME" x="13.716" y="60.325" size="0.6096" layer="25"/>
+</element>
+<element name="R30" library="SparkFun-Passives" package="0805" value="120" x="15.08125" y="29.94025" smashed="yes" rot="MR270">
+<attribute name="NAME" x="14.25575" y="30.70225" size="0.6096" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="16.47825" y="30.95625" size="0.4064" layer="28" rot="MR270"/>
+</element>
 <element name="U$4" library="Molex-SL" package="5PIN" value="5PIN" x="10.95375" y="27.94" rot="R90"/>
-<element name="C39" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="7.62" y="12.3825"/>
-<element name="SH1" library="shorts-old" package="SHORT_TOP-50" value="SHORT-HT5" x="80.16875" y="63.8175" rot="MR180">
+<element name="C39" library="SparkFun-Passives" package="CPOL-RADIAL-1000UF-25V" value="220u" x="7.62" y="12.3825" smashed="yes">
+<attribute name="VALUE" x="5.715" y="8.0645" size="0.8128" layer="27"/>
+<attribute name="NAME" x="6.858" y="15.3035" size="0.6096" layer="25"/>
+</element>
+<element name="SH1" library="shorts-old" package="SHORT_TOP-50" value="SHORT-HT5" x="80.16875" y="63.8175" smashed="yes" rot="MR180">
 <attribute name="BOM" value="no" x="80.16875" y="63.8175" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="SH2" library="shorts-old" package="SHORT_TOP-50" value="SHORT-HT5" x="49.68875" y="63.8175" rot="MR180">
+<element name="SH2" library="shorts-old" package="SHORT_TOP-50" value="SHORT-HT5" x="49.68875" y="63.8175" smashed="yes" rot="MR180">
 <attribute name="BOM" value="no" x="49.68875" y="63.8175" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="R31" library="SparkFun-Passives" package="0805" value="100" x="27.178" y="6.858" rot="R90"/>
-<element name="C40" library="SparkFun-Passives" package="0805" value=".015u" x="27.178" y="2.794" rot="R270"/>
-<element name="R36" library="SparkFun-Passives" package="0805" value="10k" x="89.916" y="31.496"/>
-<element name="R37" library="SparkFun-Passives" package="0805" value="10k" x="89.916" y="26.924"/>
-<element name="R38" library="SparkFun-Passives" package="0805" value="10k" x="89.916" y="36.068"/>
-<element name="Q9" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MOSFET-NCHANNELAO3404A" x="3.556" y="62.738" rot="R270">
+<element name="R31" library="SparkFun-Passives" package="0805" value="100" x="27.178" y="6.858" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.3525" y="6.096" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="28.575" y="5.842" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C40" library="SparkFun-Passives" package="0805" value=".015u" x="27.178" y="2.794" smashed="yes" rot="R270">
+<attribute name="NAME" x="28.0035" y="3.556" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="25.781" y="3.81" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="R36" library="SparkFun-Passives" package="0805" value="10k" x="89.916" y="31.496" smashed="yes">
+<attribute name="NAME" x="89.154" y="32.3215" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="88.9" y="30.099" size="0.4064" layer="27"/>
+</element>
+<element name="R37" library="SparkFun-Passives" package="0805" value="10k" x="89.916" y="26.924" smashed="yes">
+<attribute name="NAME" x="89.154" y="27.7495" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="88.9" y="25.527" size="0.4064" layer="27"/>
+</element>
+<element name="R38" library="SparkFun-Passives" package="0805" value="10k" x="89.916" y="36.068" smashed="yes">
+<attribute name="NAME" x="89.154" y="36.8935" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="88.9" y="34.671" size="0.4064" layer="27"/>
+</element>
+<element name="Q9" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MOSFET-NCHANNELAO3404A" x="3.556" y="62.738" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="TRAN-12988" x="3.556" y="62.738" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="5.334" y="63.5635" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="3.3655" y="63.754" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="R51" library="SparkFun-Passives" package="0805" value="1M" x="0.254" y="67.31" rot="R90"/>
-<element name="R50" library="SparkFun-Passives" package="0805" value="3M" x="2.794" y="67.31" rot="R270"/>
-<element name="D10" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="72.39" y="57.404" rot="MR180">
+<element name="R51" library="SparkFun-Passives" package="0805" value="1M" x="0.254" y="67.31" smashed="yes" rot="R90">
+<attribute name="NAME" x="-0.5715" y="66.548" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="1.651" y="66.294" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R50" library="SparkFun-Passives" package="0805" value="3M" x="2.794" y="67.31" smashed="yes" rot="R270">
+<attribute name="NAME" x="3.6195" y="68.072" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="1.397" y="68.326" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="D10" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="72.39" y="57.404" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="DIO-11284" x="72.39" y="57.404" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="71.501" y="56.388" size="0.6096" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="71.374" y="58.801" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="D11" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="57.0865" y="57.658" rot="MR180">
+<element name="D11" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="57.0865" y="57.658" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="DIO-11284" x="57.0865" y="57.658" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="56.1975" y="56.642" size="0.6096" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="56.0705" y="59.055" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="D12" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="40.932403125" y="57.32388125" rot="MR180">
+<element name="D12" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="40.932403125" y="57.32388125" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="DIO-11284" x="40.932403125" y="57.32388125" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="40.043403125" y="56.30788125" size="0.6096" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="39.916403125" y="58.72088125" size="0.4064" layer="28" rot="MR180"/>
 </element>
 <element name="D13" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="25.146" y="57.15" rot="MR180">
 <attribute name="PROD_ID" value="DIO-11284" x="25.146" y="57.15" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="D14" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="84.074" y="57.404" rot="MR180">
+<element name="D14" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="84.074" y="57.404" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="DIO-11284" x="84.074" y="57.404" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="83.185" y="56.388" size="0.6096" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="83.058" y="58.801" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="D15" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="103.124" y="63.246" rot="MR0">
+<element name="D15" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="103.124" y="63.246" smashed="yes" rot="MR0">
 <attribute name="PROD_ID" value="DIO-11284" x="103.124" y="63.246" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="104.013" y="64.262" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="104.14" y="61.849" size="0.4064" layer="28" rot="MR0"/>
 </element>
 <element name="U$10" library="MRDT-Connectors" package="TEST_POINT_0.1INDIAM" value="TEST_POINT_0.1INDIAM" x="7.62" y="62.738" rot="R90"/>
 <element name="U$11" library="MRDT-Connectors" package="TEST_POINT_0.1INDIAM" value="TEST_POINT_0.1INDIAM" x="7.62" y="67.564" rot="R90"/>
@@ -10417,14 +10684,34 @@ design rules under a new name.</description>
 <element name="U$27" library="MRDT-Connectors" package="TEST_POINT_0.1INDIAM" value="TEST_POINT_0.1INDIAM" x="10.16" y="76.2" rot="R180"/>
 <element name="U$28" library="MRDT-Connectors" package="TEST_POINT_0.1INDIAM" value="TEST_POINT_0.1INDIAM" x="13.716" y="2.032" rot="R180"/>
 <element name="U$29" library="MRDT-Connectors" package="TEST_POINT_0.1INDIAM" value="TEST_POINT_0.1INDIAM" x="101.092" y="69.596" rot="R180"/>
-<element name="R39" library="SparkFun-Passives" package="0805" value="10" x="89.916" y="29.21"/>
-<element name="R40" library="SparkFun-Passives" package="0805" value="10" x="89.916" y="33.782"/>
-<element name="R41" library="SparkFun-Passives" package="0805" value="10" x="89.916" y="38.354"/>
-<element name="C41" library="SparkFun-Passives" package="0805" value=".015u" x="86.868" y="37.592" rot="R270"/>
-<element name="C42" library="SparkFun-Passives" package="0805" value=".015u" x="86.868" y="33.02" rot="R270"/>
-<element name="C43" library="SparkFun-Passives" package="0805" value=".015u" x="86.868" y="28.448" rot="R270"/>
-<element name="D16" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="0.254" y="62.738" rot="R270">
+<element name="R39" library="SparkFun-Passives" package="0805" value="10" x="89.916" y="29.21" smashed="yes">
+<attribute name="NAME" x="89.154" y="30.0355" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="88.9" y="27.813" size="0.4064" layer="27"/>
+</element>
+<element name="R40" library="SparkFun-Passives" package="0805" value="10" x="89.916" y="33.782" smashed="yes">
+<attribute name="NAME" x="89.154" y="34.6075" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="88.9" y="32.385" size="0.4064" layer="27"/>
+</element>
+<element name="R41" library="SparkFun-Passives" package="0805" value="10" x="89.916" y="38.354" smashed="yes">
+<attribute name="NAME" x="89.154" y="39.1795" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="88.9" y="36.957" size="0.4064" layer="27"/>
+</element>
+<element name="C41" library="SparkFun-Passives" package="0805" value=".015u" x="86.868" y="37.592" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.6935" y="38.354" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="85.471" y="38.608" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C42" library="SparkFun-Passives" package="0805" value=".015u" x="86.868" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.6935" y="33.782" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="85.471" y="34.036" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C43" library="SparkFun-Passives" package="0805" value=".015u" x="86.868" y="28.448" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.6935" y="29.21" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="85.471" y="29.464" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="D16" library="SparkFun-DiscreteSemi" package="SOD-323" value="3.3V" x="0.254" y="62.738" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="DIO-11284" x="0.254" y="62.738" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="1.27" y="63.627" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="-1.143" y="63.754" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="U$13" library="MRDT-ICs" package="SOIC8" value="MAX3078E" x="22.86" y="32.258" rot="MR270"/>
 </elements>
@@ -10657,10 +10944,10 @@ design rules under a new name.</description>
 <wire x1="47.05" y1="30.15" x2="44.78" y2="30.15" width="0.3048" layer="1"/>
 <wire x1="44.78" y1="30.15" x2="41.275" y2="33.655" width="0.3048" layer="1"/>
 <contactref element="U$2" pad="PA7"/>
-<wire x1="91.23125" y1="50.4825" x2="70.485" y2="50.4825" width="0.3048" layer="1"/>
+<wire x1="92.50125" y1="50.4825" x2="70.485" y2="50.4825" width="0.3048" layer="1"/>
 <wire x1="70.485" y1="50.4825" x2="68.8975" y2="52.07" width="0.3048" layer="1"/>
 <wire x1="68.8975" y1="52.07" x2="37.7825" y2="52.07" width="0.3048" layer="1"/>
-<wire x1="96.94875" y1="44.765" x2="91.23125" y2="50.4825" width="0.3048" layer="1"/>
+<wire x1="98.21875" y1="44.765" x2="92.50125" y2="50.4825" width="0.3048" layer="1"/>
 <wire x1="37.7825" y1="52.07" x2="34.845625" y2="49.133125" width="0.3048" layer="1"/>
 <via x="32.86125" y="47.14875" extent="1-16" drill="0.381"/>
 <wire x1="34.845625" y1="49.133125" x2="32.86125" y2="47.14875" width="0.3048" layer="1"/>
@@ -10680,7 +10967,7 @@ design rules under a new name.</description>
 <wire x1="47.05" y1="29.65" x2="44.3275" y2="29.65" width="0.3048" layer="1"/>
 <wire x1="44.3275" y1="29.65" x2="41.5925" y2="32.385" width="0.3048" layer="1"/>
 <contactref element="U$2" pad="PA6"/>
-<wire x1="96.94875" y1="51.115" x2="70.805" y2="51.115" width="0.3048" layer="1"/>
+<wire x1="98.21875" y1="51.115" x2="70.805" y2="51.115" width="0.3048" layer="1"/>
 <wire x1="70.805" y1="51.115" x2="69.215" y2="52.705" width="0.3048" layer="1"/>
 <wire x1="69.215" y1="52.705" x2="36.5125" y2="52.705" width="0.3048" layer="1"/>
 <wire x1="36.5125" y1="52.705" x2="32.0675" y2="48.26" width="0.3048" layer="1"/>
@@ -10738,15 +11025,10 @@ design rules under a new name.</description>
 <via x="29.5275" y="33.655" extent="1-16" drill="0.381"/>
 <wire x1="31.485" y1="34.925" x2="31.485" y2="33.655" width="0.3048" layer="1"/>
 <wire x1="31.485" y1="33.655" x2="29.5275" y2="33.655" width="0.3048" layer="1"/>
-<wire x1="96.94875" y1="49.215" x2="97.94875" y2="48.215" width="0.508" layer="1"/>
-<wire x1="97.94875" y1="48.215" x2="97.94875" y2="42.8625" width="0.508" layer="1"/>
-<wire x1="97.94875" y1="42.8625" x2="97.94875" y2="38.57625" width="0.508" layer="1"/>
-<wire x1="97.94875" y1="38.57625" x2="99.53625" y2="36.98875" width="0.508" layer="1"/>
-<wire x1="99.53625" y1="36.98875" x2="99.53625" y2="25.4" width="0.508" layer="1"/>
-<wire x1="99.53625" y1="25.4" x2="99.53625" y2="17.17675" width="0.508" layer="1"/>
-<wire x1="96.99625" y1="25.4" x2="99.53625" y2="25.4" width="0.508" layer="1"/>
-<wire x1="96.94875" y1="42.865" x2="96.95125" y2="42.8625" width="0.508" layer="1"/>
-<wire x1="96.95125" y1="42.8625" x2="97.94875" y2="42.8625" width="0.508" layer="1"/>
+<wire x1="99.28225" y1="48.1515" x2="99.28225" y2="42.926" width="0.508" layer="1"/>
+<wire x1="99.28225" y1="42.926" x2="99.28225" y2="25.4" width="0.508" layer="1"/>
+<wire x1="99.28225" y1="25.4" x2="99.28225" y2="17.17675" width="0.508" layer="1"/>
+<wire x1="96.99625" y1="25.4" x2="99.28225" y2="25.4" width="0.508" layer="1"/>
 <wire x1="70.299375" y1="46.593125" x2="70.58025" y2="46.62" width="0.4064" layer="1"/>
 <wire x1="73.936875" y1="46.593125" x2="72.734375" y2="46.593125" width="0.4064" layer="1"/>
 <wire x1="72.734375" y1="46.593125" x2="72.9615" y2="46.62" width="0.4064" layer="1"/>
@@ -10783,6 +11065,9 @@ design rules under a new name.</description>
 <wire x1="18.415" y1="33.655" x2="12.827" y2="33.655" width="0.3048" layer="16"/>
 <wire x1="12.827" y1="33.655" x2="10.922" y2="35.56" width="0.3048" layer="16"/>
 <wire x1="18.4408" y1="33.6292" x2="18.415" y2="33.655" width="0.3048" layer="16"/>
+<wire x1="99.28225" y1="48.1515" x2="98.21875" y2="49.215" width="0.508" layer="1"/>
+<wire x1="98.21875" y1="42.865" x2="99.22125" y2="42.865" width="0.508" layer="1"/>
+<wire x1="99.22125" y1="42.865" x2="99.28225" y2="42.926" width="0.508" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$1" pad="7"/>
@@ -11601,12 +11886,12 @@ design rules under a new name.</description>
 <signal name="N$28">
 <contactref element="Q8" pad="3"/>
 <contactref element="D9" pad="A"/>
-<wire x1="104.06875" y1="43.815" x2="99.04875" y2="43.815" width="0.3048" layer="1"/>
+<wire x1="104.06875" y1="43.815" x2="100.31875" y2="43.815" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$32">
 <contactref element="Q7" pad="3"/>
 <contactref element="D8" pad="A"/>
-<wire x1="104.06875" y1="50.165" x2="99.04875" y2="50.165" width="0.3048" layer="1"/>
+<wire x1="104.06875" y1="50.165" x2="100.31875" y2="50.165" width="0.3048" layer="1"/>
 </signal>
 <signal name="HALL_A">
 <via x="68.73875" y="50.64125" extent="1-16" drill="0.381"/>
