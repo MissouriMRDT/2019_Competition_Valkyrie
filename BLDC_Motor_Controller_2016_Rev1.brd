@@ -10895,7 +10895,7 @@ design rules under a new name.</description>
 <via x="51.816" y="21.336" extent="1-16" drill="0.381" shape="square"/>
 <via x="52.832" y="21.336" extent="1-16" drill="0.381" shape="square"/>
 <via x="48.768" y="21.336" extent="1-16" drill="0.381" shape="square"/>
-<via x="29.21" y="8.4455" extent="1-16" drill="0.381" shape="square"/>
+<via x="28.956" y="8.4455" extent="1-16" drill="0.381" shape="square"/>
 <contactref element="U1" pad="2"/>
 <via x="34.417" y="38.735" extent="1-16" drill="0.381" shape="square"/>
 <via x="34.417" y="36.195" extent="1-16" drill="0.381" shape="square"/>
