@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4132,12 +4132,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </device>
 </devices>
 </deviceset>
-<deviceset name="MAX232" prefix="U">
+<deviceset name="MAX*232" prefix="U">
 <gates>
 <gate name="G$1" symbol="MAX232" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC16">
+<device name="D" package="SOIC16">
 <connects>
 <connect gate="G$1" pin="C1+" pad="1"/>
 <connect gate="G$1" pin="C1-" pad="3"/>
@@ -4157,7 +4157,12 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connect gate="G$1" pin="VS-" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="OPERATING_VOLTAGE" value="5V"/>
+</technology>
+<technology name="3">
+<attribute name="OPERATING_VOLTAGE" value="3V3" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4243,7 +4248,7 @@ by exp-lbrs.ulp</description>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0805" value="6800p"/>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0805" value="120p"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="53.3k"/>
+<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="31.6k"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
@@ -4419,14 +4424,14 @@ by exp-lbrs.ulp</description>
 <part name="U1" library="MRDT-ICs" deviceset="NUP4201MR6" device=""/>
 <part name="GND42" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="U2" library="MRDT-ICs" deviceset="MAX232" device=""/>
-<part name="C44" library="SparkFun-Passives" deviceset="CAP" device="0805" value="1u"/>
-<part name="C45" library="SparkFun-Passives" deviceset="CAP" device="0805" value="1u"/>
-<part name="C46" library="SparkFun-Passives" deviceset="CAP" device="0805" value="1u"/>
+<part name="U2" library="MRDT-ICs" deviceset="MAX*232" device="D" technology="3" value="MAX3232D"/>
+<part name="C44" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1u"/>
+<part name="C45" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1u"/>
+<part name="C46" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1u"/>
 <part name="GND43" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C47" library="SparkFun-Passives" deviceset="CAP" device="0805" value="1u"/>
-<part name="C48" library="SparkFun-Passives" deviceset="CAP" device="0805" value="1u"/>
+<part name="C47" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1u"/>
+<part name="C48" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1u"/>
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
@@ -4516,6 +4521,7 @@ by exp-lbrs.ulp</description>
 <text x="205.74" y="93.98" size="5.08" layer="97">Microcontroller</text>
 <text x="205.74" y="-15.24" size="5.08" layer="97">External Connections</text>
 <text x="-111.76" y="-93.98" size="5.08" layer="97">Indicators</text>
+<text x="53.34" y="68.58" size="5.08" layer="97">VCC = 3.3V</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="5.08"/>
@@ -5178,9 +5184,9 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
-<pinref part="U$2" gate="G$1" pin="+5V"/>
-<wire x1="269.24" y1="12.7" x2="261.62" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="12.7" x2="261.62" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="15.24" x2="261.62" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="+3V3"/>
+<wire x1="261.62" y1="15.24" x2="269.24" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D7" gate="G$1" pin="A"/>
@@ -5230,8 +5236,8 @@ by exp-lbrs.ulp</description>
 <segment>
 <pinref part="U2" gate="G$1" pin="VCC"/>
 <wire x1="243.84" y1="-40.64" x2="243.84" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="C46" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="-33.02" x2="215.9" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="C46" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="-33.02" x2="215.9" y2="-35.56" width="0.1524" layer="91"/>
 <label x="243.84" y="-33.02" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
