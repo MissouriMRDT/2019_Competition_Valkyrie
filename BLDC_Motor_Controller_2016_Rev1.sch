@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4255,7 +4255,7 @@ by exp-lbrs.ulp</description>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1"/>
+<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="150k"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Passives" deviceset="CAP" device="1206" value="2.2u"/>
 <part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0805" value=".022u"/>
@@ -4385,12 +4385,12 @@ by exp-lbrs.ulp</description>
 <part name="R51" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1M"/>
 <part name="R50" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="3M"/>
 <part name="GND35" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="D10" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="3.3V"/>
-<part name="D11" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="3.3V"/>
-<part name="D12" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="3.3V"/>
-<part name="D13" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="3.3V"/>
-<part name="D14" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="3.3V"/>
-<part name="D15" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="3.3V"/>
+<part name="D10" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="15V"/>
+<part name="D11" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="15V"/>
+<part name="D12" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="15V"/>
+<part name="D13" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="15V"/>
+<part name="D14" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="15V"/>
+<part name="D15" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="15V"/>
 <part name="U$10" library="MRDT-Connectors" deviceset="TEST_POINT_0.1INDIAM" device=""/>
 <part name="U$11" library="MRDT-Connectors" deviceset="TEST_POINT_0.1INDIAM" device=""/>
 <part name="U$12" library="MRDT-Connectors" deviceset="TEST_POINT_0.1INDIAM" device=""/>
@@ -4434,6 +4434,8 @@ by exp-lbrs.ulp</description>
 <part name="C48" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1u"/>
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND37" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4717,6 +4719,8 @@ by exp-lbrs.ulp</description>
 <instance part="C48" gate="G$1" x="264.16" y="-60.96" rot="R90"/>
 <instance part="GND45" gate="1" x="269.24" y="-55.88"/>
 <instance part="GND46" gate="1" x="269.24" y="-63.5"/>
+<instance part="GND37" gate="1" x="27.94" y="-35.56" rot="R90"/>
+<instance part="SUPPLY4" gate="G$1" x="-45.72" y="-48.26"/>
 </instances>
 <busses>
 </busses>
@@ -5077,6 +5081,11 @@ by exp-lbrs.ulp</description>
 <pinref part="GND36" gate="1" pin="GND"/>
 <wire x1="312.42" y1="-63.5" x2="317.5" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="SL_C"/>
+<wire x1="17.78" y1="-35.56" x2="25.4" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="GND37" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -5241,6 +5250,12 @@ by exp-lbrs.ulp</description>
 <wire x1="215.9" y1="-33.02" x2="215.9" y2="-35.56" width="0.1524" layer="91"/>
 <label x="243.84" y="-33.02" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="REF"/>
+<wire x1="-17.78" y1="-50.8" x2="-45.72" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-50.8" x2="-45.72" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -5392,13 +5407,6 @@ by exp-lbrs.ulp</description>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="DVDD"/>
 <wire x1="-22.86" y1="-45.72" x2="-17.78" y2="-45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="REF" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="REF"/>
-<wire x1="-17.78" y1="-50.8" x2="-27.94" y2="-50.8" width="0.1524" layer="91"/>
-<label x="-27.94" y="-50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -5564,13 +5572,6 @@ by exp-lbrs.ulp</description>
 <pinref part="R50" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="-114.3" x2="-55.88" y2="-121.92" width="0.1524" layer="91"/>
 <label x="-55.88" y="-114.3" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="SL_C" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="SL_C"/>
-<wire x1="17.78" y1="-35.56" x2="25.4" y2="-35.56" width="0.1524" layer="91"/>
-<label x="25.4" y="-35.56" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GL_C" class="0">
@@ -6361,6 +6362,17 @@ by exp-lbrs.ulp</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,269.24,15.24,U$2,+3V3,VCC,,,"/>
+<approved hash="204,1,269.24,12.7,U$2,+5V,,,,"/>
+<approved hash="204,1,299.72,15.24,U$2,RST,,,,"/>
+<approved hash="111,1,231.14,-129.54,HALL_C,,,,,"/>
+<approved hash="111,1,226.06,-134.62,HALL_B,,,,,"/>
+<approved hash="113,1,-32.6983,-133.35,D6,,,,,"/>
+<approved hash="113,1,-19.9983,-123.19,D7,,,,,"/>
+<approved hash="113,1,-2.21827,-123.19,D8,,,,,"/>
+<approved hash="113,1,25.7217,-130.81,D9,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
