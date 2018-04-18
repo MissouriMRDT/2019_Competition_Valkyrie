@@ -145,7 +145,7 @@ Text GLabel 2450 9200 1    60   UnSpc ~ 0
 Text GLabel 2750 9200 1    60   UnSpc ~ 0
 5V
 Text GLabel 4650 6750 0    60   UnSpc ~ 0
-5V
+Gnd
 $Comp
 L R R9
 U 1 1 5AB9D92A
@@ -315,10 +315,10 @@ Text GLabel 7500 7900 2    60   UnSpc ~ 0
 Gnd
 Wire Wire Line
 	7350 7900 7500 7900
-Text GLabel 6250 6750 2    60   UnSpc ~ 0
-Gnd
-Text GLabel 6250 6850 2    60   UnSpc ~ 0
-3.3V
+Text GLabel 6250 6750 2    60   Input ~ 0
+5V
+Text GLabel 6250 6850 2    60   Input ~ 0
+OE
 Connection ~ 2150 10050
 Wire Wire Line
 	6250 6750 6050 6750
@@ -338,15 +338,15 @@ F 3 "" H 4400 7050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 4300 6850 0    60   Input ~ 0
-OE
+3.3V
 Text GLabel 4650 6950 0    60   Input ~ 0
-A1
-Text GLabel 4650 6650 0    60   Output ~ 0
-B1
-Text GLabel 6250 6650 2    60   Output ~ 0
-B2
-Text GLabel 6250 6950 2    60   Input ~ 0
 A2
+Text GLabel 4650 6650 0    60   Output ~ 0
+B2
+Text GLabel 6250 6650 2    60   Output ~ 0
+B1
+Text GLabel 6250 6950 2    60   Input ~ 0
+A1
 Wire Wire Line
 	6050 6650 6250 6650
 Wire Wire Line
@@ -404,9 +404,9 @@ F 3 "" H 6400 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5400 5700 2    60   Input ~ 0
-A1
+B2
 Text GLabel 5400 5800 2    60   Input ~ 0
-A0
+B1
 Wire Wire Line
 	5300 5700 5400 5700
 Wire Wire Line
