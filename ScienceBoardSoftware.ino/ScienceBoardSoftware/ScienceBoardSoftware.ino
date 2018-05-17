@@ -99,7 +99,7 @@ void spectrometerSerialDebug(uint16_t spectrometer_photodiode_1, uint16_t spectr
 //////////////////////////////////////////////////////////
 void setup() 
 {  
-  Wire.begin();
+ /* Wire.begin();
   delay(10);
   PressureI2C.begin();
   PressureI2C.setModeBarometer();
@@ -109,10 +109,16 @@ void setup()
   RoveComm.begin(192, 168, 1, SCIENCEBOARD_FOURTH_OCTET); 
   delay(10);
   SpeectrometerTcpServer.begin();
-  delay(10);
-  
+  delay(10);*/
+
+  pinMode(PN_1, OUTPUT);
+  digitalWrite(PN_1, HIGH);
   if(USE_SERIAL_DEBUG)
+  {
     Serial.begin(9600);
+    delay(10);
+    Serial.println("Serial Initialised");
+  }
   delay(10);
 
   pinMode(METHANE_PIN,                     INPUT);
@@ -134,8 +140,10 @@ void setup()
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void loop() 
 {
+  delay(1000);
+  
   RoveComm.read(&data_id, &command_data_size, data_value);
-
+  
   switch (data_id)
   {
     case(LASER_ON):
@@ -150,9 +158,9 @@ void loop()
     default:
       break;
   }
-
+  
   //Read and Map sensor Vales
-  air_pressure_pascals       = PressureI2C.readPressure();
+//  air_pressure_pascals       = PressureI2C.readPressure();
   methane_ppm                = 0.001*map(analogRead(METHANE_PIN),         METHANE_MIN_ADC,         METHANE_MAX_ADC,         METHANE_MIN_ACTUAL,         METHANE_MAX_ACTUAL);
   ammonia_ppm                = 0.001*map(analogRead(AMMONIA_PIN),         AMMONIA_MIN_ADC,         AMMONIA_MAX_ADC,         AMMONIA_MIN_ACTUAL,         AMMONIA_MAX_ACTUAL);
   uv_intensity               = 0.001*map(analogRead(UV_PIN),              UV_MIN_ADC,              UV_MAX_ADC,              UV_MIN_ACTUAL,              UV_MAX_ACTUAL);
@@ -167,7 +175,7 @@ void loop()
   RoveComm.write(AMMONIA_SCI_SENSOR_2,         sizeof(float), &ammonia_ppm                );
   RoveComm.write(UV_SCI_SENSOR_3,              sizeof(float), &uv_intensity               );
   RoveComm.write(AIR_HUMIDITY_SCI_SENSOR_4,    sizeof(float), &air_humidity_rh            );
-  RoveComm.write(AIR_TEMPERATURE_SCI_SENSOR_5, sizeof(float), &air_temperature_farenheit  );
+  RoveComm.write(AIR_TEMPERATURE_SCI_SENSOR_5, sizeof(float), &air_temperature_farenheit  ); 
 
   if(USE_SERIAL_DEBUG) sensorSerialDebug();
 }
@@ -242,7 +250,7 @@ float getPressure()
 //////////////////////////////////
 void sensorSerialDebug()
 {
-    Serial.println("");
+    Serial.println("----------");
     Serial.print("Pressure Out");
     Serial.println(air_pressure_pascals);
     
