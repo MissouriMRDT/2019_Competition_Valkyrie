@@ -27,8 +27,8 @@ const int SPECTROMETER_LASER_PIN          = PD_4;
 const int SPECTROMETER_MIRROR_ENCODER_PIN = PM_0; //pulseIn()
 const int SPECTROMETER_MIRROR_MOTOR_PIN_1 = PK_4;
 const int SPECTROMETER_MIRROR_MOTOR_PIN_2 = PK_5;
-const int SPECTROMETER_PHOTODIODE_PIN_1   = PD_0;
-const int SPECTROMETER_PHOTODIODE_PIN_2   = PD_1;
+const int SPECTROMETER_PHOTODIODE_1_PIN   = PD_0;
+const int SPECTROMETER_PHOTODIODE_2_PIN   = PD_1;
 
 //Sensors/////////////////////////////////////////
 const int PRESSURE_I2C                    = 0;
@@ -106,12 +106,13 @@ void setup()
   PressureI2C.setOversampleRate(7);
   PressureI2C.enableEventFlags();
   delay(10);
+  */
   RoveComm.begin(192, 168, 1, SCIENCEBOARD_FOURTH_OCTET); 
   delay(10);
   SpeectrometerTcpServer.begin();
-  delay(10);*/
+  delay(10);
 
-  pinMode(PN_1, OUTPUT);
+  pinMode(PN_1, OUTPUT); //I don't know what this actually does
   digitalWrite(PN_1, HIGH);
   if(USE_SERIAL_DEBUG)
   {
@@ -127,8 +128,8 @@ void setup()
   pinMode(AIR_HUMIDITY_PIN,                INPUT);
   pinMode(AIR_TEMPERATURE_PIN,             INPUT);
   
-  pinMode(SPECTROMETER_PHOTODIODE_PIN_1,   INPUT);
-  pinMode(SPECTROMETER_PHOTODIODE_PIN_2,   INPUT);
+  pinMode(SPECTROMETER_PHOTODIODE_1_PIN,   INPUT);
+  pinMode(SPECTROMETER_PHOTODIODE_2_PIN,   INPUT);
   pinMode(SPECTROMETER_LASER_PIN,          OUTPUT);
   pinMode(SPECTROMETER_MIRROR_ENCODER_PIN, OUTPUT);
   pinMode(SPECTROMETER_MIRROR_MOTOR_PIN_1, OUTPUT);
@@ -140,10 +141,12 @@ void setup()
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void loop() 
 {
-  delay(1000);
+  delay(100);
   
   RoveComm.read(&data_id, &command_data_size, data_value);
-  
+
+  digitalWrite(SPECTROMETER_LASER_PIN, HIGH);
+      
   switch (data_id)
   {
     case(LASER_ON):
@@ -193,7 +196,7 @@ void spectrometerRun()
 
      //Move Spectrometer Motor Forward
      digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, HIGH);
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW );
+     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, LOW );
 
      delay(5000);
 
@@ -204,8 +207,8 @@ void spectrometerRun()
      for(int i = 0; i<240; i++)
      {
       //Read Photodiodes
-      spectrometer_photodiode_1 = analogRead(SPECTROMETER_PHOTODIODE_PIN_1);
-      spectrometer_photodiode_2 = analogRead(SPECTROMETER_PHOTODIODE_PIN_2);
+      spectrometer_photodiode_1 = analogRead(SPECTROMETER_PHOTODIODE_1_PIN);
+      spectrometer_photodiode_2 = analogRead(SPECTROMETER_PHOTODIODE_2_PIN);
 
       if(USE_SERIAL_DEBUG) spectrometerSerialDebug(spectrometer_photodiode_1, spectrometer_photodiode_2);
 
@@ -223,7 +226,7 @@ void spectrometerRun()
 
      //Stop Motor
      digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW);
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW);
+     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, LOW);
 
      //End TCP Client
      SpectrometerTcpClient.stop();
@@ -232,12 +235,12 @@ void spectrometerRun()
 
      //Return Motor to Start
      digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW );
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, HIGH);
+     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, HIGH);
      delay(40000);
 
      //Stop Motor
      digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW);
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW);
+     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, LOW);
 
      delay(10000);
   }
