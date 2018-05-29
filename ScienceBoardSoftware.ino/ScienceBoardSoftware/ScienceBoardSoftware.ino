@@ -17,7 +17,7 @@
 #include <EthernetClient.h>
 #include <EthernetServer.h>
 
-#define USE_SERIAL_DEBUG 1 //Set to 1 to output sensor data to Serial
+#define USE_SERIAL_DEBUG  1//Set to 1 to output sensor data to Serial
 
 ////////////////////
 //   Board Pins   //
@@ -42,12 +42,12 @@ const int AIR_TEMPERATURE_PIN             = PD_7;
 // Sensor Config  //
 ////////////////////
 //Outputs///////////////////////////
-uint16_t air_pressure_pascals;
-uint16_t methane_ppm;
-uint16_t ammonia_ppm;
-uint16_t uv_intensity;
-uint16_t air_humidity_rh;
-uint16_t air_temperature_farenheit;
+float air_pressure_pascals;
+float methane_ppm;
+float ammonia_ppm;
+float uv_intensity;
+float air_humidity_rh;
+float air_temperature_farenheit;
 
 //Map Consts/////////////////////////////////////////////////////////////////////////
 #define METHANE_MAX_ADC            1 //ADC
@@ -114,7 +114,7 @@ void setup()
 
   pinMode(PN_1, OUTPUT); //I don't know what this actually does
   digitalWrite(PN_1, HIGH);
-  if(USE_SERIAL_DEBUG)
+  if(1)
   {
     Serial.begin(9600);
     delay(10);
@@ -135,6 +135,9 @@ void setup()
   pinMode(SPECTROMETER_MIRROR_MOTOR_PIN_1, OUTPUT);
   pinMode(SPECTROMETER_MIRROR_MOTOR_PIN_2, OUTPUT);
 
+  digitalWrite(SPECTROMETER_LASER_PIN,            LOW);
+  digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1,   LOW);
+  digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2,   LOW);
  //ToDo:Watchdog
 }
 
@@ -144,22 +147,26 @@ void loop()
   delay(100);
   
   RoveComm.read(&data_id, &command_data_size, data_value);
-
-  digitalWrite(SPECTROMETER_LASER_PIN, HIGH);
-      
-  switch (data_id)
+  Serial.print("ID: ");
+  Serial.println(data_id);
+  
+  int temp = *(int8_t*)data_value;
+  if(data_id = SCIENCE_COMMANDS)
   {
-    case(LASER_ON):
-      digitalWrite(SPECTROMETER_LASER_PIN, HIGH);
-      break;
-    case(LASER_OFF):
-      digitalWrite(SPECTROMETER_LASER_PIN, LOW);
-      break;
-    case(SPECTROMETER_RUN):
-      spectrometerRun();
-      break;
-    default:
-      break;
+    switch (temp)
+    {
+      case(LASER_ON):
+        digitalWrite(SPECTROMETER_LASER_PIN, HIGH);
+        break;
+      case(LASER_OFF):
+        digitalWrite(SPECTROMETER_LASER_PIN, LOW);
+        break;
+      case(SPECTROMETER_RUN):
+         spectrometerRun();
+        break;
+      default:
+        break;
+    }
   }
   
   //Read and Map sensor Vales
@@ -186,6 +193,7 @@ void loop()
 /////////////////////////////////////////////////////
 void spectrometerRun()
 {
+  Serial.println("Running Spectrometer");
   EthernetClient SpectrometerTcpClient = SpeectrometerTcpServer.available();
 
   if(SpectrometerTcpClient)
@@ -210,7 +218,10 @@ void spectrometerRun()
       spectrometer_photodiode_1 = analogRead(SPECTROMETER_PHOTODIODE_1_PIN);
       spectrometer_photodiode_2 = analogRead(SPECTROMETER_PHOTODIODE_2_PIN);
 
-      if(USE_SERIAL_DEBUG) spectrometerSerialDebug(spectrometer_photodiode_1, spectrometer_photodiode_2);
+      if(USE_SERIAL_DEBUG)
+      {
+        spectrometerSerialDebug(spectrometer_photodiode_1, spectrometer_photodiode_2);
+      }
 
       //Print Data
       SpeectrometerTcpServer.println("photodiode 1:");
@@ -229,7 +240,7 @@ void spectrometerRun()
      digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, LOW);
 
      //End TCP Client
-     SpectrometerTcpClient.stop();
+    // SpectrometerTcpClient.stop();
 
      delay(2000);
 
@@ -253,7 +264,7 @@ float getPressure()
 //////////////////////////////////
 void sensorSerialDebug()
 {
-    Serial.println("----------");
+/*    Serial.println("----------");
     Serial.print("Pressure Out");
     Serial.println(air_pressure_pascals);
     
@@ -286,7 +297,7 @@ void sensorSerialDebug()
     Serial.println(analogRead(AIR_TEMPERATURE_PIN));
     Serial.print("Air Temperature Out");
     Serial.println(air_temperature_farenheit);
-
+*/
     return;
 }
 
