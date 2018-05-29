@@ -79,7 +79,6 @@ float air_temperature_farenheit;
 // RoveComm Setup //
 ////////////////////
 ////////////////////////////////////////////////////////////////////
-RoveCommEthernetUdp RoveComm;
 EthernetServer      SpeectrometerTcpServer(ROVE_ETHERNET_TCP_PORT);
 
 //Read Variables
@@ -107,7 +106,7 @@ void setup()
   PressureI2C.enableEventFlags();
   delay(10);
   */
-  RoveComm.begin(192, 168, 1, SCIENCEBOARD_FOURTH_OCTET); 
+  roveComm_Begin(192, 168, 1, SCIENCEBOARD_FOURTH_OCTET); 
   delay(10);
   SpeectrometerTcpServer.begin();
   delay(10);
@@ -146,7 +145,7 @@ void loop()
 {
   delay(100);
   
-  RoveComm.read(&data_id, &command_data_size, data_value);
+  roveComm_GetMsg(&data_id, &command_data_size, data_value);
   Serial.print("ID: ");
   Serial.println(data_id);
   
@@ -180,12 +179,12 @@ void loop()
   //Send Senor Values
   //RoveComm.write(AIR_PRESSURE_SCI_SENSOR_0,    sizeof(float), PressureI2C To Do      );
 
-  RoveComm.write(AIR_PRESSURE_SCI_SENSOR_0,    sizeof(float), &air_pressure_pascals       );
-  RoveComm.write(METHANE_SCI_SENSOR_1,         sizeof(float), &methane_ppm                );
-  RoveComm.write(AMMONIA_SCI_SENSOR_2,         sizeof(float), &ammonia_ppm                );
-  RoveComm.write(UV_SCI_SENSOR_3,              sizeof(float), &uv_intensity               );
-  RoveComm.write(AIR_HUMIDITY_SCI_SENSOR_4,    sizeof(float), &air_humidity_rh            );
-  RoveComm.write(AIR_TEMPERATURE_SCI_SENSOR_5, sizeof(float), &air_temperature_farenheit  ); 
+  roveComm_SendMsg(AIR_PRESSURE_SCI_SENSOR_0,    sizeof(float), &air_pressure_pascals       );
+  roveComm_SendMsg(METHANE_SCI_SENSOR_1,         sizeof(float), &methane_ppm                );
+  roveComm_SendMsg(AMMONIA_SCI_SENSOR_2,         sizeof(float), &ammonia_ppm                );
+  roveComm_SendMsg(UV_SCI_SENSOR_3,              sizeof(float), &uv_intensity               );
+  roveComm_SendMsg(AIR_HUMIDITY_SCI_SENSOR_4,    sizeof(float), &air_humidity_rh            );
+  roveComm_SendMsg(AIR_TEMPERATURE_SCI_SENSOR_5, sizeof(float), &air_temperature_farenheit  ); 
 
   if(USE_SERIAL_DEBUG) sensorSerialDebug();
 }
