@@ -1,116 +1,54 @@
-/*
- * Science Board Software
- * Rev 1, 2018
- * Used with Science Board Hardware Rev 1
- * Andrew Van Horn, Judah Schad
- * 
- * Controls spectrometer laser, spectrometer mirror motor, mirror motor encoder, and photodiode sensors
- */
+//Programmers: Chris Dutcher™ & Jimmy Haviland
+//Febuary 24, 2017
+//Missouri S&T  Mars Rover Design Team
+//Science Board Main program
 
-
-
-#include "RoveWare.h"
-#include "MPL3115A2.h"
-
-//Energia Libraries
+//TODO: Clean up includes (move to energia's folder, not github's)
+#include "config.h"
+#include "science.h"
+#include "RoveEthernet.h"
+#include <SPI.h>
+#include "Servo.h"
 #include <Wire.h>
-#include <EthernetClient.h>
-#include <EthernetServer.h>
-
-#define USE_SERIAL_DEBUG  1//Set to 1 to output sensor data to Serial
-
-////////////////////
-//   Board Pins   //
-////////////////////
-/////////////////////////////////////////////////
-const int SPECTROMETER_LASER_PIN          = PD_4;
-const int SPECTROMETER_MIRROR_ENCODER_PIN = PM_0; //pulseIn()
-const int SPECTROMETER_MIRROR_MOTOR_PIN_1 = PK_4;
-const int SPECTROMETER_MIRROR_MOTOR_PIN_2 = PK_5;
-const int SPECTROMETER_PHOTODIODE_1_PIN   = PD_0;
-const int SPECTROMETER_PHOTODIODE_2_PIN   = PD_1;
-
-//Sensors/////////////////////////////////////////
-const int PRESSURE_I2C                    = 0;
-const int METHANE_PIN                     = PE_0;
-const int AMMONIA_PIN                     = PE_1;
-const int UV_PIN                          = PE_2;
-const int AIR_HUMIDITY_PIN                = PE_3;
-const int AIR_TEMPERATURE_PIN             = PD_7;
-
-////////////////////
-// Sensor Config  //
-////////////////////
-//Outputs///////////////////////////
-float air_pressure_pascals;
-float methane_ppm;
-float ammonia_ppm;
-float uv_intensity;
-float air_humidity_rh;
-float air_temperature_farenheit;
-
-//Map Consts/////////////////////////////////////////////////////////////////////////
-#define METHANE_MAX_ADC            1 //ADC
-#define METHANE_MAX_ACTUAL         1 //Real Sensor (Enter as Float, ie 1.234 => 1234)
-#define METHANE_MIN_ADC            1
-#define METHANE_MIN_ACTUAL         1
-
-#define AMMONIA_MAX_ADC            1
-#define AMMONIA_MAX_ACTUAL         1
-#define AMMONIA_MIN_ADC            1
-#define AMMONIA_MIN_ACTUAL         1
-
-#define UV_MAX_ADC                 1
-#define UV_MAX_ACTUAL              1
-#define UV_MIN_ADC                 1
-#define UV_MIN_ACTUAL              1
-
-#define AIR_HUMIDITY_MAX_ADC       1
-#define AIR_HUMIDITY_MAX_ACTUAL    1
-#define AIR_HUMIDITY_MIN_ADC       1
-#define AIR_HUMIDITY_MIN_ACTUAL    1
-
-#define AIR_TEMPERATURE_MAX_ADC    1
-#define AIR_TEMPERATURE_MAX_ACTUAL 1
-#define AIR_TEMPERATURE_MIN_ADC    1
-#define AIR_TEMPERATURE_MIN_ACTUAL 1
-
-////////////////////
-// RoveComm Setup //
-////////////////////
-////////////////////////////////////////////////////////////////////
-EthernetServer      SpeectrometerTcpServer(ROVE_ETHERNET_TCP_PORT);
-
-//Read Variables
-uint16_t data_id;
-size_t command_data_size;
-uint8_t data_value[2];
-
-MPL3115A2 PressureI2C;
-
-//Function Prototypes
-void spectrometerRun();
-
-void sensorSerialDebug();
-void spectrometerSerialDebug(uint16_t spectrometer_photodiode_1, uint16_t spectrometer_photodiode_2);
+//#include "BMP085_t.h"
 
 
-//////////////////////////////////////////////////////////
-void setup() 
-{  
- /* Wire.begin();
-  delay(10);
-  PressureI2C.begin();
-  PressureI2C.setModeBarometer();
-  PressureI2C.setOversampleRate(7);
-  PressureI2C.enableEventFlags();
-  delay(10);
-  */
-  roveComm_Begin(192, 168, 1, SCIENCEBOARD_FOURTH_OCTET); 
-  delay(10);
-  SpeectrometerTcpServer.begin();
-  delay(10);
+//Variable declaration:
+//Stores the result (if any) of commands received and executed
+CommandResult result;
 
+//Stores the value received from base station, of which command to execute
+uint16_t commandId;
+
+//Stores the size of the commandData received from base station
+size_t commandSize;
+
+//Stores the command arguement, sent by base station, to send through to the command
+int16_t commandData;
+
+//Stores the value of watchdog, which times out after not receiving a command from base station, to terminate any potential dangerous operations
+uint32_t watchdogTimer_us = 0;
+
+//Stores the time value since the most recent sensor information send
+uint32_t sensorTimer = 0;
+
+ //Determines which sensors will send data back
+bool sensor_enable[7] = {false,false,false,false,false,false,false};
+
+//Device objects
+//Energia standard servo device class from Servo.h
+Servo flap, carousel;
+//Pressure sensor object
+//BMP085<0, airPressurePin> PSensor;
+
+//global current position for carousel
+int curPos = 0;
+
+//All non-important pre-loop setup is done here
+void setup() {
+  roveComm_Begin(IP_ADDRESS[0], IP_ADDRESS[1], IP_ADDRESS[2], IP_ADDRESS[3]);
+  Serial.begin(9600);
+  PhotoServer.begin();
   pinMode(PN_1, OUTPUT); //I don't know what this actually does
   digitalWrite(PN_1, HIGH);
   if(1)
@@ -137,174 +75,491 @@ void setup()
   digitalWrite(SPECTROMETER_LASER_PIN,            LOW);
   digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1,   LOW);
   digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2,   LOW);
- //ToDo:Watchdog
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-void loop() 
-{
-  delay(100);
-  
-  roveComm_GetMsg(&data_id, &command_data_size, data_value);
-  Serial.print("ID: ");
-  Serial.println(data_id);
-  
-  int temp = *(int8_t*)data_value;
-  if(data_id = SCIENCE_COMMANDS)
-  {
-    switch (temp)
-    {
-      case(LASER_ON):
-        digitalWrite(SPECTROMETER_LASER_PIN, HIGH);
-        break;
-      case(LASER_OFF):
-        digitalWrite(SPECTROMETER_LASER_PIN, LOW);
-        break;
-      case(SPECTROMETER_RUN):
-         spectrometerRun();
-        break;
-      default:
-        break;
-    }
   }
+
+
+void loop() {
+  //Resets the message to nothing
+  commandSize = 0;
+  commandId = 0;
+  commandData = 0;
+  //Receives a command form base station and stores the message
+  roveComm_GetMsg(&commandId, &commandSize, &commandData);
   
-  //Read and Map sensor Vales
-//  air_pressure_pascals       = PressureI2C.readPressure();
-  methane_ppm                = 0.001*map(analogRead(METHANE_PIN),         METHANE_MIN_ADC,         METHANE_MAX_ADC,         METHANE_MIN_ACTUAL,         METHANE_MAX_ACTUAL);
-  ammonia_ppm                = 0.001*map(analogRead(AMMONIA_PIN),         AMMONIA_MIN_ADC,         AMMONIA_MAX_ADC,         AMMONIA_MIN_ACTUAL,         AMMONIA_MAX_ACTUAL);
-  uv_intensity               = 0.001*map(analogRead(UV_PIN),              UV_MIN_ADC,              UV_MAX_ADC,              UV_MIN_ACTUAL,              UV_MAX_ACTUAL);
-  air_humidity_rh            = 0.001*map(analogRead(AIR_HUMIDITY_PIN),    AIR_HUMIDITY_MIN_ADC,    AIR_HUMIDITY_MAX_ADC,    AIR_HUMIDITY_MIN_ACTUAL,    AIR_HUMIDITY_MAX_ACTUAL);
-  air_temperature_farenheit  = 0.001*map(analogRead(AIR_TEMPERATURE_PIN), AIR_TEMPERATURE_MIN_ADC, AIR_TEMPERATURE_MAX_ADC, AIR_TEMPERATURE_MIN_ACTUAL, AIR_TEMPERATURE_MAX_ACTUAL);
-
-  //Send Senor Values
-  //RoveComm.write(AIR_PRESSURE_SCI_SENSOR_0,    sizeof(float), PressureI2C To Do      );
-
-  roveComm_SendMsg(AIR_PRESSURE_SCI_SENSOR_0,    sizeof(float), &air_pressure_pascals       );
-  roveComm_SendMsg(METHANE_SCI_SENSOR_1,         sizeof(float), &methane_ppm                );
-  roveComm_SendMsg(AMMONIA_SCI_SENSOR_2,         sizeof(float), &ammonia_ppm                );
-  roveComm_SendMsg(UV_SCI_SENSOR_3,              sizeof(float), &uv_intensity               );
-  roveComm_SendMsg(AIR_HUMIDITY_SCI_SENSOR_4,    sizeof(float), &air_humidity_rh            );
-  roveComm_SendMsg(AIR_TEMPERATURE_SCI_SENSOR_5, sizeof(float), &air_temperature_farenheit  ); 
-
-  if(USE_SERIAL_DEBUG) sensorSerialDebug();
-}
-
-/////////////////////////////////////////////////////
-void spectrometerRun()
-{
-  Serial.println("Running Spectrometer");
-  EthernetClient SpectrometerTcpClient = SpeectrometerTcpServer.available();
-
-  if(SpectrometerTcpClient)
+  //Checks the message for an actual command
+  if(commandId != 0)
   {
-     uint16_t spectrometer_photodiode_1;
-     uint16_t spectrometer_photodiode_2;
-     String tcp_buffer;
-
-     //Move Spectrometer Motor Forward
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, HIGH);
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, LOW );
-
-     delay(5000);
-
-     //Turn on Laser
-     digitalWrite(SPECTROMETER_LASER_PIN, HIGH);
-
-     //Loop takes analog reading, delays 1/8 second, runs for roughly 30 seconds
-     for(int i = 0; i<240; i++)
+    //We have received a command, so watchdog is reset
+    watchdogTimer_us = 0;
+  
+    Serial.println(commandId);
+    Serial.println(commandData);
+    Serial.println(commandSize);
+    Serial.println("");
+    
+     //Checks the value of the command, and if applicable, executes it
+     if(commandId == ScienceCommand)
      {
-      //Read Photodiodes
-      spectrometer_photodiode_1 = analogRead(SPECTROMETER_PHOTODIODE_1_PIN);
-      spectrometer_photodiode_2 = analogRead(SPECTROMETER_PHOTODIODE_2_PIN);
+      switch(commandData) {
+        case sensorAllEnable:
+          for(int i=0;i<7;i++)
+            {
+              if(i!=1||i!=3)
+                 sensor_enable[i]=true;
+            }
+            break;
+        case sensorAllDisable:
+          for(int i=0;i<7;i++)
+            {
+              sensor_enable[i]=false;
+            }
+            break;
+        case sensor0Enable:
+          sensor_enable[0]=true;
+          break;
+        case sensor0Disable:
+          sensor_enable[0]=false;
+          break;
+        case sensor1Enable:
+          sensor_enable[1]=true;
+          break;
+        case sensor1Disable:
+          sensor_enable[1]=false;
+          break;
+        case sensor2Enable:
+          sensor_enable[2]=true;
+          break;
+        case sensor2Disable:
+          sensor_enable[2]=false;
+          break;
+        case sensor3Enable:
+          sensor_enable[3]=true;
+          break;
+        case sensor3Disable:
+          sensor_enable[3]=false;
+          break;
+        case sensor4Enable:
+          sensor_enable[4]=true;
+          break;
+        case sensor4Disable:
+          sensor_enable[4]=false;
+          break;
+        case sensor5Enable:
+          sensor_enable[5]=true;
+          break;
+        case sensor5Disable:
+          sensor_enable[5]=false;
+          break;
+        case sensor6Enable:
+          sensor_enable[6]=true;
+          break;
+        case sensor6Disable:
+          sensor_enable[6]=false;
+          break;
+        case laserOn:
+          turnOnLaser();
+          break;
+        case laserOff:
+          turnOffLaser();
+          break;
+        case flapOpen:
+          openFlap();
+          break;
+        case flapClose:
+          closeFlap();
+          break;
+        case spectro:
+          spectrometer();
+          break;
+       }//End Switch   
+     }
+     else if(commandId == ScienceCarousel)//Carousel
+     {
+       rotateCarousel(commandData);
+     }
+  }
+  else //No message was received and we send sensor data
+  {
+    //Delay before we check for another command from base station
+    uint8_t microsecondDelay = 10;
+    delayMicroseconds(microsecondDelay);
+    watchdogTimer_us += microsecondDelay;
+    //Once we have spend two seconds delaying for commands, we terminate potentially dangerous (to astronaughts or the rover) operations and keep them disabled until we receive a command again
+    if(watchdogTimer_us >= WATCHDOG_TIMEOUT_US)
+    {
+      //End dangerous operations here
+      //kill();
+      //Serial.println("Watch out dog!!!!!!");
+      watchdogTimer_us = 0;
+    }//end if for watchdog timeout
+    
+  }//End else go to watchdog (no message received)
 
-      if(USE_SERIAL_DEBUG)
+   //TODO: Remove sending from sensors moved to arm
+   //millis()   returns milliseconds since program started, can use like a watch dog, but for sensors
+   //Temporary sensor variable, future variable will be altered by sensor functions before being sent
+   float sensorTestData = 100.0;
+   //check for which sensors to record, and then send through rovecomm
+  if((millis()-sensorTimer)>250)
+  {
+    //Serial.println("Checking Sensors");
+     sensorTimer=millis();
+     if(sensor_enable[0])//AirTemp
+     {
+      sensorTestData = 100.0;
+      float temp = 0.001*map(analogRead(AIR_TEMPERATURE_PIN), AIR_TEMPERATURE_MIN_ADC, AIR_TEMPERATURE_MAX_ADC, AIR_TEMPERATURE_MIN_ACTUAL, AIR_TEMPERATURE_MAX_ACTUAL);
+
+      roveComm_SendMsg(air_temperature_ID, sizeof(temp), &temp); 
+     }
+     if(sensor_enable[1]) //Soil Temp
+     {
+      float temp = instantSoilTemp();
+      roveComm_SendMsg(soil_temperature_ID, sizeof(temp), &temp);
+     }
+     if(sensor_enable[2]) //AirHumidity
+     {
+      float airHum = 0.001*map(analogRead(AIR_HUMIDITY_PIN),    AIR_HUMIDITY_MIN_ADC,    AIR_HUMIDITY_MAX_ADC,    AIR_HUMIDITY_MIN_ACTUAL,    AIR_HUMIDITY_MAX_ACTUAL);
+      roveComm_SendMsg(air_humidity_ID, sizeof(airHum), &airHum);
+     }
+     if(sensor_enable[3]) //Soil Humidity
+     {
+      float temp = instantSoilHumidity();
+      roveComm_SendMsg(soil_humidity_ID, sizeof(temp), &temp);
+     }
+     if(sensor_enable[4]) //UVIntensity
+     {
+      float temp = uv_intensity               = 0.001*map(analogRead(UV_PIN),              UV_MIN_ADC,              UV_MAX_ADC,              UV_MIN_ACTUAL,              UV_MAX_ACTUAL);
+      roveComm_SendMsg(UV_intensity_ID, sizeof(temp), &temp);
+      
+     }
+     if(sensor_enable[5]) //Pressure
+     {
+      float temp = instantPressure();
+      roveComm_SendMsg(pressure_ID, sizeof(temp), &temp);
+     }
+     if(sensor_enable[6]) //Methane
+     {
+      float temp = methane_ppm                = 0.001*map(analogRead(METHANE_PIN),         METHANE_MIN_ADC,         METHANE_MAX_ADC,         METHANE_MIN_ACTUAL,         METHANE_MAX_ACTUAL);
+      roveComm_SendMsg(methane_ID, sizeof(temp), &temp);
+     }
+  }//end if millis, send sensor data
+
+}//End loop()
+
+//Functions:
+//TODO: Add a calibration file for sensors
+
+//Spectometer sub-routine
+void spectrometer()
+{
+   Serial.println("Start spectro routine.");
+
+   EthernetClient client = PhotoServer.available();
+
+   if(client)//only run the routine if TCP available!
+   {
+     uint16_t photo1, photo2;
+     String tcp_buffer;
+     //turn on motor, run for 5s before continuing
+     //direction is a bool! change true/false for direction
+     spectroMotorForward();   
+     //do nothing except leave motor on for 5s
+     delay(5000);
+     //turn on laser
+     turnOnLaser();   
+     //keep laser and motor on for 30s
+     int timer = 0;
+     //loop takes analog readings 
+     //delays for 1/8 second
+     //should repeat until roughly 30s have passed.
+     while (timer <= 30000)
+     {
+      //read photo diodes
+      photo1 = analogRead(photoPin1);//analog read returns 10 bit integer (0 to 1023)
+      photo2 = analogRead(photoPin2);
+      //print data
+      Serial.println("Data for photodiodes 1 & 2, respectively:");
+      Serial.println(photo1);
+      Serial.println(photo2);
+      //roveComm_SendMsg(sensor9_ID, sizeof(photo1), &photo1);
+      //roveComm_SendMsg(0x, sizeof(photo2), &photo2);
+
+      if(photo1 > 255 || photo2 > 255)
       {
-        spectrometerSerialDebug(spectrometer_photodiode_1, spectrometer_photodiode_2);
+        Serial.println("Photo data greater than 8 bit!!!!!!!!!!!!!!!!!!!!!!!!!! ");
       }
 
-      //Print Data
-      SpeectrometerTcpServer.println("photodiode 1:");
-      SpeectrometerTcpServer.println(spectrometer_photodiode_1);
-      SpeectrometerTcpServer.println("photodiode 2:");
-      SpeectrometerTcpServer.println(spectrometer_photodiode_2);
+      PhotoServer.println("photodiode 1:");
+      PhotoServer.println(photo1);
+      //PhotoServer.print("\n");
+
+      PhotoServer.println("photodiode 2:");
+      PhotoServer.println(photo2);
+      //PhotoServer.print("\n");
+
+      //TCP needs 8 bit values
+      uint8_t photo1_8 = photo1;
+      uint8_t photo2_8 = photo2;
+
+      //PhotoServer.write(&photo1_8,sizeof(photo1_8));
+      //PhotoServer.write(&photo2_8,sizeof(photo2_8));
       
-      delay(125);
+      timer += 125;
+      delay(125); 
      }
 
-     //Turn off Laser
-     digitalWrite(SPECTROMETER_LASER_PIN, LOW);
+     //turn off laser
+     turnOffLaser();
+     
+     //turn off motor
+     spectroMotorOff();
 
-     //Stop Motor
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW);
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, LOW);
-
-     //End TCP Client
-    // SpectrometerTcpClient.stop();
-
+     //end tcp connection
+     client.stop();
+     
+     //delay couple seconds
      delay(2000);
-
-     //Return Motor to Start
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW );
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, HIGH);
+     
+     //return motor to start position
+     //opposite direction than what was called earlier!
+     spectroMotorReverse();
+     
+     //wait 35s for motor to return
      delay(40000);
+     
+     //stop motor again
+     spectroMotorOff();
+     
+     //wait 10 seconds before repeating the loop
+     delay(10000); 
 
-     //Stop Motor
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW);
-     digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, LOW);
+     
+   }//end if client
+   else
+   {
+    Serial.println("TCP not available. Spectrometer routine not run.");
+   }
+   
+     
+   return;
+}
 
-     delay(10000);
+//Turns on the spectrometer laser
+void turnOnLaser()
+{
+  Serial.println("Laser on");
+  //turn on laser by setting pin to High
+  digitalWrite(laserPin, HIGH);//laser
+  digitalWrite(LEDPin, HIGH);//LED
+  return;
+}
+
+//Turns off the spectormeter laser
+void turnOffLaser()
+{
+  Serial.println("Laser off");
+  //turn off laser by setting pin to low
+  digitalWrite(laserPin, LOW);//laser
+  digitalWrite(LEDPin, LOW);//led
+  return;
+}
+
+//Opens the sample cache cover flap
+void openFlap()
+{
+  Serial.println("Opening flap.");
+  //Flap should open as it goes away from 180
+  flap.write(20);
+  //flap.writeMicroseconds(1);
+  //delay(5000);//Delay to let servo catch up
+  return;
+}
+
+//Closes the sample cache cover flap
+void closeFlap()
+{
+  Serial.println("Closing flap.");
+  //Flap should close at 180
+  flap.write(170);
+  //flap.writeMicroseconds(2);
+  //delay(5000);//Delay to let servo catch up
+  return;
+}
+
+//Rotates the sample cache carousel to the given position
+void rotateCarousel(const uint16_t pos)
+{
+  Serial.print("Rotating carousel to pos = ");
+  Serial.print(pos);
+  Serial.print("\n");
+  carousel.write(car_positions[pos]);
+  //carousel.write(170/4 * pos);  // TODO: cache positions must be tweeked here. 
+  //delay(5000);//Delay to let servo catch up
+
+/******This is my attempt to slow down the carousel servo motor. 
+  Serial.print("carousel rotate: from pos = ");
+  Serial.print(curPos);
+  Serial.print(". to pos = ");
+  Serial.print(pos);
+  Serial.print(". \n");
+  
+  int delay_val = 100; //Change this val to slow down motor.
+  if(pos>curPos)       //Do not make it too small or the servo will freak out!
+  {
+    Serial.println("Going up! (rotating to greater pos)");
+    for(int i = car_positions[curPos]; i < car_positions[pos]; i++)
+    {
+      Serial.print(i);
+      carousel.write(i);
+      delay(delay_val);
+    }
   }
-}
-
-////ToDo
-float getPressure()
-{}
-
-//////////////////////////////////
-void sensorSerialDebug()
-{
-/*    Serial.println("----------");
-    Serial.print("Pressure Out");
-    Serial.println(air_pressure_pascals);
-    
-    Serial.println("");
-    Serial.print("Methane Ain:");
-    Serial.println(analogRead(METHANE_PIN));
-    Serial.print("Methane Out");
-    Serial.println(methane_ppm);
-
-    Serial.println("");
-    Serial.print("Ammonia Ain:");
-    Serial.println(analogRead(AMMONIA_PIN));
-    Serial.print("Ammonia Out");
-    Serial.println(ammonia_ppm);
-
-    Serial.println("");
-    Serial.print("UV Ain:");
-    Serial.println(analogRead(UV_PIN));
-    Serial.print("UV Out");
-    Serial.println(uv_intensity);
-
-    Serial.println("");
-    Serial.print("Air Humidity Ain:");
-    Serial.println(analogRead(AIR_HUMIDITY_PIN));
-    Serial.print("Air Humidity Out");
-    Serial.println(air_humidity_rh);
-
-    Serial.println("");
-    Serial.print("Air Temperature Ain:");
-    Serial.println(analogRead(AIR_TEMPERATURE_PIN));
-    Serial.print("Air Temperature Out");
-    Serial.println(air_temperature_farenheit);
+  else if(pos<curPos)
+  {
+    Serial.println("Goin' Down. (rotating to lower pos)");
+    for(int i = car_positions[curPos]; i > car_positions[pos]; i--)
+    {
+      Serial.print(i);
+      carousel.write(i);
+      delay(delay_val);
+    }
+  }
+   else
+   {
+    Serial.println("pos is same");
+   }
+   
+  Serial.print("\n");
 */
-    return;
+  
+  curPos = pos;
+  return;
 }
 
-void spectrometerSerialDebug(uint16_t spectrometer_photodiode_1, uint16_t spectrometer_photodiode_2)
+//Turns on the spectrometer motor on in the forward direction (the direction it will go when reading the photo-diodes)
+void spectroMotorForward()
 {
-  Serial.print("Photodiode 1: ");
-  Serial.println(spectrometer_photodiode_1);
-  Serial.print("Photodiode 2: ");
-  Serial.println(spectrometer_photodiode_2);
+   Serial.println("Spectro motor forward");
+   digitalWrite(spectro_motor_in_1, HIGH);//phase, low = forward
+   digitalWrite(spectro_motor_in_2, LOW);//enable
+   return;
 }
+
+//Turns the spectrometer motor on in the backwards direciton (when the spectrometer resets)
+void spectroMotorReverse()
+{
+   Serial.println("Spectro motor reverse");
+   digitalWrite(spectro_motor_in_1, LOW);
+   digitalWrite(spectro_motor_in_2, HIGH);
+
+   return;
+}
+
+//Turns off the spectrometer motor
+void spectroMotorOff()
+{
+  Serial.println("Spectro motor off");
+  digitalWrite(spectro_motor_in_2, LOW);
+  digitalWrite(spectro_motor_in_1, LOW);
+  return;
+}
+
+//Returns one soil temperature reading
+float instantSoilTemp()
+{
+  //const int analogRes = 4095;
+  //float voltage = (analogRead(soilTempPin) * 5 / analogRes);
+  //float degC = (voltage - 0.5) * 100.0;
+  //float degC = -1.0;
+  //return degC;
+}
+
+//Returns one air temperature reading
+float instantAirTemp()
+{
+  const int analogRes = 4095;
+  float voltage = analogRead(airTempPin) * 5;
+  Serial.print("voltage:");Serial.print(voltage);Serial.print("\n");
+  voltage = voltage / analogRes;
+  float degC = (voltage - 0.5) * 100.0;
+  float degF = (degC * 1.8)+32;
+  Serial.print("TempF:");Serial.print(degF);Serial.print("\n");
+  return degF;
+}
+
+//TODO: determine if all pins are 5V or 3.3V for the conversion to voltage in these sensor equations
+
+//Returns on UV intensity reading
+float instantUV()
+{
+  //Enable pin here
+  int reading = analogRead(UVPin);
+  float outputVoltage = (reading * 3.3333) / 4095;
+  float uvInten = mapfloat(outputVoltage, UV_in_min, UV_in_max, UV_out_min, UV_out_max); // these values defined in config.h
+  Serial.print("UV:"); Serial.print(uvInten); Serial.print("\n");
+  return uvInten;
+}
+
+//The Arduino Map function but for floats (used in UV intensity)
+//From: http://forum.arduino.cc/index.php?topic=3922.0
+float mapfloat(float x, float in_min, float in_max, float out_min, float out_max)
+{
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+//Returns one reading of the air humidity
+float instantAirHumidity()
+{
+  int reading = analogRead(airHumidityPin);
+  Serial.print("reading:");Serial.print(reading);Serial.print("\n");
+  int max_voltage = 5;
+  float RH = reading/1023;
+  RH=RH*5;
+  RH=RH-2.4;
+  RH=RH/max_voltage;
+  Serial.print(" data: "); Serial.print(RH); Serial.print("\n");
+  RH=RH*100;
+  Serial.print("air humidity: "); Serial.print(RH); Serial.print("\n");
+  return RH;  
+}
+
+//Returns one reading of the soil humidity
+float instantSoilHumidity()
+{
+  //int reading = analogRead(soilMoisturePin);
+  //float voltage = ((reading * 5.0) / 4095);
+  //float voltage = -1.0;
+  //return voltage; //returning raw voltage for now
+                  //TODO: convert to measurement of moisture
+}
+
+//Returns one reading of methane
+float instantMethane()
+{
+  int reading = analogRead(methanePin);
+  float voltage = (reading * 5.0) / 4095.0;
+  Serial.print("methane data:"); Serial.print(voltage); Serial.print("\n");
+  return voltage;
+  //TODO: convert voltage to measurement of methane
+}
+
+//Returns one air pressure reading 
+float instantPressure()
+{
+  //PSensor.refresh();
+  //PSensor.calculate();
+  //float pressure = (PSensor.pressure + 50) / 100;
+  int pressure = 99;
+  Serial.print("Pressure:");Serial.print(pressure);Serial.print("\n");
+  return pressure;
+  //TODO: adjust this conversion? current unit is hPa
+  //TODO: this sensor only works on pins configuerd for I2C
+          //change pins this sensor connects to so it will function
+}
+
+void kill()
+{
+  turnOffLaser();
+}
+
 
