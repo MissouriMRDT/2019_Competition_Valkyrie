@@ -275,8 +275,8 @@ void spectrometer()
      while (timer <= 30000)
      {
       //read photo diodes
-      photo1 = analogRead(photoPin1);//analog read returns 10 bit integer (0 to 1023)
-      photo2 = analogRead(photoPin2);
+      photo1 = analogRead(SPECTROMETER_PHOTODIODE_1_PIN);//analog read returns 10 bit integer (0 to 1023)
+      photo2 = analogRead(SPECTROMETER_PHOTODIODE_2_PIN);
       //print data
       Serial.println("Data for photodiodes 1 & 2, respectively:");
       Serial.println(photo1);
@@ -349,8 +349,7 @@ void turnOnLaser()
 {
   Serial.println("Laser on");
   //turn on laser by setting pin to High
-  digitalWrite(laserPin, HIGH);//laser
-  digitalWrite(LEDPin, HIGH);//LED
+  digitalWrite(SPECTROMETER_LASER_PIN, HIGH);//laser
   return;
 }
 
@@ -359,8 +358,7 @@ void turnOffLaser()
 {
   Serial.println("Laser off");
   //turn off laser by setting pin to low
-  digitalWrite(laserPin, LOW);//laser
-  digitalWrite(LEDPin, LOW);//led
+  digitalWrite(SPECTROMETER_LASER_PIN, LOW);//laser
   return;
 }
 
@@ -440,8 +438,8 @@ void rotateCarousel(const uint16_t pos)
 void spectroMotorForward()
 {
    Serial.println("Spectro motor forward");
-   digitalWrite(spectro_motor_in_1, HIGH);//phase, low = forward
-   digitalWrite(spectro_motor_in_2, LOW);//enable
+   digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, HIGH);//phase, low = forward
+   digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, LOW);//enable
    return;
 }
 
@@ -449,8 +447,8 @@ void spectroMotorForward()
 void spectroMotorReverse()
 {
    Serial.println("Spectro motor reverse");
-   digitalWrite(spectro_motor_in_1, LOW);
-   digitalWrite(spectro_motor_in_2, HIGH);
+   digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW);
+   digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, HIGH);
 
    return;
 }
@@ -459,8 +457,8 @@ void spectroMotorReverse()
 void spectroMotorOff()
 {
   Serial.println("Spectro motor off");
-  digitalWrite(spectro_motor_in_2, LOW);
-  digitalWrite(spectro_motor_in_1, LOW);
+  digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_1, LOW);
+  digitalWrite(SPECTROMETER_MIRROR_MOTOR_PIN_2, LOW);
   return;
 }
 
