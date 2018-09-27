@@ -38,7 +38,6 @@ LIBS:MRDT_Drill_Holes
 LIBS:MRDT_Headers
 LIBS:MRDT_ICs
 LIBS:MRDT_Passives
-LIBS:MRDT_Sensors
 LIBS:MRDT_Shields
 LIBS:MRDT_Silkscreens
 LIBS:MRDT_Switches
@@ -2034,7 +2033,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 1900 7950 1900
 Wire Notes Line
-	550  550  10800 550 
+	550  550  18100 550 
 Wire Notes Line
 	550  3050 10100 3050
 Wire Notes Line
@@ -2486,7 +2485,7 @@ Wire Wire Line
 	8700 11850 8700 12100
 Connection ~ 8700 12000
 Wire Notes Line
-	550  12800 18100 12800
+	18100 12800 550  12800
 Wire Wire Line
 	1850 10600 1850 10800
 Wire Wire Line
@@ -2760,5 +2759,7 @@ SH_B
 Text GLabel 16650 11300 0    39   Input ~ 0
 SH_C
 Wire Notes Line
-	18100 12800 18100 6150
+	18100 550  18100 12800
+Text Notes 10900 900  0    197  ~ 0
+TIVA Header
 $EndSCHEMATC
