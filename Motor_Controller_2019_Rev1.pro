@@ -1,4 +1,4 @@
-update=9/22/2018 12:22:36 PM
+update=10/2/2018 5:07:11 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/KiCad-Libraries-Hardware
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,14 +61,14 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=Device/MRDT_Actives
-LibName34=Device/MRDT_Connectors
-LibName35=Device/MRDT_Devices
-LibName36=Device/MRDT_Drill_Holes
-LibName37=Device/MRDT_Headers
-LibName38=Device/MRDT_ICs
-LibName39=Device/MRDT_Passives
-LibName40=Device/MRDT_Sensors
-LibName41=Device/MRDT_Shields
-LibName42=Device/MRDT_Silkscreens
-LibName43=Device/MRDT_Switches
+LibName33=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Actives
+LibName34=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Connectors
+LibName35=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Devices
+LibName36=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Drill_Holes
+LibName37=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Headers
+LibName38=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_ICs
+LibName39=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Passives
+LibName40=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Sensors
+LibName41=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Shields
+LibName42=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Silkscreens
+LibName43=C:/MRDT_KiCAD_Libraries-2019R1/Device/MRDT_Switches
