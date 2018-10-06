@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name "DC-DC Converter")(type Legacy)(uri "C:/Powerboard Libraries/DC-DC Converter.lib")(options "")(descr ""))
+  (lib (name "DC-DC Converter")(type Legacy)(uri "C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/PowerBoardHardware/PowerBoard-Hardware(Evan Hite)/Powerboard Libraries/DC-DC Converter.lib")(options "")(descr ""))
+  (lib (name Fuse_Block)(type Legacy)(uri "C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/PowerBoardHardware/PowerBoard-Hardware(Evan Hite)/Powerboard Libraries/Fuse_Block.lib")(options "")(descr ""))
 )
