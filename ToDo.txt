@@ -1,0 +1,6 @@
+Cnsider runningNOCTW and NFAULT buss directly into LED instead of through FET
+
+Annotate schematic and assign footprints
+
+Run bus to Phase C1 to keep consistent
+Consider using bus fr SH_A since youre already using it fo sense
