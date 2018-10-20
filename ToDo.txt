@@ -1,19 +1,6 @@
-Ask Jacob if we want to run 2 PVDD inputs for each moco so that we have sperate power running to each phase
-
-**Design Ideas
-	LEDIndication for Each motor phase (Physically see what's firing)
-	
 Annotate schematic and assign footprints
 
-Consider using bus fr SH_A since youre already using it fo sense
-
 Headers need to be shifted to the right by some amount to mitigate the overhang of the f28069m. Look at the datasheet to determine the amount of space to move the headers.
-
-Calculate resistor value to put pack voltage directly to LED after removing transistor
-
-Run two LEDS through GH and GL through a 1K ohm resistor for each phase of each motor, leave it indicators for neatness
-
-Add LEDs for Serial TX and RX
 
 For PDR:
 
