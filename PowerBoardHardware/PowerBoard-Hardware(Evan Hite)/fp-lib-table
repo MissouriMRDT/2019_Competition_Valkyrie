@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name DC-DC_Converter_Quarter_Brick)(type KiCad)(uri ${KIPRJMOD}/DC-DC_Converter_Quarter_Brick.pretty)(options "")(descr ""))
+  (lib (name Fuse_Block)(type KiCad)(uri ${KIPRJMOD}/Fuse_Block.pretty)(options "")(descr ""))
+)
