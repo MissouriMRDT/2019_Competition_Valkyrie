@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\andre\Documents\Rover\GitHub\Hardware\MotorController_Hardware\Motor_Controller\Motor_Controller_2019_Rev1.sch)
-    (date "10/20/2018 6:03:44 PM")
+    (date "10/20/2018 6:43:43 PM")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1200,7 +1200,7 @@
       (tstamp 5BD7F5C8))
     (comp (ref U3)
       (value LAUNCHXL_F28069M_Launchpad)
-      (footprint MotorController_Hardware:LAUNCHXL_F28069M_Launchpad_FULL_Booster_SMD_Bottom)
+      (footprint MotorController_Hardware:LAUNCHXL_F28069M_Launchpad_FULL_Booster_SMD_Top)
       (libsource (lib "") (part LAUNCHXL_F28069M_Launchpad) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5BD1B882))
