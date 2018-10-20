@@ -455,7 +455,7 @@ Text GLabel 3050 6450 0    39   Input ~ 0
 SDO_M1
 Text GLabel 3050 6550 0    39   Input ~ 0
 SCLK_M1
-Text GLabel 1500 6800 0    39   Input ~ 0
+Text GLabel 1500 6650 0    39   Input ~ 0
 DC_CAL_M1
 $Comp
 L Device:R R6
@@ -468,7 +468,7 @@ F 3 "" H 1550 7000 50  0001 C CNN
 	1    1550 7000
 	1    0    0    -1  
 $EndComp
-Text GLabel 2050 6900 0    39   Input ~ 0
+Text GLabel 2050 6750 0    39   Input ~ 0
 EN_GATE_M1
 $Comp
 L Device:R R8
@@ -1296,7 +1296,7 @@ L Device:R R10
 U 1 1 5BAA7CAC
 P 11250 8300
 F 0 "R10" V 11330 8300 50  0000 C CNN
-F 1 "500" V 11250 8300 50  0000 C CNN
+F 1 "1.7k" V 11250 8300 50  0000 C CNN
 F 2 "" V 11180 8300 50  0001 C CNN
 F 3 "" H 11250 8300 50  0001 C CNN
 	1    11250 8300
@@ -1821,7 +1821,7 @@ Text GLabel 20900 6450 0    39   Input ~ 0
 SDO_M2
 Text GLabel 20900 6550 0    39   Input ~ 0
 SCLK_M2
-Text GLabel 19300 6800 0    39   Input ~ 0
+Text GLabel 19300 6650 0    39   Input ~ 0
 DC_CAL_M2
 $Comp
 L Device:R R41
@@ -1834,7 +1834,7 @@ F 3 "" H 19350 7000 50  0001 C CNN
 	1    19350 7000
 	1    0    0    -1  
 $EndComp
-Text GLabel 19850 6900 0    39   Input ~ 0
+Text GLabel 19850 6750 0    39   Input ~ 0
 EN_GATE_M2
 $Comp
 L Device:R R44
@@ -2751,14 +2751,6 @@ F 3 "" H 12050 5200 50  0001 C CNN
 	1    12050 5200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	20000 6850 20000 6750
-Wire Wire Line
-	19950 6850 20000 6850
-Wire Wire Line
-	19300 6800 19350 6800
-Wire Wire Line
-	19950 6800 19950 6650
 Connection ~ 26250 9750
 Wire Wire Line
 	26250 9600 26250 9750
@@ -2815,13 +2807,8 @@ Wire Wire Line
 	12750 7750 12750 7650
 Wire Wire Line
 	12450 7750 12450 7650
-Connection ~ 1550 6800
-Wire Wire Line
-	1550 6850 1550 6800
 Wire Wire Line
 	2600 6850 2750 6850
-Connection ~ 25900 7150
-Connection ~ 25900 6850
 Connection ~ 26250 6550
 Connection ~ 25900 6550
 Wire Wire Line
@@ -2874,8 +2861,6 @@ Wire Wire Line
 	25800 5200 25900 5200
 Wire Wire Line
 	25500 5200 25350 5200
-Connection ~ 25900 3900
-Connection ~ 25900 3600
 Connection ~ 26250 3300
 Connection ~ 25900 3300
 Wire Wire Line
@@ -2998,16 +2983,6 @@ Wire Wire Line
 	20350 6950 20400 6950
 Wire Wire Line
 	20350 6850 20600 6850
-Wire Wire Line
-	20000 6750 20950 6750
-Connection ~ 19350 6800
-Wire Wire Line
-	19350 6850 19350 6800
-Connection ~ 19950 6900
-Wire Wire Line
-	19950 6950 19950 6900
-Wire Wire Line
-	19950 6650 20950 6650
 Wire Wire Line
 	20350 5650 20350 5600
 Connection ~ 19950 4950
@@ -3144,8 +3119,6 @@ Wire Wire Line
 	8100 8500 8200 8500
 Wire Wire Line
 	7800 8500 7650 8500
-Connection ~ 8200 7100
-Connection ~ 8200 6800
 Connection ~ 8550 6500
 Connection ~ 8200 6500
 Wire Wire Line
@@ -3198,8 +3171,6 @@ Wire Wire Line
 	8100 5150 8200 5150
 Wire Wire Line
 	7800 5150 7650 5150
-Connection ~ 8200 3950
-Connection ~ 8200 3650
 Connection ~ 8550 3350
 Connection ~ 8200 3350
 Wire Wire Line
@@ -3319,23 +3290,6 @@ Wire Wire Line
 	2550 6950 2550 7050
 Wire Wire Line
 	2500 6950 2550 6950
-Wire Wire Line
-	2300 6750 3100 6750
-Wire Wire Line
-	2300 6850 2300 6750
-Wire Wire Line
-	2100 6850 2300 6850
-Wire Wire Line
-	2200 6800 1550 6800
-Connection ~ 2100 6900
-Wire Wire Line
-	2050 6900 2100 6900
-Wire Wire Line
-	2100 6950 2100 6900
-Wire Wire Line
-	2200 6650 2200 6800
-Wire Wire Line
-	3100 6650 2200 6650
 Wire Wire Line
 	2500 5650 2500 5600
 Connection ~ 2100 4950
@@ -3484,106 +3438,10 @@ Text GLabel 16650 5950 0    39   Input ~ 0
 SH_B_M2
 Text GLabel 16650 6350 0    39   Input ~ 0
 SH_C_M2
-Wire Wire Line
-	24650 6850 25900 6850
-Wire Wire Line
-	24650 7150 25900 7150
 Connection ~ 26250 6850
-Entry Wire Line
-	24550 6750 24650 6850
-Entry Wire Line
-	24550 7050 24650 7150
-Text Label 24650 6850 0    39   ~ 0
-SN2_M2
-Text Label 24650 7150 0    39   ~ 0
-SP2_M2
-Entry Wire Line
-	22300 6250 22400 6150
-Wire Wire Line
-	22050 6250 22300 6250
-Text Label 22050 6250 0    39   ~ 0
-SP2_M2
-Wire Wire Line
-	22050 6150 22300 6150
-Entry Wire Line
-	22300 6150 22400 6050
-Text Label 22050 6150 0    39   ~ 0
-SN2_M2
-Wire Wire Line
-	24650 3600 25900 3600
 Connection ~ 26250 3600
-Entry Wire Line
-	24550 3700 24650 3600
-Wire Wire Line
-	24650 3900 25900 3900
-Entry Wire Line
-	24550 4000 24650 3900
-Text Label 24650 3600 0    39   ~ 0
-SN1_M2
-Text Label 24650 3900 0    39   ~ 0
-SP1_M2
-Entry Wire Line
-	22300 5950 22400 5850
-Wire Wire Line
-	22050 5950 22300 5950
-Wire Wire Line
-	22050 6050 22300 6050
-Entry Wire Line
-	22300 6050 22400 5950
-Text Label 22050 5950 0    39   ~ 0
-SN1_M2
-Text Label 22050 6050 0    39   ~ 0
-SP1_M2
-Wire Wire Line
-	6950 6800 8200 6800
 Connection ~ 8550 6800
-Wire Wire Line
-	6950 7100 8200 7100
-Entry Wire Line
-	4450 6250 4550 6150
-Wire Wire Line
-	4200 6250 4450 6250
-Entry Wire Line
-	4450 6150 4550 6050
-Wire Wire Line
-	4200 6150 4450 6150
-Entry Wire Line
-	4450 6050 4550 5950
-Wire Wire Line
-	4200 6050 4450 6050
-Entry Wire Line
-	4450 5950 4550 5850
-Wire Wire Line
-	4200 5950 4450 5950
-Text Label 4200 5950 0    39   ~ 0
-SN1_M1
-Text Label 4200 6050 0    39   ~ 0
-SP1_M1
-Text Label 4200 6150 0    39   ~ 0
-SN2_M1
-Text Label 4200 6250 0    39   ~ 0
-SP2_M1
-Entry Wire Line
-	6850 7000 6950 7100
-Text Label 6950 7100 0    39   ~ 0
-SP2_M1
-Entry Wire Line
-	6850 6700 6950 6800
-Text Label 6950 6800 0    39   ~ 0
-SN2_M1
-Entry Wire Line
-	6850 3750 6950 3650
-Wire Wire Line
-	6950 3650 8200 3650
 Connection ~ 8550 3650
-Wire Wire Line
-	6950 3950 8200 3950
-Entry Wire Line
-	6850 4050 6950 3950
-Text Label 6950 3650 0    39   ~ 0
-SN1_M1
-Text Label 6950 3950 0    39   ~ 0
-SP1_M1
 Wire Wire Line
 	25900 9400 25900 9450
 Wire Wire Line
@@ -3604,8 +3462,6 @@ Wire Wire Line
 	25900 8550 25900 8650
 Wire Wire Line
 	25900 8550 25950 8550
-Wire Wire Line
-	1550 6800 1500 6800
 Wire Wire Line
 	25900 7150 26250 7150
 Wire Wire Line
@@ -3686,10 +3542,6 @@ Wire Wire Line
 	20600 6850 20650 6850
 Wire Wire Line
 	20400 6950 20650 6950
-Wire Wire Line
-	19350 6800 19950 6800
-Wire Wire Line
-	19950 6900 19950 6850
 Wire Wire Line
 	19950 4950 20150 4950
 Wire Wire Line
@@ -3821,8 +3673,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 6950 2800 6950
 Wire Wire Line
-	2100 6900 2100 6850
-Wire Wire Line
 	2100 4950 2300 4950
 Wire Wire Line
 	2300 4950 2500 4950
@@ -3919,16 +3769,6 @@ Wire Wire Line
 	26750 8550 27000 8550
 Connection ~ 27000 8550
 Connection ~ 15150 9650
-Entry Bus Bus
-	6750 5750 6850 5650
-Entry Bus Bus
-	22400 5850 22500 5750
-Entry Bus Bus
-	4550 5850 4650 5750
-Wire Bus Line
-	4650 5750 6750 5750
-Entry Bus Bus
-	24450 5750 24550 5650
 Wire Wire Line
 	2100 2000 2400 2000
 Wire Wire Line
@@ -4471,8 +4311,6 @@ Connection ~ 9600 2400
 Connection ~ 9600 5550
 Connection ~ 9600 8900
 Connection ~ 19350 1700
-Wire Bus Line
-	22500 5750 24450 5750
 Connection ~ 27300 8950
 Text Notes 4650 950  0    276  ~ 55
 Motor 1
@@ -4501,8 +4339,6 @@ Wire Wire Line
 	20400 7350 20600 7350
 Wire Wire Line
 	19350 7350 19950 7350
-Wire Wire Line
-	19850 6900 19950 6900
 Connection ~ 19950 7350
 Connection ~ 27300 2350
 Connection ~ 27300 5600
@@ -5486,8 +5322,6 @@ Wire Wire Line
 	16650 8550 16950 8550
 Wire Wire Line
 	11250 7650 11250 7750
-Text Notes 11200 7250 0    31   ~ 0
-confirm pack voltage to \ncalculate this value
 Connection ~ 16350 8550
 $Comp
 L Device:LED D?
@@ -5579,12 +5413,96 @@ Connection ~ 16950 8550
 Wire Wire Line
 	17250 8550 17550 8550
 Connection ~ 17250 8550
-Wire Bus Line
-	22400 5850 22400 6150
-Wire Bus Line
-	4550 5850 4550 6150
-Wire Bus Line
-	6850 3750 6850 7000
-Wire Bus Line
-	24550 3700 24550 7050
+Text GLabel 4250 5950 2    39   Input ~ 0
+SN1_M1
+Text GLabel 4250 6050 2    39   Input ~ 0
+SP1_M1
+Text GLabel 4250 6150 2    39   Input ~ 0
+SN2_M1
+Text GLabel 4250 6250 2    39   Input ~ 0
+SP2_M1
+Wire Wire Line
+	4250 6250 4200 6250
+Wire Wire Line
+	4200 6150 4250 6150
+Wire Wire Line
+	4200 6050 4250 6050
+Wire Wire Line
+	4200 5950 4250 5950
+Wire Wire Line
+	8200 7100 8100 7100
+Connection ~ 8200 7100
+Wire Wire Line
+	8200 6800 8100 6800
+Connection ~ 8200 6800
+Text GLabel 8100 6800 0    39   Input ~ 0
+SN2_M1
+Text GLabel 8100 7100 0    39   Input ~ 0
+SP2_M1
+Wire Wire Line
+	8200 3950 8100 3950
+Connection ~ 8200 3950
+Wire Wire Line
+	8200 3650 8100 3650
+Connection ~ 8200 3650
+Text GLabel 8100 3650 0    39   Input ~ 0
+SN1_M1
+Text GLabel 8100 3950 0    39   Input ~ 0
+SN2_M2
+Text GLabel 22050 5950 2    39   Input ~ 0
+SN1_M2
+Text GLabel 22050 6050 2    39   Input ~ 0
+SP1_M2
+Text GLabel 22050 6150 2    39   Input ~ 0
+SN2_M2
+Text GLabel 22050 6250 2    39   Input ~ 0
+SP2_M2
+Wire Wire Line
+	25900 3900 25800 3900
+Connection ~ 25900 3900
+Wire Wire Line
+	25900 3600 25800 3600
+Connection ~ 25900 3600
+Text GLabel 25800 3600 0    39   Input ~ 0
+SN1_M2
+Text GLabel 25800 3900 0    39   Input ~ 0
+SP1_M2
+Wire Wire Line
+	25900 7150 25800 7150
+Connection ~ 25900 7150
+Wire Wire Line
+	25900 6850 25800 6850
+Connection ~ 25900 6850
+Text GLabel 25800 6850 0    39   Input ~ 0
+SN2_M2
+Text GLabel 25800 7150 0    39   Input ~ 0
+SP2_M2
+Wire Wire Line
+	19300 6650 19350 6650
+Wire Wire Line
+	19350 6850 19350 6650
+Connection ~ 19350 6650
+Wire Wire Line
+	19350 6650 20950 6650
+Wire Wire Line
+	19950 6750 20950 6750
+Wire Wire Line
+	19950 6750 19950 6950
+Wire Wire Line
+	19850 6750 19950 6750
+Connection ~ 19950 6750
+Wire Wire Line
+	1500 6650 1550 6650
+Wire Wire Line
+	1550 6850 1550 6650
+Connection ~ 1550 6650
+Wire Wire Line
+	1550 6650 3100 6650
+Wire Wire Line
+	2050 6750 2100 6750
+Wire Wire Line
+	2100 6950 2100 6750
+Connection ~ 2100 6750
+Wire Wire Line
+	2100 6750 3100 6750
 $EndSCHEMATC
