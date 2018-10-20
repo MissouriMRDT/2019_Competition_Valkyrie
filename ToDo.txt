@@ -1,41 +1,21 @@
-**IMPORTANT**
-	Motor Headers, you used TM4C123G. You need to use F280609m
-	Net "232_TX_M1 is not routed to anything
-	
-
-Consider runningNOCTW and NFAULT buss directly into LED instead of through FET
-Consider labeling the andersons in external connections. (Perhaps group them more tightly too)
 Ask Jacob if we want to run 2 PVDD inputs for each moco so that we have sperate power running to each phase
-Max 3232 could be moved to its own section
-Do we need that many GND testpoints?
 
 **Design Ideas
 	LEDIndication for Each motor phase (Physically see what's firing)
 	
-
 Annotate schematic and assign footprints
 
 Consider using bus fr SH_A since youre already using it fo sense
 
 Headers need to be shifted to the right by some amount to mitigate the overhang of the f28069m. Look at the datasheet to determine the amount of space to move the headers.
 
-Make indicator resistors 500 ohms from 330
-
-Remove fets from indicators and run nfault, etc directly into LED
-
 Calculate resistor value to put pack voltage directly to LED after removing transistor
-
-Add text labels to Anderons and remove the AndersonPP labeling
-
-Remove all ground test points
 
 Run two LEDS through GH and GL through a 1K ohm resistor for each phase of each motor, leave it indicators for neatness
 
 Add LEDs for Serial TX and RX
 
-Double check TX and RX connections, we're currently doubled up on our UART connections
-
-Add grounds to Phase A, B Sn, SP signals
+For PDR:
 
 Pin table based on motor header connections
 
