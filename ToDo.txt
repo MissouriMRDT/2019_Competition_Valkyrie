@@ -16,3 +16,29 @@ Do we need that many GND testpoints?
 Annotate schematic and assign footprints
 
 Consider using bus fr SH_A since youre already using it fo sense
+
+Headers need to be shifted to the right by some amount to mitigate the overhang of the f28069m. Look at the datasheet to determine the amount of space to move the headers.
+
+Make indicator resistors 500 ohms from 330
+
+Remove fets from indicators and run nfault, etc directly into LED
+
+Calculate resistor value to put pack voltage directly to LED after removing transistor
+
+Add text labels to Anderons and remove the AndersonPP labeling
+
+Remove all ground test points
+
+Run two LEDS through GH and GL through a 1K ohm resistor for each phase of each motor, leave it indicators for neatness
+
+Add LEDs for Serial TX and RX
+
+Double check TX and RX connections, we're currently doubled up on our UART connections
+
+Add grounds to Phase A, B Sn, SP signals
+
+Pin table based on motor header connections
+
+Make a folder in the PDR folder for this board and upload the documentation there and on github (PDFs or txt files)
+
+List of changes from Cameron's system. I'll talk about the hardware changes and Andrew will talk about the software changes
