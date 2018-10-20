@@ -1,0 +1,93 @@
+//////////////////
+J1-J4
+/////
+J1_1  - +3V3         - +3V3  - +3V3
+J1_2  - NC           - A_A6 
+J1_3  - UART_TX_M1   - P_28  - SCI_RX_DA: JP-(7, 6)(On, On)
+J1_4  - UART_RX_M1   - P_29  - SCI_TX_DA: JP-(7, 6)(On, On)
+J1_5  - NSCS_M1      - P_12  - GPIO 12
+J1_6  - NCS          - A_B6  - ADCIN_B6
+J1_7  - SCLK_M1      - P_16  - SPICKA
+J1_8  - NC           - P_22  
+J1_9  - NFAULT_M1    - P_33  - GPIO 33
+J1_10 - NOCTW_M1     - P_32  - GPIO 32
+
+J2_11 - PWM_IN_M1    - P_55  - HRCAP2
+J2_12 - DC_CAL_M1    - P_51  - ?
+J2_13 - EN_GATE_M1   - P_50  - GPIO 50
+J2_14 - SDO_M1       - P_17  - SPI_SOMI_A
+J2_15 - SDI_M1       - P_16  - SPI_SIMO_A
+J2_16 - NC           - Rese  
+J2_17 - NC           - NC    
+J2_18 - NC           - P_44  
+J2_19 - NC           - P_19  
+J2_20 - GND          - GND   - 
+                             - 
+J3_21 - +5V          - +5V   - +5V
+J3_22 - GND          - GND   - GND
+J3_23 - PVDDSENSE_M1 - A_A7  - ADCIN_A7
+J3_24 - ASENSE_M1    - A_B1  - ADCIN_B1
+J3_25 - BSENSE_M1    - A_A2  - ADCIN_A2
+J3_26 - CSENSE_M1    - A_B2  - ADCIN_B2
+J3_27 - SO1_M1       - A_A0  - ADCIN_A0
+J3_28 - SO2_M1       - A_B0  - ADCIN_B0
+J3_29 - NC           - A_A1  
+J3_30 - NC           - NC    
+
+J4_31 - NC           - DAC2  
+J4_32 - NC           - DAC1  
+J4_33 - NC           - NC    
+J4_34 - NC           - P_13  
+J4_35 - INL_C_M1     - P_5   - EPWM_3B
+J4_36 - INH_C_M1     - P_4   - EPWM_3A
+J4_37 - INL_B_M1     - P_3   - EPWM_2B
+J4_38 - INH_B_M1     - P_2   - EPWM_2A
+J4_39 - INL_A_M1     - P_1   - EPWM_1B
+J4_40 - INH_A_M1     - P_0   - EPWM_1A
+
+//////////////////           
+J5-J6                        
+/////                        
+J5_41 - +3V3         - +3V3  - +3V3
+J5_42 - NC           - NC    
+J5_43 - UART_TX_M2   - P_15  - SCI_RX_DB: JP-(7, 6)(On, On)
+J5_44 - UART_RX_M2   - P_58  - SCI_TX_DB: JP-(7, 6)(On, On)
+J5_45 - NSCS_M2      - P_20  - GPIO 20
+J5_46 - NCS          - NC    
+J5_47 - SCLK_M2      - P_14  - SPICLKB
+J5_48 - NC           - P_21  
+J5_49 - NFAULT_M2    - P_23  - GPIO 23
+J5_50 - NOCTW_M2     - P_54  - GPIO 54
+
+J6_51 - PWM_IN_M2    - P_56  - HRCAP3
+J6_52 - DC_CAL_M2    - P_53  - GPIO 53
+J6_53 - EN_GATE_M2   - P_52  - GPIO 52
+J6_54 - SDO_M2       - P_25  - SPI_SOMI_B
+J6_55 - SDI_M2       - P_24  - SPI_SIMO_B
+J6_56 - NC           - Rese 
+J6_57 - NC           - NC    
+J6_58 - NC           - P_26  
+J6_59 - NC           - P_27  
+J6_60 - GND          - GND   - GND
+
+J7_61 - +5V          - +5V   - +5V
+J7_62 - GND          - GND   - GND
+J7_63 - PVDDSENSE_M2 - A_B7  - ADCIN_B7
+J7_64 - ASENSE_M2    - A_B4  - ADCIN_B4
+J7_65 - BSENSE_M2    - A_A5  - ADCIN_A5
+J7_66 - CSENSE_M2    - A_B5  - ADCIN_B5
+J7_67 - SO1_M2       - A_A3  - ADCIN_A3
+J7_68 - SO2_M2       - A_B3  - ADCIN_B3
+J7_69 - NC           - A_A4  - ADCIN_A4
+J7_70 - NC           - NC   
+
+J8_71 - NC           - DAC4  
+J8_72 - NC           - DAC3  
+J8_73 - NC           - NC    
+J8_74 - NC           - NC    
+J8_75 - INL_C_M2     - P_11  - EPWM_6B
+J8_76 - INH_C_M2     - P_10  - EPWM_6A
+J8_77 - INL_B_M2     - P_9   - EPWM_5B
+J8_78 - INH_B_M2     - P_8   - EPWM_5A
+J8_79 - INL_A_M2     - P_7   - EPWM_4B
+J8_80 - INH_A_M2     - P_6   - EPWM_4A
