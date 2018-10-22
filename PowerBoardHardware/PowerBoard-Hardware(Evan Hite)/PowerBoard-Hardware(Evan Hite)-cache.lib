@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# DC-DC Converter:DC-DC_Converter
+# DC-DC_Converter:DC-DC_Converter
 #
-DEF DC-DC Converter:DC-DC_Converter CONV 0 5 Y Y 1 F N
+DEF DC-DC_Converter:DC-DC_Converter CONV 0 5 Y Y 1 F N
 F0 "CONV" 600 150 50 H V C CNN
-F1 "DC-DC Converter:DC-DC_Converter" 600 50 50 H V C CNN
+F1 "DC-DC_Converter:DC-DC_Converter" 600 50 50 H V C CNN
 F2 "" 550 300 50 H I C CNN
 F3 "" 550 300 50 H I C CNN
 DRAW

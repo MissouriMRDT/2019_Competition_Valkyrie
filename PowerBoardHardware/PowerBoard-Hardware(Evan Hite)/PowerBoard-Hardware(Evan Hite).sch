@@ -671,12 +671,12 @@ Connection ~ 4350 2650
 Wire Wire Line
 	4350 2400 4350 2650
 $Comp
-L DC-DC~Converter:DC-DC_Converter CONV1
+L DC-DC_Converter:DC-DC_Converter CONV1
 U 1 1 5BB35538
 P 2450 2350
 F 0 "CONV1" H 3100 2500 50  0000 C CNN
 F 1 "DC-DC_Converter" H 3100 2400 50  0000 C CNN
-F 2 "DC-DC_Converter_Quarter_Brick:DC-DC Converter (Murata)" H 3000 2650 50  0001 C CNN
+F 2 "DC-DC_Converter_Quarter_Brick:DC-DC_Converter_Quarter_Brick" H 3000 2650 50  0001 C CNN
 F 3 "" H 3000 2650 50  0001 C CNN
 	1    2450 2350
 	1    0    0    -1  
@@ -1068,12 +1068,12 @@ F 3 "" H 2650 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC-DC~Converter:DC-DC_Converter CONV2
+L DC-DC_Converter:DC-DC_Converter CONV2
 U 1 1 5BBF2506
 P 3050 7200
 F 0 "CONV2" H 3818 7775 50  0000 C CNN
 F 1 "DC-DC_Converter" H 3818 7684 50  0000 C CNN
-F 2 "DC-DC_Converter_Quarter_Brick:DC-DC Converter (Murata)" H 3600 7500 50  0001 C CNN
+F 2 "DC-DC_Converter_Quarter_Brick:DC-DC_Converter_Quarter_Brick" H 3600 7500 50  0001 C CNN
 F 3 "" H 3600 7500 50  0001 C CNN
 	1    3050 7200
 	1    0    0    -1  
@@ -4270,8 +4270,6 @@ Wire Wire Line
 	3800 2400 3750 2400
 Connection ~ 3800 2400
 Wire Wire Line
-	3700 2800 3700 2950
-Wire Wire Line
 	3700 2950 3500 2950
 Wire Wire Line
 	2500 2700 2500 2850
@@ -4291,9 +4289,6 @@ Connection ~ 3750 2400
 Wire Wire Line
 	3750 2400 3700 2400
 Wire Wire Line
-	3700 2700 3700 2800
-Connection ~ 3700 2800
-Wire Wire Line
 	4600 7150 4600 7250
 Wire Wire Line
 	4300 7250 4600 7250
@@ -4301,13 +4296,7 @@ Connection ~ 4600 7250
 Wire Wire Line
 	4600 7250 4600 7400
 Wire Wire Line
-	4300 7550 4300 7650
-Wire Wire Line
-	4300 7650 4300 7750
-Connection ~ 4300 7650
-Wire Wire Line
 	4300 7350 4300 7250
-Connection ~ 4300 7250
 Wire Wire Line
 	3100 7250 3050 7250
 Wire Wire Line
@@ -4316,4 +4305,8 @@ Wire Wire Line
 	3100 7400 2650 7400
 Wire Wire Line
 	2650 7400 2650 7550
+Wire Wire Line
+	3700 2700 3700 2950
+Wire Wire Line
+	4300 7550 4300 7750
 $EndSCHEMATC
