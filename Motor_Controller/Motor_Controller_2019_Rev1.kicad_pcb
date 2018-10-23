@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1.27)
+    (last_trace_width 0.25)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
     (user_trace_width 0.508)
@@ -66,7 +66,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFFF7FF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -847,7 +847,7 @@
     )
   )
 
-  (module MotorController_Hardware:TO-220-3_Horizontal_Reversed_NoHole (layer B.Cu) (tedit 5BCB87C6) (tstamp 5BCD7BFB)
+  (module MotorController_Hardware:TO-220-3_Horizontal_Reversed_NoHole (layer B.Cu) (tedit 5BCB87C6) (tstamp 5BCE6F4B)
     (at 96.266 -23.876 90)
     (descr "TO-220-3, Horizontal, RM 2.54mm")
     (tags "TO-220-3 Horizontal RM 2.54mm")
@@ -11545,8 +11545,8 @@
     )
   )
 
-  (dimension 151.13 (width 0.3) (layer F.SilkS)
-    (gr_text "5.9500 in" (at 205.808 32.893 90) (layer F.SilkS)
+  (dimension 151.13 (width 0.3) (layer F.Fab)
+    (gr_text "5.9500 in" (at 205.808 32.893 90) (layer F.Fab)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
     )
     (feature1 (pts (xy 175.006 -42.672) (xy 204.294421 -42.672)))
