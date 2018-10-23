@@ -42,6 +42,7 @@ LIBS:MRDT_Sensors
 LIBS:MRDT_Shields
 LIBS:MRDT_Silkscreens
 LIBS:MRDT_Switches
+LIBS:PowerBoard-Hardware(Evan Hite)-cache
 EELAYER 26 0
 EELAYER END
 $Descr C 22000 17000
@@ -56,32 +57,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:+BATT #PWR0101
-U 1 1 5BB151A8
-P 650 1000
-F 0 "#PWR0101" H 650 850 50  0001 C CNN
-F 1 "+BATT" H 665 1173 50  0000 C CNN
-F 2 "" H 650 1000 50  0001 C CNN
-F 3 "" H 650 1000 50  0001 C CNN
-	1    650  1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-BATT #PWR0102
-U 1 1 5BB151ED
-P 900 1000
-F 0 "#PWR0102" H 900 850 50  0001 C CNN
-F 1 "-BATT" H 915 1173 50  0000 C CNN
-F 2 "" H 900 1000 50  0001 C CNN
-F 3 "" H 900 1000 50  0001 C CNN
-	1    900  1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	900  1050 900  1000
-Text GLabel 650  1200 3    50   Input ~ 0
-V_BATT
 Text Notes 500  650  0    100  ~ 20
 Power Input
 $Comp
@@ -107,23 +82,12 @@ F 3 "~" H 2200 1050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 2100 800  0    50   Input ~ 0
-V_BATT
+PVDD
 Wire Wire Line
 	1650 900  2200 900 
 Connection ~ 2200 900 
 Wire Wire Line
 	1650 1200 2200 1200
-$Comp
-L power:GND #PWR0103
-U 1 1 5BB15812
-P 900 1050
-F 0 "#PWR0103" H 900 800 50  0001 C CNN
-F 1 "GND" H 905 877 50  0000 C CNN
-F 2 "" H 900 1050 50  0001 C CNN
-F 3 "" H 900 1050 50  0001 C CNN
-	1    900  1050
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5BB15838
@@ -219,10 +183,8 @@ Wire Wire Line
 	2200 800  2200 900 
 Text Notes 1550 650  0    100  ~ 20
 Power Conditioning Capacitance
-Wire Wire Line
-	650  1000 650  1200
 Text GLabel 5200 650  0    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L Device:R_US 100k3
 U 1 1 5BB16E19
@@ -411,7 +373,7 @@ U 1 1 5BB25730
 P 7550 2600
 F 0 "U7" H 7550 3178 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 7550 3087 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7650 2250 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7650 2250 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 7550 2600 50  0001 C CNN
 	1    7550 2600
 	1    0    0    -1  
@@ -551,7 +513,7 @@ U 2 1 5BB3178A
 P 7250 4400
 F 0 "VCC2" V 7510 4372 60  0000 R CNN
 F 1 "AndersonPP" V 7404 4372 60  0000 R CNN
-F 2 "" H 7100 3850 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 7100 3850 60  0001 C CNN
 F 3 "" H 7100 3850 60  0001 C CNN
 	2    7250 4400
 	0    -1   -1   0   
@@ -584,7 +546,7 @@ F 3 "" H 3500 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2500 2200 1    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L power:GND #PWR0115
 U 1 1 5BB3E7BF
@@ -809,7 +771,7 @@ U 1 1 5BB8933A
 P 7800 5200
 F 0 "U9" H 7800 5778 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 7800 5687 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7900 4850 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7900 4850 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 7800 5200 50  0001 C CNN
 	1    7800 5200
 	1    0    0    -1  
@@ -970,7 +932,7 @@ U 2 1 5BBC1067
 P 7350 6850
 F 0 "VCC3" V 7610 6822 60  0000 R CNN
 F 1 "AndersonPP" V 7504 6822 60  0000 R CNN
-F 2 "" H 7200 6300 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 7200 6300 60  0001 C CNN
 F 3 "" H 7200 6300 60  0001 C CNN
 	2    7350 6850
 	0    -1   -1   0   
@@ -1079,7 +1041,7 @@ F 3 "" H 3600 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3050 7000 1    50   Input ~ 0
-V_BATT
+PVDD
 Wire Wire Line
 	3050 7250 3050 7000
 $Comp
@@ -1167,7 +1129,7 @@ U 1 1 5BC49CA8
 P 7750 7450
 F 0 "U8" H 7750 8028 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 7750 7937 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7850 7100 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7850 7100 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 7750 7450 50  0001 C CNN
 	1    7750 7450
 	1    0    0    -1  
@@ -1303,7 +1265,7 @@ U 2 1 5BC9E549
 P 6200 9300
 F 0 "VCC1" V 6460 9272 60  0000 R CNN
 F 1 "AndersonPP" V 6354 9272 60  0000 R CNN
-F 2 "" H 6050 8750 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 6050 8750 60  0001 C CNN
 F 3 "" H 6050 8750 60  0001 C CNN
 	2    6200 9300
 	0    -1   -1   0   
@@ -1685,7 +1647,7 @@ F 3 "~" H 6850 10400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7000 10050 2    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L power:GND #PWR0140
 U 1 1 5BBA9386
@@ -1767,7 +1729,7 @@ Connection ~ 6850 10600
 Wire Notes Line
 	7350 11100 7350 9700
 Text GLabel 7750 10200 0    50   Input ~ 0
-V_BATT
+PVDD
 Text GLabel 8850 10200 2    50   Input ~ 0
 3.3V
 $Comp
@@ -1854,7 +1816,7 @@ Wire Wire Line
 Text GLabel 5850 15800 2    50   Input ~ 0
 3.3V
 Text GLabel 12150 1050 1    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L Fuse_Block:ATC_FUSE_BLOCK U4
 U 1 1 5BF631E1
@@ -1926,7 +1888,7 @@ U 1 1 5C048436
 P 12650 2350
 F 0 "U20" H 12650 2928 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 12650 2837 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12750 2000 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 12750 2000 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 12650 2350 50  0001 C CNN
 	1    12650 2350
 	1    0    0    -1  
@@ -2131,7 +2093,7 @@ U 2 1 5C2598AB
 P 11200 4000
 F 0 "VCC4" V 11460 3972 60  0000 R CNN
 F 1 "AndersonPP" V 11354 3972 60  0000 R CNN
-F 2 "" H 11050 3450 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 11050 3450 60  0001 C CNN
 F 3 "" H 11050 3450 60  0001 C CNN
 	2    11200 4000
 	0    -1   -1   0   
@@ -2139,12 +2101,12 @@ $EndComp
 $Comp
 L MRDT_Connectors:AndersonPP Conn5
 U 1 1 5C259C73
-P 10900 4000
-F 0 "Conn5" H 11150 4250 60  0000 R CNN
-F 1 "AndersonPP" H 11350 4350 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 10750 3450 60  0001 C CNN
-F 3 "" H 10750 3450 60  0001 C CNN
-	1    10900 4000
+P 10950 15300
+F 0 "Conn5" H 11200 15550 60  0000 R CNN
+F 1 "AndersonPP" H 11400 15650 60  0000 R CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 10800 14750 60  0001 C CNN
+F 3 "" H 10800 14750 60  0001 C CNN
+	1    10950 15300
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -2152,16 +2114,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0153
 U 1 1 5C272C7C
-P 10800 3400
-F 0 "#PWR0153" H 10800 3150 50  0001 C CNN
-F 1 "GND" H 10805 3227 50  0000 C CNN
-F 2 "" H 10800 3400 50  0001 C CNN
-F 3 "" H 10800 3400 50  0001 C CNN
-	1    10800 3400
+P 10850 14700
+F 0 "#PWR0153" H 10850 14450 50  0001 C CNN
+F 1 "GND" H 10855 14527 50  0000 C CNN
+F 2 "" H 10850 14700 50  0001 C CNN
+F 3 "" H 10850 14700 50  0001 C CNN
+	1    10850 14700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10800 3600 10800 3400
+	10850 14900 10850 14700
 Wire Wire Line
 	11100 3150 11100 3250
 $Comp
@@ -2184,7 +2146,7 @@ Motor 1
 Text Notes 13200 900  0    300  ~ 60
 MOTORS 1-7 AND AUX
 Text GLabel 12000 4500 1    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L Fuse_Block:ATC_FUSE_BLOCK U15
 U 1 1 5C3091D0
@@ -2202,7 +2164,7 @@ U 1 1 5C309374
 P 12550 5950
 F 0 "U19" H 12550 6528 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 12550 6437 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12650 5600 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 12650 5600 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 12550 5950 50  0001 C CNN
 	1    12550 5950
 	1    0    0    -1  
@@ -2305,7 +2267,7 @@ U 2 1 5C30A805
 P 11450 7600
 F 0 "VCC6" V 11710 7572 60  0000 R CNN
 F 1 "AndersonPP" V 11604 7572 60  0000 R CNN
-F 2 "" H 11300 7050 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 11300 7050 60  0001 C CNN
 F 3 "" H 11300 7050 60  0001 C CNN
 	2    11450 7600
 	0    -1   -1   0   
@@ -2478,14 +2440,14 @@ F 3 "" H 12300 8600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 12150 8050 1    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L Sensor_Current:ACS714xLCTR-05B U21
 U 1 1 5C630251
 P 12700 9550
 F 0 "U21" H 12700 10128 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 12700 10037 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12800 9200 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 12800 9200 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 12700 9550 50  0001 C CNN
 	1    12700 9550
 	1    0    0    -1  
@@ -2601,7 +2563,7 @@ U 2 1 5C631908
 P 11450 11150
 F 0 "VCC7" V 11710 11122 60  0000 R CNN
 F 1 "AndersonPP" V 11604 11122 60  0000 R CNN
-F 2 "" H 11300 10600 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 11300 10600 60  0001 C CNN
 F 3 "" H 11300 10600 60  0001 C CNN
 	2    11450 11150
 	0    -1   -1   0   
@@ -2750,7 +2712,7 @@ Wire Wire Line
 Text Notes 9850 8000 0    200  ~ 40
 Motor 3
 Text GLabel 12150 11850 1    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L Fuse_Block:ATC_FUSE_BLOCK U18
 U 1 1 5CA42B1A
@@ -2768,7 +2730,7 @@ U 1 1 5CA42C1A
 P 12750 13500
 F 0 "U22" H 12750 14078 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 12750 13987 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12850 13150 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 12850 13150 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 12750 13500 50  0001 C CNN
 	1    12750 13500
 	1    0    0    -1  
@@ -2859,23 +2821,23 @@ SIG-M4
 $Comp
 L MRDT_Connectors:AndersonPP Conn4
 U 1 1 5CA43B93
-P 10800 15300
-F 0 "Conn4" H 11050 15550 60  0000 R CNN
-F 1 "AndersonPP" H 11250 15650 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 10650 14750 60  0001 C CNN
-F 3 "" H 10650 14750 60  0001 C CNN
-	1    10800 15300
+P 10900 4000
+F 0 "Conn4" H 11150 4250 60  0000 R CNN
+F 1 "AndersonPP" H 11350 4350 60  0000 R CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 10750 3450 60  0001 C CNN
+F 3 "" H 10750 3450 60  0001 C CNN
+	1    10900 4000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0170
 U 1 1 5CA43CAD
-P 10700 14650
-F 0 "#PWR0170" H 10700 14400 50  0001 C CNN
-F 1 "GND" H 10705 14477 50  0000 C CNN
-F 2 "" H 10700 14650 50  0001 C CNN
-F 3 "" H 10700 14650 50  0001 C CNN
-	1    10700 14650
+P 10800 3350
+F 0 "#PWR0170" H 10800 3100 50  0001 C CNN
+F 1 "GND" H 10805 3177 50  0000 C CNN
+F 2 "" H 10800 3350 50  0001 C CNN
+F 3 "" H 10800 3350 50  0001 C CNN
+	1    10800 3350
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2895,7 +2857,7 @@ U 2 1 5CA43E8B
 P 11400 15300
 F 0 "VCC5" V 11660 15272 60  0000 R CNN
 F 1 "AndersonPP" V 11554 15272 60  0000 R CNN
-F 2 "" H 11250 14750 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 11250 14750 60  0001 C CNN
 F 3 "" H 11250 14750 60  0001 C CNN
 	2    11400 15300
 	0    -1   -1   0   
@@ -3027,7 +2989,7 @@ Wire Wire Line
 Wire Wire Line
 	13450 14900 13450 14950
 Wire Wire Line
-	10700 14900 10700 14650
+	10800 3600 10800 3350
 Text Notes 9850 11700 0    200  ~ 40
 Motor 4
 Text GLabel 17150 2700 0    50   Input ~ 0
@@ -3077,14 +3039,14 @@ F 3 "" H 19350 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 19200 950  1    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L Sensor_Current:ACS714xLCTR-05B U33
 U 1 1 5CE8B780
 P 19800 2350
 F 0 "U33" H 19800 2928 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 19800 2837 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 19900 2000 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 19900 2000 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 19800 2350 50  0001 C CNN
 	1    19800 2350
 	1    0    0    -1  
@@ -3187,7 +3149,7 @@ U 2 1 5CE8CBE4
 P 18250 4200
 F 0 "VCC10" V 18510 4172 60  0000 R CNN
 F 1 "AndersonPP" V 18404 4172 60  0000 R CNN
-F 2 "" H 18100 3650 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 18100 3650 60  0001 C CNN
 F 3 "" H 18100 3650 60  0001 C CNN
 	2    18250 4200
 	0    -1   -1   0   
@@ -3318,7 +3280,7 @@ Wire Wire Line
 Wire Wire Line
 	20950 3950 20950 4000
 Text GLabel 19050 4900 1    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L Fuse_Block:ATC_FUSE_BLOCK U28
 U 1 1 5D308D1D
@@ -3336,7 +3298,7 @@ U 1 1 5D308E53
 P 19800 6200
 F 0 "U34" H 19800 6778 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 19800 6687 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 19900 5850 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 19900 5850 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 19800 6200 50  0001 C CNN
 	1    19800 6200
 	1    0    0    -1  
@@ -3408,7 +3370,7 @@ U 2 1 5D309E09
 P 18350 7850
 F 0 "VCC11" V 18610 7822 60  0000 R CNN
 F 1 "AndersonPP" V 18504 7822 60  0000 R CNN
-F 2 "" H 18200 7300 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 18200 7300 60  0001 C CNN
 F 3 "" H 18200 7300 60  0001 C CNN
 	2    18350 7850
 	0    -1   -1   0   
@@ -3589,7 +3551,7 @@ Wire Wire Line
 Text Notes 16450 4600 0    200  ~ 40
 Motor 6
 Text GLabel 19050 8350 1    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L Fuse_Block:ATC_FUSE_BLOCK U29
 U 1 1 5D8ED09D
@@ -3607,7 +3569,7 @@ U 1 1 5D8ED1DF
 P 19650 9650
 F 0 "U32" H 19650 10228 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 19650 10137 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 19750 9300 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 19750 9300 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 19650 9650 50  0001 C CNN
 	1    19650 9650
 	1    0    0    -1  
@@ -3721,7 +3683,7 @@ U 2 1 5D8EE489
 P 18100 11250
 F 0 "VCC8" V 18360 11222 60  0000 R CNN
 F 1 "AndersonPP" V 18254 11222 60  0000 R CNN
-F 2 "" H 17950 10700 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 17950 10700 60  0001 C CNN
 F 3 "" H 17950 10700 60  0001 C CNN
 	2    18100 11250
 	0    -1   -1   0   
@@ -3860,7 +3822,7 @@ Wire Wire Line
 Text Notes 16450 8250 0    200  ~ 40
 Motor 7
 Text GLabel 19000 11750 1    50   Input ~ 0
-V_BATT
+PVDD
 $Comp
 L Fuse_Block:ATC_FUSE_BLOCK U27
 U 1 1 5DF786B7
@@ -3878,7 +3840,7 @@ U 1 1 5DF7880B
 P 19500 13200
 F 0 "U31" H 19500 13778 50  0000 C CNN
 F 1 "ACS714xLCTR-05B" H 19500 13687 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 19600 12850 50  0001 L CIN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 19600 12850 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS714-Datasheet.ashx?la=en" H 19500 13200 50  0001 C CNN
 	1    19500 13200
 	1    0    0    -1  
@@ -3983,7 +3945,7 @@ U 2 1 5DF79824
 P 18200 14850
 F 0 "VCC9" V 18460 14822 60  0000 R CNN
 F 1 "AndersonPP" V 18354 14822 60  0000 R CNN
-F 2 "" H 18050 14300 60  0001 C CNN
+F 2 "MRDT-Connectors:Anderson_2_Vertical" H 18050 14300 60  0001 C CNN
 F 3 "" H 18050 14300 60  0001 C CNN
 	2    18200 14850
 	0    -1   -1   0   
