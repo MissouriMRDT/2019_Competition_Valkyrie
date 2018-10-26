@@ -185,7 +185,7 @@ F 3 "" H 4150 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4050 7500 0    39   Input ~ 0
-PVDD
+PVDD_M1
 $Comp
 L Device:C C4
 U 1 1 5BA6B253
@@ -209,7 +209,7 @@ F 3 "" H 3250 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3400 7400 1    39   Input ~ 0
-PVDD
+PVDD_M1
 $Comp
 L power:VCC #PWR015
 U 1 1 5BA6BEE9
@@ -1501,7 +1501,7 @@ F 3 "" H 22150 7850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 21900 7500 0    39   Input ~ 0
-PVDD
+PVDD_M2
 $Comp
 L Device:C C53
 U 1 1 5BB18024
@@ -1525,7 +1525,7 @@ F 3 "" H 21100 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 21250 7400 1    39   Input ~ 0
-PVDD
+PVDD_M2
 $Comp
 L power:VCC #PWR076
 U 1 1 5BB18037
