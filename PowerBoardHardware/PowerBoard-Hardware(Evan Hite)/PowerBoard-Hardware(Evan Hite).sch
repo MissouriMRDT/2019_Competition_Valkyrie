@@ -320,7 +320,7 @@ F 3 "" H 5850 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5100 3000 0    50   Input ~ 0
-LOGIC_SIG
+LOGIC-SIG
 Wire Wire Line
 	5850 3450 5850 3600
 Wire Wire Line

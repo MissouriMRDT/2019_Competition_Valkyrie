@@ -1,0 +1,53 @@
+PowerBoard Rev 1 2018 Pin Map
+Pins that are assigned from the Tiva to the board.
+
+Row A1
+A1-6 = VMEAS-VBATT (Voltage Measurement of Battery Voltage)
+A1-4 = SER_TX (Serial TX)
+A1_3 = SER_RX (Serial RX)
+A1_1 = 3.3V (3.3 Volt signal)
+
+Row A2
+A2_1 = 3.3V (3.3 Volt Signal)
+
+Row B1
+B1_6 = IMEAS-M7 (Measurment of extra Bus)
+B1_5 = IMEAS-ACT (Measurement of Actuation Bus)
+B1_4 = IMEAS-COM (Measurment of Communication Bus)
+B1_3 = IMEAS-LOGIC (Measurement of Logic Bus)
+B1_2 = GND
+B1_1 = 5V
+
+Row B2
+B2_8 = IMEAS-M1 (Measurment of Motor Bus 1)
+B2_7 = IMEAS-M2 (Measurment of Motor Bus 2)
+B2_6 = IMEAS-M3 (Measurment of Motor Bus 3)
+B2_5 = IMEAS-M4 (Measurment of Motor Bus 4)
+B2_4 = IMEAS-M5 (Measurment of Motor Bus 5)
+B2_3 = IMEAS-M6 (Measurment of Motor Bus 6)
+B2_2 = GND
+B2_1 = 5V
+
+Row C1
+No pins are used
+
+Row C2
+C2_10 = SIG-M1 (Signal to Motor Bus 1)
+C2_9 = SIG-M2 (Signal to Motor Bus 2)
+C2_8 = SIG-M3 (Signal to Motor Bus 3)
+C2_7 = SIG-M4 (Signal to Motor Bus 4)
+C2_6 = SIG-M5 (Signal to Motor Bus 5)
+C2_5 = SIG-M6 (Signal to Motor Bus 6)
+C2_4 = SIG-M7 (Signal to Motor Bus 7)
+C2_3 = SIG-AUX (Signal to Auxillary Bus)
+
+Row D1
+D1_10 = LOGIC\COM-CTL (Logic/Communication Bus Control)
+D1_9 = ACT-CTL (Actuation Bus Control)
+D1_7 = IMEAS-AUX (Measurement of Actuation Bus)
+D1_3 = LOGIC-SIG (Logic Bus Signal)
+D1_2 = FAN-CTL (Fan Control)
+D1_1 = GND
+
+Row D2
+D2_1 = GND
