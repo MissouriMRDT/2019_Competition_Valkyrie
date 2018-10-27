@@ -5,10 +5,11 @@ Battery Ground Cable-GND
 
 Outgoing
 2 Pin SL- FAN-CTL
-2 Vertically Stacked Horizontal Andersons
+2 Vertical Andersons
 	1. Logic Bus
 	2. Actuation Bus
 	3. Communication Bus
+2 Vertically Stacked Horizontal Andersons
 	4. Motor Bus 1
 	5. Motor Bus 2
 	6. Motor Bus 3

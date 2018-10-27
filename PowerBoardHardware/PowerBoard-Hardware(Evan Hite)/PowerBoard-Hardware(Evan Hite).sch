@@ -475,18 +475,18 @@ U 1 1 5BB3166B
 P 7000 4400
 F 0 "Conn2" H 7250 4650 60  0000 R CNN
 F 1 "AndersonPP" H 7450 4750 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 6850 3850 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 6850 3850 60  0001 C CNN
 F 3 "" H 6850 3850 60  0001 C CNN
 	1    7000 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP VCC2
+L MRDT_Connectors:AndersonPP Conn2
 U 2 1 5BB3178A
 P 7250 4400
-F 0 "VCC2" V 7510 4372 60  0000 R CNN
+F 0 "Conn2" V 7510 4372 60  0000 R CNN
 F 1 "AndersonPP" V 7404 4372 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 7100 3850 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 7100 3850 60  0001 C CNN
 F 3 "" H 7100 3850 60  0001 C CNN
 	2    7250 4400
 	0    -1   -1   0   
@@ -878,7 +878,7 @@ U 1 1 5BBC1286
 P 7100 6850
 F 0 "Conn3" H 7350 7100 60  0000 R CNN
 F 1 "AndersonPP" H 7550 7200 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 6950 6300 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 6950 6300 60  0001 C CNN
 F 3 "" H 6950 6300 60  0001 C CNN
 	1    7100 6850
 	0    -1   -1   0   
@@ -900,12 +900,12 @@ $EndComp
 Wire Wire Line
 	7000 6450 7000 6300
 $Comp
-L MRDT_Connectors:AndersonPP VCC3
+L MRDT_Connectors:AndersonPP Conn3
 U 2 1 5BBC1067
 P 7350 6850
-F 0 "VCC3" V 7610 6822 60  0000 R CNN
+F 0 "Conn3" V 7610 6822 60  0000 R CNN
 F 1 "AndersonPP" V 7504 6822 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 7200 6300 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 7200 6300 60  0001 C CNN
 F 3 "" H 7200 6300 60  0001 C CNN
 	2    7350 6850
 	0    -1   -1   0   
@@ -1233,12 +1233,12 @@ Wire Wire Line
 Wire Wire Line
 	7550 8750 7550 8850
 $Comp
-L MRDT_Connectors:AndersonPP VCC1
+L MRDT_Connectors:AndersonPP Conn1
 U 2 1 5BC9E549
 P 6200 9300
-F 0 "VCC1" V 6460 9272 60  0000 R CNN
+F 0 "Conn1" V 6460 9272 60  0000 R CNN
 F 1 "AndersonPP" V 6354 9272 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 6050 8750 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 6050 8750 60  0001 C CNN
 F 3 "" H 6050 8750 60  0001 C CNN
 	2    6200 9300
 	0    -1   -1   0   
@@ -1252,7 +1252,7 @@ U 1 1 5BCA4FDD
 P 5950 9300
 F 0 "Conn1" H 6200 9550 60  0000 R CNN
 F 1 "AndersonPP" H 6400 9650 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 5800 8750 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 5800 8750 60  0001 C CNN
 F 3 "" H 5800 8750 60  0001 C CNN
 	1    5950 9300
 	0    -1   -1   0   
@@ -1360,10 +1360,6 @@ F 3 "" H 2500 10900 60  0001 C CNN
 	8    2500 10900
 	-1   0    0    1   
 $EndComp
-Text GLabel 1500 10550 2    50   Input ~ 0
-SER_RX
-Text GLabel 1500 10450 2    50   Input ~ 0
-SER_TX
 Text GLabel 2800 10150 2    50   Input ~ 0
 SIG-M4
 Wire Wire Line
@@ -1408,10 +1404,6 @@ Wire Wire Line
 	2700 10250 2800 10250
 Text GLabel 1500 13950 2    50   Input ~ 0
 FAN-CTL
-Wire Wire Line
-	1400 10450 1500 10450
-Wire Wire Line
-	1400 10550 1500 10550
 Wire Wire Line
 	1400 13850 1500 13850
 Wire Wire Line
@@ -2061,10 +2053,10 @@ F 3 "" H 13350 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP VCC4
+L MRDT_Connectors:AndersonPP Conn4
 U 2 1 5C2598AB
 P 11200 4000
-F 0 "VCC4" V 11460 3972 60  0000 R CNN
+F 0 "Conn4" V 11460 3972 60  0000 R CNN
 F 1 "AndersonPP" V 11354 3972 60  0000 R CNN
 F 2 "MRDT-Connectors:Anderson_2_Vertical" H 11050 3450 60  0001 C CNN
 F 3 "" H 11050 3450 60  0001 C CNN
@@ -2235,10 +2227,10 @@ F 3 "~" H 11950 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP VCC6
+L MRDT_Connectors:AndersonPP Conn6
 U 2 1 5C30A805
 P 11450 11150
-F 0 "VCC6" V 11710 11122 60  0000 R CNN
+F 0 "Conn6" V 11710 11122 60  0000 R CNN
 F 1 "AndersonPP" V 11604 11122 60  0000 R CNN
 F 2 "MRDT-Connectors:Anderson_2_Vertical" H 11300 10600 60  0001 C CNN
 F 3 "" H 11300 10600 60  0001 C CNN
@@ -2524,10 +2516,10 @@ F 3 "" H 10600 14900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP VCC7
+L MRDT_Connectors:AndersonPP Conn7
 U 2 1 5C631908
 P 11400 15300
-F 0 "VCC7" V 11660 15272 60  0000 R CNN
+F 0 "Conn7" V 11660 15272 60  0000 R CNN
 F 1 "AndersonPP" V 11554 15272 60  0000 R CNN
 F 2 "MRDT-Connectors:Anderson_2_Vertical" H 11250 14750 60  0001 C CNN
 F 3 "" H 11250 14750 60  0001 C CNN
@@ -2813,10 +2805,10 @@ F 3 "" H 11100 14500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP VCC5
+L MRDT_Connectors:AndersonPP Conn5
 U 2 1 5CA43E8B
 P 11450 7600
-F 0 "VCC5" V 11710 7572 60  0000 R CNN
+F 0 "Conn5" V 11710 7572 60  0000 R CNN
 F 1 "AndersonPP" V 11604 7572 60  0000 R CNN
 F 2 "MRDT-Connectors:Anderson_2_Vertical" H 11300 7050 60  0001 C CNN
 F 3 "" H 11300 7050 60  0001 C CNN
@@ -3098,10 +3090,10 @@ F 3 "" H 20950 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP VCC10
+L MRDT_Connectors:AndersonPP Conn10
 U 2 1 5CE8CBE4
 P 18300 11250
-F 0 "VCC10" V 18560 11222 60  0000 R CNN
+F 0 "Conn10" V 18560 11222 60  0000 R CNN
 F 1 "AndersonPP" V 18454 11222 60  0000 R CNN
 F 2 "MRDT-Connectors:Anderson_2_Vertical" H 18150 10700 60  0001 C CNN
 F 3 "" H 18150 10700 60  0001 C CNN
@@ -3319,10 +3311,10 @@ F 3 "" H 18150 14300 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP VCC11
+L MRDT_Connectors:AndersonPP Conn11
 U 2 1 5D309E09
 P 18750 14850
-F 0 "VCC11" V 19010 14822 60  0000 R CNN
+F 0 "Conn11" V 19010 14822 60  0000 R CNN
 F 1 "AndersonPP" V 18904 14822 60  0000 R CNN
 F 2 "MRDT-Connectors:Anderson_2_Vertical" H 18600 14300 60  0001 C CNN
 F 3 "" H 18600 14300 60  0001 C CNN
@@ -3632,10 +3624,10 @@ F 3 "" H 17800 10600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP VCC8
+L MRDT_Connectors:AndersonPP Conn8
 U 2 1 5D8EE489
 P 18850 4150
-F 0 "VCC8" V 19110 4122 60  0000 R CNN
+F 0 "Conn8" V 19110 4122 60  0000 R CNN
 F 1 "AndersonPP" V 19004 4122 60  0000 R CNN
 F 2 "MRDT-Connectors:Anderson_2_Vertical" H 18700 3600 60  0001 C CNN
 F 3 "" H 18700 3600 60  0001 C CNN
@@ -3890,10 +3882,10 @@ F 3 "" H 18350 3450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP VCC9
+L MRDT_Connectors:AndersonPP Conn9
 U 2 1 5DF79824
 P 18350 7850
-F 0 "VCC9" V 18610 7822 60  0000 R CNN
+F 0 "Conn9" V 18610 7822 60  0000 R CNN
 F 1 "AndersonPP" V 18504 7822 60  0000 R CNN
 F 2 "MRDT-Connectors:Anderson_2_Vertical" H 18200 7300 60  0001 C CNN
 F 3 "" H 18200 7300 60  0001 C CNN
@@ -4213,7 +4205,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 7400 2650 7550
 Wire Wire Line
-	3700 2700 3700 2950
+	3700 2700 3700 2800
 Wire Wire Line
 	4300 7550 4300 7750
 Wire Wire Line
@@ -4248,4 +4240,7 @@ Wire Wire Line
 	19050 10800 19050 11000
 Wire Wire Line
 	18650 14450 18850 14450
+Connection ~ 3700 2800
+Wire Wire Line
+	3700 2800 3700 2950
 $EndSCHEMATC
