@@ -475,7 +475,7 @@ U 1 1 5BB3166B
 P 7000 4400
 F 0 "Conn2" H 7250 4650 60  0000 R CNN
 F 1 "AndersonPP" H 7450 4750 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 6850 3850 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 6850 3850 60  0001 C CNN
 F 3 "" H 6850 3850 60  0001 C CNN
 	1    7000 4400
 	0    -1   -1   0   
@@ -486,7 +486,7 @@ U 2 1 5BB3178A
 P 7250 4400
 F 0 "Conn2" V 7510 4372 60  0000 R CNN
 F 1 "AndersonPP" V 7404 4372 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 7100 3850 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 7100 3850 60  0001 C CNN
 F 3 "" H 7100 3850 60  0001 C CNN
 	2    7250 4400
 	0    -1   -1   0   
@@ -878,7 +878,7 @@ U 1 1 5BBC1286
 P 7100 6850
 F 0 "Conn3" H 7350 7100 60  0000 R CNN
 F 1 "AndersonPP" H 7550 7200 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 6950 6300 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 6950 6300 60  0001 C CNN
 F 3 "" H 6950 6300 60  0001 C CNN
 	1    7100 6850
 	0    -1   -1   0   
@@ -905,7 +905,7 @@ U 2 1 5BBC1067
 P 7350 6850
 F 0 "Conn3" V 7610 6822 60  0000 R CNN
 F 1 "AndersonPP" V 7504 6822 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 7200 6300 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 7200 6300 60  0001 C CNN
 F 3 "" H 7200 6300 60  0001 C CNN
 	2    7350 6850
 	0    -1   -1   0   
@@ -1238,7 +1238,7 @@ U 2 1 5BC9E549
 P 6200 9300
 F 0 "Conn1" V 6460 9272 60  0000 R CNN
 F 1 "AndersonPP" V 6354 9272 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 6050 8750 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 6050 8750 60  0001 C CNN
 F 3 "" H 6050 8750 60  0001 C CNN
 	2    6200 9300
 	0    -1   -1   0   
@@ -1252,7 +1252,7 @@ U 1 1 5BCA4FDD
 P 5950 9300
 F 0 "Conn1" H 6200 9550 60  0000 R CNN
 F 1 "AndersonPP" H 6400 9650 60  0000 R CNN
-F 2 "MRDT-Connectors:Anderson_2_Vertical" H 5800 8750 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical Anderson Double" H 5800 8750 60  0001 C CNN
 F 3 "" H 5800 8750 60  0001 C CNN
 	1    5950 9300
 	0    -1   -1   0   

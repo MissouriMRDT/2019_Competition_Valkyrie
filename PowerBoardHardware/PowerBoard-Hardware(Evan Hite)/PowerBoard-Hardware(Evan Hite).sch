@@ -1429,10 +1429,6 @@ Text GLabel 1500 10750 2    50   Input ~ 0
 3.3V
 Wire Wire Line
 	1400 11750 1950 11750
-Wire Wire Line
-	1400 11850 1500 11850
-Text GLabel 1500 11850 2    50   Input ~ 0
-5V
 $Comp
 L power:GND #PWR0136
 U 1 1 5BDFE645
@@ -1474,8 +1470,6 @@ Wire Wire Line
 	1400 15150 1550 15150
 Text GLabel 1550 15150 2    50   Input ~ 0
 3.3V
-Text GLabel 1550 16250 2    50   Input ~ 0
-5V
 Wire Wire Line
 	1400 15550 1550 15550
 Wire Wire Line
@@ -1484,8 +1478,6 @@ Wire Wire Line
 	1400 15750 1550 15750
 Wire Wire Line
 	1400 15850 1550 15850
-Wire Wire Line
-	1550 16250 1400 16250
 $Comp
 L power:GND #PWR0139
 U 1 1 5BE5AF40
