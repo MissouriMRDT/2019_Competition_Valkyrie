@@ -5,7 +5,7 @@
     (drawings 12)
     (tracks 0)
     (zones 0)
-    (modules 142)
+    (modules 146)
     (nets 169)
   )
 
@@ -61,8 +61,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 18.288 18.288)
-    (pad_drill 9.144)
+    (pad_size 3.302 3.302)
+    (pad_drill 3.302)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
     (visible_elements 7FFFF7FF)
@@ -4306,7 +4306,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 58E0A804) (tstamp 5BD211E0)
-    (at 37.465 123.19)
+    (at 37.465 120.015)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5DF79B7D)
@@ -4342,7 +4342,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 58E0A804) (tstamp 5BCBDF2F)
-    (at 37.465 107.95)
+    (at 37.465 104.775)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5D8F00E5)
@@ -4378,7 +4378,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 58E0A804) (tstamp 5BCBDF40)
-    (at 37.465 90.17)
+    (at 37.465 86.995)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5D309F43)
@@ -4414,7 +4414,7 @@
   )
 
   (module Resistors_SMD:R_0603_HandSoldering (layer F.Cu) (tedit 58E0A804) (tstamp 5BCBDF51)
-    (at 37.465 75.565)
+    (at 37.465 71.755)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
     (path /5CE8C847)
@@ -4574,7 +4574,7 @@
   )
 
   (module MRDT-Connectors:Anderson_2_Vertical (layer F.Cu) (tedit 5AD6BD88) (tstamp 5BCBE001)
-    (at 30.48 81.915)
+    (at 30.48 78.74)
     (path /5D8EE489)
     (fp_text reference Conn8 (at -5.461 4.826) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4605,7 +4605,7 @@
   )
 
   (module MRDT-Connectors:Anderson_2_Vertical (layer F.Cu) (tedit 5BD38045) (tstamp 5BCBE017)
-    (at 30.48 96.52)
+    (at 30.48 93.345)
     (path /5D8EE0D3)
     (fp_text reference Conn9 (at -5.461 4.826) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4636,7 +4636,7 @@
   )
 
   (module MRDT-Connectors:Anderson_2_Vertical (layer F.Cu) (tedit 5AD6BD88) (tstamp 5BCBE02D)
-    (at 30.48 114.3)
+    (at 30.48 111.125)
     (path /5CE8CBE4)
     (fp_text reference Conn10 (at -5.461 4.826) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4667,7 +4667,7 @@
   )
 
   (module MRDT-Connectors:Anderson_2_Vertical (layer F.Cu) (tedit 5AD6BD88) (tstamp 5BCBE043)
-    (at 30.48 130.81)
+    (at 30.48 127.635)
     (path /5D309A08)
     (fp_text reference Conn11 (at -5.461 4.826) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4964,7 +4964,7 @@
   )
 
   (module LEDs:LED_0603_HandSoldering (layer F.Cu) (tedit 595FC9C0) (tstamp 5BCBE0EB)
-    (at 31.115 123.19)
+    (at 31.115 120.015)
     (descr "LED SMD 0603, hand soldering")
     (tags "LED 0603")
     (path /5DF79CF7)
@@ -5002,7 +5002,7 @@
   )
 
   (module LEDs:LED_0603_HandSoldering (layer F.Cu) (tedit 595FC9C0) (tstamp 5BCFF184)
-    (at 31.115 107.95)
+    (at 31.115 104.775)
     (descr "LED SMD 0603, hand soldering")
     (tags "LED 0603")
     (path /5D8F023F)
@@ -5040,7 +5040,7 @@
   )
 
   (module LEDs:LED_0603_HandSoldering (layer F.Cu) (tedit 595FC9C0) (tstamp 5BCBE115)
-    (at 31.115 90.17)
+    (at 31.115 86.995)
     (descr "LED SMD 0603, hand soldering")
     (tags "LED 0603")
     (path /5D30A08D)
@@ -5078,7 +5078,7 @@
   )
 
   (module LEDs:LED_0603_HandSoldering (layer F.Cu) (tedit 595FC9C0) (tstamp 5BCBE12A)
-    (at 31.115 75.565)
+    (at 31.115 71.755)
     (descr "LED SMD 0603, hand soldering")
     (tags "LED 0603")
     (path /5CE8C981)
@@ -7560,7 +7560,7 @@
   )
 
   (module "Vertical Anderson Double:Vertical Anderson Double" (layer F.Cu) (tedit 5BD3E30A) (tstamp 5BD3F567)
-    (at 226.06 29.21 270)
+    (at 226.06 30.48 270)
     (path /5BC9E549)
     (fp_text reference Conn1 (at -17.272 -2.921) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -7595,7 +7595,7 @@
   )
 
   (module "Vertical Anderson Double:Vertical Anderson Double" (layer F.Cu) (tedit 5BD3E30A) (tstamp 5BD3F57C)
-    (at 142.24 29.21 270)
+    (at 142.24 30.099 270)
     (path /5BB3166B)
     (fp_text reference Conn2 (at -17.653 -2.032) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -7630,7 +7630,7 @@
   )
 
   (module "Vertical Anderson Double:Vertical Anderson Double" (layer F.Cu) (tedit 5BD3E30A) (tstamp 5BD3F591)
-    (at 190.5 29.464 270)
+    (at 190.5 30.48 270)
     (path /5BBC1286)
     (fp_text reference Conn3 (at -17.018 -2.413) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -7973,6 +7973,50 @@
     )
     (pad 1 thru_hole circle (at 0 0) (size 18.288 18.288) (drill 9.144) (layers *.Cu *.Mask)
       (net 110 GND) (zone_connect 2))
+  )
+
+  (module MRDT-Drill_Holes:MOUTING_HOLE_D0.13in (layer F.Cu) (tedit 5AD6119B) (tstamp 5BE97D56)
+    (at 288.925 136.525)
+    (fp_text reference REF** (at 0 2) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.03175)))
+    )
+    (fp_text value MOUTING_HOLE_D0.13in (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.03175)))
+    )
+    (pad "" np_thru_hole circle (at 0 0) (size 3.302 3.302) (drill 3.302) (layers *.Cu *.Mask))
+  )
+
+  (module MRDT-Drill_Holes:MOUTING_HOLE_D0.13in (layer F.Cu) (tedit 5AD6119B) (tstamp 5BE97D63)
+    (at 287.655 16.51)
+    (fp_text reference REF** (at 0 2) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.03175)))
+    )
+    (fp_text value MOUTING_HOLE_D0.13in (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.03175)))
+    )
+    (pad "" np_thru_hole circle (at 0 0) (size 3.302 3.302) (drill 3.302) (layers *.Cu *.Mask))
+  )
+
+  (module MRDT-Drill_Holes:MOUTING_HOLE_D0.13in (layer F.Cu) (tedit 5BE89164) (tstamp 5BE97D70)
+    (at 15.875 15.875)
+    (fp_text reference REF** (at 0 2) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.03175)))
+    )
+    (fp_text value MOUTING_HOLE_D0.13in (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.03175)))
+    )
+    (pad "" np_thru_hole circle (at 0 0) (size 3.302 3.302) (drill 3.302) (layers *.Cu *.Mask))
+  )
+
+  (module MRDT-Drill_Holes:MOUTING_HOLE_D0.13in (layer F.Cu) (tedit 5AD6119B) (tstamp 5BE97D7D)
+    (at 15.875 136.525)
+    (fp_text reference REF** (at 0 2) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.03175)))
+    )
+    (fp_text value MOUTING_HOLE_D0.13in (at 0 -2) (layer F.Fab) hide
+      (effects (font (size 0.127 0.127) (thickness 0.03175)))
+    )
+    (pad "" np_thru_hole circle (at 0 0) (size 3.302 3.302) (drill 3.302) (layers *.Cu *.Mask))
   )
 
   (gr_line (start 292.1 12.7) (end 12.7 12.7) (layer Edge.Cuts) (width 0.2))
