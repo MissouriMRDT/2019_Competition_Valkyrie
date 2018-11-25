@@ -1678,7 +1678,7 @@ $EndComp
 Text GLabel 13150 1950 1    50   Input ~ 0
 3.3V
 Text GLabel 13050 2350 2    50   Output ~ 0
-IMEAS-M1
+IMEAS-M7
 $Comp
 L Device:C_Small C31
 U 1 1 5C0B866F
@@ -1878,9 +1878,9 @@ F 3 "" H 11100 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 10500 2700 0    50   Input ~ 0
-SIG-M1
+SIG-M7
 Text Notes 9850 800  0    200  ~ 40
-Motor 1
+Motor 7
 Text Notes 13200 900  0    300  ~ 60
 MOTORS 1-7 AND AUX
 Text GLabel 12000 4650 1    50   Input ~ 0
@@ -1932,7 +1932,7 @@ $EndComp
 Text GLabel 13100 5550 1    50   Input ~ 0
 3.3V
 Text GLabel 12950 5950 2    50   Output ~ 0
-IMEAS-M2
+IMEAS-M6
 $Comp
 L Device:C_Small C30
 U 1 1 5C309B9F
@@ -2055,7 +2055,7 @@ F 3 "" H 13650 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 10450 6300 0    50   Input ~ 0
-SIG-M2
+SIG-M6
 Wire Wire Line
 	12000 5400 12000 5750
 Wire Wire Line
@@ -2129,7 +2129,7 @@ $EndComp
 Wire Wire Line
 	11750 5650 11750 5800
 Text Notes 9850 4400 0    200  ~ 40
-Motor 2
+Motor 6
 $Comp
 L Fuse_Block:ATC_FUSE_BLOCK U17
 U 1 1 5C630093
@@ -2179,7 +2179,7 @@ $EndComp
 Text GLabel 13250 9150 1    50   Input ~ 0
 3.3V
 Text GLabel 13100 9550 2    50   Output ~ 0
-IMEAS-M3
+IMEAS-M5
 $Comp
 L Device:C_Small C36
 U 1 1 5C630C21
@@ -2236,7 +2236,7 @@ F 3 "" H 10700 10150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 10500 9900 0    50   Input ~ 0
-SIG-M3
+SIG-M5
 $Comp
 L MRDT_Connectors:AndersonPP Conn7
 U 1 1 5C631721
@@ -2380,7 +2380,7 @@ Wire Wire Line
 Wire Wire Line
 	13600 11100 13600 11150
 Text Notes 9850 8000 0    200  ~ 40
-Motor 3
+Motor 5
 Text GLabel 12150 12100 1    50   Input ~ 0
 PVDD
 $Comp
@@ -2634,7 +2634,7 @@ Wire Wire Line
 Text Notes 9850 11700 0    200  ~ 40
 Motor 4
 Text GLabel 17500 2700 0    50   Input ~ 0
-SIG-M5
+SIG-AUX
 $Comp
 L MRDT_ICs:LT1910 U26
 U 1 1 5CE8B22F
@@ -2726,7 +2726,7 @@ F 3 "~" H 20300 2600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 20200 2350 2    50   Output ~ 0
-IMEAS-M5
+IMEAS-AUX
 Text GLabel 20250 1950 1    50   Input ~ 0
 3.3V
 $Comp
@@ -2938,7 +2938,7 @@ $EndComp
 Text GLabel 20250 5800 1    50   Input ~ 0
 3.3V
 Text GLabel 20200 6200 2    50   Input ~ 0
-IMEAS-M6
+IMEAS-M1
 $Comp
 L Device:Q_NMOS_GDS Q13
 U 1 1 5D30967E
@@ -2962,7 +2962,7 @@ F 3 "" H 17650 6800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 17450 6550 0    50   Input ~ 0
-SIG-M6
+SIG-M1
 $Comp
 L MRDT_Connectors:AndersonPP Conn11
 U 1 1 5D309A08
@@ -3041,7 +3041,7 @@ F 3 "" H 20000 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 16450 1300 0    200  ~ 40
-Motor 5
+Auxillary\n
 Wire Wire Line
 	19050 5800 19050 6000
 Wire Wire Line
@@ -3133,7 +3133,7 @@ F 3 "" H 18050 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 16450 4600 0    200  ~ 40
-Motor 6
+Motor 1
 Text GLabel 19050 8450 1    50   Input ~ 0
 PVDD
 $Comp
@@ -3183,7 +3183,7 @@ $EndComp
 Text GLabel 20150 9250 1    50   Input ~ 0
 3.3V
 Text GLabel 20050 9650 2    50   Output ~ 0
-IMEAS-M7
+IMEAS-M2
 $Comp
 L Device:C_Small C42
 U 1 1 5D8ED7FC
@@ -3273,7 +3273,7 @@ F 3 "" H 18700 3600 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 17200 10000 0    50   Input ~ 0
-SIG-M7
+SIG-M2
 $Comp
 L Device:C_Small C39
 U 1 1 5D8EF7C7
@@ -3378,7 +3378,7 @@ Wire Wire Line
 Wire Wire Line
 	18400 7400 18400 7200
 Text Notes 16450 8250 0    200  ~ 40
-Motor 7
+Motor 2
 Text GLabel 19000 11750 1    50   Input ~ 0
 PVDD
 $Comp
@@ -3428,7 +3428,7 @@ $EndComp
 Text GLabel 20000 12800 1    50   Input ~ 0
 3.3V
 Text GLabel 19900 13200 2    50   Output ~ 0
-IMEAS-AUX
+IMEAS-M3
 $Comp
 L Device:C_Small C44
 U 1 1 5DF78E8C
@@ -3474,7 +3474,7 @@ F 3 "" H 17450 13800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 17250 13550 0    50   Input ~ 0
-SIG-AUX
+SIG-M3
 $Comp
 L MRDT_Connectors:AndersonPP Conn8
 U 1 1 5DF7956F
@@ -3627,7 +3627,7 @@ Wire Wire Line
 Wire Wire Line
 	20200 14450 20200 14500
 Text Notes 16400 11700 0    200  ~ 40
-Auxillary 
+Motor 3
 Wire Notes Line
 	21500 500  21500 15250
 Wire Notes Line
