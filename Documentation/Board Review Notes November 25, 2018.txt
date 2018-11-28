@@ -1,0 +1,67 @@
+Notes for Fixing PowerBoard
+
+File Structure
+Get rid of the eagle and Evan Hite folder. Just keep the stuff you have
+Download the Roveso drive 2019 elec arch resources and download .gitignore and place it in top level
+Rename to PowerBoard_Hardware for everything and the folder that contains it
+Put Documentation Files into a new folder. Labe this folder Documentation. (Pin map, connections, all that sort of thing)
+
+
+Schematic
+-Get rid of Power Input
+-Under Power Conditioning Capacitance - change to TVS symbol 1.5KExxA
+-Add note about 30.8 Volts on those diodes in the aformentioned note
+-Under Value (Place the 1.5KE36)
+-Add in some extra fields for Working Voltage and the other voltages
+-Mirror the Tivas so that they go from 1-10 instead of 10-1
+-Naming Convention for M1-SIG to M1_CTL, M1_IMEAS so on and so forth
+-Flags need to have a little connection line 
+-Have your tiva pins in and even manor, X9 be with X9 and such
+-Decoupling Capacitors, make bring the connection wires to be the same
+-Check the control pins on the DC-DC Converters, make sure they are the right configuration of pins.e change the name to this
+-On Capacitor C7 change the ground orientation
+-Change the ATC_FUSE_Block to just a normal fuse, it should work
+-Check the FETS on LOGIC 12V also change its name so its accurate. 
+Change the current sensor to the 722 40AU one
+-Change all 3.3V flags to power flags
+-Adjust the capacitors so that it flows from top to bottom, not left to right
+-Jump up the Resistors on the LED's to be 500 Ohm instead of 1K
+-Change the 5k ohms on the motor busses to 1.5K
+-Center Motors 1-7 and Aux
+-Go to File and Page Settings to add in all the stuff. Make it fancy!
+
+
+Layout
+Adjust the Angles on the bends for the signal wires
+Jack up the 3.3V line to 40 or 30 Mil if you don't have room
+Make the text on M1 much larger
+.2,.2,.025 are the thickness and size
+Check your silkscreen, Put names of the Buses next to the LED's
+Adjust corners so that they fit specifications of the drill holes
+Include a large 3.3V Bus on both sides(Possibly a polygon maybe, just an idea
+Include a + and - sign at the input terminals for VBatt
+Imeas COM offshoot, delete it.
+No backtracking on the signals, its under the tiva, just go ahead and fix that
+3.3V oki to show we know what it is
+Label the current for each fuse 20 for actuation, 5 for logic and communication and 30 Amp for motor busses
+Missouri University of Science and Technology
+Actuation Bus Polygun, make it bigger
+Unconnect the 5V 
+Unconnect the Reset
+At the oki, put a ground via at each node
+Move the control Nfets up so that they are no onger eating into the PVDD plane
+Move the top busses to the right a little bit, about 50-70 mils. Give it a decent amount
+Move Oki's down , middle of the oki is a post hole
+Create a hole with a diameter of .145 inches. And a keepout zone of 1.9 times the hole diameter
+
+
+Write up all the parts that you have made and generate a BOM
+
+
+
+
+
+
+
+
+
