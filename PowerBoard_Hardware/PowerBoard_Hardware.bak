@@ -20,11 +20,11 @@ EELAYER END
 $Descr C 22000 17000
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "PowerBoard"
+Date "2018-11-28"
+Rev "1"
+Comp "Mars Rover Design Team"
+Comment1 "Evan Hite"
 Comment2 ""
 Comment3 ""
 Comment4 ""

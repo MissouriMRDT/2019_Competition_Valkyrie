@@ -1,0 +1,9 @@
+Device Files Created
+	DC_DC_Converter- Add to list of Devices
+	Fuse_Block- Do not add
+
+Package Files Created
+	DC_DC_Quarter_Brick - Add to list of Packages
+	Drill_Hole_632 - Add to list of Packages
+	Fuse_Block - Do not add to list of Packages
+	Vertical_Anderson_Double - Add to list of Packages

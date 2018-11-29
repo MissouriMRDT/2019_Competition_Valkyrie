@@ -1,10 +1,14 @@
 Notes for Fixing PowerBoard
 
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+All Notes Marked with a - in front have been resolved
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
 File Structure
-Get rid of the eagle and Evan Hite folder. Just keep the stuff you have
-Download the Roveso drive 2019 elec arch resources and download .gitignore and place it in top level
-Rename to PowerBoard_Hardware for everything and the folder that contains it
-Put Documentation Files into a new folder. Labe this folder Documentation. (Pin map, connections, all that sort of thing)
+-Get rid of the eagle and Evan Hite folder. Just keep the stuff you have
+-Download the Roveso drive 2019 elec arch resources and download .gitignore and place it in top level
+-Rename to PowerBoard_Hardware for everything and the folder that contains it
+-Put Documentation Files into a new folder. Labe this folder Documentation. (Pin map, connections, all that sort of thing)
 
 
 Schematic
@@ -32,30 +36,33 @@ Change the current sensor to the 722 40AU one
 
 
 Layout
-Adjust the Angles on the bends for the signal wires
-Jack up the 3.3V line to 40 or 30 Mil if you don't have room
-Make the text on M1 much larger
-.2,.2,.025 are the thickness and size
-Check your silkscreen, Put names of the Buses next to the LED's
-Adjust corners so that they fit specifications of the drill holes
-Include a large 3.3V Bus on both sides(Possibly a polygon maybe, just an idea
-Include a + and - sign at the input terminals for VBatt
-Imeas COM offshoot, delete it.
-No backtracking on the signals, its under the tiva, just go ahead and fix that
-3.3V oki to show we know what it is
-Label the current for each fuse 20 for actuation, 5 for logic and communication and 30 Amp for motor busses
-Missouri University of Science and Technology
-Actuation Bus Polygun, make it bigger
-Unconnect the 5V 
-Unconnect the Reset
-At the oki, put a ground via at each node
-Move the control Nfets up so that they are no onger eating into the PVDD plane
-Move the top busses to the right a little bit, about 50-70 mils. Give it a decent amount
-Move Oki's down , middle of the oki is a post hole
-Create a hole with a diameter of .145 inches. And a keepout zone of 1.9 times the hole diameter
+-Adjust the Angles on the bends for the signal wires
+-Jack up the 3.3V line to 40 or 30 Mil if you don't have room
+-Make the text on M1 much larger
+-.2,.2,.025 are the thickness and size
+-Check your silkscreen, Put names of the Buses next to the LED's
+-Adjust corners so that they fit specifications of the drill holes
+-Include a large 3.3V Bus on both sides(Possibly a polygon maybe, just an idea
+-Include a + and - sign at the input terminals for VBatt
+-Imeas COM offshoot, delete it.
+-No backtracking on the signals, its under the tiva, just go ahead and fix that
+-3.3V oki to show we know what it is
+-Label the current for each fuse 20 for actuation, 5 for logic and communication and 30 Amp for motor busses
+-Missouri University of Science and Technology
+-Actuation Bus Polygun, make it bigger
+-Unconnect the 5V 
+-Unconnect the Reset
+-At the oki, put a ground via at each node
+-Move the control Nfets up so that they are no onger eating into the PVDD plane
+-Move the top busses to the right a little bit, about 50-70 mils. Give it a decent amount
+-Move Oki's down , middle of the oki is a post hole
+-Create a hole with a diameter of .145 inches. And a keepout zone of 1.9 times the hole diameter
 
 
-Write up all the parts that you have made and generate a BOM
+-Write up all the parts that you have made 
+Generate a BOM
+
+
 
 
 
