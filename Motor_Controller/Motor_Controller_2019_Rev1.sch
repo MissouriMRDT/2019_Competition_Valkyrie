@@ -3234,8 +3234,6 @@ Connection ~ 4500 8250
 Wire Wire Line
 	4450 8350 4500 8350
 Wire Wire Line
-	4350 8150 4400 8150
-Wire Wire Line
 	4500 8150 4500 8250
 Wire Wire Line
 	5000 8250 4500 8250
@@ -4323,20 +4321,12 @@ Wire Wire Line
 	14200 11250 14250 11250
 Text GLabel 14700 11950 0    39   Input ~ 0
 SL_TX_M1
-Text GLabel 14700 12050 0    39   Input ~ 0
+Text GLabel 14700 12050 0    39   Output ~ 0
 SL_RX_M1
-Text GLabel 14700 12150 0    39   Input ~ 0
-SL_TX_M2
-Text GLabel 14700 12250 0    39   Input ~ 0
-SL_RX_M2
 Wire Wire Line
 	14700 11950 14750 11950
 Wire Wire Line
 	14700 12050 14750 12050
-Wire Wire Line
-	14700 12150 14750 12150
-Wire Wire Line
-	14700 12250 14750 12250
 $Comp
 L Device:R R9
 U 1 1 5D8D0B34
@@ -5164,20 +5154,6 @@ F 3 "" H 22350 8150 50  0001 C CNN
 	1    22350 8150
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR0114
-U 1 1 5C059F99
-P 4400 8150
-F 0 "#PWR0114" H 4400 8000 50  0001 C CNN
-F 1 "VCC" H 4400 8300 50  0000 C CNN
-F 2 "" H 4400 8150 50  0001 C CNN
-F 3 "" H 4400 8150 50  0001 C CNN
-	1    4400 8150
-	1    0    0    -1  
-$EndComp
-Connection ~ 4400 8150
-Wire Wire Line
-	4400 8150 4500 8150
 Wire Wire Line
 	14800 14150 15100 14150
 Wire Wire Line
@@ -5752,4 +5728,25 @@ MGH_C_M2
 Text Label 27950 15200 0    50   ~ 0
 MGL_C_M2
 NoConn ~ 22850 8000
+Wire Wire Line
+	14700 12250 14750 12250
+Wire Wire Line
+	14700 12150 14750 12150
+Text GLabel 14700 12250 0    39   Output ~ 0
+SL_RX_M2
+Text GLabel 14700 12150 0    39   Input ~ 0
+SL_TX_M2
+$Comp
+L power:+BATT #PWR?
+U 1 1 5C113B51
+P 4400 7150
+F 0 "#PWR?" H 4400 7000 50  0001 C CNN
+F 1 "+BATT" H 4415 7323 50  0000 C CNN
+F 2 "" H 4400 7150 50  0001 C CNN
+F 3 "" H 4400 7150 50  0001 C CNN
+	1    4400 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 8150 4500 8150
 $EndSCHEMATC
