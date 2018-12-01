@@ -1206,8 +1206,6 @@ F 3 "" H 11100 15800 50  0001 C CNN
 $EndComp
 Text Notes 15850 12800 0    157  ~ 31
 Indicators
-Text GLabel 13300 13250 1    39   Input ~ 0
-PVDD
 $Comp
 L Device:LED D3
 U 1 1 5BAA68EB
@@ -4895,8 +4893,6 @@ Wire Notes Line
 	12800 16250 2600 16250
 Wire Notes Line
 	30750 16250 20150 16250
-Wire Notes Line
-	12750 12800 20100 12800
 Wire Wire Line
 	3950 15100 4450 15100
 Wire Wire Line
@@ -5187,13 +5183,13 @@ Wire Wire Line
 Wire Wire Line
 	16300 14150 16600 14150
 Text GLabel 19250 13250 1    39   Input ~ 0
-UART_TX_M2
+SL_TX_M2
 Text GLabel 19550 13250 1    39   Input ~ 0
-UART_RX_M2
+SL_RX_M2
 Text GLabel 18650 13250 1    39   Input ~ 0
-UART_TX_M1
+SL_TX_M1
 Text GLabel 18950 13250 1    39   Input ~ 0
-UART_RX_M1
+SL_RX_M1
 Text GLabel 15400 11600 2    39   Output ~ 0
 SL_TX_M1
 Text GLabel 15400 11500 2    39   Input ~ 0
@@ -5270,17 +5266,6 @@ F 1 "TEST" H 4150 11000 50  0000 C CNN
 F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 4150 10750 50  0001 C CNN
 F 3 "" H 4150 10750 50  0001 C CNN
 	1    4150 10750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP20
-U 1 1 5BB180D3
-P 22000 10750
-F 0 "TP20" H 22000 11050 50  0000 C BNN
-F 1 "TEST" H 22000 11000 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1mmDrill" H 22000 10750 50  0001 C CNN
-F 3 "" H 22000 10750 50  0001 C CNN
-	1    22000 10750
 	1    0    0    -1  
 $EndComp
 NoConn ~ 15150 7400
@@ -5682,27 +5667,89 @@ Connection ~ 18950 14150
 Wire Wire Line
 	18950 14150 19250 14150
 Text GLabel 15100 13250 1    39   Input ~ 0
-GH_A_M1
+MGH_A_M1
 Text GLabel 15400 13250 1    39   Input ~ 0
-SL_A_M1
+MGL_A_M1
 Text GLabel 15700 13250 1    39   Input ~ 0
-GH_B_M1
+MGH_B_M1
 Text GLabel 16000 13250 1    39   Input ~ 0
-GL_B_M1
+MGL_B_M1
 Text GLabel 16300 13250 1    39   Input ~ 0
-GH_C_M1
+MGH_C_M1
 Text GLabel 16600 13250 1    39   Input ~ 0
-GL_C_M1
+MGL_C_M1
 Text GLabel 16900 13250 1    39   Input ~ 0
-GH_A_M2
+MGH_A_M2
 Text GLabel 17200 13250 1    39   Input ~ 0
-GL_A_M2
-Text GLabel 17500 13250 1    39   Input ~ 0
-SH_B_M2
+MGL_A_M2
 Text GLabel 17800 13250 1    39   Input ~ 0
-GL_B_M2
+MGL_B_M2
 Text GLabel 18050 13250 1    39   Input ~ 0
-GH_C_M2
+MGH_C_M2
 Text GLabel 18350 13250 1    39   Input ~ 0
-GL_C_M2
+MGL_C_M2
+Text GLabel 13300 13250 1    39   Input ~ 0
+PVDD_M1
+$Comp
+L Device:LED D37
+U 1 1 5E0B3DA6
+P 13050 13500
+F 0 "D37" H 13050 13600 50  0000 C CNN
+F 1 "LED" H 13050 13400 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 13050 13500 50  0001 C CNN
+F 3 "" H 13050 13500 50  0001 C CNN
+	1    13050 13500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R81
+U 1 1 5E0B3DAC
+P 13050 13900
+F 0 "R81" V 13130 13900 50  0000 C CNN
+F 1 "2k" V 13050 13900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 12980 13900 50  0001 C CNN
+F 3 "" H 13050 13900 50  0001 C CNN
+	1    13050 13900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13050 13650 13050 13750
+Wire Wire Line
+	13050 13250 13050 13350
+Text GLabel 13050 13250 1    39   Input ~ 0
+PVDD_M2
+Wire Wire Line
+	13050 14150 13050 14050
+Connection ~ 13300 14150
+Wire Wire Line
+	13300 14150 13050 14150
+Wire Notes Line
+	12800 12850 20150 12850
+Text GLabel 17500 13250 1    39   Input ~ 0
+MGH_B_M2
+Text Label 10250 7800 0    50   ~ 0
+MGH_A_M1
+Text Label 10250 8650 0    50   ~ 0
+MGL_A_M1
+Text Label 10250 10950 0    50   ~ 0
+MGH_B_M1
+Text Label 10250 11800 0    50   ~ 0
+MGL_B_M1
+Text Label 10250 14300 0    50   ~ 0
+MGH_C_M1
+Text Label 10250 15150 0    50   ~ 0
+MGL_C_M1
+Text Label 27950 7750 0    50   ~ 0
+MGH_A_M2
+Text Label 27950 8600 0    50   ~ 0
+MGL_A_M2
+Text Label 27950 11000 0    50   ~ 0
+MGH_B_M2
+Text Label 27950 11850 0    50   ~ 0
+MGL_B_M2
+Text Label 27950 14350 0    50   ~ 0
+MGH_C_M2
+Text Label 27950 15200 0    50   ~ 0
+MGL_C_M2
+NoConn ~ 22850 8000
 $EndSCHEMATC
