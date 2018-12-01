@@ -884,12 +884,12 @@ Text GLabel 7500 5250 2    50   UnSpc ~ 0
 Text GLabel 7500 4350 2    50   UnSpc ~ 0
 +12V
 $Comp
-L MRDT_Connectors:AndersonPP Conn?
+L MRDT_Connectors:AndersonPP Conn1
 U 2 1 5C03B8AB
 P 3200 3000
-F 0 "Conn?" H 3000 3150 60  0000 C CNN
+F 0 "Conn1" H 3000 3150 60  0000 C CNN
 F 1 "AndersonPP_LOG" H 2800 3050 60  0000 C CNN
-F 2 "" H 3050 2450 60  0001 C CNN
+F 2 "MRDT_Connectors:Anderson_1_Horisontal" H 3050 2450 60  0001 C CNN
 F 3 "" H 3050 2450 60  0001 C CNN
 	2    3200 3000
 	1    0    0    -1  
