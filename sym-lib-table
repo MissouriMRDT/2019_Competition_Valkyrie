@@ -14,4 +14,5 @@
   (lib (name MRDT_Shields)(type Legacy)(uri C:/MRDT_KiCAD_Libraries/Device/MRDT_Shields.lib)(options "")(descr ""))
   (lib (name MRDT_Silkscreens)(type Legacy)(uri C:/MRDT_KiCAD_Libraries/Device/MRDT_Silkscreens.lib)(options "")(descr ""))
   (lib (name MRDT_Switches)(type Legacy)(uri C:/MRDT_KiCAD_Libraries/Device/MRDT_Switches.lib)(options "")(descr ""))
+  (lib (name AP150933SG13)(type Legacy)(uri "${KIPRJMOD}/new parts/Device/AP150933SG13.lib")(options "")(descr ""))
 )
