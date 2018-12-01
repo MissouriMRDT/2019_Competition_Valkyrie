@@ -1,6 +1,6 @@
 (fp_lib_table
-  (lib (name DC_DC_Converter_Quarter_Brick)(type KiCad)(uri C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/PowerBoard_Hardware/Powerboard_Package/DC_DC_Converter_Quarter_Brick.pretty)(options "")(descr ""))
-  (lib (name Fuse_Block)(type KiCad)(uri C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/PowerBoard_Hardware/Powerboard_Package/Fuse_Block.pretty)(options "")(descr ""))
-  (lib (name "Vertical Anderson Double")(type KiCad)(uri ${KIPRJMOD}/Powerboard_Package/Vertical_Anderson_Double.pretty)(options "")(descr ""))
-  (lib (name Drill_Hole_632)(type KiCad)(uri ${KIPRJMOD}/Powerboard_Package/Drill_Hole_632.pretty)(options "")(descr ""))
+  (lib (name DC_DC_Converter_Quarter_Brick)(type KiCad)(uri C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/Libraries/Powerboard_Package/DC_DC_Converter_Quarter_Brick.pretty)(options "")(descr ""))
+  (lib (name Fuse_Block)(type KiCad)(uri C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/Libraries/Powerboard_Package/Fuse_Block.pretty)(options "")(descr ""))
+  (lib (name "Vertical Anderson Double")(type KiCad)(uri C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/Libraries/Powerboard_Package/Vertical_Anderson_Double.pretty)(options "")(descr ""))
+  (lib (name Drill_Hole_632)(type KiCad)(uri C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/Libraries/Powerboard_Package/Drill_Hole_632.pretty)(options "")(descr ""))
 )

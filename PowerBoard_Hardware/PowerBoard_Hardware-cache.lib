@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# DC-DC_Converter:DC-DC_Converter
+# DC_DC_Converter:DC-DC_Converter
 #
-DEF DC-DC_Converter:DC-DC_Converter CONV 0 5 Y Y 1 F N
+DEF DC_DC_Converter:DC-DC_Converter CONV 0 5 Y Y 1 F N
 F0 "CONV" 600 150 50 H V C CNN
-F1 "DC-DC_Converter:DC-DC_Converter" 600 50 50 H V C CNN
+F1 "DC_DC_Converter:DC-DC_Converter" 600 50 50 H V C CNN
 F2 "" 550 300 50 H I C CNN
 F3 "" 550 300 50 H I C CNN
 DRAW
@@ -57,6 +57,28 @@ P 2 0 1 13 -60 -20 60 -20 N
 P 2 0 1 12 -60 20 60 20 N
 X ~ 1 0 100 80 D 50 50 1 1 P
 X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device:D_Schottky
+#
+DEF Device:D_Schottky D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device:D_Schottky" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

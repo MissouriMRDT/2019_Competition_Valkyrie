@@ -154,7 +154,7 @@ Connection ~ 5350 1000
 Wire Wire Line
 	5350 1000 5350 1050
 Wire Wire Line
-	5350 1000 5850 1000
+	5350 1000 5700 1000
 Text GLabel 5850 1000 2    50   Output ~ 0
 VMEAS_VBATT
 Wire Notes Line
@@ -403,7 +403,7 @@ U 1 1 5BB3166B
 P 7000 4400
 F 0 "Conn2" H 7250 4650 60  0000 R CNN
 F 1 "AndersonPP" H 7450 4750 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical Anderson Double" H 6850 3850 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 6850 3850 60  0001 C CNN
 F 3 "" H 6850 3850 60  0001 C CNN
 	1    7000 4400
 	0    -1   -1   0   
@@ -414,7 +414,7 @@ U 2 1 5BB3178A
 P 7250 4400
 F 0 "Conn2" V 7510 4372 60  0000 R CNN
 F 1 "AndersonPP" V 7404 4372 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical Anderson Double" H 7100 3850 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 7100 3850 60  0001 C CNN
 F 3 "" H 7100 3850 60  0001 C CNN
 	2    7250 4400
 	0    -1   -1   0   
@@ -525,12 +525,12 @@ Connection ~ 4600 2650
 Wire Wire Line
 	4600 2400 4600 2650
 $Comp
-L DC-DC_Converter:DC-DC_Converter CONV1
+L DC_DC_Converter:DC-DC_Converter CONV1
 U 1 1 5BB35538
 P 2450 2350
 F 0 "CONV1" H 3100 2500 50  0000 C CNN
 F 1 "DC-DC_Converter" H 3100 2400 50  0000 C CNN
-F 2 "DC-DC_Converter_Quarter_Brick:DC-DC_Converter_Quarter_Brick" H 3000 2650 50  0001 C CNN
+F 2 "DC_DC_Converter_Quarter_Brick:DC_DC_Converter_Quarter_Brick" H 3000 2650 50  0001 C CNN
 F 3 "" H 3000 2650 50  0001 C CNN
 	1    2450 2350
 	1    0    0    -1  
@@ -772,7 +772,7 @@ U 1 1 5BBC1286
 P 7100 6850
 F 0 "Conn3" H 7350 7100 60  0000 R CNN
 F 1 "AndersonPP" H 7550 7200 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical Anderson Double" H 6950 6300 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 6950 6300 60  0001 C CNN
 F 3 "" H 6950 6300 60  0001 C CNN
 	1    7100 6850
 	0    -1   -1   0   
@@ -797,7 +797,7 @@ U 2 1 5BBC1067
 P 7350 6850
 F 0 "Conn3" V 7610 6822 60  0000 R CNN
 F 1 "AndersonPP" V 7504 6822 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical Anderson Double" H 7200 6300 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 7200 6300 60  0001 C CNN
 F 3 "" H 7200 6300 60  0001 C CNN
 	2    7350 6850
 	0    -1   -1   0   
@@ -891,12 +891,12 @@ F 3 "" H 2650 8000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC-DC_Converter:DC-DC_Converter CONV2
+L DC_DC_Converter:DC-DC_Converter CONV2
 U 1 1 5BBF2506
 P 3050 7200
-F 0 "CONV2" H 3818 7775 50  0000 C CNN
-F 1 "DC-DC_Converter" H 3818 7684 50  0000 C CNN
-F 2 "DC-DC_Converter_Quarter_Brick:DC-DC_Converter_Quarter_Brick" H 3600 7500 50  0001 C CNN
+F 0 "CONV2" H 3650 7350 50  0000 C CNN
+F 1 "DC-DC_Converter" H 3700 7250 50  0000 C CNN
+F 2 "DC_DC_Converter_Quarter_Brick:DC_DC_Converter_Quarter_Brick" H 3600 7500 50  0001 C CNN
 F 3 "" H 3600 7500 50  0001 C CNN
 	1    3050 7200
 	1    0    0    -1  
@@ -1101,7 +1101,7 @@ U 2 1 5BC9E549
 P 6200 9300
 F 0 "Conn1" V 6460 9272 60  0000 R CNN
 F 1 "AndersonPP" V 6354 9272 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical Anderson Double" H 6050 8750 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 6050 8750 60  0001 C CNN
 F 3 "" H 6050 8750 60  0001 C CNN
 	2    6200 9300
 	0    -1   -1   0   
@@ -1115,7 +1115,7 @@ U 1 1 5BCA4FDD
 P 5950 9300
 F 0 "Conn1" H 6200 9550 60  0000 R CNN
 F 1 "AndersonPP" H 6400 9650 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical Anderson Double" H 5800 8750 60  0001 C CNN
+F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 5800 8750 60  0001 C CNN
 F 3 "" H 5800 8750 60  0001 C CNN
 	1    5950 9300
 	0    -1   -1   0   
@@ -4325,4 +4325,35 @@ Wire Notes Line
 	12850 1000 12850 500 
 Wire Notes Line
 	14250 1000 14250 16500
+$Comp
+L Device:D_Schottky D14
+U 1 1 5C0CE66D
+P 5700 850
+F 0 "D14" V 5654 929 50  0000 L CNN
+F 1 "D_Schottky" V 5745 929 50  0000 L CNN
+F 2 "Diodes_SMD:D_0603" H 5700 850 50  0001 C CNN
+F 3 "~" H 5700 850 50  0001 C CNN
+	1    5700 850 
+	0    1    1    0   
+$EndComp
+Connection ~ 5700 1000
+Wire Wire Line
+	5700 1000 5850 1000
+$Comp
+L power:+3.3VA #PWR0206
+U 1 1 5C0CEA57
+P 6000 750
+F 0 "#PWR0206" H 6000 600 50  0001 C CNN
+F 1 "+3.3VA" H 6015 923 50  0000 C CNN
+F 2 "" H 6000 750 50  0001 C CNN
+F 3 "" H 6000 750 50  0001 C CNN
+	1    6000 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 750  5800 750 
+Wire Wire Line
+	5800 750  5800 700 
+Wire Wire Line
+	5800 700  5700 700 
 $EndSCHEMATC
