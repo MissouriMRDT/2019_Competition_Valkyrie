@@ -157,7 +157,7 @@ ENDDEF
 #
 # MRDT_Connectors:AndersonPP
 #
-DEF MRDT_Connectors:AndersonPP Conn 0 0 N Y 5 L N
+DEF MRDT_Connectors:AndersonPP Conn 0 0 N Y 4 L N
 F0 "Conn" 150 -50 60 H V C CNN
 F1 "MRDT_Connectors:AndersonPP" 100 250 60 H V C CNN
 F2 "" -150 -550 60 H I C CNN
@@ -171,7 +171,6 @@ X GND 1 400 100 200 L 50 39 1 1 I
 X V+Log 2 400 100 200 L 50 39 2 1 I
 X V+Act 3 400 100 200 L 50 39 3 1 I
 X PV+ 4 400 100 200 L 50 39 4 1 I
-X ~ 1 400 100 200 L 50 39 5 1 I
 ENDDRAW
 ENDDEF
 #
