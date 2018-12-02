@@ -706,7 +706,7 @@ L Device:D_Zener D7
 U 1 1 5BA8BA8B
 P 10250 8050
 F 0 "D7" H 10250 8150 50  0000 C CNN
-F 1 "D_Zener" H 10250 7950 50  0000 C CNN
+F 1 "15V" H 10250 7950 50  0000 C CNN
 F 2 "Diodes_SMD:D_SOD-123" H 10250 8050 50  0001 C CNN
 F 3 "" H 10250 8050 50  0001 C CNN
 	1    10250 8050
@@ -1288,7 +1288,7 @@ F 3 "" H 16300 14150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 14100 10200 0    157  ~ 31
-MAX_3232
+MAX 3232
 Text GLabel 18700 10450 0    39   Input ~ 0
 PVDD_M2
 $Comp
@@ -1312,10 +1312,6 @@ Text Notes 13800 7000 0    157  ~ 31
 Motor Header 1
 Text Notes 17250 7000 0    157  ~ 31
 Motor Header 2
-Text Notes 2700 10000 0    60   ~ 0
-New current sensing technique in \nGimbal VFD schematic, uses ACS711 in \nPhase A and B instead of current \nsensing using DRV8301
-Text Notes 2700 10350 0    60   ~ 0
-Analog out from ACS711 \ngoes to S01 (A_A0) and \nS02 (A_B0) on F28069 headers
 $Comp
 L power:VCC #PWR044
 U 1 1 5BAF4A52
@@ -2376,10 +2372,6 @@ F 3 "" H 27950 12800 50  0001 C CNN
 	1    27950 12800
 	1    0    0    -1  
 $EndComp
-Text Notes 20450 10000 0    60   ~ 0
-New current sensing technique in \nGimbal VFD schematic, uses ACS711 in \nPhase A and B instead of current \nsensing using DRV8301
-Text Notes 20450 10350 0    60   ~ 0
-Analog out from ACS711 \ngoes to S01 (A_A0) and \nS02 (A_B0) on F28069 headers
 $Comp
 L Device:CP1 C39
 U 1 1 5BB20C08
@@ -5749,4 +5741,10 @@ F 3 "" H 4400 7150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4350 8150 4500 8150
+Text Notes 12900 7550 0    50   ~ 0
+Look at these
+Text Notes 12900 7750 0    50   ~ 0
+Why here?
+Text Notes 14300 7300 0    50   ~ 0
+MUX Sel (7=1, 6=1)
 $EndSCHEMATC
