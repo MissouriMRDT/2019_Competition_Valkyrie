@@ -25,7 +25,7 @@ Fix FIle Structure
 	'Route same Serial to both headers
 	
 --Lauout
-	Move MSP to bottom
+	'Move MSP to bottom
 	Silkscreen stuff
 		Connectors ABC silkscreen
 		LED indication silkscreen
