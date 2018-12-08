@@ -1,20 +1,36 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
 LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
 LIBS:audio
 LIBS:interface
-LIBS:MRDT_Actives
-LIBS:MRDT_Connectors
-LIBS:MRDT_Devices
-LIBS:MRDT_Drill_Holes
-LIBS:MRDT_Headers
-LIBS:MRDT_ICs
-LIBS:MRDT_Passives
-LIBS:MRDT_Sensors
-LIBS:MRDT_Shields
-LIBS:MRDT_Silkscreens
-LIBS:MRDT_Switches
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:PowerBoard_Hardware-cache
 EELAYER 26 0
 EELAYER END
@@ -403,7 +419,7 @@ U 1 1 5BB3166B
 P 7000 4400
 F 0 "Conn2" H 7250 4650 60  0000 R CNN
 F 1 "AndersonPP" H 7450 4750 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 6850 3850 60  0001 C CNN
+F 2 "PowerBoard_Hardware:Vertical_Anderson_Double_SidebySide" H 6850 3850 60  0001 C CNN
 F 3 "" H 6850 3850 60  0001 C CNN
 	1    7000 4400
 	0    -1   -1   0   
@@ -414,7 +430,7 @@ U 2 1 5BB3178A
 P 7250 4400
 F 0 "Conn2" V 7510 4372 60  0000 R CNN
 F 1 "AndersonPP" V 7404 4372 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 7100 3850 60  0001 C CNN
+F 2 "PowerBoard_Hardware:Vertical_Anderson_Double_SidebySide" H 7100 3850 60  0001 C CNN
 F 3 "" H 7100 3850 60  0001 C CNN
 	2    7250 4400
 	0    -1   -1   0   
@@ -530,7 +546,7 @@ U 1 1 5BB35538
 P 2450 2350
 F 0 "CONV1" H 3100 2500 50  0000 C CNN
 F 1 "DC-DC_Converter" H 3100 2400 50  0000 C CNN
-F 2 "DC_DC_Converter_Quarter_Brick:DC_DC_Converter_Quarter_Brick" H 3000 2650 50  0001 C CNN
+F 2 "PowerBoard_Hardware:DC_DC_Converter_Quarter_Brick" H 3000 2650 50  0001 C CNN
 F 3 "" H 3000 2650 50  0001 C CNN
 	1    2450 2350
 	1    0    0    -1  
@@ -772,7 +788,7 @@ U 1 1 5BBC1286
 P 7100 6850
 F 0 "Conn3" H 7350 7100 60  0000 R CNN
 F 1 "AndersonPP" H 7550 7200 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 6950 6300 60  0001 C CNN
+F 2 "PowerBoard_Hardware:Vertical_Anderson_Double_SidebySide" H 6950 6300 60  0001 C CNN
 F 3 "" H 6950 6300 60  0001 C CNN
 	1    7100 6850
 	0    -1   -1   0   
@@ -797,7 +813,7 @@ U 2 1 5BBC1067
 P 7350 6850
 F 0 "Conn3" V 7610 6822 60  0000 R CNN
 F 1 "AndersonPP" V 7504 6822 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 7200 6300 60  0001 C CNN
+F 2 "PowerBoard_Hardware:Vertical_Anderson_Double_SidebySide" H 7200 6300 60  0001 C CNN
 F 3 "" H 7200 6300 60  0001 C CNN
 	2    7350 6850
 	0    -1   -1   0   
@@ -896,7 +912,7 @@ U 1 1 5BBF2506
 P 3050 7200
 F 0 "CONV2" H 3650 7350 50  0000 C CNN
 F 1 "DC-DC_Converter" H 3700 7250 50  0000 C CNN
-F 2 "DC_DC_Converter_Quarter_Brick:DC_DC_Converter_Quarter_Brick" H 3600 7500 50  0001 C CNN
+F 2 "PowerBoard_Hardware:DC_DC_Converter_Quarter_Brick" H 3600 7500 50  0001 C CNN
 F 3 "" H 3600 7500 50  0001 C CNN
 	1    3050 7200
 	1    0    0    -1  
@@ -1101,7 +1117,7 @@ U 2 1 5BC9E549
 P 6200 9300
 F 0 "Conn1" V 6460 9272 60  0000 R CNN
 F 1 "AndersonPP" V 6354 9272 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 6050 8750 60  0001 C CNN
+F 2 "PowerBoard_Hardware:Vertical_Anderson_Double_SidebySide" H 6050 8750 60  0001 C CNN
 F 3 "" H 6050 8750 60  0001 C CNN
 	2    6200 9300
 	0    -1   -1   0   
@@ -1115,7 +1131,7 @@ U 1 1 5BCA4FDD
 P 5950 9300
 F 0 "Conn1" H 6200 9550 60  0000 R CNN
 F 1 "AndersonPP" H 6400 9650 60  0000 R CNN
-F 2 "Vertical Anderson Double:Vertical_Anderson_Double" H 5800 8750 60  0001 C CNN
+F 2 "PowerBoard_Hardware:Vertical_Anderson_Double_SidebySide" H 5800 8750 60  0001 C CNN
 F 3 "" H 5800 8750 60  0001 C CNN
 	1    5950 9300
 	0    -1   -1   0   
