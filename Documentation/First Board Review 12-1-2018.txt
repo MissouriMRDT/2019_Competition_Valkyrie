@@ -1,28 +1,28 @@
 Fix FIle Structure
-	Project Naming
-	Libraries
-	fix gitignore
+	`Project Naming
+	`Libraries
+	`fix gitignore
 	
 --Schematic--
-	DRV8301 Signals Bootom left ground going up
-	Remove ground flags on SP1, SP2
-	Bump out flags SN_1
-	SO1 resistors bumped out
-	VCC replace with +3V3
-	Drop GND flag down by 1 on pin 57
-	Replace phase capacitors with VSmall
-	Remove VCC and replace with +3V3
-	Make Motor 2 and Motor 1 consistent
-	Connect ground on TIVA
-	Check Serial flags direction
-	Swap Serial TX/Rx on F28069m
-	MAX 3232 swap out small capactitors
-	Add color text to indicators
-	1.5K for PVDD LEDs
-	Give Zener V+15V
-	Swap NMOS with GDS symbol and re-route layout
-	add part number: FQP30N06L to MOSFETS
-	Route same Serial to both headers
+	`DRV8301 Signals Bootom left ground going up
+	`Remove ground flags on SP1, SP2
+	'Bump out flags SN_1
+	'SO1 resistors bumped out
+	'VCC replace with +3V3
+	'Drop GND flag down by 1 on pin 57
+	'Replace phase capacitors with VSmall
+	'Remove VCC and replace with +3V3
+	'Make Motor 2 and Motor 1 consistent
+	'Connect ground on TIVA
+	'Check Serial flags direction
+	`Swap Serial TX/Rx on F28069m
+	`MAX 3232 swap out small capactitors
+	'Add color text to indicators
+	'1.5K for PVDD LEDs
+	'Give Zener V+15V
+	'Swap NMOS with GDS symbol and re-route layout
+	'add part number: FQP30N06L to MOSFETS
+	'Route same Serial to both headers
 	
 --Lauout
 	Move MSP to bottom
