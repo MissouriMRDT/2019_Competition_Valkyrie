@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name AP150933SG13)(type KiCad)(uri C:/CameraBoard_Hardware/Libraries/Package/AP150933SG13.pretty)(options "")(descr ""))
+  (lib (name BNC-75-Ohm-HORIZONTAL)(type KiCad)(uri C:/CameraBoard_Hardware/Libraries/Package/BNC-75-Ohm-HORIZONTAL.pretty)(options "")(descr ""))
+  (lib (name LMH6574MANOPB)(type KiCad)(uri C:/CameraBoard_Hardware/Libraries/Package/LMH6574MANOPB.pretty)(options "")(descr ""))
+  (lib (name MAX4314)(type KiCad)(uri C:/CameraBoard_Hardware/Libraries/Package/MAX4314.pretty)(options "")(descr ""))
+  (lib (name TXB0102DCUR)(type KiCad)(uri C:/CameraBoard_Hardware/Libraries/Package/TXB0102DCUR.pretty)(options "")(descr ""))
+)
