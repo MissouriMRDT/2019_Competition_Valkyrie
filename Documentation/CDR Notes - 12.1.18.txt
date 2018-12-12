@@ -1,6 +1,6 @@
--Make a new folder called CameraBoard_Hardware
+-DONE Make a new folder called CameraBoard_Hardware
 	Put all hardware files in that folder and change CameraBoard to CameraBoard_Hardware
--Another folder called Libraries
+-DONE Another folder called Libraries
 	Basically what new parts is now, devices and packages
 -DONE Use the MRDT 1509 (called 1059) instead of the one I used
 -DONE Use the same schematic from sensor pod from last year (sensorpod_hardware)
@@ -17,16 +17,16 @@
 -DONE Use diode 0603 hand soldering for schottky diode
 
 Layout Notes
--Add labels for LEDs to layout
--Change trace width across the board to 15 mil
+-DONE Add labels for LEDs to layout
+-DONE Change trace width across the board to 15 mil
 	-you can change many widths at once by using filter selection on the whole board and changing it there
 -DONE Change the ap1509 footprint to the one used in MRDT libraries, soic-8-3.9x4.9mm
--Clean up the traces by undoing the vertical horizontal behavior where it's not needed
--Right click zone outline and edit the default pad connection to solid
--Check that all grounds are connected after the fill zones are filled
--Check trace kinks and remove them
+-DONE Clean up the traces by undoing the vertical horizontal behavior where it's not needed
+-DONE Right click zone outline and edit the default pad connection to solid
+-DONE Check that all grounds are connected after the fill zones are filled
+-DONE Check trace kinks and remove them
 -DONE Change CAM_INPUT text to CAM IN
--Silkscreen text on the cam outputs (CAM OUT)
--Replace tiva with throughhole variant to avoid having to drop down to the second layer so often
--Missouri S&T on label
--Use the add footprint tool to add the logo and signature silkscreens
+-DONE Silkscreen text on the cam outputs (CAM OUT)
+-DONE Replace tiva with throughhole variant to avoid having to drop down to the second layer so often
+-DONE Missouri S&T on label
+-DONE Use the add footprint tool to add the logo and signature silkscreens
