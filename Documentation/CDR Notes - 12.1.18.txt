@@ -2,30 +2,30 @@
 	Put all hardware files in that folder and change CameraBoard to CameraBoard_Hardware
 -Another folder called Libraries
 	Basically what new parts is now, devices and packages
--Use the MRDT 1509 (called 1059) instead of the one I used
--Use the same schematic from sensor pod from last year (sensorpod_hardware)
--Use +12V flag and +3V3 flag instead of the labels
--Clean up the schematic around the schottky diodes
--Output +5V from the AP1509 and give +5V to the muxs instead of +3.3V. Still uses same circuit and same package
--Set the pin for SHDN as inverted and remove the asterisk from the name
--Jumper to select 5V or resistor divider to 10V for power input to MAX4314
+-DONE Use the MRDT 1509 (called 1059) instead of the one I used
+-DONE Use the same schematic from sensor pod from last year (sensorpod_hardware)
+-DONE Use +12V flag and +3V3 flag instead of the labels
+-DONE Clean up the schematic around the schottky diodes
+-DONE Output +5V from the AP1509 and give +5V to the muxs instead of +3.3V. Still uses same circuit and same package
+-DONE Set the pin for SHDN as inverted and remove the asterisk from the name
+-DONE Jumper to select 5V or resistor divider to 10V for power input to MAX4314
 	-Choose resistors in range of 100 - 1000 for the divider so as to give enough current
 	-See picture of resistor divider
--Make the SHDN flags output
--Add SW_ERR label for LED and to any digital pin on the header
--To fix +12V net issue on Conn1, make andersons both 1X
--Use diode 0603 hand soldering for schottky diode
+-DONE Make the SHDN flags output
+-DONE Add SW_ERR label for LED and to any digital pin on the header
+-DONE To fix +12V net issue on Conn1, make andersons both 1X
+-DONE Use diode 0603 hand soldering for schottky diode
 
 Layout Notes
 -Add labels for LEDs to layout
 -Change trace width across the board to 15 mil
 	-you can change many widths at once by using filter selection on the whole board and changing it there
--Change the ap1509 footprint to the one used in MRDT libraries, soic-8-3.9x4.9mm
+-DONE Change the ap1509 footprint to the one used in MRDT libraries, soic-8-3.9x4.9mm
 -Clean up the traces by undoing the vertical horizontal behavior where it's not needed
 -Right click zone outline and edit the default pad connection to solid
 -Check that all grounds are connected after the fill zones are filled
 -Check trace kinks and remove them
--Change CAM_INPUT text to CAM IN
+-DONE Change CAM_INPUT text to CAM IN
 -Silkscreen text on the cam outputs (CAM OUT)
 -Replace tiva with throughhole variant to avoid having to drop down to the second layer so often
 -Missouri S&T on label
