@@ -469,13 +469,13 @@ F 3 "~" H 7050 1650 50  0001 C CNN
 $EndComp
 Text Notes 1050 2750 0    157  ~ 31
 Power Input
-Text GLabel 3700 4850 0    50   Output ~ 0
-MUXB0
 Text GLabel 3700 4750 0    50   Output ~ 0
+MUXB0
+Text GLabel 3700 4850 0    50   Output ~ 0
 MUXB1
-Text GLabel 3700 4550 0    50   Output ~ 0
-MUXA1
 Text GLabel 3700 4650 0    50   Output ~ 0
+MUXA1
+Text GLabel 3700 4550 0    50   Output ~ 0
 MUXA0
 Wire Wire Line
 	3700 4550 3750 4550
@@ -507,7 +507,7 @@ Wire Wire Line
 	2600 4700 2600 4650
 Wire Wire Line
 	2600 4650 2700 4650
-Text GLabel 4750 5050 0    50   Output ~ 0
+Text GLabel 3700 5050 0    50   Output ~ 0
 MUXB_SHDN
 Text GLabel 4750 5150 0    50   Output ~ 0
 MUXA_SHDN
@@ -845,18 +845,18 @@ $EndComp
 Wire Wire Line
 	2600 4550 2700 4550
 Wire Wire Line
-	4750 5050 4800 5050
+	3700 5050 3750 5050
 Wire Wire Line
 	4750 5150 4800 5150
 $Comp
 L Device:Jumper_NC_Dual JP1
 U 1 1 5C15FC96
-P 6800 1500
-F 0 "JP1" V 6700 1300 50  0000 L CNN
-F 1 "Jumper_NC_Dual" V 6600 850 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6800 1500 50  0001 C CNN
-F 3 "~" H 6800 1500 50  0001 C CNN
-	1    6800 1500
+P 6300 2050
+F 0 "JP1" V 6200 1850 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 6000 1600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6300 2050 50  0001 C CNN
+F 3 "~" H 6300 2050 50  0001 C CNN
+	1    6300 2050
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
@@ -864,43 +864,21 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0120
 U 1 1 5C17CA99
-P 6550 1750
-F 0 "#PWR0120" H 6550 1600 50  0001 C CNN
-F 1 "+5V" H 6565 1923 50  0000 C CNN
-F 2 "" H 6550 1750 50  0001 C CNN
-F 3 "" H 6550 1750 50  0001 C CNN
-	1    6550 1750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NC_Dual JP2
-U 1 1 5C196DF5
-P 6800 2550
-F 0 "JP2" V 6700 2350 50  0000 L CNN
-F 1 "Jumper_NC_Dual" V 6600 1900 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6800 2550 50  0001 C CNN
-F 3 "~" H 6800 2550 50  0001 C CNN
-	1    6800 2550
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0123
-U 1 1 5C196DFD
-P 6550 2800
-F 0 "#PWR0123" H 6550 2650 50  0001 C CNN
-F 1 "+5V" H 6565 2973 50  0000 C CNN
-F 2 "" H 6550 2800 50  0001 C CNN
-F 3 "" H 6550 2800 50  0001 C CNN
-	1    6550 2800
+P 6050 2300
+F 0 "#PWR0120" H 6050 2150 50  0001 C CNN
+F 1 "+5V" H 6065 2473 50  0000 C CNN
+F 2 "" H 6050 2300 50  0001 C CNN
+F 3 "" H 6050 2300 50  0001 C CNN
+	1    6050 2300
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6900 2550 7050 2550
 Connection ~ 7050 2550
-Text GLabel 4750 5450 0    50   Input ~ 0
+Text GLabel 3700 4950 0    50   Output ~ 0
 SW_ERR
 Wire Wire Line
-	4750 5450 4800 5450
+	3700 4950 3750 4950
 Text GLabel 3950 6350 1    50   Input ~ 0
 SW_ERR
 Wire Wire Line
@@ -1067,33 +1045,18 @@ Wire Wire Line
 $Comp
 L power:+10V #PWR0125
 U 1 1 5C24BE18
-P 6550 1250
-F 0 "#PWR0125" H 6550 1100 50  0001 C CNN
-F 1 "+10V" H 6565 1423 50  0000 C CNN
-F 2 "" H 6550 1250 50  0001 C CNN
-F 3 "" H 6550 1250 50  0001 C CNN
-	1    6550 1250
+P 6050 1800
+F 0 "#PWR0125" H 6050 1650 50  0001 C CNN
+F 1 "+10V" H 6065 1973 50  0000 C CNN
+F 2 "" H 6050 1800 50  0001 C CNN
+F 3 "" H 6050 1800 50  0001 C CNN
+	1    6050 1800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 1250 6800 1250
+	6050 1800 6300 1800
 Wire Wire Line
-	6550 1750 6800 1750
-Wire Wire Line
-	6550 2800 6800 2800
-$Comp
-L power:+10V #PWR0126
-U 1 1 5C2975B7
-P 6550 2300
-F 0 "#PWR0126" H 6550 2150 50  0001 C CNN
-F 1 "+10V" H 6565 2473 50  0000 C CNN
-F 2 "" H 6550 2300 50  0001 C CNN
-F 3 "" H 6550 2300 50  0001 C CNN
-	1    6550 2300
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 2300 6800 2300
+	6050 2300 6300 2300
 $Comp
 L Device:LED D7
 U 1 1 5C12E6CB
@@ -1213,8 +1176,6 @@ Text Notes 6050 5600 0    50   ~ 0
 SL
 Text Notes 6050 4650 0    50   ~ 0
 SL
-NoConn ~ 3750 4950
-NoConn ~ 3750 5050
 NoConn ~ 3750 5150
 NoConn ~ 3750 5250
 NoConn ~ 3750 5350
@@ -1243,4 +1204,15 @@ NoConn ~ 1650 4850
 NoConn ~ 1650 4750
 NoConn ~ 1650 4650
 NoConn ~ 1650 4550
+NoConn ~ 4800 5450
+Wire Wire Line
+	6900 2550 6900 2050
+Wire Wire Line
+	6400 2050 6900 2050
+Connection ~ 6900 2050
+Wire Wire Line
+	6900 2050 6900 1500
+Text Label 6500 2050 0    50   ~ 0
+MUX_PWR
+NoConn ~ 4800 5050
 $EndSCHEMATC
