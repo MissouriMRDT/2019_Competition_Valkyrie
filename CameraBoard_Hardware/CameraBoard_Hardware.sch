@@ -1213,4 +1213,34 @@ Text Notes 6050 5600 0    50   ~ 0
 SL
 Text Notes 6050 4650 0    50   ~ 0
 SL
+NoConn ~ 3750 4950
+NoConn ~ 3750 5050
+NoConn ~ 3750 5150
+NoConn ~ 3750 5250
+NoConn ~ 3750 5350
+NoConn ~ 3750 5450
+NoConn ~ 4800 5350
+NoConn ~ 4800 5250
+NoConn ~ 4800 4950
+NoConn ~ 4800 4850
+NoConn ~ 4800 4750
+NoConn ~ 4800 4650
+NoConn ~ 2700 4750
+NoConn ~ 2700 4850
+NoConn ~ 2700 4950
+NoConn ~ 2700 5050
+NoConn ~ 2700 5150
+NoConn ~ 2700 5250
+NoConn ~ 2700 5350
+NoConn ~ 2700 5450
+NoConn ~ 1650 5450
+NoConn ~ 1650 5350
+NoConn ~ 1650 5250
+NoConn ~ 1650 5150
+NoConn ~ 1650 5050
+NoConn ~ 1650 4950
+NoConn ~ 1650 4850
+NoConn ~ 1650 4750
+NoConn ~ 1650 4650
+NoConn ~ 1650 4550
 $EndSCHEMATC
