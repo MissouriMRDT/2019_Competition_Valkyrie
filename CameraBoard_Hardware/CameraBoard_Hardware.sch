@@ -507,9 +507,9 @@ Wire Wire Line
 	2600 4700 2600 4650
 Wire Wire Line
 	2600 4650 2700 4650
-Text GLabel 3700 5050 0    50   Output ~ 0
+Text GLabel 3700 5450 0    50   Output ~ 0
 MUXB_SHDN
-Text GLabel 4750 5150 0    50   Output ~ 0
+Text GLabel 4750 5450 0    50   Output ~ 0
 MUXA_SHDN
 Connection ~ 7050 1500
 Wire Wire Line
@@ -845,9 +845,9 @@ $EndComp
 Wire Wire Line
 	2600 4550 2700 4550
 Wire Wire Line
-	3700 5050 3750 5050
+	3700 5450 3750 5450
 Wire Wire Line
-	4750 5150 4800 5150
+	4750 5450 4800 5450
 $Comp
 L Device:Jumper_NC_Dual JP1
 U 1 1 5C15FC96
@@ -1179,7 +1179,6 @@ SL
 NoConn ~ 3750 5150
 NoConn ~ 3750 5250
 NoConn ~ 3750 5350
-NoConn ~ 3750 5450
 NoConn ~ 4800 5350
 NoConn ~ 4800 5250
 NoConn ~ 4800 4950
@@ -1204,7 +1203,6 @@ NoConn ~ 1650 4850
 NoConn ~ 1650 4750
 NoConn ~ 1650 4650
 NoConn ~ 1650 4550
-NoConn ~ 4800 5450
 Wire Wire Line
 	6900 2550 6900 2050
 Wire Wire Line
@@ -1215,4 +1213,6 @@ Wire Wire Line
 Text Label 6500 2050 0    50   ~ 0
 MUX_PWR
 NoConn ~ 4800 5050
+NoConn ~ 3750 5050
+NoConn ~ 4800 5150
 $EndSCHEMATC
