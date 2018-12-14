@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MotorController_Hardware-cache
 EELAYER 26 0
 EELAYER END
 $Descr A1 33110 23386
@@ -421,13 +422,13 @@ $EndComp
 $Comp
 L Device:C_Small C17
 U 1 1 5BA76504
-P 6350 12250
-F 0 "C17" H 6350 12300 50  0000 L CNN
-F 1 ".022u" H 6400 12200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6388 12100 50  0001 C CNN
-F 3 "" H 6350 12250 50  0001 C CNN
-	1    6350 12250
-	1    0    0    -1  
+P 6400 12200
+F 0 "C17" V 6350 12000 50  0000 L CNN
+F 1 ".022u" V 6350 12250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6438 12050 50  0001 C CNN
+F 3 "" H 6400 12200 50  0001 C CNN
+	1    6400 12200
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R18
@@ -1597,13 +1598,13 @@ $EndComp
 $Comp
 L Device:C_Small C60
 U 1 1 5BB18126
-P 24200 12250
-F 0 "C60" H 24225 12350 50  0000 L CNN
-F 1 ".022u" H 24225 12150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 24238 12100 50  0001 C CNN
-F 3 "" H 24200 12250 50  0001 C CNN
-	1    24200 12250
-	1    0    0    -1  
+P 24250 12200
+F 0 "C60" V 24200 12000 50  0000 L CNN
+F 1 ".022u" V 24200 12250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 24288 12050 50  0001 C CNN
+F 3 "" H 24250 12200 50  0001 C CNN
+	1    24250 12200
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R47
@@ -4906,18 +4907,6 @@ Wire Wire Line
 Wire Wire Line
 	6800 12450 6800 12500
 Wire Wire Line
-	24100 12300 24150 12300
-Wire Wire Line
-	24150 12300 24150 12350
-Wire Wire Line
-	24150 12350 24200 12350
-Wire Wire Line
-	24100 12200 24150 12200
-Wire Wire Line
-	24150 12200 24150 12150
-Wire Wire Line
-	24150 12150 24200 12150
-Wire Wire Line
 	24700 12450 24700 12050
 Wire Wire Line
 	24700 12050 24100 12050
@@ -4930,18 +4919,6 @@ Connection ~ 24700 12050
 Wire Wire Line
 	6800 12050 6800 12450
 Connection ~ 6800 12450
-Wire Wire Line
-	6350 12150 6300 12150
-Wire Wire Line
-	6300 12150 6300 12200
-Wire Wire Line
-	6300 12200 6250 12200
-Wire Wire Line
-	6250 12300 6300 12300
-Wire Wire Line
-	6300 12300 6300 12350
-Wire Wire Line
-	6300 12350 6350 12350
 Wire Wire Line
 	24150 11750 24100 11750
 Wire Wire Line
@@ -5771,4 +5748,56 @@ F 3 "" H 17300 9700 60  0001 C CNN
 	8    17300 9700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6250 12200 6300 12200
+Wire Wire Line
+	6250 12300 6500 12300
+Wire Wire Line
+	6500 12300 6500 12200
+Wire Wire Line
+	24100 12200 24150 12200
+Wire Wire Line
+	24100 12300 24350 12300
+Wire Wire Line
+	24350 12300 24350 12200
+Text Notes 13050 7600 0    50   ~ 0
+SCI A
+Text Notes 16500 7600 0    50   ~ 0
+SCI B
+Text Notes 14600 9350 0    50   ~ 0
+SPI A
+Text Notes 18100 9350 0    50   ~ 0
+SPI B
+Text Notes 14450 7550 0    50   ~ 0
+AA7
+Text Notes 14450 7650 0    50   ~ 0
+AB1
+Text Notes 14450 7750 0    50   ~ 0
+AA2
+Text Notes 14450 7850 0    50   ~ 0
+AB2
+Text Notes 12950 8800 0    50   ~ 0
+EPWM1A
+Text Notes 12950 8900 0    50   ~ 0
+EPWM1B
+Text Notes 12950 9000 0    50   ~ 0
+EPWM2A
+Text Notes 12950 9100 0    50   ~ 0
+EPWM2B
+Text Notes 12950 9200 0    50   ~ 0
+EPWM3A
+Text Notes 12950 9300 0    50   ~ 0
+EPWM3B
+Text Notes 16400 8800 0    50   ~ 0
+EPWM4A
+Text Notes 16400 8900 0    50   ~ 0
+EPWM4B
+Text Notes 16400 9000 0    50   ~ 0
+EPWM5A
+Text Notes 16400 9100 0    50   ~ 0
+EPWM5B
+Text Notes 16400 9200 0    50   ~ 0
+EPWM6A
+Text Notes 16400 9300 0    50   ~ 0
+EPWM6B
 $EndSCHEMATC
