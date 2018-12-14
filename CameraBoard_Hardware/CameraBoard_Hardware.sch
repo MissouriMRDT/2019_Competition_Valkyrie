@@ -1149,4 +1149,16 @@ F 3 "" H 4250 6350 50  0001 C CNN
 	1    4250 6350
 	1    0    0    -1  
 $EndComp
+Text Notes 2600 6650 1    50   ~ 0
+Yelw
+Text Notes 2950 6650 1    50   ~ 0
+Yelw
+Text Notes 3300 6650 1    50   ~ 0
+Yelw
+Text Notes 3600 6650 1    50   ~ 0
+Yelw
+Text Notes 3900 6650 1    50   ~ 0
+Red
+Text Notes 4200 6650 1    50   ~ 0
+Green
 $EndSCHEMATC
