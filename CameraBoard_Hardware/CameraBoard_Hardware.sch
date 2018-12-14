@@ -315,14 +315,6 @@ Wire Wire Line
 	7750 3150 7700 3150
 Wire Wire Line
 	7750 3050 7700 3050
-Wire Wire Line
-	6350 4350 6400 4350
-Wire Wire Line
-	7450 4350 7500 4350
-Wire Wire Line
-	6350 5250 6400 5250
-Wire Wire Line
-	7450 5250 7500 5250
 $Comp
 L Device:R R9
 U 1 1 5BF650EF
@@ -698,14 +690,6 @@ Wire Notes Line
 	10000 700  10000 5900
 Wire Notes Line
 	1050 700  1050 7400
-Text GLabel 6400 4350 2    50   UnSpc ~ 0
-+12V
-Text GLabel 6400 5250 2    50   UnSpc ~ 0
-+12V
-Text GLabel 7500 5250 2    50   UnSpc ~ 0
-+12V
-Text GLabel 7500 4350 2    50   UnSpc ~ 0
-+12V
 $Comp
 L MRDT_ICs:AP1059 U2
 U 1 1 5C126042
@@ -1161,4 +1145,64 @@ Text Notes 3900 6650 1    50   ~ 0
 Red
 Text Notes 4200 6650 1    50   ~ 0
 Green
+$Comp
+L power:+12V #PWR?
+U 1 1 5C172796
+P 6450 4300
+F 0 "#PWR?" H 6450 4150 50  0001 C CNN
+F 1 "+12V" H 6465 4473 50  0000 C CNN
+F 2 "" H 6450 4300 50  0001 C CNN
+F 3 "" H 6450 4300 50  0001 C CNN
+	1    6450 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4300 6450 4350
+Wire Wire Line
+	6350 4350 6450 4350
+$Comp
+L power:+12V #PWR?
+U 1 1 5C17754D
+P 7550 4300
+F 0 "#PWR?" H 7550 4150 50  0001 C CNN
+F 1 "+12V" H 7565 4473 50  0000 C CNN
+F 2 "" H 7550 4300 50  0001 C CNN
+F 3 "" H 7550 4300 50  0001 C CNN
+	1    7550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4300 7550 4350
+Wire Wire Line
+	7450 4350 7550 4350
+$Comp
+L power:+12V #PWR?
+U 1 1 5C17C147
+P 7550 5200
+F 0 "#PWR?" H 7550 5050 50  0001 C CNN
+F 1 "+12V" H 7565 5373 50  0000 C CNN
+F 2 "" H 7550 5200 50  0001 C CNN
+F 3 "" H 7550 5200 50  0001 C CNN
+	1    7550 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5200 7550 5250
+Wire Wire Line
+	7450 5250 7550 5250
+$Comp
+L power:+12V #PWR?
+U 1 1 5C180C8B
+P 6450 5200
+F 0 "#PWR?" H 6450 5050 50  0001 C CNN
+F 1 "+12V" H 6465 5373 50  0000 C CNN
+F 2 "" H 6450 5200 50  0001 C CNN
+F 3 "" H 6450 5200 50  0001 C CNN
+	1    6450 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5200 6450 5250
+Wire Wire Line
+	6350 5250 6450 5250
 $EndSCHEMATC
