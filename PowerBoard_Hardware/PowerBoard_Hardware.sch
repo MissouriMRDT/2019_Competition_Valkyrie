@@ -1,36 +1,20 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
 LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
 LIBS:audio
 LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+LIBS:MRDT_Actives
+LIBS:MRDT_Connectors
+LIBS:MRDT_Devices
+LIBS:MRDT_Drill_Holes
+LIBS:MRDT_Headers
+LIBS:MRDT_ICs
+LIBS:MRDT_Passives
+LIBS:MRDT_Sensors
+LIBS:MRDT_Shields
+LIBS:MRDT_Silkscreens
+LIBS:MRDT_Switches
 LIBS:PowerBoard_Hardware-cache
 EELAYER 26 0
 EELAYER END
@@ -213,7 +197,7 @@ U 1 1 5BB198D9
 P 4600 2850
 F 0 "C9" H 4715 2896 50  0000 L CNN
 F 1 "330u" H 4715 2805 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 4600 2850 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 4600 2850 50  0001 C CNN
 F 3 "~" H 4600 2850 50  0001 C CNN
 	1    4600 2850
 	1    0    0    -1  
@@ -224,7 +208,7 @@ U 1 1 5BB1997D
 P 4400 2850
 F 0 "C6" H 4200 2900 50  0000 L CNN
 F 1 "330u" H 4150 2800 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 4400 2850 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 4400 2850 50  0001 C CNN
 F 3 "~" H 4400 2850 50  0001 C CNN
 	1    4400 2850
 	1    0    0    -1  
@@ -552,7 +536,7 @@ U 1 1 5BB5D664
 P 4250 4450
 F 0 "C8" H 3950 4500 50  0000 L CNN
 F 1 "330u" H 4000 4400 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 4250 4450 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 4250 4450 50  0001 C CNN
 F 3 "~" H 4250 4450 50  0001 C CNN
 	1    4250 4450
 	1    0    0    -1  
@@ -563,7 +547,7 @@ U 1 1 5BB5D6D2
 P 4450 4450
 F 0 "C10" H 4565 4496 50  0000 L CNN
 F 1 "330u" H 4565 4405 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 4450 4450 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 4450 4450 50  0001 C CNN
 F 3 "~" H 4450 4450 50  0001 C CNN
 	1    4450 4450
 	1    0    0    -1  
@@ -945,7 +929,7 @@ U 1 1 5BC2A5E2
 P 4600 7550
 F 0 "C11" H 4750 7600 50  0000 L CNN
 F 1 "330u" H 4750 7500 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 4600 7550 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 4600 7550 50  0001 C CNN
 F 3 "~" H 4600 7550 50  0001 C CNN
 	1    4600 7550
 	1    0    0    -1  
@@ -1673,7 +1657,7 @@ L Device:C_Small C26
 U 1 1 5C1B1D14
 P 18800 9450
 F 0 "C26" V 18571 9450 50  0000 C CNN
-F 1 "0.1" V 18662 9450 50  0000 C CNN
+F 1 "0.1u" V 18662 9450 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 18800 9450 50  0001 C CNN
 F 3 "~" H 18800 9450 50  0001 C CNN
 	1    18800 9450
@@ -3623,7 +3607,7 @@ U 1 1 5BEF890D
 P 5750 7500
 F 0 "C16" H 5865 7546 50  0000 L CNN
 F 1 "330u" H 5865 7455 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 5750 7500 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P3.50mm" H 5750 7500 50  0001 C CNN
 F 3 "~" H 5750 7500 50  0001 C CNN
 	1    5750 7500
 	1    0    0    -1  

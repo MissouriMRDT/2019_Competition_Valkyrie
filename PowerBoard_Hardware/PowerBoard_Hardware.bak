@@ -446,7 +446,7 @@ F 3 "" H 6750 3750 50  0001 C CNN
 	1    6750 3750
 	1    0    0    -1  
 $EndComp
-Text Notes 5200 2200 0    200  ~ 40
+Text Notes 2950 3750 0    200  ~ 40
 Logic 12V
 $Comp
 L power:GND #PWR0114
@@ -507,7 +507,7 @@ F 3 "~" H 1500 2500 50  0001 C CNN
 $EndComp
 Text GLabel 1300 2500 0    50   Input ~ 0
 LOGIC\COM_CTL
-Text Notes 4450 3750 2    200  ~ 40
+Text Notes 6650 2150 2    200  ~ 40
 Communication 12V
 Wire Wire Line
 	3900 3850 3900 4100
