@@ -2000,4 +2000,118 @@ Wire Wire Line
 	6700 5400 6750 5400
 Text GLabel 6750 5400 2    57   Input ~ 0
 Pot_Ind
+Text Notes 6900 5600 0    39   ~ 0
+? in notes "Pot_Ind output to LED \nyellow analogWrite"
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 1 1 5C6706D5
+P 1100 5650
+F 0 "Conn1" H 900 5800 60  0000 C CNN
+F 1 "AndersonPP" H 800 5700 60  0000 C CNN
+F 2 "" H 950 5100 60  0001 C CNN
+F 3 "" H 950 5100 60  0001 C CNN
+	1    1100 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 2 1 5C6714B7
+P 1100 5350
+F 0 "Conn1" H 900 5500 60  0000 C CNN
+F 1 "AndersonPP" H 800 5400 60  0000 C CNN
+F 2 "" H 950 4800 60  0001 C CNN
+F 3 "" H 950 4800 60  0001 C CNN
+	2    1100 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5550 1550 5550
+Wire Wire Line
+	1550 5550 1550 5600
+$Comp
+L power:GND #PWR?
+U 1 1 5C680E4E
+P 1550 5600
+F 0 "#PWR?" H 1550 5350 50  0001 C CNN
+F 1 "GND" H 1555 5427 50  0000 C CNN
+F 2 "" H 1550 5600 50  0001 C CNN
+F 3 "" H 1550 5600 50  0001 C CNN
+	1    1550 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5550 1600 5550
+Connection ~ 1550 5550
+Wire Wire Line
+	1500 5250 1600 5250
+$Comp
+L Device:C C1
+U 1 1 5C690830
+P 1600 5400
+F 0 "C1" H 1715 5446 50  0000 L CNN
+F 1 "10uf" H 1715 5355 50  0000 L CNN
+F 2 "" H 1638 5250 50  0001 C CNN
+F 3 "~" H 1600 5400 50  0001 C CNN
+	1    1600 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5250 1650 5250
+Connection ~ 1600 5250
+$Comp
+L MRDT_Devices:OKI U?
+U 1 1 5C6987D0
+P 1850 5350
+F 0 "U?" H 1900 5300 60  0001 C CNN
+F 1 "OKI" H 2050 5631 60  0000 C CNN
+F 2 "" H 1650 5250 60  0001 C CNN
+F 3 "" H 1650 5250 60  0001 C CNN
+	1    1850 5350
+	1    0    0    -1  
+$EndComp
+Text Notes 2100 5450 0    49   ~ 0
+3.3V
+Wire Wire Line
+	1600 5550 2050 5550
+Connection ~ 1600 5550
+Wire Wire Line
+	2050 5550 2500 5550
+Connection ~ 2050 5550
+Wire Wire Line
+	2450 5250 2500 5250
+$Comp
+L Device:C C2
+U 1 1 5C6B0E56
+P 2500 5400
+F 0 "C2" H 2615 5446 50  0000 L CNN
+F 1 "10uf" H 2615 5355 50  0000 L CNN
+F 2 "" H 2538 5250 50  0001 C CNN
+F 3 "~" H 2500 5400 50  0001 C CNN
+	1    2500 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 5250 2500 5200
+Connection ~ 2500 5250
+$Comp
+L power:+5V #PWR?
+U 1 1 5C6BA830
+P 2500 5200
+F 0 "#PWR?" H 2500 5050 50  0001 C CNN
+F 1 "+5V" H 2515 5373 50  0000 C CNN
+F 2 "" H 2500 5200 50  0001 C CNN
+F 3 "" H 2500 5200 50  0001 C CNN
+	1    2500 5200
+	1    0    0    -1  
+$EndComp
+Text Notes 1950 5700 0    39   ~ 0
+? in notes "Oki 3.3V" \nbut 5V on doc
+Wire Notes Line style solid
+	450  4900 2800 4900
+Text Notes 550  4850 0    57   ~ 11
+Power Conversion
+Text Notes 2500 6150 0    57   ~ 0
+? in notes "LED for power on green" Where do I put this?
+Text Notes 2500 6350 0    57   ~ 0
+? how is the anderson circuit connected to everything else?
 $EndSCHEMATC
