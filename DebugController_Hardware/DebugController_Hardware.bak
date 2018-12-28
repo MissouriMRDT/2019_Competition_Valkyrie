@@ -1461,7 +1461,7 @@ Text GLabel 7050 4750 2    50   Output ~ 0
 Switch_Out_9
 Text GLabel 7600 4850 0    50   Input ~ 0
 Switch_Out_10
-Text GLabel 8400 2850 2    50   Output ~ 0
+Text GLabel 8400 5650 2    50   Output ~ 0
 Switch_Out_11
 Text GLabel 8400 2950 2    50   Output ~ 0
 Switch_Out_12
