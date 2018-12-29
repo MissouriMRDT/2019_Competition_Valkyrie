@@ -2408,4 +2408,10 @@ Text GLabel 9000 4300 2    57   Output ~ 0
 Other_Ind
 Wire Wire Line
 	8950 4300 9000 4300
+Text Notes 5250 7450 0    50   ~ 0
+? TIVA stuff: i feel like im not supposed to \nconnect labels to ground or reset but you \ndidnt say anything about that and \nalso I know literally nothing so... \nif yes, why; if not, why
+Text Notes 5250 7000 0    50   ~ 0
+? Pot_Out: still confused if i did \nthis right...i looked at the \nlink you gave me and none \nof the red outer values correspond \nto the analogRead options
+Text Notes 5250 7750 0    50   ~ 0
+? potentiometer: if i have a separate LED \nfor the potentiometer, do i need \nto take the one already on it off?
 $EndSCHEMATC
