@@ -1,0 +1,17 @@
+Power Conversion
+	The OKI comes in 2 versions, one that ouptus 3.3V and one that outputs 5V. We want the one that outputs 3.3V because we don't use 5V anywhere else on the schematic and the TIVA reuires a 3.3V logic signal and power
+Power LED
+	You can put that anywhere on the schematic. The power LED doesn't need a button, since that will turn on when the board is on. Just run a 3.3V power flag through a 500 Ohm resstor and LED in series. 
+Anderson Ciruit
+	The anderson circuit is connected through the 3.3V power flag (see above). Swap the 5V flag for 3.3V
+Pot_Ind
+	Basically, place a label coming out of one of the pins of the TIVA, and then place another label in the schematic that goes through a 500 ohm resistor and LED to ground. The Pot_Ind flag should be connected to a pin that has "Analog Write" funcionality as per the "Energia TM4C129 Launchpad Pinout"
+	https://energia.nu/pinmaps/img/EK-TM4C1294XL-FRONT.jpg
+--Other Schematic Notes---
+	the "Pot_Out flag needs to be connected to an "Analog Read" pin on the TIVA-https://energia.nu/pinmaps/img/EK-TM4C1294XL-FRONT.jpg
+
+I think it would be nice to add an LED to indicate whether or not we're connected to a system. Ie, when we plug into the arm board, an LED would turn on indicating that we are connected to the arm board
+	These would be software-LEDs, similar to the one we're runing for Pot_Ind but it doesn't have to be connected to an "Analog Write" pin. 
+	I would add 4 LEDs, one for each system
+
+The schematic looks very clean and nice. I think were only a review or two away from going to the layout.
