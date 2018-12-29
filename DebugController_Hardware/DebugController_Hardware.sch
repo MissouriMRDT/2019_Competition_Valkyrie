@@ -202,7 +202,7 @@ F 3 "" H 8750 6150 60  0001 C CNN
 	8    8750 6150
 	-1   0    0    -1  
 $EndComp
-Text GLabel 7050 6000 0    50   Output ~ 0
+Text GLabel 5750 5600 0    50   Input ~ 0
 Pot_Out
 $Comp
 L Device:LED D?
@@ -1189,8 +1189,6 @@ Wire Wire Line
 	4700 5650 4700 5700
 Text Notes 4800 5400 0    50   ~ 0
 Yellow
-Wire Notes Line style solid
-	2800 5950 5150 5950
 Text Notes 5200 850  0    59   ~ 0
 SRA System
 $Comp
@@ -1972,15 +1970,11 @@ Wire Notes Line style solid
 Wire Notes Line
 	2800 750  2800 4650
 Wire Notes Line
-	5150 7800 5200 7800
-Wire Notes Line
 	9700 750  9700 3450
 Wire Notes Line style solid
 	9700 3500 9700 6550
 Text Notes 9750 3600 0    57   ~ 11
 Potentiometer
-Wire Notes Line style solid
-	5150 3450 5150 6550
 $Comp
 L Device:LED D?
 U 1 1 5C65DE2E
@@ -1996,12 +1990,8 @@ Wire Wire Line
 	10150 4650 10150 4700
 Text Notes 10250 4400 0    57   ~ 0
 Yellow
-Wire Wire Line
-	6700 5400 6750 5400
-Text GLabel 6750 5400 2    57   Input ~ 0
+Text GLabel 6750 6100 2    57   Output ~ 0
 Pot_Ind
-Text Notes 6800 5800 0    47   ~ 0
-? in notes "Pot_Ind output to LED\nyellow analogWrite" \nnot exactly sure how to\ndo this/what it means
 $Comp
 L MRDT_Connectors:AndersonPP Conn1
 U 1 1 5C6706D5
@@ -2093,25 +2083,329 @@ $EndComp
 Wire Wire Line
 	2500 5250 2500 5200
 Connection ~ 2500 5250
+Wire Notes Line style solid
+	450  4900 2800 4900
+Text Notes 550  4850 0    57   ~ 11
+Power Conversion
 $Comp
-L power:+5V #PWR?
-U 1 1 5C6BA830
+L power:+3.3V #PWR?
+U 1 1 5C290555
 P 2500 5200
 F 0 "#PWR?" H 2500 5050 50  0001 C CNN
-F 1 "+5V" H 2515 5373 50  0000 C CNN
+F 1 "+3.3V" H 2515 5373 50  0000 C CNN
 F 2 "" H 2500 5200 50  0001 C CNN
 F 3 "" H 2500 5200 50  0001 C CNN
 	1    2500 5200
 	1    0    0    -1  
 $EndComp
-Text Notes 1850 5800 0    47   ~ 0
-? in notes "Oki 3.3V" \nbut 5V on doc
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C2922AC
+P 1250 6500
+F 0 "#PWR?" H 1250 6350 50  0001 C CNN
+F 1 "+3.3V" H 1265 6673 50  0000 C CNN
+F 2 "" H 1250 6500 50  0001 C CNN
+F 3 "" H 1250 6500 50  0001 C CNN
+	1    1250 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C292382
+P 1250 6700
+F 0 "R?" H 1320 6746 50  0000 L CNN
+F 1 "500" H 1320 6655 50  0000 L CNN
+F 2 "" V 1180 6700 50  0001 C CNN
+F 3 "~" H 1250 6700 50  0001 C CNN
+	1    1250 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C29254A
+P 1250 7050
+F 0 "D?" V 1288 6933 50  0000 R CNN
+F 1 "LED" V 1197 6933 50  0000 R CNN
+F 2 "" H 1250 7050 50  0001 C CNN
+F 3 "~" H 1250 7050 50  0001 C CNN
+	1    1250 7050
+	0    -1   -1   0   
+$EndComp
+Text Notes 1350 6850 0    50   ~ 0
+Green
+Text Notes 1150 6200 0    57   ~ 0
+Power
+Wire Wire Line
+	1250 6500 1250 6550
+Wire Wire Line
+	1250 6850 1250 6900
 Wire Notes Line style solid
-	450  4900 2800 4900
-Text Notes 550  4850 0    57   ~ 11
-Power Conversion
-Text Notes 2500 6150 0    57   ~ 0
-? in notes "LED for power on green" \nWhere do I put this/do I need to make another button?
-Text Notes 2500 6350 0    57   ~ 0
-? how is the anderson circuit connected to everything else?
+	450  5950 5150 5950
+Wire Notes Line style solid
+	9700 5000 11250 5000
+Text GLabel 650  6650 1    57   Input ~ 0
+Pot_Ind
+$Comp
+L Device:R R?
+U 1 1 5C31549B
+P 650 6850
+F 0 "R?" H 750 6900 50  0000 L CNN
+F 1 "500" H 750 6800 50  0000 L CNN
+F 2 "" V 580 6850 50  0001 C CNN
+F 3 "~" H 650 6850 50  0001 C CNN
+	1    650  6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  6650 650  6700
+Wire Wire Line
+	650  7000 650  7050
+$Comp
+L Device:LED D?
+U 1 1 5C32FFE8
+P 650 7200
+F 0 "D?" V 700 7100 50  0000 R CNN
+F 1 "LED" V 600 7100 50  0000 R CNN
+F 2 "" H 650 7200 50  0001 C CNN
+F 3 "~" H 650 7200 50  0001 C CNN
+	1    650  7200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C341A0D
+P 650 7400
+F 0 "#PWR?" H 650 7150 50  0001 C CNN
+F 1 "GND" V 655 7272 50  0000 R CNN
+F 2 "" H 650 7400 50  0001 C CNN
+F 3 "" H 650 7400 50  0001 C CNN
+	1    650  7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  7400 650  7350
+Text Notes 500  6200 0    57   ~ 0
+Pot_Ind
+Wire Wire Line
+	6750 6100 6700 6100
+Wire Wire Line
+	5750 5600 5800 5600
+Text Notes 500  6050 0    57   ~ 11
+LEDs
+Wire Notes Line style solid
+	450  6250 5150 6250
+Text Notes 750  7100 0    57   ~ 0
+Yellow
+Wire Notes Line
+	1100 6100 1100 7800
+Wire Notes Line style solid
+	5150 3450 5150 6550
+Text GLabel 1850 6750 1    57   Input ~ 0
+Drive_Ind
+$Comp
+L Device:R R?
+U 1 1 5C41DDAC
+P 1850 6950
+F 0 "R?" H 1950 7000 50  0000 L CNN
+F 1 "500" H 1950 6900 50  0000 L CNN
+F 2 "" V 1780 6950 50  0001 C CNN
+F 3 "~" H 1850 6950 50  0001 C CNN
+	1    1850 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6750 1850 6800
+Wire Wire Line
+	1850 7100 1850 7150
+$Comp
+L Device:LED D?
+U 1 1 5C41DDB4
+P 1850 7300
+F 0 "D?" V 1900 7200 50  0000 R CNN
+F 1 "LED" V 1800 7200 50  0000 R CNN
+F 2 "" H 1850 7300 50  0001 C CNN
+F 3 "~" H 1850 7300 50  0001 C CNN
+	1    1850 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C41DDBA
+P 1850 7500
+F 0 "#PWR?" H 1850 7250 50  0001 C CNN
+F 1 "GND" V 1855 7372 50  0000 R CNN
+F 2 "" H 1850 7500 50  0001 C CNN
+F 3 "" H 1850 7500 50  0001 C CNN
+	1    1850 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 7500 1850 7450
+Text Notes 1950 7200 0    57   ~ 0
+Yellow
+Text GLabel 2450 6700 1    57   Input ~ 0
+Arm_Ind
+$Comp
+L Device:R R?
+U 1 1 5C4277C2
+P 2450 6900
+F 0 "R?" H 2550 6950 50  0000 L CNN
+F 1 "500" H 2550 6850 50  0000 L CNN
+F 2 "" V 2380 6900 50  0001 C CNN
+F 3 "~" H 2450 6900 50  0001 C CNN
+	1    2450 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6700 2450 6750
+Wire Wire Line
+	2450 7050 2450 7100
+$Comp
+L Device:LED D?
+U 1 1 5C4277CA
+P 2450 7250
+F 0 "D?" V 2500 7150 50  0000 R CNN
+F 1 "LED" V 2400 7150 50  0000 R CNN
+F 2 "" H 2450 7250 50  0001 C CNN
+F 3 "~" H 2450 7250 50  0001 C CNN
+	1    2450 7250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C4277D0
+P 2450 7450
+F 0 "#PWR?" H 2450 7200 50  0001 C CNN
+F 1 "GND" V 2455 7322 50  0000 R CNN
+F 2 "" H 2450 7450 50  0001 C CNN
+F 3 "" H 2450 7450 50  0001 C CNN
+	1    2450 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 7450 2450 7400
+Text Notes 2550 7150 0    57   ~ 0
+Yellow
+Text GLabel 3050 6700 1    57   Input ~ 0
+SRA_Ind
+$Comp
+L Device:R R?
+U 1 1 5C431819
+P 3050 6900
+F 0 "R?" H 3150 6950 50  0000 L CNN
+F 1 "500" H 3150 6850 50  0000 L CNN
+F 2 "" V 2980 6900 50  0001 C CNN
+F 3 "~" H 3050 6900 50  0001 C CNN
+	1    3050 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6700 3050 6750
+Wire Wire Line
+	3050 7050 3050 7100
+$Comp
+L Device:LED D?
+U 1 1 5C431821
+P 3050 7250
+F 0 "D?" V 3100 7150 50  0000 R CNN
+F 1 "LED" V 3000 7150 50  0000 R CNN
+F 2 "" H 3050 7250 50  0001 C CNN
+F 3 "~" H 3050 7250 50  0001 C CNN
+	1    3050 7250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C431827
+P 3050 7450
+F 0 "#PWR?" H 3050 7200 50  0001 C CNN
+F 1 "GND" V 3055 7322 50  0000 R CNN
+F 2 "" H 3050 7450 50  0001 C CNN
+F 3 "" H 3050 7450 50  0001 C CNN
+	1    3050 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 7450 3050 7400
+Text Notes 3150 7150 0    57   ~ 0
+Yellow
+Text GLabel 3650 6750 1    57   Input ~ 0
+Other_Ind
+$Comp
+L Device:R R?
+U 1 1 5C43BE49
+P 3650 6950
+F 0 "R?" H 3750 7000 50  0000 L CNN
+F 1 "500" H 3750 6900 50  0000 L CNN
+F 2 "" V 3580 6950 50  0001 C CNN
+F 3 "~" H 3650 6950 50  0001 C CNN
+	1    3650 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6750 3650 6800
+Wire Wire Line
+	3650 7100 3650 7150
+$Comp
+L Device:LED D?
+U 1 1 5C43BE51
+P 3650 7300
+F 0 "D?" V 3700 7200 50  0000 R CNN
+F 1 "LED" V 3600 7200 50  0000 R CNN
+F 2 "" H 3650 7300 50  0001 C CNN
+F 3 "~" H 3650 7300 50  0001 C CNN
+	1    3650 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C43BE57
+P 3650 7500
+F 0 "#PWR?" H 3650 7250 50  0001 C CNN
+F 1 "GND" V 3655 7372 50  0000 R CNN
+F 2 "" H 3650 7500 50  0001 C CNN
+F 3 "" H 3650 7500 50  0001 C CNN
+	1    3650 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 7500 3650 7450
+Text Notes 3750 7200 0    57   ~ 0
+Yellow
+Wire Notes Line
+	1600 6100 1600 7800
+Text Notes 1650 6200 0    57   ~ 0
+Drive
+Wire Notes Line
+	2250 6100 2250 7800
+Text Notes 2300 6200 0    57   ~ 0
+Arm
+Wire Notes Line
+	2850 6100 2850 7800
+Text Notes 2900 6200 0    57   ~ 0
+SRA
+Wire Notes Line
+	3450 6100 3450 7800
+Text Notes 3500 6200 0    57   ~ 0
+Other
+Wire Notes Line
+	4100 6100 4100 7800
+Wire Notes Line style solid
+	450  6100 5150 6100
+Text GLabel 5750 4600 0    57   Output ~ 0
+Drive_Ind
+Wire Wire Line
+	5800 4600 5750 4600
+Text GLabel 6750 4800 2    57   Output ~ 0
+Arm_Ind
+Wire Wire Line
+	6750 4800 6700 4800
+Text GLabel 8000 4300 0    57   Output ~ 0
+SRA_Ind
+Wire Wire Line
+	8050 4300 8000 4300
+Text GLabel 9000 4300 2    57   Output ~ 0
+Other_Ind
+Wire Wire Line
+	8950 4300 9000 4300
 $EndSCHEMATC

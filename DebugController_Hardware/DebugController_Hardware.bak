@@ -2000,8 +2000,8 @@ Wire Wire Line
 	6700 5400 6750 5400
 Text GLabel 6750 5400 2    57   Input ~ 0
 Pot_Ind
-Text Notes 6900 5600 0    39   ~ 0
-? in notes "Pot_Ind output to LED \nyellow analogWrite"
+Text Notes 6800 5800 0    47   ~ 0
+? in notes "Pot_Ind output to LED\nyellow analogWrite" \nnot exactly sure how to\ndo this/what it means
 $Comp
 L MRDT_Connectors:AndersonPP Conn1
 U 1 1 5C6706D5
@@ -2104,14 +2104,14 @@ F 3 "" H 2500 5200 50  0001 C CNN
 	1    2500 5200
 	1    0    0    -1  
 $EndComp
-Text Notes 1950 5700 0    39   ~ 0
+Text Notes 1850 5800 0    47   ~ 0
 ? in notes "Oki 3.3V" \nbut 5V on doc
 Wire Notes Line style solid
 	450  4900 2800 4900
 Text Notes 550  4850 0    57   ~ 11
 Power Conversion
 Text Notes 2500 6150 0    57   ~ 0
-? in notes "LED for power on green" Where do I put this?
+? in notes "LED for power on green" \nWhere do I put this/do I need to make another button?
 Text Notes 2500 6350 0    57   ~ 0
 ? how is the anderson circuit connected to everything else?
 $EndSCHEMATC
