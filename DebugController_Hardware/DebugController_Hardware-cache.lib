@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_C
+# Device:C
 #
-DEF Device_C C 0 10 N Y 1 F N
+DEF Device:C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
+F1 "Device:C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -19,11 +19,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_LED
+# Device:LED
 #
-DEF Device_LED D 0 40 N N 1 F N
+DEF Device:LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device_LED" 0 -100 50 H V C CNN
+F1 "Device:LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -42,11 +42,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R
+# Device:R
 #
-DEF Device_R R 0 0 N Y 1 F N
+DEF Device:R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
+F1 "Device:R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -59,11 +59,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_POT
+# Device:R_POT
 #
-DEF Device_R_POT RV 0 40 Y N 1 F N
+DEF Device:R_POT RV 0 40 Y N 1 F N
 F0 "RV" -175 0 50 V V C CNN
-F1 "Device_R_POT" -100 0 50 V V C CNN
+F1 "Device:R_POT" -100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -79,11 +79,11 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MRDT_Connectors_AndersonPP
+# MRDT_Connectors:AndersonPP
 #
-DEF MRDT_Connectors_AndersonPP Conn 0 0 N Y 4 L N
+DEF MRDT_Connectors:AndersonPP Conn 0 0 N Y 4 L N
 F0 "Conn" 150 -50 60 H V C CNN
-F1 "MRDT_Connectors_AndersonPP" 100 250 60 H V C CNN
+F1 "MRDT_Connectors:AndersonPP" 100 250 60 H V C CNN
 F2 "" -150 -550 60 H I C CNN
 F3 "" -150 -550 60 H I C CNN
 DRAW
@@ -98,11 +98,11 @@ X PV+ 4 400 100 200 L 50 39 4 1 I
 ENDDRAW
 ENDDEF
 #
-# MRDT_Devices_OKI
+# MRDT_Devices:OKI
 #
-DEF MRDT_Devices_OKI U 0 40 Y Y 1 F N
+DEF MRDT_Devices:OKI U 0 40 Y Y 1 F N
 F0 "U" 50 -50 60 H I C CNN
-F1 "MRDT_Devices_OKI" 200 250 60 H V C CNN
+F1 "MRDT_Devices:OKI" 200 250 60 H V C CNN
 F2 "" -200 -100 60 H I C CNN
 F3 "" -200 -100 60 H I C CNN
 DRAW
@@ -113,11 +113,11 @@ X Vo 3 600 100 200 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# MRDT_Shields_TM4C129E_Launchpad
+# MRDT_Shields:TM4C129E_Launchpad
 #
-DEF MRDT_Shields_TM4C129E_Launchpad U 0 20 Y Y 8 L N
+DEF MRDT_Shields:TM4C129E_Launchpad U 0 20 Y Y 8 L N
 F0 "U" 100 -50 60 H V C CNN
-F1 "MRDT_Shields_TM4C129E_Launchpad" 100 1150 60 H V C CNN
+F1 "MRDT_Shields:TM4C129E_Launchpad" 100 1150 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -213,11 +213,11 @@ X D2_5 Rese -200 550 200 R 50 50 8 1 I
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_Push
+# Switch:SW_Push
 #
-DEF Switch_SW_Push SW 0 40 N N 1 F N
+DEF Switch:SW_Push SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F1 "Switch:SW_Push" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -230,11 +230,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# power_+3.3V
+# power:+3.3V
 #
-DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+DEF power:+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3.3V" 0 140 50 H V C CNN
+F1 "power:+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -246,11 +246,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_+3V3
+# power:+3V3
 #
-DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+DEF power:+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3V3" 0 140 50 H V C CNN
+F1 "power:+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -261,11 +261,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_GND
+# power:GND
 #
-DEF power_GND #PWR 0 0 Y Y 1 F P
+DEF power:GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
