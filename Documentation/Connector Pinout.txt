@@ -1,0 +1,15 @@
+/////////////////
+PVDD 1-Anderson 2
+PVDD 2-Anderson 2
+
+//////////
+Serial-SL5
+	1-Tx_1
+	2-Rx_1
+	3-Tx_2
+	4-Rx_2
+	5-GND
+
+//////////////////
+Motor 1-Anderson 3
+Motor 2-Anderson 3

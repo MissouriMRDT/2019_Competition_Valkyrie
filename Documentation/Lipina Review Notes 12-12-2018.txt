@@ -1,0 +1,21 @@
+Schematic (since design is symmetrical, some of these M1 comments apply to their counterpart on M2)
+	'C17 is disgusting. Rotate the symbol to clean the routing.
+	'Add text near UART_RX and TX to indicate serial channel
+	'Some unconnected pins are without a no connection flag
+	'U1A designator to close to U1D. At a quick glance someone may mistake the U1D for U1A.
+	'C20 not consistent with C18 and C19
+Layout	
+	'C30,C31,C32,C72,C73,C74 are on bottom side but will conflict with the MOSFETs that are being bent over in those areas. 
+	'We need two more 4-40 mounting holes if we want the heatsink to be secured in four corners. A good space for those would be between the phase C and PVDD andersons. Don't worry about the keepout region on those. We'll be fine if the head of the bolt fits in that space.
+	'Andersons on M2 side are not horizontally aligned with the andersons on M1 side. This means the space for the 4-40 between M2 phase c and PVDD is too small. Move all andersons up to accomadate. 
+	Hmm, something I just thought of. The MOSFETs are extreamely close to each other. As we know, the drain on each of those fets cannot touch one another. Thats why we use the thermal pads to isolate from the heatsink. So unless we put something between each fet to isolate side to side, I don't trust them to be soldered perfectly squarely and also not to shift side to side as we handle them and run them on rover. 
+	'Be carful with how close the four 220uF through hole caps are to the fets. The solder joints could touch drain of the fet or cause sparking across the gap since the joint is GND. Id move them all away from the fets since you still have room before you hit the other caps. 
+	'GND for C34, R33, U2 could use a second via to take them to the bigger plane
+	'GND on D21 and D12 are both routed all to way up to the GND pin on one of the Phase C fets. I understand why that is from the schematic and thats what we had last year, but on D12 you allowed the GND to connnect to the entire plane instead of keeping it isolated until it got to the fet. The D21 GND was isolate up until it reached the fet.
+	'GND path next to D13 and R81 must handle Current from 9 comps going to GND. Are those passagways thick enough? Widen that area by moving the two PVDD_M2 vias to the left.
+	'3V3 plane gets tight all the way to right on board next to the INL_C_M2 via.
+	Silkscreen:
+		'Do something to better incorporate the signatures and rover logo into the title block. They all feel separate right now
+		'Need text on the Molex SL
+		'U1, R6, C25, C17, D13, U2, R79, R80, U6, designators are non optimally placed (not visable, on copper pad, or misplaced)
+		
