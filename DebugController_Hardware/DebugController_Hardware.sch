@@ -2074,84 +2074,39 @@ F 3 "" H 2500 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0151
+L power:+3.3V #PWR?
 U 1 1 5C2922AC
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-P 1250 6500
-F 0 "#PWR0151" H 1250 6350 50  0001 C CNN
-F 1 "+3.3V" H 1265 6673 50  0000 C CNN
-F 2 "" H 1250 6500 50  0001 C CNN
-F 3 "" H 1250 6500 50  0001 C CNN
-	1    1250 6500
-=======
->>>>>>> parent of 1d2533e... Revert "sch fixes concerning tiva, leds, pot"
-P 1250 6650
+P 0 0
 F 0 "#PWR?" H 1250 6500 50  0001 C CNN
 F 1 "+3.3V" H 1265 6823 50  0000 C CNN
 F 2 "" H 1250 6650 50  0001 C CNN
 F 3 "" H 1250 6650 50  0001 C CNN
-	1    1250 6650
-<<<<<<< HEAD
-=======
->>>>>>> 06c2707cf053f8d4b2b9237699cddfe6dd108289
->>>>>>> parent of 1d2533e... Revert "sch fixes concerning tiva, leds, pot"
+	1    0    0   
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R?
 U 1 1 5C292382
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-P 1250 6700
-F 0 "R5" H 1320 6746 50  0000 L CNN
-F 1 "500" H 1320 6655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1180 6700 50  0001 C CNN
-F 3 "~" H 1250 6700 50  0001 C CNN
-	1    1250 6700
-=======
->>>>>>> parent of 1d2533e... Revert "sch fixes concerning tiva, leds, pot"
-P 1250 6850
+P 0 0
 F 0 "R?" H 1320 6896 50  0000 L CNN
 F 1 "500" H 1320 6805 50  0000 L CNN
 F 2 "" V 1180 6850 50  0001 C CNN
 F 3 "~" H 1250 6850 50  0001 C CNN
-	1    1250 6850
-<<<<<<< HEAD
-=======
->>>>>>> 06c2707cf053f8d4b2b9237699cddfe6dd108289
->>>>>>> parent of 1d2533e... Revert "sch fixes concerning tiva, leds, pot"
+	1    0    0   
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D5
+L Device:LED D?
 U 1 1 5C29254A
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-P 1250 7050
-F 0 "D5" V 1288 6933 50  0000 R CNN
-F 1 "LED" V 1197 6933 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1250 7050 50  0001 C CNN
-F 3 "~" H 1250 7050 50  0001 C CNN
-	1    1250 7050
-=======
->>>>>>> parent of 1d2533e... Revert "sch fixes concerning tiva, leds, pot"
-P 1250 7200
+P 0 0
 F 0 "D?" V 1288 7083 50  0000 R CNN
 F 1 "LED" V 1197 7083 50  0000 R CNN
 F 2 "" H 1250 7200 50  0001 C CNN
 F 3 "~" H 1250 7200 50  0001 C CNN
-	1    1250 7200
-<<<<<<< HEAD
-=======
->>>>>>> 06c2707cf053f8d4b2b9237699cddfe6dd108289
->>>>>>> parent of 1d2533e... Revert "sch fixes concerning tiva, leds, pot"
+	1    0    0   
 	0    -1   -1   0   
 $EndComp
-Text Notes 1350 7000 0    50   ~ 0
+Text Notes 1350 7100 0    50   ~ 0
 Green
 Text Notes 1150 6200 0    57   ~ 0
 Power
@@ -2410,8 +2365,6 @@ Wire Notes Line style solid
 	450  6100 5150 6100
 Text GLabel 6750 5400 2    57   Output ~ 0
 Drive_Ind
-Wire Wire Line
-	5800 4600 5750 4600
 Text GLabel 6750 5500 2    57   Output ~ 0
 Arm_Ind
 Wire Wire Line
@@ -2420,9 +2373,6 @@ Text GLabel 6750 5600 2    57   Output ~ 0
 SRA_Ind
 Text GLabel 6750 5700 2    57   Output ~ 0
 Other_Ind
-Wire Wire Line
-<<<<<<< HEAD
-	10150 4350 10150 4300
 Wire Notes Line style solid
 	9700 4600 11250 4600
 $Comp
@@ -2506,14 +2456,6 @@ F 3 "" H 9000 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9000 3900 8950 3900
-=======
-	8950 4300 9000 4300
-Text Notes 5250 7450 0    50   ~ 0
-? TIVA stuff: i feel like im not supposed to \nconnect labels to ground or reset but you \ndidnt say anything about that and \nalso I know literally nothing so... \nif yes, why; if not, why
-Text Notes 5250 7000 0    50   ~ 0
-? Pot_Out: still confused if i did \nthis right...i looked at the \nlink you gave me and none \nof the red outer values correspond \nto the analogRead options
-Text Notes 5250 7750 0    50   ~ 0
-? potentiometer: if i have a separate LED \nfor the potentiometer, do i need \nto take the one already on it off?
 $Comp
 L power:GND #PWR?
 U 1 1 5C28F18B
@@ -2529,8 +2471,39 @@ Wire Wire Line
 	1250 7350 1250 7400
 Text Notes 5300 5650 0    50   ~ 0
 A7
-<<<<<<< HEAD
-=======
->>>>>>> 06c2707cf053f8d4b2b9237699cddfe6dd108289
->>>>>>> parent of 1d2533e... Revert "sch fixes concerning tiva, leds, pot"
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C39E27F
+P 1250 6650
+F 0 "#PWR?" H 1250 6500 50  0001 C CNN
+F 1 "+3.3V" H 1265 6823 50  0000 C CNN
+F 2 "" H 1250 6650 50  0001 C CNN
+F 3 "" H 1250 6650 50  0001 C CNN
+	1    1250 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C39E36B
+P 1250 6850
+F 0 "R?" H 1320 6896 50  0000 L CNN
+F 1 "500" H 1320 6805 50  0000 L CNN
+F 2 "" V 1180 6850 50  0001 C CNN
+F 3 "~" H 1250 6850 50  0001 C CNN
+	1    1250 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C39E668
+P 1250 7200
+F 0 "D?" V 1288 7083 50  0000 R CNN
+F 1 "LED" V 1197 7083 50  0000 R CNN
+F 2 "" H 1250 7200 50  0001 C CNN
+F 3 "~" H 1250 7200 50  0001 C CNN
+	1    1250 7200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10150 4300 10150 4350
 $EndSCHEMATC
