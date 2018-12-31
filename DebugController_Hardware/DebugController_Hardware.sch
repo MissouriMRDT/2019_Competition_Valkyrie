@@ -2427,4 +2427,6 @@ F 3 "" H 1250 7400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1250 7350 1250 7400
+Text Notes 5300 5650 0    50   ~ 0
+A7
 $EndSCHEMATC
