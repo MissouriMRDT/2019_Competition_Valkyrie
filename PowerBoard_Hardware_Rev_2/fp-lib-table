@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name PowerBoard_Hardware)(type KiCad)(uri "C:/Users/Jacob Lipina/Documents/1.) Mars Rover/2018-19 Rover/PowerBoard_Hardware/Libraries/Packages/PowerBoard_Hardware.pretty")(options "")(descr ""))
-  (lib (name PowerBoard_Hardware2)(type KiCad)(uri C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/Libraries/Packages/PowerBoard_Hardware.pretty)(options "")(descr ""))
-)

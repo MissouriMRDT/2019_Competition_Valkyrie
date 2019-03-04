@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name DC_DC_Converter)(type Legacy)(uri C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/Libraries/Powerboard_Device/DC_DC_CONVERTER/DC_DC_Converter.lib)(options "")(descr ""))
-  (lib (name Fuse_Block)(type Legacy)(uri C:/Users/shotp/Documents/GitHub/PowerBoard_Hardware/Libraries/Powerboard_Device/Fuse_Block/Fuse_Block.lib)(options "")(descr ""))
-)
