@@ -20899,7 +20899,7 @@
   (gr_text "Middle Motor" (at 51.816 114.808) (layer F.SilkS)
     (effects (font (size 2.54 2.54) (thickness 0.381)))
   )
-  (gr_text "Full Motor" (at 49.276 99.06) (layer F.SilkS)
+  (gr_text "Front Motor" (at 50.546 98.806) (layer F.SilkS)
     (effects (font (size 2.54 2.54) (thickness 0.381)))
   )
   (gr_text "Extra Motor" (at 50.292 84.328) (layer F.SilkS)
