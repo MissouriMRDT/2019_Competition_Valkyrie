@@ -27,16 +27,15 @@ Id,Designator,Package,Designation,,Item Name,Part Number,,,Vendor,Quantity,,,,
 *,"U3,U18",20A Fuse,20A Fuse,,FUSE AUTOMOTIVE 20A 32VDC BLADE,F4201-ND,,,Digikey,2,0.272,,,https://www.digikey.com/product-detail/en/littelfuse-inc/0287020.PXCN/F4201-ND/2519821
 *,"U27,U28,U29,U30",30A Fuse,30A Fuse,,FUSE AUTOMOTIVE 40A 32VDC BLADE,F4203-ND,,,Digikey,4,0.27,,,https://www.digikey.com/product-detail/en/littelfuse-inc/0287040.PXCN/F4203-ND/2519817
 *,"Conn1,Conn2,Conn3",Vertical_Anderson_Double_SidebySide,AndersonPP,,PCB Vertical Contact 45A,1335G1,,,Powerwerx,6,0.59,,,https://powerwerx.com/anderson-1335g1-printed-circuit-board-vertical
-*,"Conn4,Conn5,Conn6,Conn7,Conn8,Conn9,Conn10,Conn11",Anderson_2_Vertical,AndersonPP,,PCB Horizontal Bottom Contact 45A,1336G1,,,Powerwerx,8,0.53,,,https://powerwerx.com/anderson-1336g1-printed-circuit-board-horizontal
-*,"Conn4,Conn5,Conn6,Conn7,Conn8,Conn9,Conn10,Conn11",Anderson_2_Vertical,AndersonPP,,PCB Horizontal Top Contact 45A,1337G1,,,Powerwerx,8,0.56,,,https://powerwerx.com/anderson-1337g1-printed-circuit-board-horizontal
+*,"Conn4,Conn5,Conn6,Conn7,Conn8,Conn9,Conn10,Conn11",Anderson_2_Vertical,AndersonPP,,PCB Horizontal Bottom Contact 45A,1336G1,,,Powerwerx,7,0.53,,,https://powerwerx.com/anderson-1336g1-printed-circuit-board-horizontal
+*,"Conn4,Conn5,Conn6,Conn7,Conn8,Conn9,Conn10,Conn11",Anderson_2_Vertical,AndersonPP,,PCB Horizontal Top Contact 45A,1337G1,,,Powerwerx,7,0.56,,,https://powerwerx.com/anderson-1337g1-printed-circuit-board-horizontal
 *,Connector Housing,Anderson Housing,AndersonPP ,,Red 45/30/15A Housing,1327,,,Powerwerx,1,0.37,,,https://powerwerx.com/anderson-powerpole-colored-housings
-*,Connector Housing,Anderson Housing,AndersonPP ,,Black 45/30/15A Housing,1327G6,,,Powerwerx,11,0.37,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Black 45/30/15A Housing,1327G6,,,Powerwerx,10,0.37,,,https://powerwerx.com/anderson-powerpole-colored-housings
 *,Connector Housing,Anderson Housing,AndersonPP ,,Blue 45/30/15A Housing,1327G8,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
 *,Connector Housing,Anderson Housing,AndersonPP ,,Green 45/30/15A Housing,1327G5,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
 *,Connector Housing,Anderson Housing,AndersonPP ,,Orange 45/30/15A Housing,1327G17,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
 *,Connector Housing,Anderson Housing,AndersonPP ,,Violet 45/30/15A Housing,1327G23,,,Powerwerx,2,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
 *,Connector Housing,Anderson Housing,AndersonPP ,,Yellow 45/30/15A Housing,1327G16,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
 *,Connector Housing,Anderson Housing,AndersonPP ,,White 45/30/15A Housing,1327G7,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
-*,Connector Housing,Anderson Housing,AndersonPP ,,Gray 45/30/15A Housing,1327G18,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
-*,Connector Housing,Anderson Housing,AndersonPP ,,Brown 45/30/15A Housing,1327G21,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Gray 45/30/15A Housing,1327G18,,,Powerwerx,2,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
 *,Connector Housing,Anderson Housing,AndersonPP ,,Pink 45/30/15A Housing,1327G22,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
