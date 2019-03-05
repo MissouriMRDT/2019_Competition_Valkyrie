@@ -1,0 +1,41 @@
+Id,Designator,Package,Designation,,Item Name,Part Number,,,Vendor,Quantity,,,,
+1,"Dahlbot,The Van",DC_DC_Converter_Quarter_Brick,DC-DC_Converter,,DC DC CONVERTER 12V 240W,941-1816-ND,,,Digikey,2,59.38,,,https://www.digikey.com/product-detail/en/delta-electronics/Q36SR12020NRFH/941-1816-ND/7681593
+2,"R9,R7,R8",R_0603_HandSoldering,500,,RES SMD 510 OHM 5% 1/4W 0603,RHM510DCT-ND,,,Digikey,3,0.087,,,https://www.digikey.com/product-detail/en/rohm-semiconductor/ESR03EZPJ511/RHM510DCT-ND/1762937
+3,"C15,C19,C21,C24,C25,C27,C28,C29,C32,C35,C37,C38,C39,C40,C41,C43,C47,C48,C49",C_0603_HandSoldering,0.1u,,CAP CER 0.1UF 50V Y5V 0603,1276-1012-1-ND,,,Digikey,19,0.0169,,,https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10F104ZB8NNNC/1276-1012-1-ND/3889098
+4,"D12,D13",D_DO-201AD_P5.08mm_Vertical_KathodeUp,1.5KE36,,TVS DIODE 30.8V 64.3V DO201,497-11379-1-ND,,,Digikey,2,0.68,,,https://www.digikey.com/product-detail/en/stmicroelectronics/1.5KE36A/497-11379-1-ND/2674529
+5,"R3,R4",R_0603_HandSoldering,100k,,RES SMD 100K OHM 0.1%,P100KDBCT-ND,,,Digikey,2,0.3,,,https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-3AEB104V/P100KDBCT-ND/1466100
+6,"C13,C18",C_0603_HandSoldering,10u,,CAP CER 10UF 6.3V X5R 0603,1276-1119-1-ND,,,Digikey,2,0.112,,,https://www.digikey.com/products/en?keywords=1276-1119-1-ND
+7,"R1,R2",R_0603_HandSoldering,1k,,RES SMD 1K OHM 5% 1/4W 0603,RHM1.0KDCT-ND,,,Digikey,2,0.087,,,https://www.digikey.com/products/en?keywords=RHM1.0KDCT-ND
+8,"C1,C2,C3,C5",CP_Radial_D12.5mm_P5.00mm,1m,,CAP ALUM 1000UF 20% 35V RADIAL,1189-1745-ND,,,Digikey,4,0.545,,,https://www.digikey.com/products/en?keywords=1189-1745-ND
+9,"C12,C17,C20,C22,C23,C30,C33,C36,C42,C44,C45,C46",C_0603_HandSoldering,1n,,Multilayer Ceramic Capacitors MLCC - SMD/SMT WCAP-CSGP 1000pF 0603 10% 50V MLCC,1276-1018-1-ND,,,Digikey,13,0.0179,,,https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B102KB8NNNC/1276-1018-1-ND/3889104
+10,"C4,C7,C14",C_0603_HandSoldering,2.2u,,CAP CER 2.2UF 50V X5R 0603,490-12332-1-ND,,,Digikey,3,0.287,,,https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRT188R61H225KE13D/490-12332-1-ND/5417033
+11,3V3FAN1,MOLEX_SL_02_Horizontal,Molex_SL_02,,CONN HOUSING 2POS .100 W/LATCH,WM2900-ND,,,Digikey,1,0.257,,,https://www.digikey.com/products/en?keywords=WM2900-ND
+12,"R10,R12,R13,R14,R15,R16,R17",R_0603_HandSoldering,1.5k,,RES SMD 1.5K OHM 5% 1/4W 0603,RHM1.5KDCT-ND,,,Digikey,8,0.087,,,https://www.digikey.com/products/en?keywords=RHM1.5KDCT-ND
+14,"D1,D2,D3",LED_0603_HandSoldering,LED,,LED GREEN CLEAR SMD,160-1447-1-ND,,,Digikey,3,0.215,,,https://www.digikey.com/products/en?keywords=160-1446-1-ND
+,"D5,D6,D7,D8,D9,D10,D11",LED_0603_HandSoldering,LED,,LED ORANGE CLEAR SMD,160-1445-1-ND,,,Digikey,7,0.2,,,https://www.digikey.com/products/en?keywords=160-1445-1-ND
+15,"Q1,Q2,Q3",SOT-323_SC-70_Handsoldering,BSS138PW.115,,MOSFET N-CH 60V 0.31A SOT323,1727-4793-1-ND,,,Digikey,3,0.283,,,https://www.digikey.com/products/en?keywords=1727-4793-1-ND
+17,"Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13",TO-263-2,Q_NMOS_GDS,,MOSFET N CH 40V 195A D2PAK,IRFS7437TRLPBFCT-ND,,,Digikey,8,2.21,,,https://www.digikey.com/products/en?keywords=IRFS7437TRLPBFCT-ND
+18,U1,TM4C129E_Launchpad_FULL,TM4C129E_Launchpad,,CONN HDR 20POS 0.1 GOLD PCB,S6106-ND,,,Digikey,4,1.144,,,https://www.digikey.com/product-detail/en/sullins-connector-solutions/PPPC102LFBN-RC/S6106-ND/807245
+,U1,TM4C129E_Launchpad_FULL,TM4C129E_Launchpad,,EVAL BOARD FOR TM4C129E,296-44249-ND,,,Digikey,1,25.95,,,https://www.digikey.com/product-detail/en/texas-instruments/EK-TM4C129EXL/296-44249-ND/5764631
+19,"U2,U3,U4,U15,U17,U18,U27,U28,U29,U30",ATC_Fuse_Block,ATC_FUSE_BLOCK,,FUSE BLOCK BLADE 500V 30A PCB,36-3557-2-ND,,,Digikey,10,0.853,,,https://www.digikey.com/products/en?keywords=36-3557-2-ND
+20,"U5,U6,U11,U13,U14,U23,U24,U25,U26",SOIC-8_3.9x4.9mm_Pitch1.27mm,LT1910,,IC MOSFET DRIVER HI-SIDE 8-SOIC,LT1910IS8#PBF-ND,,,Digikey,9,4.61,,,https://www.digikey.com/products/en?keywords=LT1910IS8%23PBF-ND
+21,U10,OKI_Horizontal,OKI,,DC DC CONVERTER 3.3V 5W,811-3014-ND,,,Digikey,1,4.54,,,https://www.digikey.com/product-detail/en/murata-power-solutions-inc/OKI-78SR-3.3-1.5-W36H-C/811-3014-ND/4878851
+22,"U7,U8,U9,U19,U21,U22,U31,U32,U33,U34",SOIC-8_3.9x4.9mm_Pitch1.27mm,ACS722xLCTR-40AU,,SENSOR CURRENT HALL 40A DC,620-1640-1-ND,,,Digikey,10,4.316,,,https://www.digikey.com/products/en?keywords=620-1640-1-ND
+23,"Q4,Q5",TO-252-2,IPT020N10N3,,MOSFET N-CH 25V 35A TO-252AA,FDD8780CT-ND,,,Digikey,2,0.94,,,https://www.digikey.com/products/en?keywords=FDD8780CT-ND
+25,"C6,C8,C9,C10,C11,C16",CP_Radial_D8.0mm_P3.50mm,330u,,Aluminum Electrolytic Capacitors - Radial Leaded 35VDC 330uF 8000H 8x15mm,667-EEU-FS1V331LB,,,Mousser,6,0.338,,,https://www.mouser.com/ProductDetail/Panasonic/EEU-FS1V331LB?qs=sGAEpiMZZMvwFf0viD3Y3fHxNcSaiftwLov%252bVcmAY8O2OhjfK8WoMw%3d%3d
+*,"U2,U4,U17",5A Fuse,5A Fuse,,FUSE AUTO 5A 32VDC BLADE ATO/ATC,F4197-ND,,,Digikey,3,0.272,,,https://www.digikey.com/products/en?keywords=F4197-ND
+*,"U3,U18",20A Fuse,20A Fuse,,FUSE AUTOMOTIVE 20A 32VDC BLADE,F4201-ND,,,Digikey,2,0.272,,,https://www.digikey.com/product-detail/en/littelfuse-inc/0287020.PXCN/F4201-ND/2519821
+*,"U27,U28,U29,U30",30A Fuse,30A Fuse,,FUSE AUTOMOTIVE 40A 32VDC BLADE,F4203-ND,,,Digikey,4,0.27,,,https://www.digikey.com/product-detail/en/littelfuse-inc/0287040.PXCN/F4203-ND/2519817
+*,"Conn1,Conn2,Conn3",Vertical_Anderson_Double_SidebySide,AndersonPP,,PCB Vertical Contact 45A,1335G1,,,Powerwerx,6,0.59,,,https://powerwerx.com/anderson-1335g1-printed-circuit-board-vertical
+*,"Conn4,Conn5,Conn6,Conn7,Conn8,Conn9,Conn10,Conn11",Anderson_2_Vertical,AndersonPP,,PCB Horizontal Bottom Contact 45A,1336G1,,,Powerwerx,7,0.53,,,https://powerwerx.com/anderson-1336g1-printed-circuit-board-horizontal
+*,"Conn4,Conn5,Conn6,Conn7,Conn8,Conn9,Conn10,Conn11",Anderson_2_Vertical,AndersonPP,,PCB Horizontal Top Contact 45A,1337G1,,,Powerwerx,7,0.56,,,https://powerwerx.com/anderson-1337g1-printed-circuit-board-horizontal
+*,Connector Housing,Anderson Housing,AndersonPP ,,Red 45/30/15A Housing,1327,,,Powerwerx,1,0.37,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Black 45/30/15A Housing,1327G6,,,Powerwerx,10,0.37,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Blue 45/30/15A Housing,1327G8,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Green 45/30/15A Housing,1327G5,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Orange 45/30/15A Housing,1327G17,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Violet 45/30/15A Housing,1327G23,,,Powerwerx,2,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Yellow 45/30/15A Housing,1327G16,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,White 45/30/15A Housing,1327G7,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Gray 45/30/15A Housing,1327G18,,,Powerwerx,2,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
+*,Connector Housing,Anderson Housing,AndersonPP ,,Pink 45/30/15A Housing,1327G22,,,Powerwerx,1,0.39,,,https://powerwerx.com/anderson-powerpole-colored-housings
