@@ -19,7 +19,7 @@ U 1 1 5CA3DEAD
 P 1600 1600
 F 0 "Conn1" H 1400 1650 60  0000 C CNN
 F 1 "AndersonPP" H 1700 1550 60  0000 C CNN
-F 2 "MRDT_Connectors:Anderson_2_Horizontal_Side_by_Side" H 1450 1050 60  0001 C CNN
+F 2 "MRDT_Connectors:Anderson_3_Horizontal_Side_by_Side" H 1450 1050 60  0001 C CNN
 F 3 "" H 1450 1050 60  0001 C CNN
 	1    1600 1600
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 3 1 5CA3DF19
 P 1600 1300
 F 0 "Conn1" H 1400 1350 60  0000 C CNN
 F 1 "AndersonPP" H 1650 1550 60  0000 C CNN
-F 2 "MRDT_Connectors:Anderson_2_Horizontal_Side_by_Side" H 1450 750 60  0001 C CNN
+F 2 "MRDT_Connectors:Anderson_3_Horizontal_Side_by_Side" H 1450 750 60  0001 C CNN
 F 3 "" H 1450 750 60  0001 C CNN
 	3    1600 1300
 	1    0    0    -1  
@@ -351,7 +351,7 @@ U 1 1 5CA400C2
 P 2300 1300
 F 0 "U1" H 2350 1250 60  0001 C CNN
 F 1 "OKI" H 2500 1581 60  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2100 1200 60  0001 C CNN
+F 2 "MRDT_Devices:OKI_Horizontal" H 2100 1200 60  0001 C CNN
 F 3 "" H 2100 1200 60  0001 C CNN
 	1    2300 1300
 	1    0    0    -1  
@@ -423,7 +423,7 @@ U 1 1 5CA43646
 P 4250 1600
 F 0 "JP1" V 4296 1702 50  0000 L CNN
 F 1 "Jumper_NC_Dual" V 4205 1702 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 4250 1600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4250 1600 50  0001 C CNN
 F 3 "~" H 4250 1600 50  0001 C CNN
 	1    4250 1600
 	0    -1   -1   0   
@@ -470,10 +470,10 @@ Wire Wire Line
 Wire Wire Line
 	4250 1850 4250 1900
 $Comp
-L Device:C_Small C?
+L Device:C_Small C3
 U 1 1 5CA460E9
 P 9000 950
-F 0 "C?" H 9092 996 50  0000 L CNN
+F 0 "C3" H 9092 996 50  0000 L CNN
 F 1 "10u" H 9092 905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9038 800 50  0001 C CNN
 F 3 "~" H 9000 950 50  0001 C CNN
@@ -483,10 +483,10 @@ $EndComp
 Connection ~ 9500 850 
 Connection ~ 9500 1050
 $Comp
-L Device:C_Small C?
+L Device:C_Small C4
 U 1 1 5CA48500
 P 9000 1700
-F 0 "C?" H 9092 1746 50  0000 L CNN
+F 0 "C4" H 9092 1746 50  0000 L CNN
 F 1 "10u" H 9092 1655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9038 1550 50  0001 C CNN
 F 3 "~" H 9000 1700 50  0001 C CNN
@@ -494,10 +494,10 @@ F 3 "~" H 9000 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C5
 U 1 1 5CA48604
 P 9000 2450
-F 0 "C?" H 9092 2496 50  0000 L CNN
+F 0 "C5" H 9092 2496 50  0000 L CNN
 F 1 "10u" H 9092 2405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9038 2300 50  0001 C CNN
 F 3 "~" H 9000 2450 50  0001 C CNN
@@ -505,10 +505,10 @@ F 3 "~" H 9000 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C6
 U 1 1 5CA486E8
 P 9000 3200
-F 0 "C?" H 9092 3246 50  0000 L CNN
+F 0 "C6" H 9092 3246 50  0000 L CNN
 F 1 "10u" H 9092 3155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9038 3050 50  0001 C CNN
 F 3 "~" H 9000 3200 50  0001 C CNN
@@ -537,4 +537,84 @@ Wire Wire Line
 	9000 850  9500 850 
 Wire Wire Line
 	9000 1050 9500 1050
+$Comp
+L MRDT_Connectors:AndersonPP Conn6
+U 1 1 5CA5BEDD
+P 1050 1600
+F 0 "Conn6" H 850 1650 60  0000 C CNN
+F 1 "AndersonPP" H 1150 1550 60  0000 C CNN
+F 2 "MRDT_Connectors:Anderson_3_Horizontal_Side_by_Side" H 900 1050 60  0001 C CNN
+F 3 "" H 900 1050 60  0001 C CNN
+	1    1050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:AndersonPP Conn6
+U 3 1 5CA5BEE3
+P 1050 1300
+F 0 "Conn6" H 850 1350 60  0000 C CNN
+F 1 "AndersonPP" H 1100 1550 60  0000 C CNN
+F 2 "MRDT_Connectors:Anderson_3_Horizontal_Side_by_Side" H 900 750 60  0001 C CNN
+F 3 "" H 900 750 60  0001 C CNN
+	3    1050 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 1200
+Wire Wire Line
+	2000 1200 1450 1200
+Connection ~ 2000 1500
+Wire Wire Line
+	2000 1500 1450 1500
+$Comp
+L Device:R R1
+U 1 1 5CA5EF02
+P 2150 2550
+F 0 "R1" H 2220 2596 50  0000 L CNN
+F 1 "1.5K" H 2220 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2080 2550 50  0001 C CNN
+F 3 "~" H 2150 2550 50  0001 C CNN
+	1    2150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CA5EFE1
+P 2150 2900
+F 0 "D1" V 2188 2783 50  0000 R CNN
+F 1 "LED" V 2097 2783 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2150 2900 50  0001 C CNN
+F 3 "~" H 2150 2900 50  0001 C CNN
+	1    2150 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDDA #PWR0119
+U 1 1 5CA5F07F
+P 2150 2350
+F 0 "#PWR0119" H 2150 2200 50  0001 C CNN
+F 1 "VDDA" H 2167 2523 50  0000 C CNN
+F 2 "" H 2150 2350 50  0001 C CNN
+F 3 "" H 2150 2350 50  0001 C CNN
+	1    2150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5CA5F11D
+P 2150 3100
+F 0 "#PWR0120" H 2150 2850 50  0001 C CNN
+F 1 "GND" H 2155 2927 50  0000 C CNN
+F 2 "" H 2150 3100 50  0001 C CNN
+F 3 "" H 2150 3100 50  0001 C CNN
+	1    2150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2350 2150 2400
+Wire Wire Line
+	2150 2700 2150 2750
+Wire Wire Line
+	2150 3050 2150 3100
+Text Notes 2250 3050 0    50   ~ 0
+Green
 $EndSCHEMATC
