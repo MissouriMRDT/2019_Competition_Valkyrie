@@ -1,0 +1,472 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_Connectors:AndersonPP Conn?
+U 1 1 5CA3DEAD
+P 1600 1600
+F 0 "Conn?" H 1400 1650 60  0000 C CNN
+F 1 "AndersonPP" H 1700 1550 60  0000 C CNN
+F 2 "" H 1450 1050 60  0001 C CNN
+F 3 "" H 1450 1050 60  0001 C CNN
+	1    1600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:AndersonPP Conn?
+U 3 1 5CA3DF19
+P 1600 1300
+F 0 "Conn?" H 1400 1350 60  0000 C CNN
+F 1 "AndersonPP" H 1650 1550 60  0000 C CNN
+F 2 "" H 1450 750 60  0001 C CNN
+F 3 "" H 1450 750 60  0001 C CNN
+	3    1600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:Molex_SL_03 Conn?
+U 1 1 5CA3E09E
+P 9750 3350
+F 0 "Conn?" H 9877 3558 60  0000 L CNN
+F 1 "Molex_SL_03" H 9877 3452 60  0000 L CNN
+F 2 "" H 9750 3350 60  0001 C CNN
+F 3 "" H 9750 3350 60  0001 C CNN
+	1    9750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5CA3E10B
+P 9800 4000
+F 0 "J?" H 9899 3976 50  0000 L CNN
+F 1 "Conn_Coaxial" H 9899 3885 50  0000 L CNN
+F 2 "" H 9800 4000 50  0001 C CNN
+F 3 " ~" H 9800 4000 50  0001 C CNN
+	1    9800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA3E250
+P 9800 4250
+F 0 "#PWR?" H 9800 4000 50  0001 C CNN
+F 1 "GND" H 9805 4077 50  0000 C CNN
+F 2 "" H 9800 4250 50  0001 C CNN
+F 3 "" H 9800 4250 50  0001 C CNN
+	1    9800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4200 9800 4250
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5CA3E2C6
+P 9800 4550
+F 0 "J?" H 9899 4526 50  0000 L CNN
+F 1 "Conn_Coaxial" H 9899 4435 50  0000 L CNN
+F 2 "" H 9800 4550 50  0001 C CNN
+F 3 " ~" H 9800 4550 50  0001 C CNN
+	1    9800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA3E2CC
+P 9800 4800
+F 0 "#PWR?" H 9800 4550 50  0001 C CNN
+F 1 "GND" H 9805 4627 50  0000 C CNN
+F 2 "" H 9800 4800 50  0001 C CNN
+F 3 "" H 9800 4800 50  0001 C CNN
+	1    9800 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4750 9800 4800
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5CA3E2FD
+P 9800 5100
+F 0 "J?" H 9899 5076 50  0000 L CNN
+F 1 "Conn_Coaxial" H 9899 4985 50  0000 L CNN
+F 2 "" H 9800 5100 50  0001 C CNN
+F 3 " ~" H 9800 5100 50  0001 C CNN
+	1    9800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA3E303
+P 9800 5350
+F 0 "#PWR?" H 9800 5100 50  0001 C CNN
+F 1 "GND" H 9805 5177 50  0000 C CNN
+F 2 "" H 9800 5350 50  0001 C CNN
+F 3 "" H 9800 5350 50  0001 C CNN
+	1    9800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5300 9800 5350
+Text GLabel 9550 4000 0    50   Input ~ 0
+C1_Sig
+Text GLabel 9550 4550 0    50   Input ~ 0
+C2_Sig
+Text GLabel 9550 5100 0    50   Input ~ 0
+C3_Sig
+Wire Wire Line
+	9550 4000 9600 4000
+Wire Wire Line
+	9600 4550 9550 4550
+Wire Wire Line
+	9550 5100 9600 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5CA3E5DF
+P 9500 3350
+F 0 "#PWR?" H 9500 3100 50  0001 C CNN
+F 1 "GND" H 9505 3177 50  0000 C CNN
+F 2 "" H 9500 3350 50  0001 C CNN
+F 3 "" H 9500 3350 50  0001 C CNN
+	1    9500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5CA3E71B
+P 9800 5650
+F 0 "J?" H 9899 5626 50  0000 L CNN
+F 1 "Conn_Coaxial" H 9899 5535 50  0000 L CNN
+F 2 "" H 9800 5650 50  0001 C CNN
+F 3 " ~" H 9800 5650 50  0001 C CNN
+	1    9800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA3E721
+P 9800 5900
+F 0 "#PWR?" H 9800 5650 50  0001 C CNN
+F 1 "GND" H 9805 5727 50  0000 C CNN
+F 2 "" H 9800 5900 50  0001 C CNN
+F 3 "" H 9800 5900 50  0001 C CNN
+	1    9800 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5850 9800 5900
+Text GLabel 9550 5650 0    50   Input ~ 0
+C4_Sig
+Wire Wire Line
+	9550 5650 9600 5650
+Text GLabel 9500 3200 0    50   Input ~ 0
+C4_Sig
+$Comp
+L power:VCOM #PWR?
+U 1 1 5CA3E9AB
+P 9500 3050
+F 0 "#PWR?" H 9500 2900 50  0001 C CNN
+F 1 "VCOM" H 9517 3223 50  0000 C CNN
+F 2 "" H 9500 3050 50  0001 C CNN
+F 3 "" H 9500 3050 50  0001 C CNN
+	1    9500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3050 9500 3100
+Wire Wire Line
+	9500 3100 9550 3100
+Wire Wire Line
+	9550 3200 9500 3200
+Wire Wire Line
+	9550 3300 9500 3300
+Wire Wire Line
+	9500 3300 9500 3350
+$Comp
+L MRDT_Connectors:Molex_SL_03 Conn?
+U 1 1 5CA3ECB5
+P 9750 2600
+F 0 "Conn?" H 9877 2808 60  0000 L CNN
+F 1 "Molex_SL_03" H 9877 2702 60  0000 L CNN
+F 2 "" H 9750 2600 60  0001 C CNN
+F 3 "" H 9750 2600 60  0001 C CNN
+	1    9750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA3ECBB
+P 9500 2600
+F 0 "#PWR?" H 9500 2350 50  0001 C CNN
+F 1 "GND" H 9505 2427 50  0000 C CNN
+F 2 "" H 9500 2600 50  0001 C CNN
+F 3 "" H 9500 2600 50  0001 C CNN
+	1    9500 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 9500 2450 0    50   Input ~ 0
+C3_Sig
+$Comp
+L power:VCOM #PWR?
+U 1 1 5CA3ECC2
+P 9500 2300
+F 0 "#PWR?" H 9500 2150 50  0001 C CNN
+F 1 "VCOM" H 9517 2473 50  0000 C CNN
+F 2 "" H 9500 2300 50  0001 C CNN
+F 3 "" H 9500 2300 50  0001 C CNN
+	1    9500 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2300 9500 2350
+Wire Wire Line
+	9500 2350 9550 2350
+Wire Wire Line
+	9550 2450 9500 2450
+Wire Wire Line
+	9550 2550 9500 2550
+Wire Wire Line
+	9500 2550 9500 2600
+$Comp
+L MRDT_Connectors:Molex_SL_03 Conn?
+U 1 1 5CA3EE89
+P 9750 1850
+F 0 "Conn?" H 9877 2058 60  0000 L CNN
+F 1 "Molex_SL_03" H 9877 1952 60  0000 L CNN
+F 2 "" H 9750 1850 60  0001 C CNN
+F 3 "" H 9750 1850 60  0001 C CNN
+	1    9750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA3EE8F
+P 9500 1850
+F 0 "#PWR?" H 9500 1600 50  0001 C CNN
+F 1 "GND" H 9505 1677 50  0000 C CNN
+F 2 "" H 9500 1850 50  0001 C CNN
+F 3 "" H 9500 1850 50  0001 C CNN
+	1    9500 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 9500 1700 0    50   Input ~ 0
+C2_Sig
+$Comp
+L power:VCOM #PWR?
+U 1 1 5CA3EE96
+P 9500 1550
+F 0 "#PWR?" H 9500 1400 50  0001 C CNN
+F 1 "VCOM" H 9517 1723 50  0000 C CNN
+F 2 "" H 9500 1550 50  0001 C CNN
+F 3 "" H 9500 1550 50  0001 C CNN
+	1    9500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 1550 9500 1600
+Wire Wire Line
+	9500 1600 9550 1600
+Wire Wire Line
+	9550 1700 9500 1700
+Wire Wire Line
+	9550 1800 9500 1800
+Wire Wire Line
+	9500 1800 9500 1850
+$Comp
+L MRDT_Connectors:Molex_SL_03 Conn?
+U 1 1 5CA3EEA1
+P 9750 1100
+F 0 "Conn?" H 9877 1308 60  0000 L CNN
+F 1 "Molex_SL_03" H 9877 1202 60  0000 L CNN
+F 2 "" H 9750 1100 60  0001 C CNN
+F 3 "" H 9750 1100 60  0001 C CNN
+	1    9750 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA3EEA7
+P 9500 1100
+F 0 "#PWR?" H 9500 850 50  0001 C CNN
+F 1 "GND" H 9505 927 50  0000 C CNN
+F 2 "" H 9500 1100 50  0001 C CNN
+F 3 "" H 9500 1100 50  0001 C CNN
+	1    9500 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 9500 950  0    50   Input ~ 0
+C1_Sig
+$Comp
+L power:VCOM #PWR?
+U 1 1 5CA3EEAE
+P 9500 800
+F 0 "#PWR?" H 9500 650 50  0001 C CNN
+F 1 "VCOM" H 9517 973 50  0000 C CNN
+F 2 "" H 9500 800 50  0001 C CNN
+F 3 "" H 9500 800 50  0001 C CNN
+	1    9500 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 800  9500 850 
+Wire Wire Line
+	9500 850  9550 850 
+Wire Wire Line
+	9550 950  9500 950 
+Wire Wire Line
+	9550 1050 9500 1050
+Wire Wire Line
+	9500 1050 9500 1100
+Wire Wire Line
+	2000 1200 2050 1200
+Wire Wire Line
+	2000 1500 2050 1500
+Connection ~ 2500 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5CA40C9E
+P 2500 1550
+F 0 "#PWR?" H 2500 1300 50  0001 C CNN
+F 1 "GND" H 2505 1377 50  0000 C CNN
+F 2 "" H 2500 1550 50  0001 C CNN
+F 3 "" H 2500 1550 50  0001 C CNN
+	1    2500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1500 2500 1550
+$Comp
+L MRDT_Devices:OKI U?
+U 1 1 5CA400C2
+P 2300 1300
+F 0 "U?" H 2350 1250 60  0001 C CNN
+F 1 "OKI" H 2500 1581 60  0000 C CNN
+F 2 "" H 2100 1200 60  0001 C CNN
+F 3 "" H 2100 1200 60  0001 C CNN
+	1    2300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CA414D5
+P 2950 1350
+F 0 "C?" H 3065 1396 50  0000 L CNN
+F 1 "C" H 3065 1305 50  0000 L CNN
+F 2 "" H 2988 1200 50  0001 C CNN
+F 3 "~" H 2950 1350 50  0001 C CNN
+	1    2950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CA41507
+P 2050 1350
+F 0 "C?" H 2165 1396 50  0000 L CNN
+F 1 "C" H 2165 1305 50  0000 L CNN
+F 2 "" H 2088 1200 50  0001 C CNN
+F 3 "~" H 2050 1350 50  0001 C CNN
+	1    2050 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2050 1200
+Wire Wire Line
+	2050 1200 2100 1200
+Connection ~ 2050 1500
+Wire Wire Line
+	2050 1500 2500 1500
+Wire Wire Line
+	2900 1200 2950 1200
+Connection ~ 2950 1200
+Wire Wire Line
+	2950 1200 3000 1200
+Wire Wire Line
+	2500 1500 2950 1500
+$Comp
+L power:VDDA #PWR?
+U 1 1 5CA424B7
+P 2050 1100
+F 0 "#PWR?" H 2050 950 50  0001 C CNN
+F 1 "VDDA" H 2067 1273 50  0000 C CNN
+F 2 "" H 2050 1100 50  0001 C CNN
+F 3 "" H 2050 1100 50  0001 C CNN
+	1    2050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1200 2050 1100
+$Comp
+L power:VDDF #PWR?
+U 1 1 5CA42CE4
+P 3000 1100
+F 0 "#PWR?" H 3000 950 50  0001 C CNN
+F 1 "VDDF" H 3017 1273 50  0000 C CNN
+F 2 "" H 3000 1100 50  0001 C CNN
+F 3 "" H 3000 1100 50  0001 C CNN
+	1    3000 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1100 3000 1200
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 5CA43646
+P 4250 1600
+F 0 "JP?" V 4296 1702 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 4205 1702 50  0000 L CNN
+F 2 "" H 4250 1600 50  0001 C CNN
+F 3 "~" H 4250 1600 50  0001 C CNN
+	1    4250 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDDA #PWR?
+U 1 1 5CA436C0
+P 4250 1300
+F 0 "#PWR?" H 4250 1150 50  0001 C CNN
+F 1 "VDDA" H 4267 1473 50  0000 C CNN
+F 2 "" H 4250 1300 50  0001 C CNN
+F 3 "" H 4250 1300 50  0001 C CNN
+	1    4250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDDF #PWR?
+U 1 1 5CA436E5
+P 4250 1900
+F 0 "#PWR?" H 4250 1750 50  0001 C CNN
+F 1 "VDDF" H 4250 2050 50  0000 C CNN
+F 2 "" H 4250 1900 50  0001 C CNN
+F 3 "" H 4250 1900 50  0001 C CNN
+	1    4250 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCOM #PWR?
+U 1 1 5CA43944
+P 4400 1550
+F 0 "#PWR?" H 4400 1400 50  0001 C CNN
+F 1 "VCOM" H 4417 1723 50  0000 C CNN
+F 2 "" H 4400 1550 50  0001 C CNN
+F 3 "" H 4400 1550 50  0001 C CNN
+	1    4400 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1300 4250 1350
+Wire Wire Line
+	4400 1550 4400 1600
+Wire Wire Line
+	4400 1600 4350 1600
+Wire Wire Line
+	4250 1850 4250 1900
+$EndSCHEMATC
