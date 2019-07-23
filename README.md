@@ -1,19 +1,12 @@
-# 2019_Competition_Valkyrie
-All Hardware and Software Files Used on the 2019 Rover 
+# ArmTrain 2019 Software #
 
-How to add repos to this while retaining commit history:
+This brach is for development of the 2019 software for arm train. The software is built on the Energia libraries. Most of the software is contained within seperate repos:
 
-1. Clone this repo onto your pc
-2. Make branch on here for the repo you're about to copy in
-3. Make sure that you've merged the final release branch of the target repo into master
-4. In gitshell inside of the 2018 Competition Atlas folder:
+* RoveJoint
+* RoveMotor
+* RoveEncoder
+* RoveHALTiva
 
-git checkout [name of branch you're going to copy the repo into]
+__WARNING__
 
-git remote add x [url of deprecated repo]
-
-git fetch x
-
-git merge x/master --allow-unrelated-histories
-
-git remote rm x
+This is very incomplete as most code has not yet been merged into this repo
