@@ -1,0 +1,43 @@
+Power Conversion
+	The OKI comes in 2 versions, one that ouptus 3.3V and one that outputs 5V. We want the one that outputs 3.3V because we don't use 5V anywhere else on the schematic and the TIVA reuires a 3.3V logic signal and power
+Power LED
+	You can put that anywhere on the schematic. The power LED doesn't need a button, since that will turn on when the board is on. Just run a 3.3V power flag through a 500 Ohm resstor and LED in series. 
+Anderson Ciruit
+	The anderson circuit is connected through the 3.3V power flag (see above). Swap the 5V flag for 3.3V
+Pot_Ind
+	Basically, place a label coming out of one of the pins of the TIVA, and then place another label in the schematic that goes through a 500 ohm resistor and LED to ground. The Pot_Ind flag should be connected to a pin that has "Analog Write" funcionality as per the "Energia TM4C129 Launchpad Pinout"
+	https://energia.nu/pinmaps/img/EK-TM4C1294XL-FRONT.jpg
+--Other Schematic Notes---
+	the "Pot_Out flag needs to be connected to an "Analog Read" pin on the TIVA-https://energia.nu/pinmaps/img/EK-TM4C1294XL-FRONT.jpg
+
+I think it would be nice to add an LED to indicate whether or not we're connected to a system. Ie, when we plug into the arm board, an LED would turn on indicating that we are connected to the arm board
+	These would be software-LEDs, similar to the one we're runing for Pot_Ind but it doesn't have to be connected to an "Analog Write" pin. 
+	I would add 4 LEDs, one for each system
+
+The schematic looks very clean and nice. I think were only a review or two away from going to the layout.
+
+//////////////////////////////////
+Potentiometer Input needs analogRead
+Potentiometer Indicator Output needs analogWrite
+	On the link, analogRead  pins are shown in blue
+		     analogWrite pins are shown in purple
+The red outer values are for the SPI bus, basically its a way of transfering bytes of data serially. the acronums stand for
+	CLK(X):Clock output
+	CS (X):Chip select (Raise high when the transfer is complete
+	MOSI(X): Master Output Slave Input (Transmission signal)
+	MISO(X): Master Input Slave Output (Recieve signal)
+
+The pins you used for pot_In and Pot_Out work. Pot_Out is onnected to PD4 which is analog read pin A7
+					       Pot_Ind is conncted to PA5 which is purple on the diagram
+
+My bad for not explaining the reserved pins
+The Following pins are reserved: 
+	+5V, +3V3, GND are reserved to power the TIVA
+	Rese-Basically if this pin goes high the launchpad resets. Leave the pin unconnected if not used
+	You can route to any other pin based on the functionality of the chart in the link I sent you. Next to the power and reset pins there is no green o purple label to indicate digital read/write functionality
+	I can go more in depth on how to read the chart next call, and what each of the pins do.
+
+For the power pins, we need to supply the TIVA with either 3.3V (through the +3V3 pin) or 5V (Trhough the +5V pin) as well as ground, so go ahead and add the +3V3 flags and GND flags to their respective pins
+I think I forgot to mention this, my bad. Let's make the indicator LEDs for the sections blue. POT ind can stay yellow and power can stay green
+
+Yes, you can remove the LED on the potnetiometer. Because the resistance between pins 1 and 3 dos not change, the LED wouldn't change when the POT value changes. 
