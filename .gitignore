@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
@@ -26,6 +27,8 @@ _autosave-*
 *.xml
 *.csv
 =======
+=======
+>>>>>>> rovehal/master
 # Prerequisites
 *.d
 
@@ -58,4 +61,7 @@ _autosave-*
 *.exe
 *.out
 *.app
+<<<<<<< HEAD
 >>>>>>> lightboard/master
+=======
+>>>>>>> rovehal/master
