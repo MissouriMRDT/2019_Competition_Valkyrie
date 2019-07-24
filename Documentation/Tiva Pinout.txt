@@ -1,0 +1,12 @@
+Tiva Pinout Table
+//////////////////////////
+TM4C129E_Launchpad
+
+----X9:B1-------
++5V:+5V:B1_1
+----X9:C1-------
+Dout_NeoPixel:PF_1:C1_1:MOSI_3
+----X9:D1-------
+GND:GND
+Headlight_OnOff_PWM1:PD_1:D1_6:Dout
+Headlight_OnOff_PWM2:PD_0:D1_7:Dout

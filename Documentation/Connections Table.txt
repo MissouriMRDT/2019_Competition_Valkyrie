@@ -1,0 +1,15 @@
+Connections Table
+/////////////////
+Power  (GND, Log, Act)- Anderson 3 Horizontal
+Power  (GND, PV)- Anderson 2 Vertical
+
+Headlight		2xMolex_SL-02
+pin_1:Headlight_Vin
+pin_2:Headlight_Vout
+
+
+NeoPixel Strip		Molex_SL-03
+pin_1:+5V
+pin_2:GND
+pin_3:Dout_NeoPixel
+

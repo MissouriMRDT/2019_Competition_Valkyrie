@@ -1,0 +1,30 @@
+Move ground polygons closer to edgecuts
+
+Curve Edgecuts
+
+Move Molex away from edge
+
+Move indicator silkscreen onto board
+
+Rename indicators to proper names
+
+Name the Headlight jacks and polarity
+
+Add "+5V" next to AP1509 on silkscreen
+
+Change Headlight PWM to 15 mil trace
+
+Change Default ground plane to solid
+
++12VA to both LED Drivers
+
+Trace to R1 isn't connected properly
+
+LDD-1500L rename pin names to correct values
+
+Change ""Name1, Name 2" to our names and "Lighting Hardware" to "Lighting Board"
+
+Move Molex Connectors together
+
+Put power indicator on the top of the indicator stack
+

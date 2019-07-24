@@ -1,0 +1,50 @@
+power flags for 5v and GND
+
+power cicuitry in upper left
+
+leave one dot for connections( one dot before  GND)
+
+get rid of Vact with Vlag- set a side by side footprint
+get rid of switch
+label PV to Headlight_Vin
+in future might use Vact and get rid of PV
+futher testing 
+
+note double check neo pixel pinout
+
+fix PV pad 
+change PV anderson to CONN2
+
+Ideally power out the side and signal out the top- makes sense
+
+50mill power traces for headlights
+everything else is 15mill
+
+No via on power traces
+
+12V log to ap1509 30 mill trace size
+
+stacked vertically LED(mostly likely 3) label each horizontally (power_in[green], Headlights[orange], Neopixel[yellow]
+
+label SL
+
+fix LDD package by flipping it?
+
+name LightingBoard_Hardware
+
+connect C1 to 5V to GND
+
+CHange R1 to 470 ohm
+
+Match LDD drive diemensions schematic
+remake symbol and package
+from old symbol flip the LDD change everything to Fsilk and rotate one
+
+redownload kicad libraries
+
+power upper left tiva to right of that 
+headlight drivers below power and right of that connectors
+
+add box for indicators in the schematic
+500 ohm resistor- LED- GND in order
+flip
