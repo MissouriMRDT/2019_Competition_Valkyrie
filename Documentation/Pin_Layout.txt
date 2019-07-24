@@ -1,0 +1,15 @@
+TM4C129E_Launchpad
+----X7:A2-------
+MOTOR_3_4_RX:PP0:A2_3 :RX2
+MOTOR_3_4_TX:PP1:A2_4 :TX2
+
+-----X7:B2------
++5V:+5V:B2_1
+GND         :GND:B2_2
+MOTOR_1_2_RX:PK0:B2_5 :RX1
+MOTOR_1_2_TX:PK1:B2_6 :TX1
+MOTOR_5_6_RX:PA4:B2_9 :RX3
+MOTOR_5_6_TX:PA5:B2_10:TX3
+
+-----XY:D2------
+GND         :GND:D2_1

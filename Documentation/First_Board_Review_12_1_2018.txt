@@ -1,0 +1,48 @@
+Replace .gitignore **Done**
+Move documentation folder to upper directory  **Done**
+Remove lead from 1B  **Done**
+AP1509 should output 5V to power Max 3232's **Done**
+Rotate 3232 capacitors horizontal **Done**
+Two capacitors connected to Gnd on 3232's should be 10uF **Done**
+Use cap_small capacitors on 3232's  **Done**
+Move ground to bottom of 3232 schematic  **Done**
+Move Tiva references in schematic closer to the Tiva headers **Done**
+Move Rx and Tx connector flags one-click out from molex connectors **Done**
+Split up LED references and "LED" labels **Done**
+Change LED supply voltage to 5V **Done**
+Change LED "green-yellow" net labels to actual text in schematic **Done**
+Move 500 ohm field value on LED indicators below resistors **Done**
+Make a LED indicator connecting to a digital pin (not a power pin) on one of the Tiva pins  **Done**
+**Make Bus indicate it's for the WatchDog_IND**  **Done**
+**Lspeed_IND, Rspeed_IND** route to purple analog pins   **Done**
+Flush polygon outline with board    **Done**
+Set Default Pad Connection on polygons to solid 
+Retrace Tiva header isolating ground around and through Anderson PP
+Retrace Tiva header traces through upper Tiva header straight to Molex 
+Symmetry and condensity when routing; 10 mils apart between traces 
+Eliminate vias on capactior components connected to 3232's 
+Try to line up components directly with each other and their respective pins (if possible)
+Use snap to pad to line up components better 
+Move Moter labels inside molex sl-05 connectors and get rid of invisible text 
+Copy bottom-right curved edge and use it to replace other three board edges 
+Move and line up molex LED indicators straight under molex connectors 
+Add text to indicate (Tx) on molex LED indicators 
+Move molex connectors down and flush yellow line with connectors 
+Start with required components and place connectors last 
+Move traces closer together 
+12V supply from Anderson should be 30 mils 
+Optimize AP1509 so capacitors/components are closer to IC and layout is as efficient as possible
+Trace 12V 30 mil trace up through Anderson and along edge of board and through middle of AP1509 and directly connect to 12V pin 
+Make LED in-line with each other 
+LED indicators on Tivas: 
+	-Power label ~ Green
+	-Watchdog ~ Red 
+	-Rspeed ~ Yellow 
+	-Lspeed ~ Yellow 
+		~put a box around labels 
+Add vias into bottom GND plane for isolated grounded sections 
+Run unconnected to detect isolated grounded sections 
+
+For final Board Review: 
+-Complete Bill of Materials and Quantities of each needed components 
+-Watch for BOM Tutorial 

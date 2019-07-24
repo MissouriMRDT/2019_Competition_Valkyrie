@@ -1,0 +1,8 @@
+-----Connections-----
+Power	(GND, Log)- Anderson 2 Horiz
+Motor Control	  - 3 X Molex SL-05
+	Pin1-SERIAL_RX (1,2,3)
+	Pin2-SERIAL_TX (1,2,3)
+	Pin3-NC
+	Pin4-NC
+	Pin5-GND
