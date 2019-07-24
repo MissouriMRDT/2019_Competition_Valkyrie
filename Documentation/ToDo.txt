@@ -1,0 +1,36 @@
+--ToDo--
+Move design files into a sub-folder in the repo called "CameraBoard"
+DONE Rename all files from "2019-CameraBoard" to "CameraBoard"
+
+--Schematic
+Camera Connectors
+	DONE Rename "Molex_Sl_03" to "Camera_X"
+BNC Connector
+	Use "Conn_Coaxial" under "Connector" library
+	(Same as board in deprecated systems, wasn't able to figure out why) I belive the 75Ohm for CAM_OUT should be in parallel with ground. I could be wrong about that. Show me some documentation to explain why you have it wired that way
+	Also, it would be nice to have some documentation on why we do the 75 OHM pull-down. I have an intuitive understanding but could you do that rsearch?
+
+DONE Use boarders to seperate out sections. 
+MAX4314ESD Symbol
+	DONE You can make it a bit thinner. There's no reason for all the white space
+	DONE Fill the background of the symbol with the cream color
+	DONE I feel like you culd break from exactly matching the pin layout in the symbol. Group the pins together by fucntion. Inputs on the left. outputs on the Right
+	You should be able to select SHDN as "Inverting Input" type
+DONE I would put the TIVA connectors on the left and the Camera on the right. Power in the tp-left
+
+Make sure your Ground flavs are pointing down (Pull them out if you need to) and your power flags are pointing up
+DONE I'd use the +3V3 and +12V pwoer flag instead of "VCC" and the 12V label
+Power Filtering
+	DONE Instead of using a bank of capacitors there, put one 10uF at the VCC of each MUX, and 1 on the output of the AP1509
+	DONE use 1 1uF on the 12V input of the AP1509 and 1 10u on the 12V in for each connector. 
+TIVA Connction
+	DONE PF1, PF3 and PF2, PG0 are the same label. I thing you forgot to re-name them
+Buck converter
+	DONE You need a 12V to 3.3V buck converter. Use this IC:https://www.digikey.com/product-detail/en/diodes-incorporated/AP1509-33SG-13/AP1509-33SGDICT-ND/1301652
+	There's a schematic in the datasheet. 
+
+LED
+	DONE Use 500 OHM for all resistors (including power filtering)
+	DONE add LED to MUXA1, A0, B1, B0
+	Add LED for SOftware Error flag from any DIO pin
+DONE MUXA/B_SHDN no routed to anything. Pull them high or put them on a pin with a set of LEDs
