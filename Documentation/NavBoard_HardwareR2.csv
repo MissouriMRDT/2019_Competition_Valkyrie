@@ -1,0 +1,36 @@
+Id,Designator,Package,,Designation,Item Name,Part Number,,,Vendor,Quantity,Cost Per Item,,,URL
+1,U1,TM4C129E_Launchpad_X9,,,EK-TM4C1294XL,296-37267-ND,,,Digikey,1,20.76,,,https://www.digikey.com/products/en?keywords=296-37267-ND
+2,U1,TM4C129E_Launchpad_X9,,,CONN HDR 20POS 0.1 GOLD PCB,S6106-ND,,,Digikey,4,1.26,,,https://www.digikey.com/product-detail/en/sullins-connector-solutions/PPPC102LFBN-RC/S6106-ND/807245
+3,Y1,Crystal_HC49-U_Vertical,,Crystal,Abracon LLC ABL-16.000MHZ-B2,535-9041-ND,,,Digikey,1,0.33,,,https://www.digikey.com/product-detail/en/abracon-llc/ABL-16.000MHZ-B2/535-9041-ND/675236
+4,U2,DIP-28_W7.62mm,,ATMEGA328P-Project_Library,Microchip Technology ATMEGA328P-PU,ATMEGA328P-PU-ND,,,Digikey,1,2.14,,,https://www.digikey.com/product-detail/en/microchip-technology/ATMEGA328P-PU/ATMEGA328P-PU-ND/1914589
+5,BT1,CR1220_Battery_Holder,,Battery_Cell,BATTERY RETAINER COIN 12MM SMD,36-3080-ND,,,Digikey,1,0.58,,,https://www.digikey.com/product-detail/en/keystone-electronics/3080/36-3080-ND/2745779
+6,Conn4,MOLEX_SL_04_Horizontal,,Molex_SL_04, CONN HEADER 4POS .100 R/A GOLD,WM4902-ND,,,Digikey,1,1.16,,,https://www.digikey.com/products/en?keywords=WM4902-ND
+7,J1,RP-SMA_Jack_Tru-Hole_Right-Angle,,Conn_Coaxial,CONN SMA RCPT R/A 50 OHM PCB,CONSMA002-ND,,,Digikey,1,3.61,,,https://www.digikey.com/product-detail/en/linx-technologies-inc/CONSMA002/CONSMA002-ND/1577204
+8,U5,FGPMMOPA6H,,FGPMMOPA6H,Ultimate GPS Module - 66 channel w/10 Hz updates - MTK3339 chipset,790,,,Adafruit,1,29.95,,,https://www.adafruit.com/product/790
+9,Conn1,Anderson_2_Horisontal_Side_by_Side,,AndersonPP,Anderson Power 1336G1 Printed Circuit Board High Power 45 Amp Horizontal Bottom Contact,1336G1,,,Powerwerx,2,0.53,,,https://powerwerx.com/anderson-1336g1-printed-circuit-board-horizontal
+10,Conn1,Anderson_2_Horisontal_Side_by_Side,,AndersonPP,PP15/30/45 Loose Piece Powerpole Colored Housing,1327,,,Powerwerx,1,0.37,,,https://powerwerx.com/anderson-powerpole-colored-housings
+11,Conn1,Anderson_2_Horisontal_Side_by_Side,,AndersonPP,PP15/30/45 Loose Piece Powerpole Colored Housing,1327G6,,,Powerwerx,1,0.37,,,https://powerwerx.com/anderson-powerpole-colored-housings
+12,"C10,C8,C9,C11",C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,10u, CAP CER 10UF 6.3V X5R 0603,1276-1119-1-ND,,,Digikey,4,0.15,,,https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10A106MQ8NNNC/1276-1119-1-ND/3889205
+13,"R8,R7,R9,R10,R11,R12,R13,R14,R15",R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,500,RES SMD 510 OHM 5% 1/4W 0603,RHM510DCT-ND,,,Digikey,9,0.1,,,https://www.digikey.com/product-detail/en/rohm-semiconductor/ESR03EZPJ511/RHM510DCT-ND/1762937
+14,"C3,C5,C1",C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,1uF,Samsung Electro-Mechanics CL05A105MQ5NNNC,1276-1235-1-ND,,,Digikey,3,0.1,,,https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL05A105MQ5NNNC/1276-1235-1-ND/3889321
+15,C4,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,0.01uF,CAP CER 10000PF 50V X7R 0603,1276-1009-1-ND,,,Digikey,1,0.1,,,https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B103KB8NNNC/1276-1009-1-ND/3889095
+16,Conn2,MOLEX_SL_04_Horizontal,,LiDAR, CONN HEADER 4POS .100 R/A GOLD,WM4902-ND,,,Digikey,1,1.16,,,https://www.digikey.com/products/en?keywords=WM4902-ND
+17,D1,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,FIX,LED YELLOW CLEAR SMD,160-1448-1-ND,,,Digikey,1,0.31,,,https://www.digikey.com/product-detail/en/lite-on-inc/LTST-C191KSKT/160-1448-1-ND/386838
+18,L1,L_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,INDUCTOR, FERRITE BEAD 600 OHM 0603 1LN,732-1593-1-ND,,,Digikey,1,0.17,,,https://www.digikey.com/product-detail/en/wurth-electronics-inc/742792651/732-1593-1-ND/1639537
+19,"R1,R5,R6",R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,1K,RES SMD 1K OHM 5% 1/4W 0603,RHM1.0KDCT-ND,,,Digikey,3,0.1,,,https://www.digikey.com/product-detail/en/rohm-semiconductor/ESR03EZPJ102/RHM1.0KDCT-ND/1762924
+20,"R2,R17,R18,R19,R20,R21",R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,10K,Rohm Semiconductor ESR03EZPF1002,RHM10KADCT-ND,,,Digikey,6,0.14,,,https://www.digikey.com/product-detail/en/rohm-semiconductor/ESR03EZPF1002/RHM10KADCT-ND/1983753
+21,"R3,R4",R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,4.7K, RES SMD 4.7K OHM 1% 1/8W 0603,"MCT0603-4.70K-CFCT-ND
+",,,Digikey,2,0.18,,,https://www.digikey.com/product-detail/en/vishay-beyschlag/MCT06030C4701FP500/MCT0603-4.70K-CFCT-ND/2607907
+22,C7,CP_Radial_D6.3mm_P2.50mm,,680uF,CAP ALUM 680UF 20% 6.3V RADIAL,1189-1438-ND,,,Digikey,1,0.29,,,https://www.digikey.com/product-detail/en/rubycon/6.3PK680MEFC6.3X11/1189-1438-ND/3134394
+23,"C2,C6",C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,22pF,Samsung Electro-Mechanics CL05C220JB5NNNC,1276-1116-1-ND,,,Digikey,2,0.1,,,https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL05C220JB5NNNC/1276-1116-1-ND/3889202
+24,"Q1,Q2",SOT-23,,BSS138,"Nexperia USA Inc. BSS138PW,115",1727-1143-1-ND,,,Digikey,2,0.38,,,https://www.digikey.com/product-detail/en/nexperia-usa-inc/BSS138PW115/1727-1143-1-ND/4162472
+25,R22,R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,30K,Yageo RT0603DRD0730KL,,,,Digikey,1,0.21,,,https://www.digikey.com/product-detail/en/yageo/RT0603DRD0730KL/311-30KDCT-ND/1035788
+26,R23,R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,0,Stackpole Electronics Inc RMCF0603ZT0R00,RMCF0603ZT0R00CT-ND,,,Digikey,1,0.1,,,https://www.digikey.com/product-detail/en/stackpole-electronics-inc/RMCF0603ZT0R00/RMCF0603ZT0R00CT-ND/1943218
+27,D12,D_SOD-323,,1N4148,Micro Commercial Co 1N4148WX-TP,1N4148WXTPMSCT-ND,,,Digikey,1,0.14,,,https://www.digikey.com/product-detail/en/micro-commercial-co/1N4148WX-TP/1N4148WXTPMSCT-ND/717312
+28,Conn3,MOLEX_SL_03_Horizontal,,Molex_SL_03,Molex 0705530002,WM4901-ND,,,Digikey,1,1.12,,,https://www.digikey.com/product-detail/en/molex/0705530002/WM4901-ND/114955
+29,U3,OKI_Horizontal,,OKI,DC DC CONVERTER 5V 8W ,811-2692-ND,,,Digikey,1,4.54,,,https://www.digikey.com/product-detail/en/murata-power-solutions-inc/OKI-78SR-5-1.5-W36H-C/811-2692-ND/3438675
+30,U4,OKI_Horizontal,,OKI,OKI-78SR-3.3/1.5-W36H-C,811-3014-ND,,,Digikey,1,4.54,,,https://www.digikey.com/product-detail/en/murata-power-solutions-inc/OKI-78SR-3.3-1.5-W36H-C/811-3014-ND/4878851
+31,"D2,D3",LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,PWR,LED GREEN CLEAR SMD,160-1446-1-ND,,,Digikey,2,0.29,,,https://www.digikey.com/product-detail/en/lite-on-inc/LTST-C191KGKT/160-1446-1-ND/386834
+32,D4,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,PWR,LED RED CLEAR SMD,160-1447-1-ND,,,Digikey,1,0.29,,,https://www.digikey.com/product-detail/en/lite-on-inc/LTST-C191KRKT/160-1447-1-ND/386836
+33,"D5,D6,D7,D8",LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,PWR,LED YELLOW CLEAR SMD,160-1448-1-ND,,,Digikey,4,0.31,,,https://www.digikey.com/product-detail/en/lite-on-inc/LTST-C191KSKT/160-1448-1-ND/386838
+34,"D9,D10",LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,PWR,LED BLUE CLEAR SMD,160-1647-1-ND,,,Digikey,2,0.53,,,https://www.digikey.com/product-detail/en/lite-on-inc/LTST-C191TBKT/160-1647-1-ND/573587

@@ -1,0 +1,19 @@
+LiDAR capacitor is backwards on layout //
+	also make it a polar cap in shcematic//
+we're sending 5V to the LiDAR I2C pins through the pullup resistors. those should go to 3.3V //
+
+
+LiDAR might need an ATmega in the board to communicate correctly. Our ATmegas are ATmega328P-PU (longer thin form factor).
+
+----Andrew's Notes 2/25/19----
+--Schematic
+Remove IMU I2C connections and replace with Serial Connection//
+The External Connector" with IC_Rx/Tx is for programming. Name them Prgogramming Tx/Rx, also add a ground connection to the SL4 //
+
+Add an SL with serial and ground for the IMU//
+Power the LiDAR off 5V instead of 3.3V (Because we're working with an ATMEGA) for bith power rails//
+Remove IMU SCL/SDA inidcators, and replace with IMU Serial Indicators//
+Rename TIVATx/Rx to GPS Rx/Tx (Because now we have two serials)//
+	Then name the other (ATMEGA TxRx)//
+Reset resistor should be 1k //
+Add a capacitor o ATMEGA VCC //
