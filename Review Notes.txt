@@ -1,0 +1,6 @@
+Servo positions: Global rather than get function
+
+// Maybe not?
+Single Servo object: controls multiple servos, not a single servo
+
+millis: Use to timer the telemetry
