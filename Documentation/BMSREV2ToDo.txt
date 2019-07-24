@@ -1,0 +1,6 @@
+TEMP needs analog pins
+pack gate and logic switch need to move to digital pins
+tmp dout moved to pd1 or pd0
+remove resistor from temp sensor
+vout_ind in resister changed to 1500 and trace from vout not digpin
+vout voltage divider by buzzer needs to be r1= 100k and r2/3 = 10820

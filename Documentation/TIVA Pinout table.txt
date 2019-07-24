@@ -1,0 +1,34 @@
+--------Boosterpack 1--------
+///////////////////////////////////
+---C1---			
+V_CHECK_ARRAY:PF_1:C1_1:Analog Read
+LOGIC_SWITCH :PL_4:C1_5:D_Out
+FAN_CTL_4    :PL_5:C1_6:D_Out
+
+---D1---
+GND	     :GND :D1_1
+TEMP_1	     :PM_3:D1_2 :Analog Read
+FAN_CTL_1    :PH_2:D1_3 :D_Out
+FAN_CTL_2    :PH_3:D1_4 :D_Out
+PACK_GATE    :PD_1:D1_6 :D_Out
+FAN_CTL_3    :PD_0:D1_7 :D_Out
+BUZZER	     :PN_2:D1_8 :D_Out
+PACK_I_MEAS  :PN_3:D1_9	:Analog Read
+V_CHECK_OUT  :PP_2:D1_10:Analog Read
+
+---------Boosterpack 2--------
+///////////////////////////////
+---A2---
+CELL_8-7     :PD_4:A2_5:Analog Read
+CELL_7-6     :PD_5:A2_6:Analog Read
+
+---B2---
+5V	     :+5V :B2_1
+GND	     :GND :B2_2
+CELL_6-5     :PB_4:B2_3: Analog Read
+CELL_5-4     :PB_5:B2_4: Analog Read
+CELL_4-3     :PK_0:B2_5: Analog Read
+CELL_3-2     :PK_1:B2_6: Analog Read
+CELL_2-1     :PK_2:B2_7: Analog Read
+CELL_1-GND   :PK_3:B2_8: Analog Read
+SER_TX_IND   :PA_5:B2_10:Serial 3

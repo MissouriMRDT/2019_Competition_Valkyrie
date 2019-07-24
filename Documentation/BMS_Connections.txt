@@ -1,0 +1,42 @@
+------BMS_Connections-----
+
+---Indicator Comm---
+	Pin1 -SER_TX_IND
+	Pin2 -3v3
+	Pin3 -GND
+
+---Temperature Sensor (TEMP_1)---
+	Pin1 -3v3
+	Pin2 -Vsense
+	Pin3 -GND
+
+---Fan_1, Fan_2, Fan_3, Fan_4---
+	Pin1 -5V
+	Pin2 -Vout  
+	
+---Charge_Sense_Bottom, Charge_Sense_Top---
+	Pin1 -Cell_8
+	Pin2 -Cell_7
+	Pin3 -Cell_6
+	Pin4 -Cell_5
+	Pin5 -Cell_4
+	Pin6 -Cell_3
+	Pin7 -Cell_2
+	Pin8 -Cell_1
+	Pin9 -GND
+
+---Wireless E_Stop---
+	Pin1 -E_Stop_In
+	Pin2 -E_Stop_Out
+
+---Main E_Stop---
+	Pin1 -E_Stop_In
+	Pin2 -E_Stop_Out
+	Pin3 -Vin_LED
+	Pin4 -GND
+
+---Logic Switch---
+	Pin1 -Solenoid_Vout
+	Pin2 -5V
+	Pin3 -V_In
+	Pin4 -V_Out

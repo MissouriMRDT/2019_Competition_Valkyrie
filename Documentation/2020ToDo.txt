@@ -1,0 +1,7 @@
+make the footprints of the op amps have the 2 sides of pins slightly closer together
+make sure the diodes are seperating the cell voltages bc when testing
+	many many volts go to tiva pins
+order it with twice as thick copper layers
+more via stitching on the power planes
+keep copper out of keep out zone of mounting holes(make mounting holes first)
+AND FOR THE LOVE OF GOD DONT PUT BUZZER UNDER TIVA BC WE CANT HEAR IT.
