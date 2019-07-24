@@ -1,0 +1,42 @@
+Fix FIle Structure
+	`Project Naming
+	`Libraries
+	`fix gitignore
+	
+--Schematic--
+	`DRV8301 Signals Bootom left ground going up
+	`Remove ground flags on SP1, SP2
+	'Bump out flags SN_1
+	'SO1 resistors bumped out
+	'VCC replace with +3V3
+	'Drop GND flag down by 1 on pin 57
+	'Replace phase capacitors with VSmall
+	'Remove VCC and replace with +3V3
+	'Make Motor 2 and Motor 1 consistent
+	'Connect ground on TIVA
+	'Check Serial flags direction
+	`Swap Serial TX/Rx on F28069m
+	`MAX 3232 swap out small capactitors
+	'Add color text to indicators
+	'1.5K for PVDD LEDs
+	'Give Zener V+15V
+	'Swap NMOS with GDS symbol and re-route layout
+	'add part number: FQP30N06L to MOSFETS
+	'Route same Serial to both headers
+	
+--Lauout
+	'Move MSP to bottom
+	Silkscreen stuff
+		Connectors ABC silkscreen
+		LED indication silkscreen
+		SL/TX/RX
+		Swoosh
+		Text to say something fun
+			Rovesohard
+	make things 15 mil when possible
+	Consilidate some wires
+	VIA clearance:.015
+	Figure out no-pads view and look at it
+	Look at VIA under DRV, not too bad, but think about it
+	General cleanliness
+	Break off PVDD at thicker trace
