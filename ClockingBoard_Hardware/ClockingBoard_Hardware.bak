@@ -1,0 +1,286 @@
+EESchema Schematic File Version 4
+LIBS:ClockingBoard_Hardware-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U2
+U 1 1 5C840315
+P 3900 2550
+F 0 "U2" H 3900 2500 60  0000 L CNN
+F 1 "TM4C129E_Launchpad" H 4201 3042 60  0001 L CNN
+F 2 "MRDT_Shields:TM4C129E_Launchpad_X9_THT_BOTTOM" H 3900 2550 60  0001 C CNN
+F 3 "" H 3900 2550 60  0001 C CNN
+	1    3900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U2
+U 2 1 5C840358
+P 4400 2550
+F 0 "U2" H 4500 2500 60  0000 C CNN
+F 1 "TM4C129E_Launchpad" H 4432 3721 60  0000 C CNN
+F 2 "MRDT_Shields:TM4C129E_Launchpad_X9_THT_BOTTOM" H 4400 2550 60  0001 C CNN
+F 3 "" H 4400 2550 60  0001 C CNN
+	2    4400 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U2
+U 3 1 5C840411
+P 5600 2550
+F 0 "U2" H 5600 2500 60  0000 L CNN
+F 1 "TM4C129E_Launchpad" H 5905 3042 60  0001 L CNN
+F 2 "MRDT_Shields:TM4C129E_Launchpad_X9_THT_BOTTOM" H 5600 2550 60  0001 C CNN
+F 3 "" H 5600 2550 60  0001 C CNN
+	3    5600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U2
+U 4 1 5C840462
+P 6100 2550
+F 0 "U2" H 6200 2500 60  0000 C CNN
+F 1 "TM4C129E_Launchpad" H 6132 3721 60  0001 C CNN
+F 2 "MRDT_Shields:TM4C129E_Launchpad_X9_THT_BOTTOM" H 6100 2550 60  0001 C CNN
+F 3 "" H 6100 2550 60  0001 C CNN
+	4    6100 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:Molex_SL_07 Conn2
+U 1 1 5C840C35
+P 8950 2800
+F 0 "Conn2" H 9077 3208 60  0000 L CNN
+F 1 "Molex_SL_07" H 9077 3102 60  0000 L CNN
+F 2 "MRDT_Connectors:MOLEX_SL_07_Vertival" H 8950 3000 60  0001 C CNN
+F 3 "" H 8950 3000 60  0001 C CNN
+	1    8950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5C840CD3
+P 8700 2100
+F 0 "#PWR0101" H 8700 1950 50  0001 C CNN
+F 1 "+3V3" H 8715 2273 50  0000 C CNN
+F 2 "" H 8700 2100 50  0001 C CNN
+F 3 "" H 8700 2100 50  0001 C CNN
+	1    8700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C840D25
+P 8700 2800
+F 0 "#PWR0102" H 8700 2550 50  0001 C CNN
+F 1 "GND" H 8705 2627 50  0000 C CNN
+F 2 "" H 8700 2800 50  0001 C CNN
+F 3 "" H 8700 2800 50  0001 C CNN
+	1    8700 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 2650 0    50   Input ~ 0
+M
+Text GLabel 8700 2550 0    50   Input ~ 0
+SH
+Text GLabel 8700 2450 0    50   Input ~ 0
+ICG
+Text GLabel 8700 2350 0    50   Input ~ 0
+Sync1
+Text GLabel 8700 2250 0    50   Input ~ 0
+Sync2
+Wire Wire Line
+	8750 2150 8700 2150
+Wire Wire Line
+	8700 2150 8700 2100
+Wire Wire Line
+	8750 2250 8700 2250
+Wire Wire Line
+	8700 2350 8750 2350
+Wire Wire Line
+	8750 2450 8700 2450
+Wire Wire Line
+	8700 2550 8750 2550
+Wire Wire Line
+	8750 2650 8700 2650
+Wire Wire Line
+	8750 2750 8700 2750
+Wire Wire Line
+	8700 2750 8700 2800
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 1 1 5C841414
+P 1300 1850
+F 0 "Conn1" H 1400 1800 60  0000 C CNN
+F 1 "AndersonPP" H 1506 2131 60  0001 C CNN
+F 2 "MRDT_Connectors:Anderson_2_Horizontal_Side_by_Side" H 1150 1300 60  0001 C CNN
+F 3 "" H 1150 1300 60  0001 C CNN
+	1    1300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 2 1 5C841492
+P 1300 1550
+F 0 "Conn1" H 1400 1500 60  0000 C CNN
+F 1 "AndersonPP" H 1506 1831 60  0000 C CNN
+F 2 "MRDT_Connectors:Anderson_2_Horizontal_Side_by_Side" H 1150 1000 60  0001 C CNN
+F 3 "" H 1150 1000 60  0001 C CNN
+	2    1300 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Devices:OKI U1
+U 1 1 5C8415F6
+P 2100 1550
+F 0 "U1" H 2150 1500 60  0001 C CNN
+F 1 "OKI" H 2300 1831 60  0000 C CNN
+F 2 "MRDT_Devices:OKI_Horizontal" H 1900 1450 60  0001 C CNN
+F 3 "" H 1900 1450 60  0001 C CNN
+	1    2100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C8417F8
+P 2800 1600
+F 0 "C2" H 2915 1646 50  0000 L CNN
+F 1 "C" H 2915 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2838 1450 50  0001 C CNN
+F 3 "~" H 2800 1600 50  0001 C CNN
+	1    2800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C841836
+P 1800 1600
+F 0 "C1" H 1915 1646 50  0000 L CNN
+F 1 "C" H 1915 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1838 1450 50  0001 C CNN
+F 3 "~" H 1800 1600 50  0001 C CNN
+	1    1800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1450 1800 1450
+Wire Wire Line
+	1700 1750 1800 1750
+Connection ~ 2300 1750
+Connection ~ 1800 1450
+Connection ~ 1800 1750
+Wire Wire Line
+	1800 1450 1900 1450
+Wire Wire Line
+	1800 1750 2300 1750
+Wire Wire Line
+	2700 1450 2800 1450
+Wire Wire Line
+	2300 1750 2800 1750
+Text Label 1750 1450 0    50   ~ 0
++12V
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5C8421CE
+P 2800 1400
+F 0 "#PWR0103" H 2800 1250 50  0001 C CNN
+F 1 "+3V3" H 2815 1573 50  0000 C CNN
+F 2 "" H 2800 1400 50  0001 C CNN
+F 3 "" H 2800 1400 50  0001 C CNN
+	1    2800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5C8421F3
+P 2300 1800
+F 0 "#PWR0104" H 2300 1550 50  0001 C CNN
+F 1 "GND" H 2305 1627 50  0000 C CNN
+F 2 "" H 2300 1800 50  0001 C CNN
+F 3 "" H 2300 1800 50  0001 C CNN
+	1    2300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1750 2300 1800
+Wire Wire Line
+	2800 1450 2800 1400
+Connection ~ 2800 1450
+Text GLabel 4650 1800 2    50   Output ~ 0
+M
+Text GLabel 4650 2100 2    50   Output ~ 0
+SH
+Text GLabel 4650 1900 2    50   Output ~ 0
+ICG
+Text GLabel 4650 2000 2    50   Output ~ 0
+Sync1
+Text GLabel 3650 1700 0    50   Output ~ 0
+Sync2
+Wire Wire Line
+	4600 1800 4650 1800
+Wire Wire Line
+	4650 1900 4600 1900
+Wire Wire Line
+	4650 2000 4600 2000
+Wire Wire Line
+	4650 2100 4600 2100
+Wire Wire Line
+	3650 1700 3700 1700
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 5C844B50
+P 3650 1550
+F 0 "#PWR0105" H 3650 1400 50  0001 C CNN
+F 1 "+3V3" H 3665 1723 50  0000 C CNN
+F 2 "" H 3650 1550 50  0001 C CNN
+F 3 "" H 3650 1550 50  0001 C CNN
+	1    3650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1550 3650 1600
+Wire Wire Line
+	3650 1600 3700 1600
+$Comp
+L power:GND #PWR0106
+U 1 1 5C844EC4
+P 4900 1750
+F 0 "#PWR0106" H 4900 1500 50  0001 C CNN
+F 1 "GND" H 4905 1577 50  0000 C CNN
+F 2 "" H 4900 1750 50  0001 C CNN
+F 3 "" H 4900 1750 50  0001 C CNN
+	1    4900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5C844F2A
+P 6400 1650
+F 0 "#PWR0107" H 6400 1400 50  0001 C CNN
+F 1 "GND" H 6405 1477 50  0000 C CNN
+F 2 "" H 6400 1650 50  0001 C CNN
+F 3 "" H 6400 1650 50  0001 C CNN
+	1    6400 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1700 4900 1700
+Wire Wire Line
+	4900 1700 4900 1750
+Wire Wire Line
+	6300 1600 6400 1600
+Wire Wire Line
+	6400 1600 6400 1650
+$EndSCHEMATC

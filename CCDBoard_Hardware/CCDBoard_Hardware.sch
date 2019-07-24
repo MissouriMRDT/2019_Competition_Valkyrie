@@ -1,0 +1,197 @@
+EESchema Schematic File Version 4
+LIBS:CCDBoard_Hardware-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_Sensors:TCD1304 U1
+U 1 1 5C83DD52
+P 4500 2600
+F 0 "U1" H 4700 3175 50  0000 C CNN
+F 1 "TCD1304" H 4700 3084 50  0000 C CNN
+F 2 "MRDT_Sensors:TCD-1304" H 4200 2100 50  0001 C CNN
+F 3 "" H 4200 2100 50  0001 C CNN
+	1    4500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C83DDBD
+P 4350 2550
+F 0 "#PWR0101" H 4350 2300 50  0001 C CNN
+F 1 "GND" H 4355 2377 50  0000 C CNN
+F 2 "" H 4350 2550 50  0001 C CNN
+F 3 "" H 4350 2550 50  0001 C CNN
+	1    4350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5C83DE2E
+P 4350 2250
+F 0 "#PWR0102" H 4350 2100 50  0001 C CNN
+F 1 "+3V3" H 4365 2423 50  0000 C CNN
+F 2 "" H 4350 2250 50  0001 C CNN
+F 3 "" H 4350 2250 50  0001 C CNN
+	1    4350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2500 4350 2500
+Wire Wire Line
+	4350 2500 4350 2550
+Wire Wire Line
+	4400 2400 4350 2400
+Wire Wire Line
+	4350 2400 4350 2300
+Wire Wire Line
+	4400 2300 4350 2300
+Connection ~ 4350 2300
+Wire Wire Line
+	4350 2300 4350 2250
+Text GLabel 5800 3650 0    50   Output ~ 0
+M
+Text GLabel 5800 3550 0    50   Output ~ 0
+SH
+Text GLabel 5800 3450 0    50   Output ~ 0
+ICG
+Text GLabel 5800 2450 0    50   Input ~ 0
+OS
+Wire Wire Line
+	5000 2250 5050 2250
+Wire Wire Line
+	5000 2350 5050 2350
+Wire Wire Line
+	5000 2450 5050 2450
+Wire Wire Line
+	5050 2550 5000 2550
+$Comp
+L MRDT_Connectors:Molex_SL_07 Conn2
+U 1 1 5C83E06D
+P 6050 3800
+F 0 "Conn2" H 6050 3750 60  0000 L CNN
+F 1 "Molex_SL_07" H 6177 4102 60  0000 L CNN
+F 2 "MRDT_Connectors:MOLEX_SL_07_Vertical" H 6050 4000 60  0001 C CNN
+F 3 "" H 6050 4000 60  0001 C CNN
+	1    6050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5C83E099
+P 5800 3100
+F 0 "#PWR0103" H 5800 2950 50  0001 C CNN
+F 1 "+3V3" H 5815 3273 50  0000 C CNN
+F 2 "" H 5800 3100 50  0001 C CNN
+F 3 "" H 5800 3100 50  0001 C CNN
+	1    5800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5C83E0A8
+P 5800 3800
+F 0 "#PWR0104" H 5800 3550 50  0001 C CNN
+F 1 "GND" H 5805 3627 50  0000 C CNN
+F 2 "" H 5800 3800 50  0001 C CNN
+F 3 "" H 5800 3800 50  0001 C CNN
+	1    5800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:Molex_SL_05 Conn1
+U 1 1 5C83E20B
+P 6050 2600
+F 0 "Conn1" H 6050 2550 60  0000 L CNN
+F 1 "Molex_SL_05" H 6177 2752 60  0000 L CNN
+F 2 "MRDT_Connectors:MOLEX_SL_05_Vertical" H 6050 2500 60  0001 C CNN
+F 3 "" H 6050 2500 60  0001 C CNN
+	1    6050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5C83E23F
+P 5800 2600
+F 0 "#PWR0105" H 5800 2350 50  0001 C CNN
+F 1 "GND" H 5805 2427 50  0000 C CNN
+F 2 "" H 5800 2600 50  0001 C CNN
+F 3 "" H 5800 2600 50  0001 C CNN
+	1    5800 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5050 2250 2    50   Input ~ 0
+M
+Text GLabel 5050 2350 2    50   Input ~ 0
+SH
+Text GLabel 5050 2450 2    50   Input ~ 0
+ICG
+Text GLabel 5050 2550 2    50   Output ~ 0
+OS
+Wire Wire Line
+	5850 3450 5800 3450
+Wire Wire Line
+	5850 3550 5800 3550
+Wire Wire Line
+	5850 3650 5800 3650
+Wire Wire Line
+	5850 3750 5800 3750
+Wire Wire Line
+	5800 3750 5800 3800
+Wire Wire Line
+	5850 3150 5800 3150
+Wire Wire Line
+	5800 3150 5800 3100
+Text GLabel 5800 3350 0    50   Output ~ 0
+Sync1
+Text GLabel 5800 3250 0    50   Output ~ 0
+Sync2
+Wire Wire Line
+	5850 3250 5800 3250
+Wire Wire Line
+	5850 3350 5800 3350
+Text GLabel 5800 2350 0    50   Input ~ 0
+Sync1
+Text GLabel 5800 2250 0    50   Input ~ 0
+Sync2
+Wire Wire Line
+	5850 2550 5800 2550
+Wire Wire Line
+	5800 2550 5800 2600
+Wire Wire Line
+	5850 2450 5800 2450
+Wire Wire Line
+	5850 2350 5800 2350
+Wire Wire Line
+	5850 2250 5800 2250
+Text Notes 6700 3200 2    50   ~ 0
+Clocking TIVA
+Text Notes 6650 2300 2    50   ~ 0
+Reading TIVA
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 5C84E599
+P 5800 2100
+F 0 "#PWR0106" H 5800 1950 50  0001 C CNN
+F 1 "+3V3" H 5815 2273 50  0000 C CNN
+F 2 "" H 5800 2100 50  0001 C CNN
+F 3 "" H 5800 2100 50  0001 C CNN
+	1    5800 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2150 5800 2150
+Wire Wire Line
+	5800 2150 5800 2100
+$EndSCHEMATC
