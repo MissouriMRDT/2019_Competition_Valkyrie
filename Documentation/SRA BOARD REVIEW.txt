@@ -1,0 +1,47 @@
+SRA BOARD REVIEW
+File Managment
+	X SRASensorBoard_Hardware
+	X move documetaion folder to root
+	X add library folder for all libraries
+Schematic
+	X wireing for AP1509
+	X Rename inductor from h to l
+	X 500 ohm resistors for leds
+	X Change the LED to D1
+	X led to 3.3V, 5V,
+	X Led for soil data, mq4 data, atm out, toggle
+	X software defined led
+		X 1 for error
+		X 2 for other software flags
+	X move labels by sensors
+	push sensor software to new branch
+	X upload sht10 documentation, am2302 documentation
+	X analog in should be analog out , fix that flag
+	X toggle to uv toggle, signal goes through 500 ohm resistor
+	X PIN D2_3 should be output flag
+	X GND flags pointing down
+	X text next to leds indicating color
+	X re-route ccd pinout to the correct location
+	X re-route sdata, cs, sclk, to sl04 with ground flag
+	X sdata, sclk, cs output flags
+	X MOVE Sdata, sclk, cs, PF_1, PF_3, PF_2 respectivly. 
+	X soil_sck to PB_5
+PCB Board layout
+	X set polygons to soild
+	set traces to be in the middle of the pin holes when tracing
+	more paths to ground 
+	change bit for to have a via and put the majority of that trace on back copper
+	rework the traces to be more up and down, and left and right not diagnolay
+	make my traces not snake through the Pin heads
+	X make bit3 go underneath the top connectors
+	X make traces nice and tight
+	X reconfigure anderson and molex five, switch there spots
+	next board align to grid
+	X possible 20 mil traces for master_clock
+	X don't run power traces above or below master_clock
+	X have all sensors next to each other on top 
+	X put sensor resistors on the bottom of the board
+	silk screens around each connector to tell us where the pins go
+	
+	soil T/M, NEW LINE PART NUMBER
+	

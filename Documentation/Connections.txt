@@ -1,0 +1,35 @@
+-----Sensors-----
+///Soil Sensor///
+Molex 04:
+	Pin1- +3.3v
+	Pin2- Soil_Data
+	Pin3- Soil_Sck
+	Pin4- GND
+///Atm_Temperature Sensor///
+Molex 03:
+	Pin1- +3.3v
+	Pin2- Atm_Dout
+	Pin3- GND
+///Methane Sensor///
+Molex 04:
+	Pin1- +5v
+	Pin2- Methane_Vin
+	Pin3- Methane_Vout
+	Pin4- GND
+///////////////////////////////////
+Power (GND, LOG) - Anderson 2 Horiz
+-----Spectrometer------
+////CCD///////////////////////////////
+//CCD Control
+Molex 05:
+	Pin1-VCC- 3.3V
+	Pin2-Interrupt 2
+	Pin2-Interrupt 1
+	Pin2-Output Signal
+	Pin6-GND-GND
+
+////UV Light////
+Molex 03:
+	Pin1- 3.3V
+	Pin2- TOGGLE
+	Pin3- GND

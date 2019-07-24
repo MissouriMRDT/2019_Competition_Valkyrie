@@ -1,0 +1,11 @@
+CCD Pinout
+
+1-VCC-3.3V
+2-Master Clock-SPI_Clk (We may route this to a PWM module in the future)
+3-ICG(integrateion Clear Gate)- on the launchpad dataheet, a pin that has M0PWMx functionality
+4-SH (Shift Gate)-on the launchpad dataheet, a pin that has M0PWMx functional
+5-OS (Output signal)-Ain of ADC
+6-GND-GND
+
+Launchpad datasheet:http://www.ti.com/lit/ds/symlink/tm4c129encpdt.pdf
+ADC to use:https://www.digikey.com/product-detail/en/texas-instruments/ADCS7477AIMFX-NOPB/296-35216-1-ND/3738926

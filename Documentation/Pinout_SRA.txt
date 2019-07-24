@@ -1,0 +1,35 @@
+Tiva Pinout for SRA
+-----X9:A1-----
+A1_1:+3.3V:+3.3V
+A1_6:PE5:Soil_Data
+
+-----X9:B1-----
+B1_1:+5V:+5V
+B1_1:GND:GND
+B1_3:PE0:CCD_INT1
+B1_4:PE1:CCD_INT2
+B1_5:PE2:Methane_Vout:A1
+
+
+-----X9:C1-----
+C1_1:PF1:SDATA       :MOSI(3)
+C1_2:PF2:SCLK        :MISO(3)
+C1_3:PF3:CS	     :CS(3)
+
+-----X9:D1-----
+D1_1:GND:GND
+D1_8:PN2:Atm_Dout    :DIO
+
+-----X7:A2-----
+A2_8:PP4:SW_Flag 1
+A2_9:PN5:SW_Flag 2
+A2_10:PN4:SW_Error
+
+-----X7:B2-----
+B2_2:GND:GND	     :
+B2_4:PB5:Soil_Sck    :
+B2_4:PK3:CCD_OS	     : A19
+
+-----X7:D2-----
+D2_1 :GND:GND
+D2_3 :PP5:TOGGLE

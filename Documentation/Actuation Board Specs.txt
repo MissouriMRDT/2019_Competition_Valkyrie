@@ -1,0 +1,27 @@
+---SRA Actuation Board---
+/////////////////////////
+Rack and Pinion
+	DC Motor
+	3-LS
+		2 limits
+		1 home
+	Open Loop control
+	Goto home control
+	
+/////////////////////////
+Drill
+	DC Motor
+		No LS
+		Open loop
+
+//////////////////////
+Spectrometer movement
+	DC Motor(motion axis 1)
+		3 LS
+			2 limits
+			1 home
+		2 axes
+	DC Motor(motion axis 2)
+		3 LS
+			2 limits
+			1 home
