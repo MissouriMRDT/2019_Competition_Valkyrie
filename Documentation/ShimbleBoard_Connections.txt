@@ -1,0 +1,6 @@
+-----Connections-----
+Power  (GND, Log)- Anderson 2 Horiz
+Servo x8         - Molex SL-03
+	Pin1-GND
+	Pin2-PWM
+	Pin3-+5V

@@ -1,0 +1,12 @@
+(fp_lib_table
+  (lib (name MRDT_Actives)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_Actives.pretty)(options "")(descr ""))
+  (lib (name MRDT_Connectors)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_Connectors.pretty)(options "")(descr ""))
+  (lib (name MRDT_Devices)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_Devices.pretty)(options "")(descr ""))
+  (lib (name MRDT_Drill_Holes)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_Drill_Holes.pretty)(options "")(descr ""))
+  (lib (name MRDT_ICs)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_ICs.pretty)(options "")(descr ""))
+  (lib (name MRDT_Passives)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_Passives.pretty)(options "")(descr ""))
+  (lib (name MRDT_Sensors)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_Sensors.pretty)(options "")(descr ""))
+  (lib (name MRDT_Shields)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_Shields.pretty)(options "")(descr ""))
+  (lib (name MRDT_Silkscreens)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_Silkscreens.pretty)(options "")(descr ""))
+  (lib (name MRDT_Switches)(type KiCad)(uri C:/MRDT_KiCAD_Libraries-2019-R2/Package/MRDT_Switches.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,21 @@
+TM4C129E_Launchpad
+-----X7:A2-----
+Servo_6_Ctrl       :PD2:A2_2 :DIO
+
+-----X7:B2-----
++5V                :+5V:B2_1 
+GND                :GND:B2_2 
+Servo_7_Ctrl       :PA4:B2_9 :DIO
+Servo_8_Ctrl       :PA5:B2_10:DIO
+
+-----X7:C2-----
+Servo_1_Ctrl       :PG1:C2_1 :PWM
+Servo_2_Ctrl       :PK4:C2_2 :PWM
+Servo_3_Ctrl       :PK5:C2_3 :PWM
+Servo_4_Ctrl       :PM0:C2_4 :PWM
+
+
+-----X7:D2-----
+GND                :GND:D2_1 :DIO
+Servo_5_Ctrl       :PM7:D2_2 :PWM
+/////////////////////////////////////////////////////////////////
