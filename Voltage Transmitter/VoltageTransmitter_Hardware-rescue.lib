@@ -1,0 +1,114 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# AP1059-MRDT_ICs-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue
+#
+DEF AP1059-MRDT_ICs-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue U 0 40 Y Y 1 F N
+F0 "U" 50 -50 60 H V C CNN
+F1 "AP1059-MRDT_ICs-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue" 200 450 60 H V C CNN
+F2 "" -250 -100 60 H I C CNN
+F3 "" -250 -100 60 H I C CNN
+DRAW
+S 0 400 450 0 0 1 0 f
+X Vin 1 -200 350 200 R 50 50 1 1 I
+X Vout 2 -200 250 200 R 50 50 1 1 I
+X FB 3 -200 150 200 R 50 50 1 1 I
+X SD 4 -200 50 200 R 50 50 1 1 I
+X GND 5 650 50 200 L 50 50 1 1 I
+X GND 6 650 150 200 L 50 50 1 1 I
+X GND 7 650 250 200 L 50 50 1 1 I
+X GND 8 650 350 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# AndersonPP-MRDT_Connectors-Voltage-Transmitter-schematic-rescue
+#
+DEF AndersonPP-MRDT_Connectors-Voltage-Transmitter-schematic-rescue Conn 0 0 N Y 4 L N
+F0 "Conn" 150 -50 60 H V C CNN
+F1 "AndersonPP-MRDT_Connectors-Voltage-Transmitter-schematic-rescue" 100 250 60 H V C CNN
+F2 "" -150 -550 60 H I C CNN
+F3 "" -150 -550 60 H I C CNN
+DRAW
+C 100 100 100 0 1 0 N
+S 0 0 200 200 0 1 0 N
+P 2 0 1 0 0 200 200 0 N
+P 2 0 1 0 200 200 0 0 N
+X GND 1 400 100 200 L 50 39 1 1 I
+X V+Log 2 400 100 200 L 50 39 2 1 I
+X V+Act 3 400 100 200 L 50 39 3 1 I
+X PV+ 4 400 100 200 L 50 39 4 1 I
+ENDDRAW
+ENDDEF
+#
+# ESP8266_MCU-New_libraries-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue
+#
+DEF ESP8266_MCU-New_libraries-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "ESP8266_MCU-New_libraries-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue" 50 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 0 -1650 550 -150 0 1 0 N
+X A0 1 -100 -200 100 R 50 50 1 1 I
+X GND 10 -100 -1100 100 R 50 50 1 1 I
+X 3v3 11 -100 -1200 100 R 50 50 1 1 I
+X EN 12 -100 -1300 100 R 50 50 1 1 I
+X RST 13 -100 -1400 100 R 50 50 1 1 I
+X GND 14 -100 -1500 100 R 50 50 1 1 I
+X Vin 15 -100 -1600 100 R 50 50 1 1 I
+X 3v3 16 650 -1600 100 L 50 50 1 1 I
+X GND 17 650 -1500 100 L 50 50 1 1 I
+X TX 18 650 -1400 100 L 50 50 1 1 I
+X RX 19 650 -1300 100 L 50 50 1 1 I
+X Reserved 2 -100 -300 100 R 50 50 1 1 I
+X D8 20 650 -1200 100 L 50 50 1 1 I
+X D7 21 650 -1100 100 L 50 50 1 1 I
+X D6 22 650 -1000 100 L 50 50 1 1 I
+X D5 23 650 -900 100 L 50 50 1 1 I
+X GND 24 650 -800 100 L 50 50 1 1 I
+X 3v3 25 650 -700 100 L 50 50 1 1 I
+X D4 26 650 -600 100 L 50 50 1 1 I
+X D3 27 650 -500 100 L 50 50 1 1 I
+X D2 28 650 -400 100 L 50 50 1 1 I
+X D1 29 650 -300 100 L 50 50 1 1 I
+X Reserved 3 -100 -400 100 R 50 50 1 1 I
+X D0 30 650 -200 100 L 50 50 1 1 I
+X SD3 4 -100 -500 100 R 50 50 1 1 I
+X SD2 5 -100 -600 100 R 50 50 1 1 I
+X SD1 6 -100 -700 100 R 50 50 1 1 I
+X CMD 7 -100 -800 100 R 50 50 1 1 I
+X SD0 8 -100 -900 100 R 50 50 1 1 I
+X CLK 9 -100 -1000 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Molex_SL_02-MRDT_Connectors-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue
+#
+DEF Molex_SL_02-MRDT_Connectors-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue Conn 0 40 Y Y 1 F N
+F0 "Conn" 150 -50 60 H V C CNN
+F1 "Molex_SL_02-MRDT_Connectors-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue-Voltage-Transmitter-schematic-rescue" 50 250 60 H V C CNN
+F2 "" 0 -100 60 H I C CNN
+F3 "" 0 -100 60 H I C CNN
+DRAW
+S 0 200 100 0 0 1 0 N
+X ~ 1 -200 150 200 R 50 50 1 1 I
+X ~ 2 -200 50 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# OKI-MRDT_Devices
+#
+DEF OKI-MRDT_Devices U 0 40 Y Y 1 F N
+F0 "U" 50 -50 60 H I C CNN
+F1 "OKI-MRDT_Devices" 200 250 60 H V C CNN
+F2 "" -200 -100 60 H I C CNN
+F3 "" -200 -100 60 H I C CNN
+DRAW
+S 0 0 400 200 0 1 0 N
+X Vi 1 -200 100 200 R 50 50 1 1 I
+X GND 2 200 -200 200 U 50 50 1 1 O
+X Vo 3 600 100 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

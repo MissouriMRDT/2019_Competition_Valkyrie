@@ -1,0 +1,9 @@
+Connections Table
+/////////////////////
+2 LiPo 18650		-Molex SL-02
+	Pin1-9V battery voltage
+	Pin2-GND
+
+PV_in			-Molex SL-02
+	Pin1-PVDD
+	Pin2-GND

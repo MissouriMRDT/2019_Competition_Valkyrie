@@ -1,0 +1,10 @@
+Pin Table(Raspberry Pi 0W)
+//////////////////////////
++5V:+5V:1
+GND:GND:9
+ADC_MOSI:GP_10:19:SPI_MOSI
+ADC_MISO:GP_9:21:SPI_MISO
+ADC_Serial_Clock:GP_11:23:SPI_SCLK
+ADC_Chip_Select:GP_8:24
+
+
