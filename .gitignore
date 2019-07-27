@@ -1,26 +1,14 @@
-# For PCBs designed using KiCad: http://www.kicad-pcb.org/
-# Format documentation: http://kicad-pcb.org/help/file-formats/
+# PyCharm files
+.idea/
 
-# Temporary files
-*.000
-*.bak
-*.bck
-*.kicad_pcb-bak
-*~
-_autosave-*
-*.tmp
-*-cache.lib
-*-rescue.lib
-*-save.pro
-*-save.kicad_pcb
+# Mac Temp Files
+.DS_Store
 
-# Netlist files (exported from Eeschema)
-*.net
+# Python temp files
+*.pyc
 
-# Autorouter files (exported from Pcbnew)
-*.dsn
-*.ses
-
-# Exported BOM files
-*.xml
-*.csv
+#Our Log Files
+*/logs/
+logs/
+*.log
+*.avi
