@@ -1,0 +1,87 @@
+<controls:MetroWindow x:Class="RED.Views.ControlCenterView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        MinHeight="640" MinWidth="1024" Height="640" Width="1024" 
+        EnableDWMDropShadow="True" ResizeMode="CanResize" TitleCaps="False"
+        WindowTransitionsEnabled="True" WindowStartupLocation="CenterScreen">
+    <controls:MetroWindow.Resources>
+        <Style TargetType="Expander" BasedOn="{StaticResource {x:Type Expander}}">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </controls:MetroWindow.Resources>
+    
+    <i:Interaction.Behaviors>
+        <behaviours:BorderlessWindowBehavior />
+    </i:Interaction.Behaviors>
+
+    <controls:MetroTabControl Name="MainTabs">
+        <TabItem Header="Control Center">
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <ContentControl Grid.Row="0" x:Name="Map" />
+                    <StackPanel Grid.Row="1">
+                        <Expander Header="GPS" IsExpanded="True">
+                            <ContentControl x:Name="GPS" />
+                        </Expander>
+                        <Expander Header="Waypoints" IsExpanded="True">
+                            <ContentControl x:Name="WaypointManager" />
+                        </Expander>
+                    </StackPanel>
+                    
+                </Grid>
+                <ScrollViewer Grid.Column="1">
+                    <StackPanel>
+                        <Expander Header="Drive" IsExpanded="True">
+                            <ContentControl x:Name="Drive" />
+                        </Expander>
+                        <Expander Header="Gimbal" IsExpanded="True">
+                            <StackPanel>
+                                <ContentControl x:Name="Gimbal" />
+                            </StackPanel>
+                        </Expander>
+                        <Expander Header="Power and BMS">
+                            <ContentControl x:Name="Power" />
+                        </Expander>
+                        <Expander Header="Lighting">
+                            <ContentControl x:Name="Lighting" />
+                        </Expander>
+                    </StackPanel>
+                </ScrollViewer>
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <Expander Grid.Row="0" Header="Sensors">
+                        <ContentControl x:Name="Sensor" />
+                    </Expander>
+                    <StackPanel Grid.Row="1" Margin="5">
+                        <Button DockPanel.Dock="Bottom" x:Name="ResubscribeAll">Resubscribe All</Button>
+						<Button DockPanel.Dock="Bottom" x:Name="NetworkManager" IsEnabled="{Binding NetworkManagerEnabled}" Content="Open Network Manager" Margin="0 0 0 5"/>
+                        <Button DockPanel.Dock="Bottom" x:Name="AttachmentManager" IsEnabled="{Binding AttachmentManagerEnabled}" Content="Open Attachment Manager" Margin="0 0 0 5"/>
+                    </StackPanel>
+                    <ContentControl Grid.Row="2" Margin="5" x:Name="Console" />
+                    <ContentControl Grid.Row="3" Margin="5" x:Name="InputManager"/>
+                </Grid>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Settings" Name="SettingsTab">
+            <ContentControl x:Name="SettingsManager" />
+        </TabItem>
+    </controls:MetroTabControl>
+</controls:MetroWindow>
