@@ -1,0 +1,69 @@
+EESchema Schematic File Version 4
+LIBS:ArmBoardMC_2019_Rev1-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 9450 975  0    50   ~ 0
+H-Bridge3
+Text Label 6900 975  0    50   ~ 0
+H-Bridge3
+Text Label 4675 950  0    50   ~ 0
+H-Bridge2
+Text Label 2150 950  0    50   ~ 0
+H-Bridge1
+$Comp
+L MRDT_ICs:VNH5019A_E U?
+U 1 1 5BCBA0B5
+P 9050 2750
+F 0 "U?" H 9650 4437 60  0000 C CNN
+F 1 "VNH5019A_E" H 9650 4331 60  0000 C CNN
+F 2 "" H 9050 4050 60  0001 C CNN
+F 3 "" H 9050 4050 60  0001 C CNN
+	1    9050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_ICs:VNH5019A_E U?
+U 1 1 5BCBA018
+P 6475 2750
+F 0 "U?" H 7075 4437 60  0000 C CNN
+F 1 "VNH5019A_E" H 7075 4331 60  0000 C CNN
+F 2 "" H 6475 4050 60  0001 C CNN
+F 3 "" H 6475 4050 60  0001 C CNN
+	1    6475 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_ICs:VNH5019A_E U?
+U 1 1 5BCB9F48
+P 4250 2750
+F 0 "U?" H 4850 4437 60  0000 C CNN
+F 1 "VNH5019A_E" H 4850 4331 60  0000 C CNN
+F 2 "" H 4250 4050 60  0001 C CNN
+F 3 "" H 4250 4050 60  0001 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_ICs:VNH5019A_E U?
+U 1 1 5BCB9E87
+P 1775 2750
+F 0 "U?" H 2375 4437 60  0000 C CNN
+F 1 "VNH5019A_E" H 2375 4331 60  0000 C CNN
+F 2 "" H 1775 4050 60  0001 C CNN
+F 3 "" H 1775 4050 60  0001 C CNN
+	1    1775 2750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,185 @@
+To Do:
+Delete Patch Panel folder
+Rename files:
+"ArmMotorController_Hardware"
+"ArmDriveboard_Hardware"
+
+All documents go to a "Documentation" specific folder
+Add our created footprints and libraries to a "Libraries" Folder
+
+Move everything up a level to the main folder for our specific project
+Make sure everything is consistent for each folder
+
+ -Actual Board Reviews
+
+Motor Controller:
+-Power Flags should be pointed up, if you can, and GND should be pointed down.  --DONE
+-Move Power input of the board to the upper left hand and move the H-Bridges over  --DONE
+-Seperate each section with graphic lines  --DONE
+-Rearrage OKI to make it easier to read  --DONE (And replaced with new buck)
+
+-Change grid back to default of 50 mils and re-allign everything  --DONE
+
+- all LEDs will go into a different section for "indicators" so make sure you remove all of the ones you have placed --Made section
+- make sure we go through everything and make sure references and values are all consistently placed --Done
+rm- leds should be wired in parallel rather than in series
+- VCC should be 5v instead of the 12v we have (level shifter runs off 5v not 12)  --DONE
+- We need to change OKI to AP1509,  --DONE
+	-- Look up on digikey for footprints and diagrams
+	-- When assigning package for it just use the 0603 like usual
+
+- RX on connector should be output not input  --DONE
+- 2 Encoder 3 _PWM on the encoders, make sure to change it  --DONE
+	-- ENC1 , ENC2 etc. for flags  --DONE
+
+-Enlarge the graphic text on the H-Bridges "Motor #" --DONE
+
+-Move references to the bottom left or right  --DONE
+
+-Make sure you have the wire leading to flags, noticed on LS 4-6  --DONE
+
+- Change flag sizes back to the default one of ~ 1.2 (google if you can do it globally" --DONE
+
+- Change pinouts on schematics such as INA and INB so that it is a bit less chaotic  --Done? 
+
+-MOTORPWM are on AnalogRead and they need to be on PWMWrite (M0PWM#), given by data sheet  --DONE
+-ENCODERPWN are on AnalogRead and need to be routed to any nonconflicting pins on the "rove_hal pin conflicts"  --DONE
+-Add text next to the MotorPWM of which pin i.e (M0PWM3)  --DONE
+-Add text next to EncPwm i.e (T3A, - Timer 3a)  --DONE
+
+-Move "serial 3" to side so that its a bit more consistent  --DONE
+
+-When we add the 5v OKI dont power it into the TIVA  
+
+INDICATION Schematic:
+	- 1 LED on output of each Encoder  --DONE
+	- Put LED on limit switch if we have the space (lower priority) 
+	- 1 Led on output of each motor (either outA or outB just be consistent) --DONE
+	- 3 Led running to any digital pins on the tiva  --DONE
+	- 1 Led for 12vact, and 1 LED for 12v Log  --DONE
+-Make all resistors 500  --DONE
+
+
+PCB LAYOUT:
+
+- Make the communication molex vertical 
+- Go through borders of polygons to make sure everything is more consistent and straight
+	-Makes it easier to do in coarser grid size
+	-Be consistent with size (20 mils should be fine)
+- Add another Polygon onto some the areas on the H-Bridge that  
+
+-We have a VIA running under an IC and we don't want that, it is also too close to the pad
+	-In general, make sure vias are on the outside and not too close to other tracks
+
+-Bring in back layer polygons on h-bridges in to look a bit nicer.
+	-Makes it a bit easier to make all polygons in 10 mil grid
+-Make sure all H-bridges are on same level, some are just a little off. 
+	-Move all VNH so that they are inline with eachother
+
+-Placement in general is better on a coarser grid than fine 
+
+-There is polygons cutting into eachother so some componets aren't connected to ground plane
+	-Use via stiching so that they are able to connect
+
+-Reroute the spaghetti wire when and where you can.
+-There is a lot of "weaving" between the wires so fix that best you can. You can actually run traces into the bottom section.
+
+-Leave enough connection between the Encoders so that you can put labeling in between. 
+	-If you don't have enough vertical space you can put it off to the side.
+
+-For some of the components if you use rotation you can eliminate a lot of the messy wiring.
+
+-The capacitors for the H-Bridges you can put them all in a row next to it to make it a lot cleaner
+
+-There is a lot of areas where you can condense space through the placement of capactitors and resistors
+	-Vertical resistors can fix many of the problems making the bored much more efficient
+
+-The area with the OKI you can use that area for the two new 1509 voltage converters just fine.
+
+----When you assign the package for the 1509, it is specifically SOIC-8-3.9x4.9x 1.27mm (IMPORTANT)
+
+-The I-sense wires are going to the same general area so when tracing them they don't have to be split to trace
+
+-The 3.3v trace is going all over the place, so try to find a better trace path
+
+-For the LimitSwitches you can move the resistors to the other side to make it more efficient
+
+-To reiterate make sure you give vias more space from the tracks, pads, ics
+
+- Focus on the limit switch placement and routing, very messy. 
+	- You can route them so that they are much more in line and much less messy.
+
+-If we can find I-Sense pins closer to the top so it allows the traces to be shorter
+
+-Keep in mind, if you have traces going to the same place you can, and should, trace them together
+
+
+-(for schematic as well) if they're close together on the board they should be close together on the schematic
+	-I.E on of the capactiors for the OKI can be moved closer to the OKI to eliminate a long gross trace
+
+	-If you take routing traces a section at a time it will be much more efficient.
+-We need silkscreen below the andersons with "Motor 1, 2 etc.) and silkscreen for all the other components
+
+-Keep Leds by the connectors by their respective connectors. 
+
+-Edge cuts need to be fixed so that they're actually even and add the curved edges on the top.
+	-There is a missing curve 
+
+
+
+DRIVEBOARD:
+Rename files to "ArmDriveboard_Hardware"
+
+Schematic:
+- Make sure to rearrange the schematic to look better and a bit more clear, add graphic line boxes to seperate the components
+
+- Replace 12V_log and act with the power flags
+- Hide some of the text so that it isnt as cramped together 
+
+- Get rid of the Driveboard anderson connectors since we're on one board now
+
+- Make the Connector for power out on the patch a V+Log anderson connector, they will be anderson Vertical
+- Oki is going to be replaced (you can use the layout from sensor pod as reference) 
+
+- Make sure with the GND as well to use the power flags
+- Space out the green traces and connectors out a bit
+
+- For componets Reference on the outside and value on the inside
+- Make sure to space out your text so that everything is more clean and so the schematic is much easier to read
+- When placing flags do not place them directly onto the pins, need atleast 1 gridspace worth of wire so you can highlight 
+
+-Look out for some of your messy traces.   
+
+- Add an indicator section for all of your LEDs similar to what we talked about on MoCo
+
+- If you mirror the connectors so that the GND is on the bottom instead of the top. 
+	- Go with what you want, or if you want to change it around so that it looks better
+
+-On the Tiva your labels aren't named the same i.e "Solenoid_Control and Solenoidal_Control"
+
+-PWMs need to be outputs
+
+-You need just one APe
+
+
+BOARD LAYOUT:
+
+- The reistors with the connectors may be better beneath because of room for silk text
+- Add silscreen labeling for everything
+- The Andersons will now be horizontal on the right side with the 5v output sticking out the top and the rest on the side
+
+- Need a edgecut for your board, add it to the edgecut layer
+	-For the edges at the top you can copy and paste the curves from the bottom of the bored
+
+- Instead of the two wires on the 5v connectors you can just use one
+- Remember to have consistent ground planes
+
+- Increase the size of traces or add a polygon on top and bottom. (I.E on the 12v_act and logic andersons)  
+
+- If you can change any of the pins to clean up some of the traces, do that.
+- Try to find better routing for your traces
+- Use thicker traces on the high voltage/current traces
+
+- For the Andersons
+	- Make the Andersons vertical
+	- The Andersons for the power (5v) should be sticking out the top

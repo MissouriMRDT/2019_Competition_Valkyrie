@@ -1,0 +1,18 @@
+--------Connections--------
+Driveboard Serial    SL-05
+	Pin1 -- N.C
+	Pin2 -- N.C
+	Pin3 -- GND
+	Pin4 -- RX_1_SL
+	Pin5 -- TX_1_SL
+
+Encoder	SL-3
+	Pin1 -- VCC
+	Pin2 -- SIG
+	Pin3 -- GND
+
+Board Power 	  (Act, Log, GND)	Anderson-3
+H-Bridge to Motor (OUTA, OUTB)   	Anderson-2
+	ConnA--V+Log
+	ConnB--GND
+

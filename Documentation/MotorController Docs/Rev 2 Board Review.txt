@@ -1,0 +1,34 @@
+Move Zener Diode to the VNH circuitry and replace labels  --DONE
+
+
+When building board don't populate the current sensing circuitry and put 0ohm on CS_Dis
+
+Next year look into a reverse polarity circuit
+
+Maybe put in electrolitic if theres room   --- DONE
+If there's space in layout add an LED for Tx_2 as well  -- DONE
+Add led in series with LS so we can see if the limit switch is closed or not -- DONE
+Add atleast 2 electrolitic capacitors to the 12v Value: 47u, diameter: 5mm, lead spacing: anything just make sure you get the proper package on kicad
+	--DONE
+Change the silkscreen on slide switch to be CW or CCW --DONE
+	
+Change naming on Out_A1_M1 etc to be more consistent  -- DONE
+
+Layout:
+Spread out the capacitors on the 12vAct --DONEISH
+Move the diodes on the motors off to the sides of their corresponding currents so its easier to tell the direction 
+	Make sure the resistors have enough space for the GND  --DONE?
+Rotate oki to better connect the 12vLog and move capactors with it  --DONE
+Make the 3.3v trace consistent at that one weird part. --DONE
+Make sure the LS leds are consistent with the encoders  --DONE
+Move C10 over a little and the vias with it so its not as close to the pad  --DONE
+Move the 12vLog trace to the bottom layer to relieve more gnd space --DONE
+Label the connectors of the LS and ENC ( + - Sig
+Make the LS #ing (top left is #1) --DONE
+
+(Schm and Layout) 
+Delete the Rx_Tiva and just copy what was done with the SL connections over the the 2_SL  --DONE
+
+
+MAKE SURE BOM AND PIN LAYOUT ARE UPDATED AND CURRENT  --DONE
+

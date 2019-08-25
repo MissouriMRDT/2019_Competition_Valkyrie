@@ -1,0 +1,34 @@
+﻿1. 3-Tivas, 2 board designs
+   1. Arm Driveboard(Same design as Main DriveBoard)
+      1. Connections
+         1. V-Logic
+         2. Ethernet
+         3. Serial(2)
+            1. Driveboard → MoCo
+      1. Functionality
+         1. Process BaseStation commands
+         2. Transmit Arm telemetry-RoveComm
+         3. Calculate IK
+         4. Transmit serial commands-Serial
+   1. DC Motor Controllers(2)
+      1. Connections
+         1. V-Logic
+         2. V-Actuation
+         3. Serial(1)
+            1. Driveboard → MoCo
+         1. Limit Switch(8)
+            1. 2 per motor
+         1. Encoder(4)
+            1. 1 per motor
+            2. 5V, 3.3V switch
+      1. Functionality
+         1. Execute driveboard commands
+            1. Open-loop motor control
+            2. Closed-loop motor control
+         1. Transmit motor telemetry-Serial
+            1. Encoders and Limit Switch states
+            2. Over Serial to DriveBoard
+         1. Need to find a new H-Bridge
+         2. Nice things to have
+            1. Hardware e-stop
+            2. PWM, InA, InB LEDs

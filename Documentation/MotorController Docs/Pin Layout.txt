@@ -1,0 +1,54 @@
+TM4C129E_Launchpad
+-----X9:A1-----
+LS_8		:PE4:A1_2: Digital In
+LS_7		:PC4:A1_3: Digital In
+LS_6		:PC5:A1_4: Digital In
+LS_5		:PC6:A1_5: Digital In
+DIRECTION_SW	:PB3:A1_10:Digital In
+-----X9:B1-----
+M4_SW		:PE1:B1_4: Digital In
+M3_SW		:PE2:B1_5: Digital In
+LS_4		:PD7:B1_7: Digital In
+LS_3		:PA6:B1_8: Digital In
+LS_2		:PM4:B1_9: Digital In
+LS_1		:PM5:B1_10:Digital In
+
+-----X9:C1-----
+Mo1_PWW		:PF1:C1_1: M0PWM1
+Mo2_PWM		:PF2:C1_2: M0PWM2
+M1_SW		:PG0:C1_4: Digital In
+M2_SW		:PL4:C1_5: Digital In
+IN_A1	    	:PL0:C1_7: Digital Write
+IN_B1	    	:PL1:C1_8: Digital Write
+IN_A2	    	:PL2:C1_9: Digital Write
+IN_B2	    	:PL3:C1_10:Digital Write
+
+-----X9:D1------
+I_Sense_1	:PD1:D1_6: Analog In
+I_Sense_2	:PD0:D1_7: Analog In	
+
+-----X7:A2-----
+Rx_1_Tiva	:PP0:A2_3: U6RX
+TX_1_Tiva	:PP1:A2_4: U6TX
+ENC_3		:PD4:A2_5: T7:T3_A
+ENC_4		:PD5:A2_6: T8:T3_B
+
+-----X7:B2-----
+I_Sense_3	:PK0:B2_5: Analog In
+I_Sense_4	:PK1:B2_6: Analog In
+RX_2_Tiva	:PA4:B2_9: U3RX
+TX_2_Tiva	:PA5:B2_10:U3TX
+-----X7:C2-----
+Mo4_PWM		:PG1:C2_1: M0PWM5
+Mo3_PWM		:PK4:C2_2: M0PWM6
+ENC_1		:PM0:C2_4: T5:T2_A
+ENC_2		:PM1:C2_5: T6:T2_B
+
+-----X7:D2-----
+LED_IND_SW_1	:PM7:D2_2: Digital In
+LED_IND_SW_2	:PP5:D2_3: Digital In
+LED_IND_SW_ERR	:PA7:D2_4: Digital In
+IN_A3		:PH2:D1_3: Digital Write
+IN_B3		:PH3:D1_4: Digital Write
+IN_A4		:PN2:D1_8: Digital Write
+IN_B4		:PN3:D1_9: Digital Write

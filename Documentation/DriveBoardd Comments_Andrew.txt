@@ -1,0 +1,85 @@
+--Schematic--
+You need to put a ground flag on the Ground net connected to the andersons so that is connected to the rest of the grounds. 
+You need to put a +5V    flag on the +5V    net connected to the AP1509    so that is connected to the rest of the +5V.
+AP 1509 wiring is messy and confusing. Consider placing the PowerOut andersons somewhere else
+Replace +12V_Act label with +12VA power flag
+Rename label "Laser_control" to "Laser_Control"
+Rename label "Solenoial_Control" to "Solenoid_Control"
+on TIVA,       move all labels out by one grid space and connect to symbol via a short wire
+On connectors, move all labels out by one grid space and connect to symbol via a short wire
+Replace GND and +5V labels with GND and +5V power flags
+On indicators, move all labels and symbols apart by one grid space and connect with a short wire
+Indicator label flags have diferent sizes. Make them consistent with the rest of the labels
+in indicators, Laser and Solenoid flags need to be "Laser_Control" and "Solenoid_Control"
+Add another indicator connected to a +5V power flag
+Add text next to each LED to indicate it's color
+	Green-Power
+	Orange-Actuation (Laser, Solenoid)
+	Yellow-Digital Actuation (Serial, Servo PWM)
+	Blue-Software Flags
+	Red-Software Error Flags
+Add the following indicators:
+	SW_IND_1 connected to any DIO pin on the tiva
+	SW_IND_2 connected to any DIO pin on the tiva
+	SW_IND_2 connected to any DIO pin on the tiva
+	SW_ERR	 connected to any DIO pin on the tiva
+	
+--Layout--
+Move top and bottom polygons to the edge of the PCB
+Add silkscreen to all connectors to indicate what pkugs into them, and what each pins function is. 
+Replace AP1509 inductor with the new one (see #arch_electrical)
+You have a lot of diagonal traces on your boardmaking a poor use of space. 
+	Exibit A- your trace connecting the reset pins has weave between 3 pins to make the trace
+Also, you dont need to connect the reset pins of the tiva
++12V_Act trace going to Q1 shuould be a bit thicker. say 20 mil
+Throughout your board,you have silkscreen overlapping pads, vias, and other silscreen. Make sure all the references are visible
+Your layout is lacking symmetry and consistency overall
+AP 1509 culd we wired cleaner. 
+Your board needs edge cuts
+You have a couple long traces cutting up your ground planes. 
+MAX 3232 looks good. 
+There are still a few finishing touches we need to do on the silkscreen, but I think you need to fix up some more of the stuff I mentioned here before going on to that. 
+Much of these comments would be better explained in person. have another go at layout. Try to focus on keeping everything consistent and symmetrical. 
+
+
+--Comments Round 2
+remove ArmDeiveBoard_2019_Rev1 folder. there's nothing in it
+
+--Schematic
+	Use +12VA power flag instead of label for anderson
+	Remove redundant +5V net label next to power out andersons
+	Remove redundant GND net label next to ground flag by andersons
+	AP1509 wiring looks much better. Make sure to move things so that the text isn't beinb blocked by anything else, such is the case fo the "V+Log" flag and "D_Shottky" label
+	Same thing for the Tiva heasers. the test "Serial 6" is overlapping the labels. Make sure throughout your board that none of the text is overlapping
+	Make SW_IND flags on TIVA output flags
+	I said this last time: Rename label "Solenoial_Control" to "Solenoid_Control" The l needs to be a d
+	I said this last time: on TIVA,       move all labels out by one grid space and connect to symbol via a short wire
+	Conn 3 wires are not connected to the sybol. They need to be moved one space left
+	For Conn 7-8 it may help if you put the PWM signal on the middle pin and ground on the bottom. You would have to change the layout slightly then
+	Put a net label on pin 1 of Conn 5 and 6 saying "Laser_Out and "Solenoid_Out" respectively
+	Use +12VA Power flag instead of flag on laser control
+	For the fets, pres 'V' when on top of them and out the part number for the FET we want to use in the value field. 
+	Indicators section is falling off the board. Move around your paget to fit everything on the page
+	Add text nest to each LED to indicate color. I see you have the color in the value. but we also want text. 
+	Schematic is pretty close. Great job on it
+
+--Layout
+	Layout looks much better at first glance
+	we have a new package for the diode and inductor for the AP1509. Look at the thread in #arch_electrical for details. 
+	Move the polygons all the way to the edge of the board. You're sopping them way short on the top and bottom.
+	You can put the top and bottompolygon edges right on top of each other
+	Your polygon edges are not 90deg, check that on all corners. 
+	For the andersons, can you double up the traces onto the tp and bottom layer. You can move that +12VA trace to the left of the andersons and then put another thick power trace on the bottom for all three power channels
+	Make sure all silkscreen text is visible. for instanve, the label "U3" by the AP1509 is underneath a capacitor, and "C6" is underneath the AP1509
+	Your components around the AP1509 are a little close now for the amount of room you ave. Bump them out just a bit more
+	All LEDs need test next to them to indicate what they indicate
+	Silkscreen for the connectors will be underneath the connector when they are soldered. Move that to where it wold be visible. Perhaps it would help to move the LEDs horisontal and a bit further down from the cnnectors
+	Underneath each connector pin, add silkscreen to indicate whether the pin is +5, +3, GND, or SIG
+	I dont like that you have looong diagonals going from the MAX3232 to the TIVA headers. Make those verical and horisontal with the same itch between each trace. 
+
+
+Everything here on is easier shown than described, so perhaps we should meet sometime to go through this in person
+	Move the LED software indication more to the middle of the board, put a silkscreen box around them and add text to indicate what each LED goes to.
+	Need to add a text "Header" to the bottom tab of your board along with your signature and MRDT logo. 
+
+Layout is also very close. Make sure you're working on the BOM as well. 

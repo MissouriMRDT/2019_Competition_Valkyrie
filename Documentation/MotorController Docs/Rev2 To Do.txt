@@ -1,0 +1,9 @@
+Need: 
+Make the board an inch shorter
+Remove 2 push buttons, each button controls 2 motors
+Want:
+Move as many components to front as possible
+- Makes it much easier and faster to solder.
+
+Try and fix the messy component placement and wiring
+- Makes it more presentable

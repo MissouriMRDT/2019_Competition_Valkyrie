@@ -1,0 +1,7 @@
+2/25/19
+
+Connect EN_A and EN_B to +3V3 through a 1k resistor
+change 500 resistor on in_A, in_B, and PWM to 1k fo all ICs
+Add a 0 ohm resistor pad on CS_DIS goint to 3.3V(This will not be soldered on, but it should be there if we need it)
+
+Mke pull-down resistors on switchs 1k

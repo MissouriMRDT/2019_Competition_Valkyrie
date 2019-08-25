@@ -1,0 +1,23 @@
+Connections table
+//////////////////////////////
+Power (GND,Log,Act) - Anderson3
+
+MoCo Serial (2)-SL_5
+	pin_1:GND
+	Pin_2:TX_2_SL
+	Pin_3:RX_2_SL
+
+Servo (3)-SL_3
+	pin_1:GND
+	Pin_2:+5V
+	Pin_3:Servo1_PWM
+
+Laser (2)-SL_2
+	Pin_1:+12V
+	Pin_2:GND
+
+Solenoid-SL_2
+	Pin_1:+12V
+	Pin_2:GND
+
+

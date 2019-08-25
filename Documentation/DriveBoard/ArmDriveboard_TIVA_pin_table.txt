@@ -1,0 +1,15 @@
+TIVA Pin table
+TM4C129E
+
+PinA2_2: RX_1_IC
+PinA2_3: TX_1_IC
+PinA2_5: Laser_control
+PinA2_6: Solenoial_control
+PinB2_1: +5V
+PinB2_2: GND
+PinB2_5: RX_2_IC
+PinB2_6: TX_2_IC
+PinC2_4: Servo1_PWM
+PinC2_5: Servo2_PWM
+PinC2_6: Servo3_PWM
+PinD2_1: GND

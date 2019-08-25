@@ -1,0 +1,23 @@
+-Make boards shorter
+-1 board with andersons pointed in (soldering)
+-4 buttons, but possibly ignore 2
+-New diodes
+-vertical conectors, moved below headers (sanfan's board)
+-andersons can go closer to edge (sanfan's board)
+-remove power out andersons (sanfan's board)
+-clean up layouts and traces
+-another LED from motor to ground
+
+Drive Board notes
+-reduce height to 75mm
+-all andersons will be vertical
+	-label the andersons with GND, LOG, AUX
+-Eliminate the 5V power out anderson (2 side by side)
+-all molex sl will be vertical
+-Keep circuitry for solinoid, lazers, and servos the same
+	-New location is center of board between andersons and the max3232
+-Add two more serial busses in the schematic
+	-this means another max3232
+	-change 3pin molex sl to 5pin sl
+		-order of pins(left to right): tx1, rx1, gnd, tx2, rx2
+	-New location is right side of board
